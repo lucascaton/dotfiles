@@ -1,18 +1,16 @@
 #! /bin/bash
-echo -ne '\nInitializing...\n\n'
+NO_COLOR="\033[1;0m"
+GREEN="\033[0;32m"
+export GRAY="\033[1;30m"
 
-files=(bash_profile gitconfig irbrc psqlrc rvmrc)
+echo -ne "\n${GREEN}Initializing...\n\n"
 
-echo -ne '=> Backup your dotfiles'
-for ((i = 0; i < ${#files[@]}; i++)) do
-  echo -ne '.'; sleep 0.1
-  if [ -s ~/.${files[$i]} ]; then mv ~/.${files[$i]} ~/.${files[$i]}.bkp; fi
-done; echo -ne '\n'
+echo -e "Creating backup + creating symlinks to new dotfiles..."
+echo -e "${GRAY}"
+cd files; for file in *; do
+  echo "~/.$file"
+  if [ -s ~/.$file ]; then mv ~/.$file ~/.$file.bkp; fi
+  ln -s ~/.dotfiles/files/$file ~/.$file
+done
 
-echo -ne '=> Create symlinks to new dotfiles'
-for ((i = 0; i < ${#files[@]}; i++)) do
-  echo -ne '.'; sleep 0.1
-  ln -s ~/.dotfiles/files/${files[$i]} ~/.${files[$i]}
-done; echo -ne '\n'
-
-echo -ne '\nDone :-)\n\n'
+echo -ne "\n${GREEN}Done! :-)${NO_COLOR}\n\n"
