@@ -7,7 +7,7 @@ echo -ne "\n${GREEN}Initializing...\n\n"
 
 echo -e "Creating backup + creating symlinks to new dotfiles..."
 echo -e "${GRAY}"
-cd files; for file in *; do
+cd ~/.dotfiles/files; for file in *; do
   echo "~/.$file"
   if [ -s ~/.$file ]; then mv ~/.$file ~/.$file.bkp; fi
   ln -s ~/.dotfiles/files/$file ~/.$file
