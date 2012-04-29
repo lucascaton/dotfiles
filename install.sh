@@ -1,12 +1,18 @@
 #! /bin/bash
-echo 'Installing...'
+echo -ne '\nInitializing...\n\n'
 
-echo 'Backup your dotfiles...'
-if [[ -s ~/.bash_profile ]] ; then mv ~/.bash_profile ~/.bash_profile.bkp ; fi
-if [[ -s ~/.gitconfig ]] ; then mv ~/.bash_profile ~/.gitconfig.bkp ; fi
-if [[ -s ~/.irbrc ]] ; then mv ~/.bash_profile ~/.irbrc.bkp ; fi
+files=(bash_profile gitconfig irbrc psqlrc rvmrc)
 
-echo 'Create symlinks to new dotfiles...'
-ln -s ~/.dotfiles/bash_profile ~/.bash_profile
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/irbrc ~/.irbrc
+echo -ne '=> Backup your dotfiles'
+for ((i = 0; i < ${#files[@]}; i++)) do
+  echo -ne '.'; sleep 0.1
+  if [[ -s ~/.${files[$i]} ]]; then mv ~/.${files[$i]} ~/.${files[$i]}.bkp; fi
+done; echo -ne '\n'
+
+echo -ne '=> Create symlinks to new dotfiles'
+for ((i = 0; i < ${#files[@]}; i++)) do
+  echo -ne '.'; sleep 0.1
+  ln -s ~/.dotfiles/${files[$i]} ~/.${files[$i]}
+done; echo -ne '\n'
+
+echo -ne '\nDone :-)\n\n'

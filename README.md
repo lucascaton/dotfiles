@@ -1,3 +1,9 @@
+About
+========
+
+My configuration files.
+Tested only in OSX 10.7.
+
 Usage
 ========
 
