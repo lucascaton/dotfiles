@@ -1,8 +1,3 @@
-dotfiles
-========
-
-My personal dotfiles.
-
 Usage
 ========
 
