@@ -1,13 +1,12 @@
 Usage
 ========
 
+Clone repository:
 ```shell```
-# Backup your dotfiles
-mv ~/.bash_profile ~/.bash_profile.bkp
-
-# Clone repository
 git clone git@github.com:lucascaton/dotfiles.git ~/.dotfiles
+```shell```
 
-# Create symlinks to new dotfiles
-ln -s ~/.dotfiles/bash_profile ~/.bash_profile
+Install the dotfiles:
+```shell```
+~/.ditfiles/install.sh
 ```shell```
