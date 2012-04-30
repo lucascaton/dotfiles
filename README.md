@@ -24,6 +24,9 @@ In order to install my favorite ruby gems, run:
 rvm gemset import ~/.dotfiles/files/default.gems
 ```
 
+My vimfiles can be found at:
+https://github.com/lucascaton/vimfiles
+
 Copyright
 =========
 
