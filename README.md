@@ -18,6 +18,12 @@ Install the dotfiles:
 ~/.dotfiles/install.sh
 ```
 
+In order to install my favorite ruby gems, run:
+
+```shell
+rvm gemset import ~/.dotfiles/files/default.gems
+```
+
 Copyright
 =========
 
