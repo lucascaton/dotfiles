@@ -37,6 +37,10 @@ alias gm='git merge'
 alias ga='git add'
 alias gr='git rm'
 alias gp='git pull --rebase'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
 
 # ruby
 export RUBY_HEAP_MIN_SLOTS=1000000
