@@ -73,9 +73,9 @@ alias duh='du -h -d=1'
 alias annotate='bundle exec annotate -p before'
 
 # bundle
-alias brake='bundle exec rake'
-alias bspec='bundle exec spec'
-alias brspec='bundle exec rspec'
+alias rake='bundle exec rake'
+alias spec='bundle exec spec'
+alias rspec='bundle exec rspec'
 
 # psql
 export PGHOST=localhost
