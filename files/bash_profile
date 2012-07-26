@@ -76,6 +76,7 @@ alias bassetsc='bundle exec rake assets:clean'
 # others aliases
 alias duh='du -h -d=1'
 alias annotate='bundle exec annotate -p before'
+alias logs='cd /private/var/log'
 
 # bundle
 alias rake='bundle exec rake'
