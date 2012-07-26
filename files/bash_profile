@@ -21,6 +21,11 @@ export PURPLE="\[\033[0;35m\]"
 # rvm
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
+# rbenv
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+# # source ~/.rbenv/completions/rbenv.bash
+
 # enable programmable completion features (you don't need to enable this, if it's
 # already enabled in /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ]; then . /etc/bash_completion; fi
