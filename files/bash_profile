@@ -72,8 +72,7 @@ alias rc='rails c'
 alias rg='rails g'
 
 # rails 3.1 aliases
-alias bassets='bundle exec rake assets:clean assets:precompile'
-alias bassetsc='bundle exec rake assets:clean'
+alias assets='bundle exec rake assets:clean assets:precompile'
 
 # others aliases
 alias duh='du -h -d=1'
