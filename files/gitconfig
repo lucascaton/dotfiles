@@ -8,6 +8,7 @@
   co = checkout
 [core]
   quotepath = false
+  excludesfile = ~/.gitignore_global
 [branch]
   autosetuprebase = always
   rebase = true

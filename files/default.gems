@@ -1,6 +1,5 @@
 # .gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
 annotate
-annotate -v2.4.1.beta1
 awesome_print
 brakeman
 bundler
@@ -10,20 +9,16 @@ devise
 enumerate_it
 grb
 haml
-heroku
 mysql
 pg
 pry
 pry-doc
 pry-nav
-rails -v2.3.14
-rails -v3.0.12
-rails -v3.1.4
-rails -v3.2.3
+rails
 rails_best_practices
 routes
 rspec
 rspec-rails
-ruby_parser
+thin
 thor
 unicorn

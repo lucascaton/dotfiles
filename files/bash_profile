@@ -83,6 +83,7 @@ alias logs='cd /private/var/log'
 alias rake='bundle exec rake'
 alias spec='bundle exec spec'
 alias rspec='bundle exec rspec'
+alias cucumber='bundle exec cucumber'
 
 # psql
 export PGHOST=localhost

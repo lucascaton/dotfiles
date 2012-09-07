@@ -1,0 +1,9 @@
+# Ignore files from text editor and IDEs
+Session.vim
+*.swo
+*.swp
+*.swn
+
+# Ignore files from Operating System
+*~
+.DS_Store
