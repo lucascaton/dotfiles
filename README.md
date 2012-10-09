@@ -1,7 +1,7 @@
 About
 =====
 
-My configuration files. Tested only in OSX 10.7.
+My configuration files. Tested only in OSX 10.8.
 
 Usage
 =====
