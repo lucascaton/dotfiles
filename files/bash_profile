@@ -64,6 +64,7 @@ alias scs='script/console --sandbox'
 alias sg='script/generate'
 
 # rails 3 aliases
+alias rails_new='_(){ rails new $1 --skip-bundle --skip-test-unit -f postgresql -m ~/.rails_templates/default.rb; }; _'
 alias rs='rails s'
 alias rsd='rails s --debugger'
 alias us='unicorn_rails --port 3000'
@@ -78,6 +79,7 @@ alias assets='bundle exec rake assets:clean assets:precompile'
 alias duh='du -h -d=1'
 alias annotate='bundle exec annotate -p before'
 alias logs='cd /private/var/log'
+alias ctags="`brew --prefix`/bin/ctags"
 
 # bundle
 alias rake='bundle exec rake'
