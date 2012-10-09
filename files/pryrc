@@ -15,18 +15,11 @@ end
 if defined?(Rails)
   %w(rails/console/app rails/console/helpers).each { |f| require f }
   TOPLEVEL_BINDING.eval('self').extend ::Rails::ConsoleMethods
-
-  def factory_load!
-    require 'factory_girl'
-    FactoryGirl.factories.clear
-    load File.join(Rails.root, 'spec/support/factories.rb')
-    true
-  end
 end
 
 begin
   require 'awesome_print'
   Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
 rescue LoadError => err
-   warn '=> Unable to load awesome_print'
+  warn '=> Unable to load awesome_print'
 end
