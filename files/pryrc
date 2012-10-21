@@ -17,6 +17,13 @@ if defined?(Rails)
   TOPLEVEL_BINDING.eval('self').extend ::Rails::ConsoleMethods
 end
 
+def fg
+  require 'factory_girl'
+  FactoryGirl.factories.clear
+  load File.join(Rails.root, 'spec/support/factories.rb')
+  true
+end
+
 begin
   require 'awesome_print'
   Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
