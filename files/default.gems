@@ -8,7 +8,7 @@ code2pdf
 devise
 enumerate_it
 grb
-haml
+haml-rails
 mysql
 pg
 pry
