@@ -56,35 +56,25 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
-# rails 2 aliases
-alias ss='script/server'
-alias ssd='script/server --debugger'
-alias sc='script/console'
-alias scs='script/console --sandbox'
-alias sg='script/generate'
-
-# rails 3 aliases
-alias rails_new='_(){ rails new $1 --skip-bundle --skip-test-unit -f postgresql -m ~/.rails_templates/default.rb; }; _'
+# rails aliases
 alias rs='rails s'
-alias rsd='rails s --debugger'
-alias us='unicorn_rails --port 3000'
-alias usd='unicorn_rails --port 3000 --debug'
 alias rc='rails c'
 alias rg='rails g'
 
-# rails 3.1 aliases
-alias assets='bundle exec rake assets:clean assets:precompile'
-
 # others aliases
+alias ll='ls -l'
+alias la='ls -la'
 alias duh='du -h -d=1'
-alias annotate='bundle exec annotate -p before'
+alias fs='foreman start'
 alias logs='cd /private/var/log'
 alias ctags="`brew --prefix`/bin/ctags"
 
 # bundle
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
-alias cucumber='bundle exec cucumber'
+alias assets='bundle exec rake assets:clean assets:precompile'
+alias annotate='bundle exec annotate -p before'
+alias foreman='bundle exec foreman'
 
 # psql
 export PGHOST=localhost
