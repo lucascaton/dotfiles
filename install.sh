@@ -1,7 +1,7 @@
 #! /bin/bash
 NO_COLOR="\033[1;0m"
 GREEN="\033[0;32m"
-export GRAY="\033[1;30m"
+GRAY="\033[1;30m"
 
 echo -ne "\n${GREEN}Initializing...\n\n"
 
