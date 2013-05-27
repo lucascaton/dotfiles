@@ -45,10 +45,10 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 
 # rails aliases
-alias rs='rails s'
+alias rs='bundle exec rails s'
 alias us='bundle exec unicorn_rails -p 3000'
-alias rc='rails c'
-alias rg='rails g'
+alias rc='bundle exec rails c'
+alias rg='bundle exec rails g'
 
 # others aliases
 alias ll='ls -l'
