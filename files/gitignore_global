@@ -5,3 +5,6 @@ Session.vim
 # Ignore files from Operating System
 *~
 .DS_Store
+
+# Ignore files from Ctags
+/tags
