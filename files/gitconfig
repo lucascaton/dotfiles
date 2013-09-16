@@ -11,7 +11,7 @@
   quotepath = false
   excludesfile = ~/.gitignore_global
 [branch]
-  autosetuprebase = always
+	autosetuprebase = always
   rebase = true
 [merge "railsschema"]
   name = newer Rails schema version

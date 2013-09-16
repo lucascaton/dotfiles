@@ -8,3 +8,7 @@ Session.vim
 
 # Ignore files from Ctags
 /tags
+
+# Others
+rails_best_practices_output.html
+.routes
