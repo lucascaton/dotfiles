@@ -1,10 +1,14 @@
 Pry.config.editor = 'mvim -v'
 
+Pry.commands.alias_command 'c', 'continue'
+Pry.commands.alias_command 's', 'step'
+Pry.commands.alias_command 'n', 'next'
+
 Pry.config.prompt = proc do |obj, level, _|
   prompt = ''
   prompt << "#{Rails.version}@" if defined?(Rails)
   prompt << "#{RUBY_VERSION}"
-  "#{prompt} (#{obj})> "
+  "#{prompt} (#{obj.to_s[0..30]})> "
 end
 
 Pry.config.exception_handler = proc do |output, exception, _|
@@ -28,5 +32,30 @@ begin
   require 'awesome_print'
   Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
 rescue LoadError => err
-  warn '=> Unable to load awesome_print'
+  warn "=> Unable to load awesome_print (#{err})"
 end
+
+
+
+
+
+
+# # Rails 2
+# # Launch Pry with access to the entire Rails stack.
+# # If you have Pry in your Gemfile, you can pass: ./script/console --irb=pry
+# # instead. If you don't, you can load it through the lines below :)
+# rails = File.join(Dir.getwd, 'config', 'environment.rb')
+#
+# if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
+#   require rails
+#
+#   if Rails.version[0..0] == '2'
+#     require 'console_app'
+#     require 'console_with_helpers'
+#   elsif Rails.version[0..0] == '3'
+#     require 'rails/console/app'
+#     require 'rails/console/helpers'
+#   else
+#     warn '[WARN] cannot load Rails console commands (Not on Rails 2 or 3?)'
+#   end
+# end
