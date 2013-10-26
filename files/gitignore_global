@@ -9,6 +9,15 @@ Session.vim
 # Ignore files from Ctags
 /tags
 
+# Ignore simplecov files
+coverage/
+
+# Ignore files from SASS
+/.sass-cache/
+
+# Ignore files from RVM
+/.rvmrc
+
 # Others
 rails_best_practices_output.html
 .routes
