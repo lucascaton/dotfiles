@@ -25,3 +25,5 @@
     exit 1 if b.include?(%(<)*%L)'"
 [rerere]
   enabled = 1
+[push]
+	default = simple
