@@ -65,6 +65,7 @@ alias assets='bundle exec rake assets:clean assets:precompile'
 alias annotate='bundle exec annotate -p before'
 alias foreman='bundle exec foreman'
 alias guard='bundle exec guard'
+alias cap='bundle exec cap'
 
 # psql
 export PGHOST=localhost
