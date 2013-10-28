@@ -73,7 +73,7 @@ export PGHOST=localhost
 # iterm2
 export LC_CTYPE=utf-8
 
-function rm () {
+function rm(){
   local path
   for path in "$@"; do
     # ignore any arguments
@@ -90,13 +90,13 @@ function rm () {
 }
 
 # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
-fcd() {
-pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-[ -n "$pFinder" ] && cd "$pFinder"
+fcd(){
+  pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+  [ -n "$pFinder" ] && cd "$pFinder"
 pwd
 }
 
-custom_prompt () {
+custom_prompt(){
   history -a
   history -c
   history -r
