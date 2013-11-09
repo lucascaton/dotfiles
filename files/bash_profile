@@ -75,6 +75,10 @@ export PGHOST=localhost
 # iterm2
 export LC_CTYPE=utf-8
 
+function npmls(){
+  npm ls -g --depth=0 "$@" 2>/dev/null
+}
+
 function rm(){
   local path
   for path in "$@"; do
