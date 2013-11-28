@@ -1,6 +1,4 @@
-annotate
 awesome_print
-better_errors
 brakeman
 bundler
 capybara
@@ -31,8 +29,4 @@ simplecov
 sqlite3
 therubyracer
 thin
-thor
 twitter-bootstrap-rails
-unicorn
-vagrant
-zeus

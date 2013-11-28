@@ -62,6 +62,7 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 # bundle
 alias rake='bundle exec rake'
+alias spec='bundle exec spec'
 alias rspec='bundle exec rspec'
 alias assets='bundle exec rake assets:clean assets:precompile'
 alias annotate='bundle exec annotate -p before'
@@ -76,6 +77,10 @@ export PGHOST=localhost
 export LC_CTYPE=utf-8
 
 function npmls(){
+  npm ls --depth=0 "$@" 2>/dev/null
+}
+
+function npmlsg(){
   npm ls -g --depth=0 "$@" 2>/dev/null
 }
 
