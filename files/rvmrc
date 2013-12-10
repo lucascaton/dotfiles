@@ -1,2 +1,0 @@
-rvm_archflags="-Os -arch x86_64 -fno-common"
-export rvm_path="$HOME/.rvm"
