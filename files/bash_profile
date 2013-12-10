@@ -20,7 +20,7 @@ export CYAN="\[\033[0;36m\]"
 export PURPLE="\[\033[0;35m\]"
 
 # rvm
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # enable programmable completion features (you don't need to enable this, if it's
 # already enabled in /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc).
@@ -54,8 +54,8 @@ alias rc='bundle exec rails c'
 alias rg='bundle exec rails g'
 
 # others aliases
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='ls -lh'
+alias la='ls -lha'
 alias duh='du -h -d=1'
 alias fs='foreman start'
 alias ctags="`brew --prefix`/bin/ctags"
