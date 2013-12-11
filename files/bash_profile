@@ -69,6 +69,7 @@ alias annotate='bundle exec annotate -p before'
 alias foreman='bundle exec foreman'
 alias guard='bundle exec guard'
 alias cap='bundle exec cap'
+alias migrate='bundle exec rake db:migrate db:test:prepare'
 
 # psql
 export PGHOST=localhost
