@@ -7,7 +7,7 @@ Session.vim
 .DS_Store
 
 # Ignore files from Ctags
-/tags
+tags
 
 # Ignore simplecov files
 coverage/
