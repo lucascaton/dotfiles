@@ -53,6 +53,10 @@ alias us='bundle exec unicorn_rails -p 3000'
 alias rc='bundle exec rails c'
 alias rg='bundle exec rails g'
 
+# rails 2 aliases
+alias ss='script/server'
+alias sc='script/console --irb=pry'
+
 # others aliases
 alias ll='ls -lh'
 alias la='ls -lha'
@@ -65,7 +69,6 @@ alias rake='bundle exec rake'
 alias spec='bundle exec spec'
 alias rspec='bundle exec rspec'
 alias assets='bundle exec rake assets:clean assets:precompile'
-alias annotate='bundle exec annotate -p before'
 alias foreman='bundle exec foreman'
 alias guard='bundle exec guard'
 alias cap='bundle exec cap'
