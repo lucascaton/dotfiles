@@ -1,10 +1,21 @@
-export CLICOLOR="auto"
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  export LANGUAGE=en_US.UTF-8
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  export RAILS_ENV=production
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  export CLICOLOR="auto"
+fi
+
 export EDITOR="mvim"
 export GEM_EDITOR="mvim"
 export ARCHFLAGS="-arch x86_64"
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;37;41"
-export CC=/usr/local/bin/gcc-4.2
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export CC=/usr/local/bin/gcc-4.2
+fi
 
 export BLUE="\[\033[0;34m\]"
 export NO_COLOR="\[\e[0m\]"
@@ -62,7 +73,10 @@ alias ll='ls -lh'
 alias la='ls -lha'
 alias duh='du -h -d=1'
 alias fs='foreman start'
-alias ctags="`brew --prefix`/bin/ctags"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ctags="`brew --prefix`/bin/ctags"
+fi
 
 # bundle
 alias rake='bundle exec rake'
@@ -77,8 +91,10 @@ alias migrate='bundle exec rake db:migrate db:test:prepare'
 # psql
 export PGHOST=localhost
 
-# iterm2
-export LC_CTYPE=utf-8
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # iterm2
+  export LC_CTYPE=utf-8
+fi
 
 function npmls(){
   npm ls --depth=0 "$@" 2>/dev/null
@@ -88,28 +104,30 @@ function npmlsg(){
   npm ls -g --depth=0 "$@" 2>/dev/null
 }
 
-function rm(){
-  local path
-  for path in "$@"; do
-    # ignore any arguments
-    if [[ "$path" = -* ]]; then :
-    else
-      local dst=${path##*/}
-      # append the time if necessary
-      while [ -e ~/.Trash/"$dst" ]; do
-        dst="$dst "$(date +%H-%M-%S)
-      done
-      mv "$path" ~/.Trash/"$dst"
-    fi
-  done
-}
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  function rm(){
+    local path
+    for path in "$@"; do
+      # ignore any arguments
+      if [[ "$path" = -* ]]; then :
+      else
+        local dst=${path##*/}
+        # append the time if necessary
+        while [ -e ~/.Trash/"$dst" ]; do
+          dst="$dst "$(date +%H-%M-%S)
+        done
+        mv "$path" ~/.Trash/"$dst"
+      fi
+    done
+  }
 
-# http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
-fcd(){
-  pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-  [ -n "$pFinder" ] && cd "$pFinder"
-pwd
-}
+  # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
+  fcd(){
+    pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    [ -n "$pFinder" ] && cd "$pFinder"
+  pwd
+  }
+fi
 
 aftermerge(){
   branch=`git branch 2> /dev/null | grep \* | sed 's/* //'`
