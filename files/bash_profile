@@ -69,14 +69,22 @@ alias ss='script/server'
 alias sc='script/console --irb=pry'
 
 # others aliases
-alias ll='ls -lh'
-alias la='ls -lha'
-alias duh='du -h -d=1'
-alias fs='foreman start'
+colorflag="-G"
+alias ls="command ls ${colorflag}"
+alias l="ls -lF ${colorflag}" # all files, in long format
+alias ll="l"
+alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
+alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
 fi
+
+# Quicker navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 # bundle
 alias rake='bundle exec rake'
@@ -209,10 +217,13 @@ custom_prompt(){
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
 
-    PS1="${RUBY_PROMPT}${YELLOW}\w${NO_COLOR} (${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR})\n\$ "
+    export PS1="${RUBY_PROMPT}${YELLOW}\w${NO_COLOR} (${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR})\n\$ "
   else
-    PS1="${RUBY_PROMPT}${YELLOW}\w${NO_COLOR}\n\$ "
+    export PS1="${RUBY_PROMPT}${YELLOW}\w${NO_COLOR}\n\$ "
   fi
 }
 
-PROMPT_COMMAND=custom_prompt
+custom_prompt
+
+# Only show the current directory's name in the tab
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
