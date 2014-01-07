@@ -99,11 +99,6 @@ alias migrate='bundle exec rake db:migrate db:test:prepare'
 # psql
 export PGHOST=localhost
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  # iterm2
-  export LC_CTYPE=utf-8
-fi
-
 function npmls(){
   npm ls --depth=0 "$@" 2>/dev/null
 }
