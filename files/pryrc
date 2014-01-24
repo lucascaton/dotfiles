@@ -29,7 +29,14 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
     def fg
       require 'factory_girl'
       FactoryGirl.factories.clear
-      load File.join(Rails.root, 'spec/support/factories.rb')
+
+      factory_girl_paths = ['spec/factories.rb', 'spec/support/factories.rb']
+
+      factory_girl_paths.each do |path|
+        file = File.join(Rails.root, path)
+        load(File.join(Rails.root, path)) if File.exist?(file)
+      end
+
       true
     end
 
