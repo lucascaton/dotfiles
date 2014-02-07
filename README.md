@@ -9,7 +9,7 @@ Usage
 Clone repository:
 
 ```shell
-git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
+git clone git://github.com/hevertonrodrigues/dotfiles.git ~/.dotfiles
 ```
 
 Install the dotfiles:
@@ -24,7 +24,7 @@ In order to install my favorite ruby gems, run:
 rvm gemset import ~/.dotfiles/files/default.gems
 ```
 
-My vimfiles can be found at: https://github.com/lucascaton/vimfiles
+My vimfiles can be found at: https://github.com/hevertonrodrigues/vimfiles
 
 Copyright
 =========
