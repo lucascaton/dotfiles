@@ -46,6 +46,9 @@ alias reloadbash='source ~/.bash_profile'
 
 # git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+alias gp='git push origin master'
+alias gf='git fetch upstream'
+alias gr='git rebase upstream/master'
 alias gc='git commit -m'
 alias gs='git status'
 alias gd='git diff'
@@ -56,8 +59,8 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add -i'
 alias gap='git add -p'
-alias gr='git rm'
-alias gp='git pull --rebase'
+alias grm='git rm'
+alias gpr='git pull --rebase'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
@@ -82,7 +85,7 @@ alias ll="l"
 alias lla="ls -laF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 
-alias rmd="rm -rf"
+alias rmd="sudo rm -rf"
 
 mkd () {
 	mkdir -p "$*"
