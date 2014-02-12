@@ -1023,7 +1023,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/lucascaton/.dotfiles/files</string>
+	<string>~/.dotfiles/other_files</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
