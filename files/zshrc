@@ -1,0 +1,150 @@
+ZSH=$HOME/.oh-my-zsh
+
+# Look in ~/.oh-my-zsh/themes/
+ZSH_THEME="fletcherm"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# export PATH="/Users/lucascaton/.rvm/gems/ruby-2.1.1/bin:/Users/lucascaton/.rvm/gems/ruby-2.1.1@global/bin:/Users/lucascaton/.rvm/rubies/ruby-2.1.1/bin:/Users/lucascaton/.rvm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+############################################# Export #############################################
+
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+  export GEM_EDITOR="vim"
+else
+  export EDITOR='mvim'
+  export GEM_EDITOR="mvim"
+fi
+
+# Compilation flags
+export ARCHFLAGS="-arch x86_64"
+
+# Grep
+export GREP_OPTIONS="--color=auto"
+export GREP_COLOR="1;37;41"
+
+# PSQL
+export PGHOST=localhost
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  export LANGUAGE=en_US.UTF-8
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  export RAILS_ENV=production
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  export CLICOLOR="auto"
+fi
+
+######################################## Personal configs ########################################
+
+if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
+
+############################################# Alias ##############################################
+
+# Git
+alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+alias gs='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gds='git diff HEAD\^ HEAD'
+alias gm='git merge'
+alias ga='git add'
+alias gaa='git add --all'
+alias gai='git add -i'
+alias gap='git add -p'
+alias gr='git rm'
+alias gp='git pull --rebase'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+
+# Rails aliases
+alias rs='bundle exec rails s'
+alias us='bundle exec unicorn_rails -p 3000'
+alias rc='bundle exec rails c'
+alias rg='bundle exec rails g'
+
+# Rails 2 aliases
+alias ss='script/server'
+alias sc='script/console --irb=pry'
+alias sg='script/generate'
+
+# Others aliases
+colorflag="-G"
+alias ls="command ls ${colorflag}"
+alias l="ls -lhF ${colorflag}" # All files, in long format
+alias ll="l"
+alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ctags="`brew --prefix`/bin/ctags"
+fi
+
+# Quicker navigation
+alias ..="cd .."
+alias ...="cd ../.."
+
+# Bundle
+alias rake='bundle exec rake'
+alias spec='bundle exec spec'
+alias rspec='bundle exec rspec'
+alias assets='bundle exec rake assets:clean assets:precompile'
+alias foreman='bundle exec foreman'
+alias guard='bundle exec guard'
+alias cap='bundle exec cap'
+alias migrate='bundle exec rake db:migrate db:test:prepare'
+
+########################################### Functions ############################################
+
+function npmls(){
+  npm ls --depth=0 "$@" 2>/dev/null
+}
+
+function npmlsg(){
+  npm ls -g --depth=0 "$@" 2>/dev/null
+}
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  function rm(){
+    local path
+    for path in "$@"; do
+      # ignore any arguments
+      if [[ "$path" = -* ]]; then :
+      else
+        local dst=${path##*/}
+        # append the time if necessary
+        while [ -e ~/.Trash/"$dst" ]; do
+          dst="$dst "$(date +%H-%M-%S)
+        done
+
+        /bin/mv "$path" ~/.Trash/"$dst"
+      fi
+    done
+  }
+
+  # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
+  fcd(){
+    pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    [ -n "$pFinder" ] && cd "$pFinder"
+  pwd
+  }
+fi
+
+aftermerge(){
+  branch=`git branch 2> /dev/null | grep \* | sed 's/* //'`
+
+  git checkout master
+  git pull --rebase
+  git remote prune origin
+  git branch -d $branch
+
+  clear
+  git branch -a
+}
