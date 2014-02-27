@@ -231,11 +231,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>553 274 201 309 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>516 393 924 485 0 0 1440 900 </string>
+	<string>516 372 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>528 562 384 129 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1440 874 0 0 1440 900 </string>
+	<string>0 0 1440 900 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 26 1440 852 0 0 1440 900 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
@@ -1041,8 +1041,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-02-02T22:47:15Z</date>
+	<date>2014-02-18T22:40:04Z</date>
 	<key>SavePasteHistory</key>
+	<false/>
+	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
