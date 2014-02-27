@@ -6,7 +6,6 @@ ZSH_THEME="fletcherm"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,9 +49,9 @@ if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.persona
 # Git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 alias gs='git status'
-alias gd='git diff'
-alias gdc='git diff --cached'
-alias gds='git diff HEAD\^ HEAD'
+alias gd='git --no-pager diff'
+alias gdc='git --no-pager diff --cached'
+alias gds='git --no-pager diff HEAD\^ HEAD'
 alias gm='git merge'
 alias ga='git add'
 alias gaa='git add --all'
