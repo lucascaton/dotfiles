@@ -173,7 +173,7 @@ custom_prompt(){
   local CHANGES_NOT_STAGED="# Changes not staged for commit"
   local LOG=`git log -1 2> /dev/null`
 
-  if [[ "$RAILS_VERSION" ]]; then
+  if [[ "$RAILS_VERSION" != "" ]]; then
     local RAILS_PROMPT="${RAILS_VERSION}@"
   fi
 
