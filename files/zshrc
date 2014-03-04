@@ -115,18 +115,21 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   function rm(){
     local path
     for path in "$@"; do
-      # ignore any arguments
+      # Ignore any arguments
       if [[ "$path" = -* ]]; then :
       else
         local dst=${path##*/}
-        # append the time if necessary
+
+        # Append the time if necessary
         while [ -e ~/.Trash/"$dst" ]; do
-          dst="$dst "$(date +%H-%M-%S)
+          dst="$dst $RANDOM"
         done
 
         /bin/mv "$path" ~/.Trash/"$dst"
       fi
     done
+
+    echo ""
   }
 
   # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
