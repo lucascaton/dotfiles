@@ -9,8 +9,6 @@ ZSH_THEME="fletcherm"
 
 source $ZSH/oh-my-zsh.sh
 
-# export PATH="/Users/lucascaton/.rvm/gems/ruby-2.1.1/bin:/Users/lucascaton/.rvm/gems/ruby-2.1.1@global/bin:/Users/lucascaton/.rvm/rubies/ruby-2.1.1/bin:/Users/lucascaton/.rvm/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-
 ############################################# Export #############################################
 
 if [[ -n $SSH_CONNECTION ]]; then
