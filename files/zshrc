@@ -187,6 +187,10 @@ custom_prompt(){
   local CHANGES_NOT_STAGED="# Changes not staged for commit"
   local LOG="$(git log -1 2> /dev/null)"
 
+  if [ -d 'spec/' ] && [ `ag focus spec --ignore=spec/spec_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
+    local FOCUS='[RSpec with focus]'
+  fi
+
   if [[ "$RAILS_VERSION" != "" ]]; then
     local RAILS_PROMPT="${RAILS_VERSION}@"
   fi
@@ -224,7 +228,7 @@ custom_prompt(){
       STATE="${STATE}${YELLOW}*${NO_COLOR}"
     fi
 
-    export PROMPT="${RUBY_PROMPT}${YELLOW}%~${NO_COLOR} (${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}${NO_COLOR})
+    export PROMPT="${RUBY_PROMPT}${YELLOW}%~${NO_COLOR} (${PROMPT_COLOR}${BRANCH}${NO_COLOR}${STATE}) ${RED}${FOCUS}${NO_COLOR}
 \$ "
   else
     export PROMPT="${RUBY_PROMPT}${YELLOW}%~${NO_COLOR}
