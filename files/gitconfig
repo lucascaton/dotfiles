@@ -1,6 +1,6 @@
 [user]
-  name = <Your name here>
-  email = <Your e-mail here>
+	name = Heverton Rodrigues
+	email = heverton25@gmail.com
 [diff]
   color = auto
 [alias]
@@ -10,6 +10,7 @@
 [core]
   quotepath = false
   excludesfile = ~/.gitignore_global
+	editor = mvim
 [branch]
   autosetuprebase = always
   rebase = true
@@ -29,3 +30,7 @@
   default = simple
 [color]
   interactive = true
+  status = auto
+  branch = auto
+  interactive = auto
+  diff = auto

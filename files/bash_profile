@@ -40,8 +40,16 @@ if [ -f /etc/bash_completion ]; then . /etc/bash_completion; fi
 # personal_configs
 if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
 
+
+alias reloadbash='source ~/.bash_profile'
+
+
 # git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+alias gp='git push origin master'
+alias gf='git fetch upstream'
+alias gr='git rebase upstream/master'
+alias gc='git commit -m'
 alias gs='git status'
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -51,8 +59,8 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add -i'
 alias gap='git add -p'
-alias gr='git rm'
-alias gp='git pull --rebase'
+alias grm='git rm'
+alias gpr='git pull --rebase'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
@@ -71,14 +79,34 @@ alias sc='script/console --irb=pry'
 # others aliases
 colorflag="-G"
 alias ls="command ls ${colorflag}"
+alias la="command ls -a ${colorflag}"
 alias l="ls -lhF ${colorflag}" # all files, in long format
 alias ll="l"
-alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
+alias lla="ls -laF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
+
+alias rmd="sudo rm -rf"
+
+mkd () {
+	mkdir -p "$*"
+	cd "$*"
+}
+
+
+# Phocus navigation
+sphocus(){
+	cd "/Volumes/apache.phocus/$*"
+}
+
+
+
+
+
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
 fi
+
 
 # Quicker navigation
 alias ..="cd .."
@@ -177,7 +205,7 @@ custom_prompt(){
     local RAILS_PROMPT="${RAILS_VERSION}@"
   fi
 
-  RUBY_PROMPT="${GRAY}[${RAILS_PROMPT}${RUBY_VERSION}]${NO_COLOR} "
+  RUBY_PROMPT="${RED}[${RAILS_PROMPT}${RUBY_VERSION}]${NO_COLOR} "
 
   if [ "$STATUS" != "" ]; then
     if [[ "$STATUS" =~ "$CHANGES_NOT_STAGED" ]]; then
