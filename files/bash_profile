@@ -3,19 +3,18 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   export LANG=en_US.UTF-8
   export LC_ALL=en_US.UTF-8
   export RAILS_ENV=production
+  export EDITOR="vim"
+  export GEM_EDITOR="vim"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   export CLICOLOR="auto"
-fi
-
-export EDITOR="mvim"
-export GEM_EDITOR="mvim"
-export ARCHFLAGS="-arch x86_64"
-export GREP_OPTIONS="--color=auto"
-export GREP_COLOR="1;37;41"
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
+  export EDITOR="mvim"
+  export GEM_EDITOR="mvim"
+  export ARCHFLAGS="-arch x86_64"
   export CC=/usr/local/bin/gcc-4.2
 fi
+
+export GREP_OPTIONS="--color=auto"
+export GREP_COLOR="1;37;41"
 
 export BLUE="\[\033[0;34m\]"
 export NO_COLOR="\[\e[0m\]"
