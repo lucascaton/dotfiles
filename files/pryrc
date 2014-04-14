@@ -6,6 +6,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   if Rails.version[0..0] == '2'
     require 'console_app'
     require 'console_with_helpers'
+    ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
   elsif Rails.version[0..0].in?(%w(3 4))
     Pry.config.editor = 'mvim -v'
 
