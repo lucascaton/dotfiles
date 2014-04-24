@@ -38,6 +38,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   export CLICOLOR="auto"
 fi
 
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
 ######################################## Personal configs ########################################
 
 if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
