@@ -7,7 +7,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
     require 'console_app'
     require 'console_with_helpers'
     ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
-  elsif Rails.version[0..0].in?(%w(3 4))
+  elsif %w(3 4).include?(Rails.version[0..0])
     Pry.config.editor = 'mvim -v'
 
     Pry.config.prompt = proc do |obj, level, _|
@@ -22,7 +22,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
       output.puts "from #{exception.backtrace.first}\e[0m"
     end
 
-    if defined?(Rails)
+    if defined?(Rails) && (Rails.version[0..0] == '4' || Rails.version[0..2] == '3.2')
       %w(rails/console/app rails/console/helpers).each { |f| require f }
       TOPLEVEL_BINDING.eval('self').extend ::Rails::ConsoleMethods
     end
