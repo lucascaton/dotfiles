@@ -29,17 +29,17 @@ export YELLOW="\[\033[0;33m\]"
 export CYAN="\[\033[0;36m\]"
 export PURPLE="\[\033[0;35m\]"
 
-# rvm
+# RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# enable programmable completion features (you don't need to enable this, if it's
+# Enable programmable completion features (you don't need to enable this, if it's
 # already enabled in /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ]; then . /etc/bash_completion; fi
 
-# personal_configs
+# Personal_configs
 if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
 
-# git
+# Git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 alias gs='git status'
 alias gd='git diff'
@@ -57,17 +57,17 @@ alias gba='git branch -a'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 
-# rails aliases
+# Rails aliases
 alias rs='bundle exec rails s'
 alias us='bundle exec unicorn_rails -p 3000'
 alias rc='bundle exec rails c'
 alias rg='bundle exec rails g'
 
-# rails 2 aliases
+# Rails 2 aliases
 alias ss='script/server'
 alias sc='script/console --irb=pry'
 
-# others aliases
+# Others aliases
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # all files, in long format
@@ -83,7 +83,7 @@ fi
 alias ..="cd .."
 alias ...="cd ../.."
 
-# bundle
+# Bundle
 alias rake='bundle exec rake'
 alias spec='bundle exec spec'
 alias rspec='bundle exec rspec'
@@ -93,7 +93,7 @@ alias guard='bundle exec guard'
 alias cap='bundle exec cap'
 alias migrate='bundle exec rake db:migrate db:test:prepare'
 
-# psql
+# PSQL
 export PGHOST=localhost
 
 function npmls(){
