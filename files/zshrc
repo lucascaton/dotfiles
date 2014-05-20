@@ -19,9 +19,6 @@ else
   export GEM_EDITOR="mvim"
 fi
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
-
 # Grep
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;37;41"
@@ -36,6 +33,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   export RAILS_ENV=production
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   export CLICOLOR="auto"
+  export ARCHFLAGS="-arch x86_64" # Compilation flags
+  export CC=/usr/local/bin/gcc-4.2
 fi
 
 # RVM
@@ -165,10 +164,12 @@ custom_prompt(){
     BRANCH=`git status 2> /dev/null | grep "On branch" | sed 's/# On branch //'`
   fi
 
-  local RUBY_VERSION=`ruby -e "puts RUBY_VERSION"`
+  if type ruby > /dev/null; then
+    local RUBY_VERSION=`ruby -e "puts RUBY_VERSION"`
 
-  if [ -f Gemfile.lock ]; then
-    local RAILS_VERSION=`cat Gemfile.lock | grep -E " +rails \([0-9]+" | sed 's/ *rails (\(.*\))/\1/'`
+    if [ -f Gemfile.lock ]; then
+      local RAILS_VERSION=`cat Gemfile.lock | grep -E " +rails \([0-9]+" | sed 's/ *rails (\(.*\))/\1/'`
+    fi
   fi
 
   export GREEN="%{$fg[green]%}"
@@ -195,11 +196,15 @@ custom_prompt(){
     local FOCUS='[RSpec with focus]'
   fi
 
-  if [[ "$RAILS_VERSION" != "" ]]; then
-    local RAILS_PROMPT="${RAILS_VERSION}@"
-  fi
+  if [[ "$RUBY_VERSION" != "" ]]; then
+    if [[ "$RAILS_VERSION" != "" ]]; then
+      local RAILS_PROMPT="${RAILS_VERSION}@"
+    fi
 
-  RUBY_PROMPT="${GRAY}[${RAILS_PROMPT}${RUBY_VERSION}]${NO_COLOR} "
+    RUBY_PROMPT="${GRAY}[${RAILS_PROMPT}${RUBY_VERSION}]${NO_COLOR} "
+  else
+    RUBY_PROMPT=""
+  fi
 
   if [ "$STATUS" != "" ]; then
     if [[ "$STATUS" =~ "$CHANGES_NOT_STAGED" ]]; then
