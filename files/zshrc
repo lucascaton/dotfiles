@@ -3,6 +3,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="fletcherm"
 
+export PATH=${PATH}:/Users/heverton/Copy/Workspace/Android/ADT/sdk/platform-tools:/Users/heverton/Copy/Workspace/Android/ADT/sdk/tools
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -46,6 +48,7 @@ fi
 if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
 
 ############################################# Alias ##############################################
+
 
 # Git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
@@ -94,9 +97,27 @@ mkd () {
   cd "$*"
 }
 
+
+#SSH
+alias sshlc="ssh root@107.170.213.110"
+
 # Sites navigation
 sites(){
   cd "/Users/$USER/Copy/Sites/$*"
+}
+# Sites navigation
+temas(){
+  cd "/Users/$USER/Copy/Sites/_others/_SOURCES/themes/$*"
+}
+
+# iOS Workspace navigation
+ios(){
+  cd "/Users/$USER/Copy/Workspace/iOS/$*"
+}
+
+# Android Workspace navigation
+android(){
+  cd "/Users/$USER/Copy/Workspace/Android/$*"
 }
 
 # Phocus navigation
