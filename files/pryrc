@@ -31,7 +31,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
       require 'factory_girl'
       FactoryGirl.factories.clear
 
-      factory_girl_paths = ['spec/factories.rb', 'spec/support/factories.rb']
+      factory_girl_paths = ['spec/factories.rb', 'spec/support/factories.rb', *Dir['spec/factories/**/*.rb']]
 
       factory_girl_paths.each do |path|
         file = File.join(Rails.root, path)
