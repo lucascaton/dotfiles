@@ -66,16 +66,19 @@ alias gba='git branch -a'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 
-# Rails aliases
-alias rs='bundle exec rails s'
-alias us='bundle exec unicorn_rails -p 3000'
-alias rc='bundle exec rails c'
-alias rg='bundle exec rails g'
+set_rails_alias(){
+  alias rs='bundle exec rails s'
+  alias rc='bundle exec rails c'
+  alias rg='bundle exec rails g'
 
-# Rails 2 aliases
-alias ss='script/server'
-alias sc='script/console --irb=pry'
-alias sg='script/generate'
+  if [ -f Gemfile.lock ]; then
+    if [[ "`cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.\).*)/\1/'`" = "2" ]]; then
+      alias rs='script/server'
+      alias rc='script/console --irb=pry'
+      alias rg='script/generate'
+    fi
+  fi
+}
 
 # Others aliases
 colorflag="-G"
@@ -248,4 +251,4 @@ custom_prompt(){
   export RPROMPT=""
 }
 
-precmd() { custom_prompt }
+precmd() { custom_prompt; set_rails_alias }
