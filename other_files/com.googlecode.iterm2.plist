@@ -451,6 +451,8 @@
 	<false/>
 	<key>NSColorPanelMode</key>
 	<string>6</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -488,17 +490,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>553 274 201 309 0 0 1440 878 </string>
+	<string>767 352 214 309 0 0 1920 1058 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>678 91 605 485 0 0 1920 1080 </string>
+	<string>677 193 924 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>768 697 384 129 0 0 1920 1058 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 474 592 584 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1080 0 0 1920 1058 </string>
+	<string>0 6 1913 1052 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 26 1440 852 0 0 1440 900 </string>
+	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1081,20 +1083,20 @@
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.81568628549575806</real>
+				<real>0.24849759042263031</real>
 				<key>Green Component</key>
-				<real>0.81568628549575806</real>
+				<real>0.24849759042263031</real>
 				<key>Red Component</key>
-				<real>0.81568628549575806</real>
+				<real>0.24849759042263031</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.18823529779911041</real>
+				<real>0.55294120311737061</real>
 				<key>Green Component</key>
-				<real>0.18823529779911041</real>
+				<real>0.7921568751335144</real>
 				<key>Red Component</key>
-				<real>0.18823529779911041</real>
+				<real>0.97647058963775635</real>
 			</dict>
 			<key>Semantic History</key>
 			<dict>
@@ -1302,7 +1304,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-08-26T22:50:52Z</date>
+	<date>2014-09-01T01:25:27Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
