@@ -17,7 +17,7 @@ jquery-rails
 mysql
 pg
 poltergeist
-pry-meta
+pry-rails
 rails
 rails-i18n
 rails_best_practices
