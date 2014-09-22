@@ -90,6 +90,7 @@ alias t="tail -f log/development.log | grep 'Render\|Process\|Param\|Completed'"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
+  alias m="mvim ."
 fi
 
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboard"'
