@@ -148,10 +148,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   }
 fi
 
+# Usage: aftermerge <branch> (default: master)
 aftermerge(){
   branch=`git branch 2> /dev/null | grep \* | sed 's/* //'`
 
-  git checkout master
+  git checkout ${1-master}
   git pull --rebase
   git remote prune origin
   git branch -d $branch
