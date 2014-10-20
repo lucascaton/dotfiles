@@ -34,7 +34,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   export CLICOLOR="auto"
   export ARCHFLAGS="-arch x86_64" # Compilation flags
-  export CC=/usr/local/bin/gcc-4.2
+  # export CC=/usr/local/bin/gcc-4.2
+  # export CC=/usr/bin/gcc
 fi
 
 # RVM
