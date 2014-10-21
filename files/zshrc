@@ -199,7 +199,7 @@ custom_prompt(){
   local CHANGES_NOT_STAGED="# Changes not staged for commit"
   local LOG="$(git log -1 2> /dev/null)"
 
-  if [ -d 'spec/' ] && [ `ag focus spec --ignore=spec/spec_helper.rb --ignore=spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
+  if [ -d 'spec/' ] && [ `grep -r focus spec --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
     local FOCUS='[RSpec with focus]'
   fi
 
