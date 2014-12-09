@@ -1,23 +1,26 @@
-# Ignore files from text editor and IDEs
-Session.vim
-*.sw?
-
-# Ignore files from Operating System
+# Operating System
 *~
 .DS_Store
 
-# Ignore files from Ctags
+# Text editor and IDEs
+Session.vim
+*.sw?
+
+# Ctags
 tags
 
-# Ignore simplecov files
+# Simplecov
 coverage/
 
-# Ignore files from SASS
+# SASS
 /.sass-cache/
 
-# Ignore files from RVM
+# RVM
 /.rvmrc
 
-# Others
+# Ruby gems
 rails_best_practices_output.html
 .routes
+
+# NPM logs
+npm-debug.log
