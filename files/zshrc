@@ -11,13 +11,8 @@ source $ZSH/oh-my-zsh.sh
 
 ############################################# Export #############################################
 
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-  export GEM_EDITOR="vim"
-else
-  export EDITOR='mvim'
-  export GEM_EDITOR="mvim"
-fi
+export EDITOR='vim'
+export GEM_EDITOR="vim"
 
 # Grep
 export GREP_OPTIONS="--color=auto"
@@ -50,12 +45,13 @@ if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.persona
 
 # Git
 alias g='git status'
+alias gc='git commit --no-edit'
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 alias gls='git log --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative'
 alias gd='git --no-pager diff'
 alias gdc='git --no-pager diff --cached'
 alias gds='git --no-pager diff HEAD\^ HEAD'
-alias gm='git merge'
+alias gm='git merge --no-edit'
 alias ga='git add'
 alias gaa='git add --all'
 alias gr='git rm'
