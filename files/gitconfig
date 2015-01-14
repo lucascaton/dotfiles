@@ -5,8 +5,8 @@
   color = auto
 [alias]
   cam = commit -am
-  co = checkout
-  su = submodule update --init
+  co  = checkout
+  su  = submodule update --init
 [core]
   quotepath = false
   excludesfile = ~/.gitignore_global
