@@ -60,6 +60,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
+alias scorched_earth='git checkout .; git clean -df'
 
 set_rails_alias(){
   alias rs='bundle exec rails s'
