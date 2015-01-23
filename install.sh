@@ -5,7 +5,7 @@ GREEN="\033[0;32m"
 GRAY="\033[1;30m"
 
 echo -ne "\n${GREEN}Initializing...\n\n"
-echo -e "Creating backup + creating symlinks to new dotfiles..."
+echo -e "Creating backup & creating symlinks to new dotfiles..."
 
 cd ~/.dotfiles/files
 for file in *; do
