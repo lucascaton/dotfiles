@@ -1,35 +1,21 @@
-About
-=====
+# About
 
-My configuration files. Tested in OS X 10.9.
+My configuration files. Tested in OS X & Ubuntu Linux.
 
-Usage
-=====
+# How to install
 
-Clone repository:
+    git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
+    ~/.dotfiles/install.sh
 
-```shell
-git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
-```
+In order to install my default ruby gems, run:
 
-Install the dotfiles:
+    rvm gemset import ~/.dotfiles/files/default.gems
 
-```shell
-~/.dotfiles/install.sh
-```
+My VimFiles can be found at: https://github.com/lucascaton/vimfiles
 
-In order to install my favorite ruby gems, run:
+# Copyright
 
-```shell
-rvm gemset import ~/.dotfiles/files/default.gems
-```
-
-My vimfiles can be found at: https://github.com/lucascaton/vimfiles
-
-Copyright
-=========
-
-Copyright (c) 2014 Lucas Caton
+Copyright (c) 2015 Lucas Caton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
