@@ -8,10 +8,13 @@ IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 begin
   require 'pry'
   Pry.start
-  exit
 rescue LoadError => e
   warn "=> Unable to load pry (#{e})"
 end
 
-require 'awesome_print'
-AwesomePrint.irb!
+begin
+  require 'awesome_print'
+  AwesomePrint.irb!
+rescue LoadError => e
+  warn "=> Unable to load awesome_print (#{e})"
+end
