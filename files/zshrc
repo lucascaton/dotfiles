@@ -36,6 +36,11 @@ fi
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+# # Bundler
+# # https://robots.thoughtbot.com/parallel-gem-installing-using-bundler
+# number_of_cores=`sysctl -n hw.ncpu`
+# bundle config --global jobs `expr $number_of_cores - 1`
+
 ######################################## Personal configs ########################################
 
 if [[ -s $HOME/.personal_configs ]] ;         then source $HOME/.personal_configs ;         fi
@@ -62,25 +67,27 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias scorched_earth='git checkout .; git clean -df'
 
-set_rails_alias() {
+set_rails_aliases_and_functions() {
   alias cap='bundle exec cap'
 
-  alias rs='     [ -f bin/spring ] && bin/spring rails s                             || bundle exec rails s'
-  alias rc='     [ -f bin/spring ] && bin/spring rails c                             || bundle exec rails c'
-  alias rg='     [ -f bin/spring ] && bin/spring rails g                             || bundle exec rails g'
-  alias rake='   [ -f bin/spring ] && bin/spring rake                                || bundle exec rake'
-  alias rspec='  [ -f bin/spring ] && bin/spring rspec                               || bundle exec rspec'
-  alias migrate='[ -f bin/spring ] && bin/spring rake db:migrate db:test:prepare     || bundle exec rake db:migrate db:test:prepare'
-  alias assets=' [ -f bin/spring ] && bin/spring rake assets:clean assets:precompile || bundle exec rake assets:clean assets:precompile'
-
-  # Rails 2
   if [ -f Gemfile.lock ]; then
+    # Rails 2
     if [[ "`cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.\).*)/\1/'`" = "2" ]]; then
       alias rs='script/server'
       alias rc='script/console --irb=pry'
       alias rg='script/generate'
       alias spec='bundle exec spec'
       alias rspec='bundle exec spec'
+
+    # Rails 3+
+    else
+      rs()      { if [ -f bin/rails ]; then bin/rails s "$@";                        else bundle exec rails s "$@";                        fi }
+      rc()      { if [ -f bin/rails ]; then bin/rails c "$@";                        else bundle exec rails c "$@";                        fi }
+      rg()      { if [ -f bin/rails ]; then bin/rails g "$@";                        else bundle exec rails g "$@";                        fi }
+      rspec()   { if [ -f bin/rspec ]; then bin/rspec   "$@";                        else bundle exec rspec   "$@";                        fi }
+      rake()    { if [ -f bin/rake ];  then bin/rake    "$@";                        else bundle exec rake    "$@";                        fi }
+      migrate() { if [ -f bin/rake ];  then bin/rake db:migrate db:test:prepare;     else bundle exec rake db:migrate db:test:prepare;     fi }
+      assets()  { if [ -f bin/rake ];  then bin/rake assets:clean assets:precompile; else bundle exec rake assets:clean assets:precompile; fi }
     fi
   fi
 }
@@ -253,4 +260,4 @@ custom_prompt(){
   export RPROMPT=""
 }
 
-precmd() { custom_prompt; set_rails_alias }
+precmd() { custom_prompt; set_rails_aliases_and_functions }
