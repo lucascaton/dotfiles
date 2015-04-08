@@ -62,16 +62,25 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias scorched_earth='git checkout .; git clean -df'
 
-set_rails_alias(){
-  alias rs='bundle exec rails s'
-  alias rc='bundle exec rails c'
-  alias rg='bundle exec rails g'
+set_rails_alias() {
+  alias cap='bundle exec cap'
 
+  alias rs='     [ -f bin/spring ] && bin/spring rails s                             || bundle exec rails s'
+  alias rc='     [ -f bin/spring ] && bin/spring rails c                             || bundle exec rails c'
+  alias rg='     [ -f bin/spring ] && bin/spring rails g                             || bundle exec rails g'
+  alias rake='   [ -f bin/spring ] && bin/spring rake                                || bundle exec rake'
+  alias rspec='  [ -f bin/spring ] && bin/spring rspec                               || bundle exec rspec'
+  alias migrate='[ -f bin/spring ] && bin/spring rake db:migrate db:test:prepare     || bundle exec rake db:migrate db:test:prepare'
+  alias assets=' [ -f bin/spring ] && bin/spring rake assets:clean assets:precompile || bundle exec rake assets:clean assets:precompile'
+
+  # Rails 2
   if [ -f Gemfile.lock ]; then
     if [[ "`cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.\).*)/\1/'`" = "2" ]]; then
       alias rs='script/server'
       alias rc='script/console --irb=pry'
       alias rg='script/generate'
+      alias spec='bundle exec spec'
+      alias rspec='bundle exec spec'
     fi
   fi
 }
@@ -94,16 +103,6 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboar
 # Quicker navigation
 alias ..="cd .."
 alias ...="cd ../.."
-
-# Bundle
-alias rake='bundle exec rake'
-alias spec='bundle exec spec'
-alias rspec='bundle exec rspec'
-alias assets='bundle exec rake assets:clean assets:precompile'
-alias foreman='bundle exec foreman'
-alias guard='bundle exec guard'
-alias cap='bundle exec cap'
-alias migrate='bundle exec rake db:migrate db:test:prepare'
 
 ########################################### Functions ############################################
 
