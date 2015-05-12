@@ -79,6 +79,8 @@ set_rails_aliases_and_functions() {
       alias rg='script/generate'
       alias spec='bundle exec spec'
       alias rspec='bundle exec spec'
+      alias rake='bundle exec rake'
+      alias migrate='bundle exec rake db:migrate db:test:prepare'
 
     # Rails 3+
     else
