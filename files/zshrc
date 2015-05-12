@@ -74,7 +74,7 @@ set_rails_aliases_and_functions() {
   if [ -f Gemfile.lock ]; then
     # Rails 2
     if [[ "`cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.\).*)/\1/'`" = "2" ]]; then
-      alias rs='script/server'
+      rs() { if [ -f script/s ]; then script/s "$@"; else script/server "$@"; fi }
       alias rc='script/console --irb=pry'
       alias rg='script/generate'
       alias spec='bundle exec spec'
