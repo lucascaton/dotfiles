@@ -69,7 +69,7 @@ alias scorched_earth='git checkout .; git clean -df'
 
 set_rails_aliases_and_functions() {
   alias cap='bundle exec cap'
-  alias transpec='traspec -v example_group,hook_scope,stub_with_hash -f spec'
+  alias transpec='transpec -v example_group,hook_scope,stub_with_hash -f spec'
 
   if [ -f Gemfile.lock ]; then
     # Rails 2
