@@ -1,17 +1,20 @@
 # About
 
 My configuration files. Tested in OS X & Ubuntu Linux.
+My VimFiles can be found at: [https://github.com/lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
 
 # How to install
 
     git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
     ~/.dotfiles/install.sh
 
+Plugins:
+
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
 In order to install my default ruby gems, run:
 
     rvm gemset import ~/.dotfiles/files/default.gems
-
-My VimFiles can be found at: https://github.com/lucascaton/vimfiles
 
 # Copyright
 
