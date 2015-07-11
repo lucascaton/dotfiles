@@ -1,7 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="fletcherm"
+ZSH_THEME='fletcherm'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -12,34 +12,27 @@ source $ZSH/oh-my-zsh.sh
 ############################################# Export #############################################
 
 export EDITOR='vim'
-export GEM_EDITOR="vim"
+export GEM_EDITOR='vim'
 
 # Grep
-export GREP_OPTIONS="--color=auto"
-export GREP_COLOR="1;37;41"
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;37;41'
 
-# PSQL
+# PostgreSQL
 export PGHOST=localhost
 
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
+if [[ '$OSTYPE' == 'linux-gnu' ]]; then
   export LANGUAGE=en_US.UTF-8
   export LANG=en_US.UTF-8
   export LC_ALL=en_US.UTF-8
   export RAILS_ENV=production
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-  export CLICOLOR="auto"
-  export ARCHFLAGS="-arch x86_64" # Compilation flags
-  # export CC=/usr/local/bin/gcc-4.2
-  # export CC=/usr/bin/gcc
+elif [[ '$OSTYPE' == 'darwin'* ]]; then
+  export CLICOLOR='auto'
+  export ARCHFLAGS='-arch x86_64' # Compilation flags
 fi
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# # Bundler
-# # https://robots.thoughtbot.com/parallel-gem-installing-using-bundler
-# number_of_cores=`sysctl -n hw.ncpu`
-# bundle config --global jobs `expr $number_of_cores - 1`
 
 ######################################## Personal configs ########################################
 
