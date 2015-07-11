@@ -12,13 +12,13 @@ Then, run:
     git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
     ~/.dotfiles/install.sh
 
-Plugins:
-
-* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-
-In order to install my default ruby gems, run:
+In order to install my default Ruby gems, run:
 
     rvm gemset import ~/.dotfiles/files/default.gems
+
+Install plugins:
+
+    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Copyright
 
