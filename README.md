@@ -5,6 +5,10 @@ My VimFiles can be found at: [https://github.com/lucascaton/vimfiles](https://gi
 
 # How to install
 
+Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh).
+
+Then, run:
+
     git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
     ~/.dotfiles/install.sh
 
