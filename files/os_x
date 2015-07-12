@@ -171,7 +171,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: allow text selection in Quick Look
-defaults write com.apple.finder QLEnableTextSelection -bool true
+# defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # When performing a search, search the current folder by default
 # defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
