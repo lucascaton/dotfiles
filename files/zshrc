@@ -147,7 +147,7 @@ fi
 
 # Usage: aftermerge <branch> (default: master)
 aftermerge(){
-  branch=`git branch 2> /dev/null | grep \* | sed 's/* //'`
+  branch=`git branch 2> /dev/null | grep \* | sed 's/* //' | sed 's/(detached from \(.*\))/\1/'`
 
   git checkout ${1-master}
   git pull --rebase
@@ -166,7 +166,7 @@ ruby_new_hash_syntax(){
 ############################################## PS1 ###############################################
 
 custom_prompt(){
-  local BRANCH=`git branch 2> /dev/null | grep \* | sed 's/* //'`
+  local BRANCH=`git branch 2> /dev/null | grep \* | sed 's/* //' | sed 's/(detached from \(.*\))/\1/'`
 
   if [[ "$BRANCH" = "" ]]; then
     BRANCH=`git status 2> /dev/null | grep "On branch" | sed 's/# On branch //'`
