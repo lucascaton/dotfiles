@@ -5,7 +5,7 @@ My VimFiles can be found at: [https://github.com/lucascaton/vimfiles](https://gi
 
 # How to install
 
-Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh).
+Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and [Git Radar](https://github.com/michaeldfallen/git-radar).
 
 Then, run:
 
