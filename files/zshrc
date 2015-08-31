@@ -166,7 +166,7 @@ ruby_new_hash_syntax(){
 ############################################## PS1 ###############################################
 
 custom_prompt(){
-  export GRAY="%{$FG[007]%}"
+  export GRAY="%{$fg_bold[black]%}"
   export RED="%{$fg[red]%}"
   export YELLOW="%{$fg[yellow]%}"
   export NO_COLOR="%{$reset_color%}"
