@@ -1,6 +1,9 @@
 # About
 
 My configuration files. Tested in OS X & Ubuntu Linux.
+
+# Vimfiles
+
 My VimFiles can be found at: [https://github.com/lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
 
 # How to install
