@@ -95,7 +95,6 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
 alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
-alias t="tail -f log/development.log | grep 'Render\|Process\|Param\|Completed'"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
