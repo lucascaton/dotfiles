@@ -1,12 +1,12 @@
 # About
 
-My configuration files. Tested in OS X & Ubuntu Linux.
+My configuration files. Works on **Mac OS X** & **Ubuntu Linux**.
 
-# Vimfiles
+# Vim files
 
-My VimFiles can be found at: [https://github.com/lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
+My Vim configuration files can be found at: [https://github.com/lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
 
-# How to install
+# How to install?
 
 Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and [Git Radar](https://github.com/michaeldfallen/git-radar).
 
