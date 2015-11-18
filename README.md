@@ -4,7 +4,7 @@ My configuration files. Works on **Mac OS X** & **Ubuntu Linux**.
 
 # Vim files
 
-My Vim configuration files can be found at: [https://github.com/lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
+My Vim configuration files can be found here: [lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
 
 # How to install?
 
