@@ -30,6 +30,10 @@ elif [[ '$OSTYPE' == 'darwin'* ]]; then
   export ARCHFLAGS='-arch x86_64' # Compilation flags
 fi
 
+# Ruby
+# https://reinteractive.net/posts/266-no-more-bundle-exec-using-the-new-rubygems_gemdeps-environment-variable
+# export RUBYGEMS_GEMDEPS=- # This is not ready yet :(
+
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
