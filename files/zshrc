@@ -170,12 +170,7 @@ ruby_new_hash_syntax(){
 
 ############################################## PS1 ###############################################
 
-custom_prompt(){
-  export GRAY="%{$fg_bold[black]%}"
-  export RED="%{$fg[red]%}"
-  export YELLOW="%{$fg[yellow]%}"
-  export NO_COLOR="%{$reset_color%}"
-
+custom_prompt() {
   local RUBY_PROMPT=""
 
   if type ruby > /dev/null; then
@@ -191,7 +186,7 @@ custom_prompt(){
       local RAILS_PROMPT="${RAILS_VERSION}@"
     fi
 
-    RUBY_PROMPT="${GRAY}[${RAILS_PROMPT}${RUBY_VERSION}] "
+    RUBY_PROMPT="%{$fg_bold[black]%}[${RAILS_PROMPT}${RUBY_VERSION}] "
   else
     RUBY_PROMPT=""
   fi
@@ -202,7 +197,7 @@ custom_prompt(){
     local FOCUS='[RSpec with focus]'
   fi
 
-  export PROMPT="${RUBY_PROMPT}${YELLOW}%~${NO_COLOR}${GIT_RADAR} ${RED}${FOCUS}${NO_COLOR}
+  export PROMPT="${RUBY_PROMPT}%F{yellow}%~%{$reset_color%}${GIT_RADAR} %F{red}${FOCUS}%{$reset_color%}
 \$ "
 
   export RPROMPT=""
