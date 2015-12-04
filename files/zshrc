@@ -170,6 +170,14 @@ ruby_new_hash_syntax(){
 
 ############################################## PS1 ###############################################
 
+check_last_exit_code() {
+  local LAST_EXIT_CODE=$?
+
+  if [[ $LAST_EXIT_CODE -ne 0 ]]; then
+    echo "%{$fg_bold[red]%}Exit code: $LAST_EXIT_CODE%{$reset_color%}"
+  fi
+}
+
 custom_prompt() {
   local RUBY_PROMPT=""
 
@@ -200,7 +208,7 @@ custom_prompt() {
   export PROMPT="${RUBY_PROMPT}%F{yellow}%~%{$reset_color%}${GIT_RADAR} %F{red}${FOCUS}%{$reset_color%}
 \$ "
 
-  export RPROMPT=""
+  export RPROMPT='$(check_last_exit_code)'
 }
 
 precmd() { custom_prompt; set_rails_aliases_and_functions }
