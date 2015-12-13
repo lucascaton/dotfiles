@@ -101,7 +101,7 @@ alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
 alias agr='ag --ruby'
 alias agj='ag --js --coffee'
-alias agc='ag --sass -css'
+alias agc='ag --sass --css'
 alias agh='ag --html --haml'
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
