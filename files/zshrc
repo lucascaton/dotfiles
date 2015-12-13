@@ -99,8 +99,10 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
 alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
-alias agr='ag -G ".*.rb"'
-alias agj='ag -G ".*.js"'
+alias agr='ag --ruby'
+alias agj='ag --js --coffee'
+alias agc='ag --sass -css'
+alias agh='ag --html --haml'
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
