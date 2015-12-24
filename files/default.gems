@@ -1,5 +1,4 @@
 awesome_print
-quiet_assets
 bootstrap-sass
 bundler
 capistrano
@@ -16,10 +15,12 @@ forgery
 grb
 haml-rails
 jquery-rails
+mailcatcher
 mysql
 pg
 poltergeist
 pry-rails
+quiet_assets
 rails
 rails-i18n
 rails_best_practices
