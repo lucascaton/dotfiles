@@ -39,8 +39,8 @@ esac
 # export RUBYGEMS_GEMDEPS=- # This is not ready yet :(
 
 # RVM
-export PATH="$PATH:$rvm_path/bin" # Add RVM to PATH for scripting
-[[ -s "$rvm_path/scripts/rvm" ]] && source "$rvm_path/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 ######################################## Personal configs ########################################
 
