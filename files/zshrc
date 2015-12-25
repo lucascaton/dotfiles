@@ -20,16 +20,19 @@ export GREP_COLOR='1;37;41'
 # PostgreSQL
 export PGHOST=localhost
 
-if [[ '$OSTYPE' == 'linux-gnu' ]]; then
-  export LANGUAGE=en_US.UTF-8
-  export LANG=en_US.UTF-8
-  export LC_ALL=en_US.UTF-8
-  export RAILS_ENV=production
-  [[ -s $HOME/.git-radar ]] && export PATH="$PATH:$HOME/.git-radar"
-elif [[ '$OSTYPE' == 'darwin'* ]]; then
-  export CLICOLOR='auto'
-  export ARCHFLAGS='-arch x86_64' # Compilation flags
-fi
+case $OSTYPE in
+  linux-gnu)
+    export LANGUAGE=en_US.UTF-8
+    export LANG=en_US.UTF-8
+    export LC_ALL=en_US.UTF-8
+    export RAILS_ENV=production
+    [[ -s $HOME/.git-radar ]] && export PATH="$PATH:$HOME/.git-radar"
+    ;;
+  darwin*)
+    export CLICOLOR='auto'
+    export ARCHFLAGS='-arch x86_64' # Compilation flags
+    ;;
+esac
 
 # Ruby
 # https://reinteractive.net/posts/266-no-more-bundle-exec-using-the-new-rubygems_gemdeps-environment-variable
@@ -105,10 +108,12 @@ alias agj='ag --js --coffee'
 alias agc='ag --sass --css'
 alias agh='ag --html --haml'
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  alias ctags="`brew --prefix`/bin/ctags"
-  alias m="mvim ."
-fi
+case $OSTYPE in
+  darwin*)
+    alias ctags="`brew --prefix`/bin/ctags"
+    alias m="mvim ."
+    ;;
+esac
 
 alias docker='docker --tlsverify=false'
 
@@ -124,34 +129,38 @@ function npmlsg(){
   npm ls -g --depth=0 "$@" 2>/dev/null
 }
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  function rm(){
-    local path
-    for path in "$@"; do
-      # Ignore any arguments
-      if [[ "$path" = -* ]]; then :
-      else
-        local dst=${path##*/}
+case $OSTYPE in
+  darwin*)
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+      function rm(){
+        local path
+        for path in "$@"; do
+          # Ignore any arguments
+          if [[ "$path" = -* ]]; then :
+          else
+            local dst=${path##*/}
 
-        # Append the time if necessary
-        while [ -e ~/.Trash/"$dst" ]; do
-          dst="$dst $RANDOM"
+            # Append the time if necessary
+            while [ -e ~/.Trash/"$dst" ]; do
+              dst="$dst $RANDOM"
+            done
+
+            /bin/mv "$path" ~/.Trash/"$dst"
+          fi
         done
 
-        /bin/mv "$path" ~/.Trash/"$dst"
-      fi
-    done
+        echo ""
+      }
 
-    echo ""
-  }
-
-  # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
-  fcd(){
-    pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-    [ -n "$pFinder" ] && cd "$pFinder"
-  pwd
-  }
-fi
+      # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
+      fcd(){
+        pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+        [ -n "$pFinder" ] && cd "$pFinder"
+      pwd
+      }
+    fi
+    ;;
+esac
 
 # Usage: aftermerge <branch> (default: master)
 aftermerge(){
