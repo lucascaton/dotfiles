@@ -25,6 +25,7 @@ if [[ '$OSTYPE' == 'linux-gnu' ]]; then
   export LANG=en_US.UTF-8
   export LC_ALL=en_US.UTF-8
   export RAILS_ENV=production
+  [[ -s $HOME/.git-radar ]] && export PATH="$PATH:$HOME/.git-radar"
 elif [[ '$OSTYPE' == 'darwin'* ]]; then
   export CLICOLOR='auto'
   export ARCHFLAGS='-arch x86_64' # Compilation flags
