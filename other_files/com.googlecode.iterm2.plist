@@ -991,9 +991,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>702 113 529 393 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>264 170 924 485 0 0 1440 877 </string>
+	<string>264 170 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 11 1434 859 0 0 1440 900 </string>
+	<string>0 4 1440 873 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1440 873 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1712,7 +1712,7 @@
 			<key>Terminal Type</key>
 			<string>xterm</string>
 			<key>Transparency</key>
-			<real>0.0094859469681978226</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
