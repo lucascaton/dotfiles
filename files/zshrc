@@ -75,6 +75,7 @@ set_rails_aliases_and_functions() {
   alias cap='bundle exec cap'
   alias transpec='transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
   alias ms='bundle exec middleman server --verbose'
+  alias js='bundle exec jekyll serve'
 
   if [ -f Gemfile.lock ]; then
     # Rails 2
