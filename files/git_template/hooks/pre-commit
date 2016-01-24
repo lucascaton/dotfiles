@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-if `git diff --cached spec | grep -e '^+'` =~ /,\s?(:focus|focus:\s?true|:focus\s?=>\s?true)/
+if `[ -d 'spec' ] && git diff --cached spec | grep -e '^+'` =~ /,\s?(:focus|focus:\s?true|:focus\s?=>\s?true)/
   puts "\e[31mPlease focus and remove your :focus flags before committing :)\n\n"
   exit 1
 end
