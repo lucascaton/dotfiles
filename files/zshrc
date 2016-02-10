@@ -73,9 +73,10 @@ alias scorched_earth='git checkout .; git clean -df'
 
 set_rails_aliases_and_functions() {
   alias cap='bundle exec cap'
-  alias transpec='transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
+  alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
   alias ms='bundle exec middleman server --verbose'
   alias js='bundle exec jekyll serve'
+  alias massa='bundle exec massa'
 
   if [ -f Gemfile.lock ]; then
     # Rails 2
@@ -107,6 +108,7 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
 alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
+alias ag='ag --hidden --ignore-dir .git'
 alias agr='ag --ruby'
 alias agj='ag --js --coffee'
 alias agc='ag --sass --css'
