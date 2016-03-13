@@ -28,7 +28,16 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
     end
 
     def fg
+      puts 'Loading FactoryGirl...'
       require 'factory_girl'
+
+      begin
+        puts 'Loading Faker...'
+        require 'faker'
+      rescue LoadError
+        puts 'faker not found'
+      end
+
       FactoryGirl.factories.clear
 
       factory_girl_paths = ['spec/factories.rb', 'spec/support/factories.rb', *Dir['spec/factories/**/*.rb']]
