@@ -121,8 +121,6 @@ case $OSTYPE in
     ;;
 esac
 
-alias docker='docker --tlsverify=false'
-
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboard"'
 
 ########################################### Functions ############################################
