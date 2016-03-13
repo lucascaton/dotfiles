@@ -64,7 +64,7 @@ alias gm='git merge --no-edit'
 alias ga='git add'
 alias gaa='git add --all'
 alias gr='git rm'
-alias gp='git pull --rebase'
+alias gp='git pull --rebase && git pull --rebase' # Duplication reason: https://github.com/michaeldfallen/git-radar/issues/81
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
@@ -172,9 +172,10 @@ aftermerge(){
   branch=`git branch 2> /dev/null | grep \* | sed 's/* //' | sed 's/(detached from \(.*\))/\1/'`
 
   git checkout ${1-master}
-  git pull --rebase
   git remote prune origin
   git branch -d $branch
+  git pull --rebase
+  git pull --rebase # Duplication reason: https://github.com/michaeldfallen/git-radar/issues/81
 
   clear
   git branch -a
