@@ -91,7 +91,7 @@ set_rails_aliases_and_functions() {
 
     # Rails 3+
     else
-      rs()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails s "$@";                        else bundle exec rails s "$@";                        fi }
+      rs()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails s -b lvh.me "$@";              else bundle exec rails s -b lvh.me "$@";              fi }
       rc()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails c "$@";                        else bundle exec rails c "$@";                        fi }
       rg()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails g "$@";                        else bundle exec rails g "$@";                        fi }
       rspec()   { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rspec ]; then bin/rspec   "$@";                        else bundle exec rspec   "$@";                        fi }
