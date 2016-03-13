@@ -50,7 +50,7 @@ export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin" # Add RVM to PATH for scri
 if [[ -s $HOME/.personal_configs ]] ;         then source $HOME/.personal_configs ;         fi
 if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
 
-############################################# Alias ##############################################
+############################################ Aliases #############################################
 
 # Git
 alias g='git status'
