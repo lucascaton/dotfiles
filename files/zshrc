@@ -122,6 +122,7 @@ case $OSTYPE in
 esac
 
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboard"'
+alias bne='curl wttr.in/brisbane'
 
 ########################################### Functions ############################################
 
