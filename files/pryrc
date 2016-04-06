@@ -1,3 +1,5 @@
+Pry.config.editor = ENV.fetch('EDITOR', 'vim')
+
 rails = File.join(Dir.getwd, 'config', 'environment.rb')
 
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
@@ -7,13 +9,11 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
     require 'console_app'
     require 'console_with_helpers'
     ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
-  elsif %w(3 4).include?(Rails.version[0..0])
-    Pry.config.editor = 'mvim -v'
-
-    Pry.config.prompt = proc do |obj, level, _|
+  elsif %w(3 4 5).include?(Rails.version[0..0])
+    Pry.config.prompt = proc do |obj, _level, _|
       prompt = ''
       prompt << "#{Rails.version}@" if defined?(Rails)
-      prompt << "#{RUBY_VERSION}"
+      prompt << RUBY_VERSION
       "#{prompt} (#{obj.to_s[0..30]})> "
     end
 
@@ -22,7 +22,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
       output.puts "from #{exception.backtrace.first}\e[0m"
     end
 
-    if defined?(Rails) && (Rails.version[0..0] == '4' || Rails.version[0..2] == '3.2')
+    if defined?(Rails) && %w(4 5).include?(Rails.version[0..0] || Rails.version[0..2] == '3.2')
       %w(rails/console/app rails/console/helpers).each { |f| require f }
       TOPLEVEL_BINDING.eval('self').extend ::Rails::ConsoleMethods
     end
@@ -34,8 +34,8 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
       begin
         puts 'Loading Faker...'
         require 'faker'
-      rescue LoadError
-        puts 'faker not found'
+      rescue LoadError => e
+        puts "➙ Unable to load Faker (#{e})"
       end
 
       FactoryGirl.factories.clear
@@ -52,11 +52,11 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
 
     begin
       require 'awesome_print'
-      Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output) }
-    rescue LoadError => err
-      warn "=> Unable to load awesome_print (#{err})"
+      Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("➙ #{value.ai}", output) }
+    rescue LoadError => e
+      warn "➙ Unable to load awesome_print (#{e})"
     end
   else
-    warn '[WARN] cannot load Rails console commands (Not on Rails 2, 3 or 4?)'
+    warn '[WARN] Unable to load Rails console commands'
   end
 end

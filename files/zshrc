@@ -10,8 +10,16 @@ source $ZSH/oh-my-zsh.sh
 
 ############################################# Export #############################################
 
-export EDITOR='vim'
-export GEM_EDITOR='vim'
+case $OSTYPE in
+  linux-gnu)
+    export EDITOR='vim'
+    export GEM_EDITOR='vim'
+    ;;
+  darwin*)
+    export EDITOR='mvim'
+    export GEM_EDITOR='mvim'
+    ;;
+esac
 
 # Grep
 export GREP_OPTIONS='--color=auto'

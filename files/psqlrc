@@ -5,7 +5,7 @@
 
 -- By default, NULL displays as an empty space. Is it actually an empty
 -- string, or is it null? This makes that distinction visible.
-\pset null '[null]'
+\pset null '[NULL]'
 
 -- Pager off
 \pset pager off

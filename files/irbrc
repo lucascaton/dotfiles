@@ -9,20 +9,18 @@ begin
   require 'pry'
   Pry.start
 rescue LoadError => e
-  warn "=> Unable to load pry (#{e})"
+  warn "➙ Unable to load pry (#{e})"
 end
 
 begin
   require 'awesome_print'
   AwesomePrint.irb!
 rescue LoadError => e
-  warn "=> Unable to load awesome_print (#{e})"
+  warn "➙ Unable to load awesome_print (#{e})"
 end
 
 def go_resque
-  if defined?(Resque)
-    Resque::Worker.new('*').work(10)
-  else
-    raise 'Resque is not defined'
-  end
+  raise 'Resque is not defined' unless defined?(Resque)
+
+  Resque::Worker.new('*').work(10)
 end
