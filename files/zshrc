@@ -8,6 +8,10 @@ plugins=(zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+# Making zsh parse calls correctly
+# More info: https://github.com/thoughtbot/dotfiles/pull/194/files
+unsetopt nomatch
+
 ############################################# Export #############################################
 
 case $OSTYPE in
