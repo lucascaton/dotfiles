@@ -120,7 +120,6 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
 alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
-alias cat='ccat'
 alias ag='ag --hidden --ignore-dir .git --ignore "*.json" --ignore "*.svg"'
 alias agr='ag --ruby'
 alias agj='ag --js --coffee'
@@ -138,6 +137,8 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboar
 alias bne='curl wttr.in/brisbane'
 
 ########################################### Functions ############################################
+
+c() { /bin/cat -n $* | ccat } # Replacement for `cat`
 
 function npmls(){
   npm ls --depth=0 "$@" 2>/dev/null
