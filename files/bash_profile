@@ -13,9 +13,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   export CC=/usr/local/bin/gcc-4.2
 fi
 
-export GREP_OPTIONS="--color=auto"
-export GREP_COLOR="1;37;41"
-
 export BLUE="\[\033[0;34m\]"
 export NO_COLOR="\[\e[0m\]"
 export GRAY="\[\033[1;30m\]"
