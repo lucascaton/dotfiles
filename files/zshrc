@@ -178,14 +178,14 @@ case $OSTYPE in
 esac
 
 # Usage: aftermerge <branch> (default: master)
-aftermerge(){
+aftermerge() {
   branch=`git branch 2> /dev/null | grep \* | sed 's/* //' | sed 's/(detached from \(.*\))/\1/'`
 
   git checkout ${1-master}
-  git remote prune origin
-  git branch -d $branch
   git pull --rebase
   git pull --rebase # Duplication reason: https://github.com/michaeldfallen/git-radar/issues/81
+  git remote prune origin
+  git branch -d $branch
 
   clear
   git branch -a
