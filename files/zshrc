@@ -136,18 +136,18 @@ alias bne='curl wttr.in/brisbane'
 
 c() { /bin/cat -n $* | ccat } # Replacement for `cat`
 
-function npmls(){
+function npmls() {
   npm ls --depth=0 "$@" 2>/dev/null
 }
 
-function npmlsg(){
+function npmlsg() {
   npm ls -g --depth=0 "$@" 2>/dev/null
 }
 
 case $OSTYPE in
   darwin*)
     if [[ "$OSTYPE" == "darwin"* ]]; then
-      function rm(){
+      function rm() {
         local path
         for path in "$@"; do
           # Ignore any arguments
@@ -168,7 +168,7 @@ case $OSTYPE in
       }
 
       # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
-      fcd(){
+      fcd() {
         pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
         [ -n "$pFinder" ] && cd "$pFinder"
       pwd
@@ -192,7 +192,7 @@ aftermerge() {
 }
 
 # Convert Ruby 1.8 to 1.9 hash syntax
-ruby_new_hash_syntax(){
+ruby_new_hash_syntax() {
   perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g' ${1}**/*.rb
 }
 
