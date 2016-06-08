@@ -136,6 +136,25 @@ alias bne='curl wttr.in/brisbane'
 
 c() { /bin/cat -n $* | ccat } # Replacement for `cat`
 
+replace() {
+  # Original function: https://github.com/thoughtbot/dotfiles/blob/master/bin/replace
+  # Original blog post: https://robots.thoughtbot.com/lists-vim-and-you
+  # Usage: replace foo bar **/*.rb
+
+  find_this="$1"
+  shift
+  replace_with="$1"
+  shift
+
+  items=("${(@f)$(ag -l --nocolor "$find_this" "$@")}")
+  temp="${TMPDIR:-/tmp}/replace_temp_file.$$"
+
+  for item in $items; do
+    echo ✓ $item
+    sed "s/$find_this/$replace_with/g" "$item" > "$temp" && mv "$temp" "$item"
+  done
+}
+
 function npmls() {
   npm ls --depth=0 "$@" 2>/dev/null
 }
