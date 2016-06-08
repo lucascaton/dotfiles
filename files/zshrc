@@ -137,9 +137,8 @@ alias bne='curl wttr.in/brisbane'
 c() { /bin/cat -n $* | ccat } # Replacement for `cat`
 
 replace() {
-  # Original function: https://github.com/thoughtbot/dotfiles/blob/master/bin/replace
-  # Original blog post: https://robots.thoughtbot.com/lists-vim-and-you
   # Usage: replace foo bar **/*.rb
+  # Original function: https://github.com/thoughtbot/dotfiles/blob/master/bin/replace
 
   find_this="$1"
   shift
