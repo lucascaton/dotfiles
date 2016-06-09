@@ -950,7 +950,7 @@
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
-	<integer>4</integer>
+	<integer>40</integer>
 	<key>JobName</key>
 	<true/>
 	<key>LeftCommand</key>
