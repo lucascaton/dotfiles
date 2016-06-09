@@ -998,11 +998,15 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 391 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>3 11 898 860 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-11 1030 570 452 -237 900 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_965B97F5-AD18-49C8-B25E-4C4ECDA89BEF</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_965B97F5-AD18-49C8-B25E-4C4ECDA89BEF_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
