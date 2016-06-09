@@ -996,9 +996,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 197 606 456 0 0 1440 900 </string>
+	<string>269 391 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>435 986 570 452 -237 900 1920 1057 </string>
+	<string>0 0 1440 900 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-11 1030 570 452 -237 900 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
@@ -1823,6 +1823,14 @@
 			<string>/Users/lucascaton</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncInstallationId</key>
 	<string>8A9DF875-55D9-49CA-9538-8ED155081889</string>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
