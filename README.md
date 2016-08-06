@@ -8,7 +8,7 @@ My Vim configuration files can be found in this repository: [lucascaton/vimfiles
 
 # How to install?
 
-Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and [Git Radar](https://github.com/michaeldfallen/git-radar).
+Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and [gitHUD](https://github.com/gbataille/gitHUD).
 
 Then, run:
 

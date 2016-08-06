@@ -34,7 +34,6 @@ case $OSTYPE in
     export LANG=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
     export RAILS_ENV=production
-    [[ -s $HOME/.git-radar ]] && export PATH="$PATH:$HOME/.git-radar"
     ;;
   darwin*)
     export CLICOLOR='auto'
@@ -72,7 +71,7 @@ alias gm='git merge --no-edit'
 alias ga='git add'
 alias gaa='git add --all'
 alias gr='git rm'
-alias gp='git pull --rebase && git pull --rebase' # Duplication reason: https://github.com/michaeldfallen/git-radar/issues/81
+alias gp='git pull --rebase'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
@@ -201,7 +200,6 @@ aftermerge() {
 
   git checkout ${1-master}
   git pull --rebase
-  git pull --rebase # Duplication reason: https://github.com/michaeldfallen/git-radar/issues/81
   git remote prune origin
   git branch -d $branch
 
@@ -245,13 +243,13 @@ custom_prompt() {
     RUBY_PROMPT=""
   fi
 
-  local GIT_RADAR="$(git-radar --zsh --fetch)"
+  local GIT_HUD=" $(/usr/local/bin/gitHUD zsh)"
 
   if [ -d 'spec/' ] && [ `grep -re ':\?focus\(:\| =>\) true' spec --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
     local FOCUS='[RSpec with focus]'
   fi
 
-  export PROMPT="${RUBY_PROMPT}%F{yellow}%~%{$reset_color%}${GIT_RADAR} %F{red}${FOCUS}%{$reset_color%}
+  export PROMPT="${RUBY_PROMPT}%F{yellow}%~%{$reset_color%}${GIT_HUD} %F{red}${FOCUS}%{$reset_color%}
 \$ "
 
   export RPROMPT='$(check_last_exit_code)'
