@@ -1,10 +1,10 @@
 # About
 
-My configuration files. Works on **Mac OS X** & **Ubuntu Linux**.
+Repository with all my dotfiles. Works on both **macOS** & **Linux**.
 
 # Vim files
 
-My Vim configuration files can be found here: [lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
+My Vim configuration files can be found in this repository: [lucascaton/vimfiles](https://github.com/lucascaton/vimfiles).
 
 # How to install?
 
@@ -15,11 +15,7 @@ Then, run:
     git clone git://github.com/lucascaton/dotfiles.git ~/.dotfiles
     ~/.dotfiles/install.sh
 
-In order to install my default Ruby gems, run:
-
-    rvm gemset import ~/.dotfiles/files/default.gems
-
-Install plugins:
+Finally, install the following plugin:
 
     git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
