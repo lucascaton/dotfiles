@@ -213,6 +213,22 @@ ruby_new_hash_syntax() {
   perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g' ${1}**/*.rb
 }
 
+# Git History - http://goo.gl/BzdgE3
+gh() {
+  if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 PATTERN FILE"
+    echo
+    echo '  Show all of the various changes to a single line in a specified file over the entire' \
+         'git history'
+    echo
+    return 1
+  fi
+
+  for c in $(git log -G "$1" --format=%H -- $2); do
+    git --no-pager grep -e "$1" $c -- $2
+  done
+}
+
 ############################################## PS1 ###############################################
 
 check_last_exit_code() {
