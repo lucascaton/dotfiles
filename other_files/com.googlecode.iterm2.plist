@@ -1823,7 +1823,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>\s*rm</string>
+					<string>^\$\s*rm</string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -1831,7 +1831,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>\s*git reset</string>
+					<string>^\$\s*git reset</string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -1839,7 +1839,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>\s*git rm</string>
+					<string>^\$\s*git rm</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
