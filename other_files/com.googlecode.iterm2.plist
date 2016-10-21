@@ -1006,7 +1006,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>187 1106 606 456 -237 900 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>313 276 796 473 0 0 1440 900 </string>
+	<string>313 237 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 900 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1823,7 +1823,7 @@
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>^\$\s*rm</string>
+					<string>^\$\s*git rm</string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -1840,6 +1840,14 @@
 					<true/>
 					<key>regex</key>
 					<string>^\$\s*git rm</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>HighlightTrigger</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>^\$\s*kill</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
@@ -2000,7 +2008,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-18T21:00:44Z</date>
+	<date>2016-10-20T23:40:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
