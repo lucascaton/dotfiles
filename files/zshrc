@@ -81,13 +81,14 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias scorched_earth='git checkout .; git clean -df'
 
-set_rails_aliases_and_functions() {
-  alias cap='bundle exec cap'
-  alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
-  alias ms='bundle exec middleman server --verbose'
-  alias js='bundle exec jekyll serve'
-  alias massa='bundle exec massa'
+ # Ruby / Rails
+alias cap='bundle exec cap'
+alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
+alias ms='bundle exec middleman server --verbose'
+alias js='bundle exec jekyll serve'
+alias massa='bundle exec massa'
 
+set_rails_aliases_and_functions() {
   if [ -f Gemfile.lock ]; then
     # Rails 2
     if [[ "`cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.\).*)/\1/'`" = "2" ]]; then
@@ -97,7 +98,7 @@ set_rails_aliases_and_functions() {
       alias spec='bundle exec spec'
       alias rspec='bundle exec spec'
       alias rake='bundle exec rake'
-      alias migrate='bundle exec rake db:migrate db:test:prepare'
+      alias migrate='bundle exec rake db:migrate'
 
     # Rails 3+
     else
@@ -106,7 +107,7 @@ set_rails_aliases_and_functions() {
       rg()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails g "$@";                        else bundle exec rails g "$@";                        fi }
       rspec()   { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rspec ]; then bin/rspec   "$@";                        else bundle exec rspec   "$@";                        fi }
       rake()    { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake    "$@";                        else bundle exec rake    "$@";                        fi }
-      migrate() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake db:migrate db:test:prepare;     else bundle exec rake db:migrate db:test:prepare;     fi }
+      migrate() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake db:migrate;                     else bundle exec rake db:migrate;                     fi }
       assets()  { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake assets:clean assets:precompile; else bundle exec rake assets:clean assets:precompile; fi }
     fi
   fi
