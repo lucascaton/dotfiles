@@ -48,6 +48,9 @@ esac
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin" # Add RVM to PATH for scripting
 
+# Homebrew
+export PATH="$PATH:/usr/local/sbin"
+
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]]     && source "$HOME/.rvm/scripts/rvm"
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
@@ -121,6 +124,7 @@ alias agj='ag --js --coffee'
 alias agc='ag --sass --css'
 alias agh='ag --html --haml'
 alias h='heroku'
+alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 case $OSTYPE in
   darwin*)
