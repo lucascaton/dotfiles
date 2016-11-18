@@ -47,6 +47,8 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
         load(File.join(Rails.root, path)) if File.exist?(file)
       end
 
+      include FactoryGirl::Syntax::Methods
+
       true
     end
 
