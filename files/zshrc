@@ -12,6 +12,11 @@ source $ZSH/oh-my-zsh.sh
 # More info: https://github.com/thoughtbot/dotfiles/pull/194/files
 unsetopt nomatch
 
+# macOS Sierra has removed the ability to remember your SSH keys across reboot in order to conform
+# to mainstream OpenSSH behavior. More info: http://superuser.com/q/1127067/667812
+# The following line solves this problem
+ssh-add -A &> /dev/null
+
 ############################################# Export #############################################
 
 case $OSTYPE in
