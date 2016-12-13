@@ -1010,11 +1010,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>282 1520 606 456 -237 900 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 382 620 392 0 0 1440 900 </string>
+	<string>530 477 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>187 1106 606 456 -237 900 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>420 262 796 473 0 0 1680 1050 </string>
+	<string>420 218 918 495 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1050 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1666,7 +1666,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>RobotoMonoForPowerline-Regular 18</string>
+			<string>RobotoMonoForPowerline-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2016,7 +2016,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-12T00:39:03Z</date>
+	<date>2016-12-13T00:39:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
