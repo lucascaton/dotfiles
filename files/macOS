@@ -333,7 +333,7 @@ ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Appli
 # Photos                                                                      #
 ###############################################################################
 
-Stop Apple Photos from auto launching
+# Stop Apple Photos from auto launching
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
 ###############################################################################
