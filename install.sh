@@ -15,7 +15,7 @@ for file in *; do
 done
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  ~/.dotfiles/files/macOS
+  ~/.dotfiles/other_files/macOS
 fi
 
 echo -e "${GRAY}"
