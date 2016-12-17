@@ -25,4 +25,4 @@
 [init]
   templatedir = ~/.dotfiles/files/git_template
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
