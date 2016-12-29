@@ -270,7 +270,7 @@ custom_prompt() {
     RUBY_PROMPT=""
   fi
 
-  local GIT_HUD=" $(/usr/local/bin/gitHUD zsh &> /dev/null)"
+  if [ -f /usr/local/bin/gitHUD ]; then local GIT_HUD=" $(/usr/local/bin/gitHUD zsh)"; fi
 
   if [ -d 'spec/' ] && [ `grep -re ':\?focus\(:\| =>\) true' spec --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
     local FOCUS='[RSpec with focus]'
