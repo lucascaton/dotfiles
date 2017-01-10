@@ -86,6 +86,9 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias scorched_earth='git checkout .; git clean -df'
 
+# Git client
+alias fork='open . -a /Applications/Fork.app' # https://git-fork.com/
+
  # Ruby / Rails
 alias cap='bundle exec cap'
 alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
