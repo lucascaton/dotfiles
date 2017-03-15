@@ -24,3 +24,6 @@ rails_best_practices_output.html
 
 # NPM logs
 npm-debug.log
+
+# Byebug command history file
+.byebug_history
