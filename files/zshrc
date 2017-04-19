@@ -143,7 +143,7 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
 alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
-alias ag='ag --hidden --ignore-dir .git --ignore "*.json" --ignore "*.svg"'
+alias ag='ag --hidden --ignore-dir .git --ignore "*.json" --ignore "*.svg" --ignore=*.min.js'
 alias agr='ag --ruby'
 alias agj='ag --js --coffee'
 alias agc='ag --sass --css'
