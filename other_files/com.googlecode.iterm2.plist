@@ -969,6 +969,8 @@
 	<string>~/.dotfiles/other_files</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1006,11 +1008,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 477 620 392 0 0 1680 1027 </string>
+	<string>530 494 620 392 0 0 1680 1050 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>374 416 918 495 0 0 1680 1027 </string>
+	<string>374 387 937 512 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1050 0 0 1680 1027 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_965B97F5-AD18-49C8-B25E-4C4ECDA89BEF</key>
@@ -1713,7 +1717,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Smart Selection Rules</key>
@@ -1870,6 +1874,8 @@
 			<string>/Users/lucascaton</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1952,7 +1958,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-03-26T22:03:53Z</date>
+	<date>2017-05-14T23:14:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
