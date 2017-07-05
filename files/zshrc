@@ -162,7 +162,14 @@ alias bne='curl wttr.in/brisbane'
 
 ########################################### Functions ############################################
 
-c() { /bin/cat -n $* | ccat } # Replacement for `cat`
+case $OSTYPE in
+  linux-gnu)
+    alias c='cat'
+    ;;
+  darwin*)
+    c() { /bin/cat -n $* | ccat } # Colorizing `cat` (https://github.com/jingweno/ccat)
+    ;;
+esac
 
 replace() {
   # Usage: replace foo bar **/*.rb
