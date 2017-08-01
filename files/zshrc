@@ -287,10 +287,10 @@ custom_prompt() {
 
   if [[ "$RUBY_VERSION" != "" ]]; then
     if [[ "$RAILS_VERSION" != "" ]]; then
-      local RAILS_PROMPT="${RAILS_VERSION}@"
+      local RAILS_PROMPT="🚂 ${RAILS_VERSION}"
     fi
 
-    RUBY_PROMPT="%{$fg_bold[black]%}[${RAILS_PROMPT}${RUBY_VERSION}] "
+    RUBY_PROMPT="%{$fg_bold[gray]%}💎 ${RUBY_VERSION} ${RAILS_PROMPT}"
   else
     RUBY_PROMPT=""
   fi
@@ -298,10 +298,10 @@ custom_prompt() {
   if [ -f /usr/local/bin/gitHUD ]; then local GIT_HUD=" $(/usr/local/bin/gitHUD zsh)"; fi
 
   if [ -d 'spec/' ] && [ `grep -re ':\?focus\(:\| =>\) true' spec --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
-    local FOCUS='[RSpec with focus]'
+    local FOCUS='🎯 RSpec with focus'
   fi
 
-  export PROMPT="${RUBY_PROMPT}%F{yellow}%~%{$reset_color%}${GIT_HUD} %F{red}${FOCUS}%{$reset_color%}
+  export PROMPT="%F{blue}%~%{$reset_color%} ${RUBY_PROMPT}${GIT_HUD} %F{red}${FOCUS}%{$reset_color%}
 \$ "
 
   export RPROMPT='$(check_last_exit_code)'
