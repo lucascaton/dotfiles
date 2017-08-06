@@ -1222,7 +1222,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 151 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>374 501 796 473 0 0 1680 1027 </string>
+	<string>444 328 918 381 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1050 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
@@ -1272,13 +1272,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40886253118515015</real>
+				<real>0.48658746480941772</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.78436315059661865</real>
+				<real>0.82482582330703735</real>
 				<key>Red Component</key>
-				<real>0.82355105876922607</real>
+				<real>0.87775915861129761</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
@@ -1330,13 +1330,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.33911216259002686</real>
+				<real>0.33896037936210632</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.75916427373886108</real>
+				<real>0.70364338159561157</real>
 				<key>Red Component</key>
-				<real>0.76566332578659058</real>
+				<real>0.76427590847015381</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -2130,7 +2130,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-31T02:26:01Z</date>
+	<date>2017-08-01T02:26:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
