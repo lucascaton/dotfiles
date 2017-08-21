@@ -287,10 +287,10 @@ custom_prompt() {
 
   if [[ "$RUBY_VERSION" != "" ]]; then
     if [[ "$RAILS_VERSION" != "" ]]; then
-      local RAILS_PROMPT="🚂 ${RAILS_VERSION}"
+      local RAILS_PROMPT=" 🚂 ${RAILS_VERSION}"
     fi
 
-    RUBY_PROMPT="%{$fg_bold[gray]%}💎 ${RUBY_VERSION} ${RAILS_PROMPT}"
+    RUBY_PROMPT="%{$fg_bold[gray]%}💎 ${RUBY_VERSION}${RAILS_PROMPT}"
   else
     RUBY_PROMPT=""
   fi
