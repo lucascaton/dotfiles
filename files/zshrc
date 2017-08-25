@@ -199,34 +199,32 @@ function npmlsg() {
 
 case $OSTYPE in
   darwin*)
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-      function rm() {
-        local path
-        for path in "$@"; do
-          # Ignore any arguments
-          if [[ "$path" = -* ]]; then :
-          else
-            local dst=${path##*/}
+    function rm() {
+      local path
+      for path in "$@"; do
+        # Ignore any arguments
+        if [[ "$path" = -* ]]; then :
+        else
+          local dst=${path##*/}
 
-            # Append the time if necessary
-            while [ -e ~/.Trash/"$dst" ]; do
-              dst="$dst $RANDOM"
-            done
+          # Append the time if necessary
+          while [ -e ~/.Trash/"$dst" ]; do
+            dst="$dst $RANDOM"
+          done
 
-            /bin/mv "$path" ~/.Trash/"$dst"
-          fi
-        done
+          /bin/mv "$path" ~/.Trash/"$dst"
+        fi
+      done
 
-        echo ""
-      }
+      echo ""
+    }
 
-      # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
-      fcd() {
-        pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-        [ -n "$pFinder" ] && cd "$pFinder"
+    # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
+    fcd() {
+      pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+      [ -n "$pFinder" ] && cd "$pFinder"
       pwd
-      }
-    fi
+    }
     ;;
 esac
 
