@@ -1230,9 +1230,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 151 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>724 606 918 381 0 0 1680 1027 </string>
+	<string>805 1634 918 452 -116 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>189 380 714 459 0 0 1680 1027 </string>
+	<string>0 0 1680 1050 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_965B97F5-AD18-49C8-B25E-4C4ECDA89BEF</key>
@@ -1463,9 +1463,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>6.6197829246520996</real>
+			<real>30</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
