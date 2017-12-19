@@ -27,3 +27,6 @@ npm-debug.log
 
 # Byebug command history file
 .byebug_history
+
+# Project specific Vim configurations
+/.vimrc
