@@ -156,7 +156,7 @@ alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 case $OSTYPE in
   darwin*)
     alias ctags="`brew --prefix`/bin/ctags"
-    alias m="mvim ."
+    m() { mvim ${1-.} }
     ;;
 esac
 
@@ -241,6 +241,7 @@ aftermerge() {
   git branch -d $branch
 
   clear
+
   git branch -a
 }
 
