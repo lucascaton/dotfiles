@@ -157,6 +157,7 @@ case $OSTYPE in
   darwin*)
     alias ctags="`brew --prefix`/bin/ctags"
     m() { mvim ${1-.} }
+    alias a="atom ."
     ;;
 esac
 
