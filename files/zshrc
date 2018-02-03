@@ -167,6 +167,7 @@ case $OSTYPE in
     alias ctags="`brew --prefix`/bin/ctags"
     m() { mvim ${1-.} }
     alias a="atom ."
+    alias x="gitx"
     ;;
 esac
 
