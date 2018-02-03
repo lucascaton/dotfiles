@@ -110,10 +110,18 @@ alias scorched_earth='git checkout .; git clean -df'
 alias cap='bundle exec cap'
 alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
 alias ms='bundle exec middleman server --verbose'
-alias js='bundle exec jekyll serve --incremental'
-alias jsl='bundle exec jekyll serve --limit_posts 1'
 alias massa='bundle exec massa'
 alias fs='foreman start -f Procfile.dev'
+
+# Usage example: `js 2` to load only last 2 posts
+js() {
+  if [ "$1" == "" ]; then
+    bundle exec jekyll serve --incremental
+  else
+    echo "### Loading only last $1 posts"
+    bundle exec jekyll serve --incremental --limit_posts $1
+  fi
+}
 
 set_rails_aliases_and_functions() {
   if [ -f Gemfile.lock ]; then
