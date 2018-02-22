@@ -133,17 +133,19 @@ set_rails_aliases_and_functions() {
       alias spec='bundle exec spec'
       alias rspec='bundle exec spec'
       alias rake='bundle exec rake'
-      alias migrate='bundle exec rake db:migrate'
+      alias migrate='bundle exec rake db:migrate && bundle exec rake db:test:prepare'
 
     # Rails 3+
     else
-      rs()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails s "$@";                        else bundle exec rails s "$@";                        fi }
-      rc()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails c "$@";                        else bundle exec rails c "$@";                        fi }
-      rg()      { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails g "$@";                        else bundle exec rails g "$@";                        fi }
-      rspec()   { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rspec ]; then bin/rspec   "$@";                        else bundle exec rspec   "$@";                        fi }
-      rake()    { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake    "$@";                        else bundle exec rake    "$@";                        fi }
-      migrate() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake db:migrate;                     else bundle exec rake db:migrate;                     fi }
-      assets()  { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake assets:clean assets:precompile; else bundle exec rake assets:clean assets:precompile; fi }
+      rails() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails "$@"; else bundle exec rails "$@"; fi }
+      rake()  { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake  "$@"; else bundle exec rake  "$@"; fi }
+      rspec() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rspec ]; then bin/rspec "$@"; else bundle exec rspec "$@"; fi }
+
+      alias rs='rails s'
+      alias rc='rails c'
+      alias rg='rails g'
+      alias migrate='rake db:migrate && rake db:test:prepare'
+      alias assets='rake assets:clean assets:precompile'
     fi
   fi
 }
