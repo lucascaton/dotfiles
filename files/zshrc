@@ -156,6 +156,19 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
 alias ll="l"
 alias la="ls -laF ${colorflag}" # All files inc dotfiles, in long format
+
+# Sort `ls` output by modification time, displayed in "long iso" format
+# https://www.cyberciti.biz/faq/ls-command-sort-the-output-by-last-modified-time-date/
+# http://giantdorks.org/alain/make-ls-output-date-in-long-iso-format-instead-of-short-month/
+case $OSTYPE in
+  linux-gnu)
+    alias lsm='ls -l --time-style=long-iso'
+    ;;
+  darwin*)
+    alias lsm='/usr/local/bin/gls -l --time-style=long-iso'
+    ;;
+esac
+
 alias ag='ag --hidden --ignore-dir .git --ignore "*.json" --ignore "*.svg" --ignore=*.min.js'
 alias agr='ag --ruby'
 alias agj='ag --js --coffee'
