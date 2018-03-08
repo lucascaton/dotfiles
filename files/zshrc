@@ -180,7 +180,17 @@ alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 case $OSTYPE in
   darwin*)
     alias ctags="`brew --prefix`/bin/ctags"
+
     m() { mvim ${1-.} }
+
+    if [[ "$ITERM_PROFILE" == "Course" ]]; then
+      export ATOM_HOME=~/.dotfiles/other_files/atom/course/;
+    elif [ -d ~/.dotfiles/other_files/atom/default/ ]; then
+      export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
+    fi
+
+    apm list --installed --bare > ${ATOM_HOME}package.list
+
     alias a="atom ."
     alias x="gitx"
     ;;

@@ -18,6 +18,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   ~/.dotfiles/other_files/macOS
 fi
 
+if [ -d ~/.atom ]; then
+  apm install --packages-file ~/.dotfiles/other_files/atom/default/package.list;
+  apm install --packages-file ~/.dotfiles/other_files/atom/course/package.list;
+fi
+
 echo -e "${GRAY}"
 
 echo -ne "${GREEN}Done! :-)${NO_COLOR}\n\n"

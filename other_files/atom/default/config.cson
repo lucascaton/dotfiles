@@ -1,0 +1,15 @@
+"*":
+  core:
+    disabledPackages: [
+      "markdown-mindmap"
+      "teletype"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 15
+  "exception-reporting":
+    userId: "716ebcc0-8930-4cd0-858b-2ee6ce9c1eb7"
+  "markdown-mindmap": {}
+  "one-dark-ui": {}
+  welcome:
+    showOnStartup: false
