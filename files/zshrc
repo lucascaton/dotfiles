@@ -303,6 +303,12 @@ check_last_exit_code() {
 }
 
 custom_prompt() {
+  if [[ "$ITERM_PROFILE" == "Course" ]]; then
+    export PROMPT="%F{green}%~%{$reset_color%} \$ "
+    export RPROMPT=''
+    return;
+  fi
+
   local RUBY_PROMPT=""
 
   if type ruby > /dev/null; then
