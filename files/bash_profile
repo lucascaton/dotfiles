@@ -10,7 +10,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   export EDITOR="mvim"
   export GEM_EDITOR="mvim"
   export ARCHFLAGS="-arch x86_64"
-  export CC=/usr/local/bin/gcc-4.2
 fi
 
 export BLUE="\[\033[0;34m\]"
