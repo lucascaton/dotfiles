@@ -189,7 +189,9 @@ case $OSTYPE in
       export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
     fi
 
-    apm list --installed --bare > ${ATOM_HOME}package.list
+    if type "apm" > /dev/null; then
+      apm list --installed --bare > ${ATOM_HOME}package.list
+    fi
 
     alias a="atom ."
     alias x="gitx"
