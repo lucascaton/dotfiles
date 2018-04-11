@@ -62,10 +62,6 @@ case $OSTYPE in
     ;;
 esac
 
-# Ruby
-# https://reinteractive.net/posts/266-no-more-bundle-exec-using-the-new-rubygems_gemdeps-environment-variable
-# export RUBYGEMS_GEMDEPS=- # This is not ready yet :(
-
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin" # Add RVM to PATH for scripting
 
@@ -125,28 +121,11 @@ js() {
 
 set_rails_aliases_and_functions() {
   if [ -f Gemfile.lock ]; then
-    # Rails 2
-    if [[ "`cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.\).*)/\1/'`" = "2" ]]; then
-      alias rs='script/server'
-      alias rc='script/console --irb=pry'
-      alias rg='script/generate'
-      alias spec='bundle exec spec'
-      alias rspec='bundle exec spec'
-      alias rake='bundle exec rake'
-      alias migrate='bundle exec rake db:migrate && bundle exec rake db:test:prepare'
-
-    # Rails 3+
-    else
-      rails() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rails ]; then bin/rails "$@"; else bundle exec rails "$@"; fi }
-      rake()  { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rake ];  then bin/rake  "$@"; else bundle exec rake  "$@"; fi }
-      rspec() { if [ "$RAILS_ENV" != 'production' ] && [ -f bin/rspec ]; then bin/rspec "$@"; else bundle exec rspec "$@"; fi }
-
-      alias rs='rails s'
-      alias rc='rails c'
-      alias rg='rails g'
-      alias migrate='rake db:migrate && rake db:test:prepare'
-      alias assets='rake assets:clean assets:precompile'
-    fi
+    alias rs='rails s'
+    alias rc='rails c'
+    alias rg='rails g'
+    alias migrate='rake db:migrate && rake db:test:prepare'
+    alias assets='rake assets:clean assets:precompile'
   fi
 }
 
@@ -333,10 +312,10 @@ custom_prompt() {
 
   if [[ "$RUBY_VERSION" != "" ]]; then
     if [[ "$RAILS_VERSION" != "" ]]; then
-      local RAILS_PROMPT=" 🚂 ${RAILS_VERSION}"
+      local RAILS_PROMPT=" 🚂  ${RAILS_VERSION}"
     fi
 
-    RUBY_PROMPT="%{$fg_bold[gray]%}💎 ${RUBY_VERSION}${RAILS_PROMPT}"
+    RUBY_PROMPT="%{$fg_bold[gray]%}💎  ${RUBY_VERSION}${RAILS_PROMPT}"
   else
     RUBY_PROMPT=""
   fi
@@ -344,7 +323,7 @@ custom_prompt() {
   if [ -f /usr/local/bin/gitHUD ]; then local GIT_HUD=" $(/usr/local/bin/gitHUD zsh)"; fi
 
   if [ -d 'spec/' ] && [ `grep -re ':\?focus\(:\| =>\) true' spec --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then
-    local FOCUS='🎯 RSpec with focus'
+    local FOCUS='🎯  RSpec with focus'
   fi
 
   export PROMPT="%F{blue}%~%{$reset_color%} ${RUBY_PROMPT}${GIT_HUD} %F{red}${FOCUS}%{$reset_color%}
