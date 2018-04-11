@@ -1,10 +1,1 @@
-:benchmark: false
-:verbose: true
-:update_sources: true
-gem: --no-ri --no-rdoc
-install: --env-shebang
-gemcutter_key: 66...cf
-:sources:
-- https://rubygems.org/
-:bulk_threshold: 1000
-update: --env-shebang
+gem: --no-document
