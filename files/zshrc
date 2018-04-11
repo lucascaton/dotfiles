@@ -169,15 +169,18 @@ case $OSTYPE in
 
     if [[ "$ITERM_PROFILE" == "Course" ]]; then
       export ATOM_HOME=~/.dotfiles/other_files/atom/course/;
-    elif [ -d ~/.dotfiles/other_files/atom/default/ ]; then
-      export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
+
+      if type "apm" > /dev/null; then
+        apm list --installed --bare > ${ATOM_HOME}package.list
+      fi
+    else
+      alias a="atom ."
+
+      if [ -d ~/.dotfiles/other_files/atom/default/ ]; then
+        export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
+      fi
     fi
 
-    if type "apm" > /dev/null; then
-      apm list --installed --bare > ${ATOM_HOME}package.list
-    fi
-
-    alias a="atom ."
     alias x="gitx"
     ;;
 esac
