@@ -6,7 +6,7 @@
     ]
     telemetryConsent: "limited"
   editor:
-    fontSize: 15
+    fontSize: 25
   "exception-reporting":
     userId: "716ebcc0-8930-4cd0-858b-2ee6ce9c1eb7"
   "markdown-mindmap": {}
