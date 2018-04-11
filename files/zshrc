@@ -74,8 +74,8 @@ export PATH="$PATH:/usr/local/sbin"
 
 ######################################## Personal configs ########################################
 
-if [[ -s $HOME/.personal_configs ]] ;         then source $HOME/.personal_configs ;         fi
-if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
+if [[ -s $HOME/.personal_configs ]] ; then source $HOME/.personal_configs ;         fi
+if [[ -s $HOME/Dropbox/.personal_configs/aliases_and_functions.sh ]] ; then source $HOME/Dropbox/.personal_configs/aliases_and_functions.sh ; fi
 
 ############################################ Aliases #############################################
 
@@ -103,23 +103,28 @@ alias fpush='git push --force-with-lease'
 alias scorched_earth='git checkout .; git clean -df'
 
 # Ruby / Rails
-alias cap='bundle exec cap'
+alias cap='bundle exec cap' # Capistrano
 alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
 alias ms='bundle exec middleman server --verbose'
 alias massa='bundle exec massa'
+alias sidekiq='bundle exec sidekiq'
 alias fs='foreman start -f Procfile.dev'
 
 # Usage example: `js 2` to load only last 2 posts
 js() {
   if [ "$1" == "" ]; then
-    bundle exec jekyll serve --incremental
+    bundle exec jekyll serve --host=0.0.0.0 --incremental
   else
     echo "### Loading only last $1 posts"
-    bundle exec jekyll serve --incremental --limit_posts $1
+    bundle exec jekyll serve --host=0.0.0.0 --drafts --incremental --limit_posts $1
   fi
 }
 
 set_rails_aliases_and_functions() {
+  if [[ "$ITERM_PROFILE" == "Course" ]]; then
+    return;
+  fi
+
   if [ -f Gemfile.lock ]; then
     alias rs='rails s'
     alias rc='rails c'
