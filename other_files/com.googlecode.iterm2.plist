@@ -1239,6 +1239,10 @@
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_965B97F5-AD18-49C8-B25E-4C4ECDA89BEF_selection</key>
 	<integer>0</integer>
+	<key>NeverWarnAboutShortLivedSessions_C7B1AD39-222F-480F-B9E1-9DDFB611F4AE</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_C7B1AD39-222F-480F-B9E1-9DDFB611F4AE_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2081,6 +2085,8 @@
 			<key>Use Canonical Parser</key>
 			<false/>
 			<key>Use Italic Font</key>
+			<false/>
+			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
@@ -2934,6 +2940,8 @@
 			<false/>
 			<key>Use Italic Font</key>
 			<false/>
+			<key>Use Non-ASCII Font</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -3030,7 +3038,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-08T11:18:17Z</date>
+	<date>2018-03-30T22:53:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
