@@ -1226,7 +1226,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>723 110 891 381 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>268 354 796 473 0 0 1680 1050 </string>
+	<string>381 357 796 473 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>191 124 570 452 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
@@ -1838,7 +1838,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>RobotoMonoForPowerline-Regular 15</string>
+			<string>HackNerdFontComplete-Regular 15</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2688,7 +2688,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>RobotoMonoForPowerline-Regular 32</string>
+			<string>HackNerdFontComplete-Regular 32</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
