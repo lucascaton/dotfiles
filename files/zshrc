@@ -162,8 +162,6 @@ alias h='heroku'
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
-  alias ctags="`brew --prefix`/bin/ctags"
-
   m() { mvim ${1-.} }
 
   if [[ "$ITERM_PROFILE" == "Course" ]]; then
