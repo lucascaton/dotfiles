@@ -1,27 +1,21 @@
-require 'irb/completion'
-require 'irb/ext/save-history'
+if ENV['ITERM_PROFILE'] != 'Course'
+  require 'irb/completion'
+  require 'irb/ext/save-history'
 
-IRB.conf[:PROMPT_MODE]  = :SIMPLE
-IRB.conf[:SAVE_HISTORY] = 100_000
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
+  IRB.conf[:SAVE_HISTORY] = 100_000
 
-begin
-  require 'pry'
-  Pry.start
-  exit
-rescue LoadError => e
-  warn "### Unable to load pry (#{e})"
-end
+  begin
+    require 'pry'
+    Pry.start
+    exit
+  rescue LoadError => e
+    warn "### Unable to load pry (#{e})"
+  end
 
-begin
-  require 'awesome_print'
-  AwesomePrint.irb!
-rescue LoadError => e
-  warn "### Unable to load awesome_print (#{e})"
-end
-
-def go_resque
-  raise 'Resque is not defined' unless defined?(Resque)
-
-  Resque::Worker.new('*').work(10)
+  begin
+    require 'awesome_print'
+    AwesomePrint.irb!
+  rescue LoadError => e
+    warn "### Unable to load awesome_print (#{e})"
+  end
 end
