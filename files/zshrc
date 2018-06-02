@@ -37,12 +37,12 @@ function zshaddhistory() {
 
 case $OSTYPE in
   linux-gnu)
-    export EDITOR='vim'
-    export GEM_EDITOR='vim'
+    export EDITOR='vim -f'
+    export GEM_EDITOR='vim -f'
     ;;
   darwin*)
-    export EDITOR='mvim'
-    export GEM_EDITOR='mvim'
+    export EDITOR='mvim -f'
+    export GEM_EDITOR='mvim -f'
     ;;
 esac
 
