@@ -161,29 +161,27 @@ alias agh='ag --html --haml'
 alias h='heroku'
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
-case $OSTYPE in
-  darwin*)
-    alias ctags="`brew --prefix`/bin/ctags"
+if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
+  alias ctags="`brew --prefix`/bin/ctags"
 
-    m() { mvim ${1-.} }
+  m() { mvim ${1-.} }
 
-    if [[ "$ITERM_PROFILE" == "Course" ]]; then
-      export ATOM_HOME=~/.dotfiles/other_files/atom/course/;
+  if [[ "$ITERM_PROFILE" == "Course" ]]; then
+    export ATOM_HOME=~/.dotfiles/other_files/atom/course/;
 
-      if type "apm" > /dev/null; then
-        apm list --installed --bare > ${ATOM_HOME}package.list
-      fi
-    else
-      alias a="atom ."
-
-      if [ -d ~/.dotfiles/other_files/atom/default/ ]; then
-        export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
-      fi
+    if type "apm" > /dev/null; then
+      apm list --installed --bare > ${ATOM_HOME}package.list
     fi
+  else
+    alias a="atom ."
 
-    alias x="gitx"
-    ;;
-esac
+    if [ -d ~/.dotfiles/other_files/atom/default/ ]; then
+      export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
+    fi
+  fi
+
+  alias x="gitx"
+fi
 
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboard"'
 alias bne='curl wttr.in/brisbane'
