@@ -1226,9 +1226,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>723 110 891 381 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>381 357 796 473 0 0 1680 1050 </string>
+	<string>368 1408 937 512 -116 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>191 124 570 452 0 0 1680 1027 </string>
+	<string>-115 1074 1920 1033 -116 1050 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_2D89F8E7-7613-4812-8E16-347239AAE358</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_965B97F5-AD18-49C8-B25E-4C4ECDA89BEF</key>
@@ -2842,7 +2842,7 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm</string>
+			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
