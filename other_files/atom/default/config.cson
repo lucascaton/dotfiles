@@ -5,8 +5,7 @@
       "teletype"
     ]
     telemetryConsent: "limited"
-  editor:
-    fontSize: 25
+  editor: {}
   "exception-reporting":
     userId: "716ebcc0-8930-4cd0-858b-2ee6ce9c1eb7"
   "markdown-mindmap": {}

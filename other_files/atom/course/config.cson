@@ -1,8 +1,16 @@
 "*":
   core:
+    ignoredNames: [
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+    ]
     telemetryConsent: "limited"
   editor:
-    fontSize: 24
+    fontSize: 26
   "exception-reporting":
     userId: "716ebcc0-8930-4cd0-858b-2ee6ce9c1eb7"
   "one-dark-ui":
