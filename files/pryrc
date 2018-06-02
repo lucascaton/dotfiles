@@ -1,19 +1,7 @@
-begin
-  require 'awesome_print'
-  # Pry.config.print = proc { |output, value| Pry::Helpers::BaseHelpers.stagger_output("➙ #{value.ai}", output) }
-  AwesomePrint.pry!
-rescue LoadError => e
-  warn "=> Unable to load awesome_print (#{e})"
-end
-
 rails = File.join(Dir.getwd, 'config', 'environment.rb')
 
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   require rails
-
-  def fg
-    puts "'fg' has been renamed to 'fb'"
-  end
 
   def fb
     puts 'Loading FactoryBot...'
@@ -31,7 +19,11 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
 
     FactoryBot.factories.clear
 
-    factory_bot_paths = ['spec/factories.rb', 'spec/support/factories.rb', *Dir['spec/factories/**/*.rb']]
+    factory_bot_paths = [
+      'spec/factories.rb',
+      'spec/support/factories.rb',
+      *Dir['spec/factories/**/*.rb']
+    ]
 
     factory_bot_paths.each do |path|
       file = File.join(Rails.root, path)
