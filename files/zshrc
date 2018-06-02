@@ -79,28 +79,30 @@ if [[ -s $HOME/Dropbox/.personal_configs/aliases_and_functions.sh ]] ; then sour
 
 ############################################ Aliases #############################################
 
-# Git
-alias g='git status'
-alias gc='git commit --no-edit'
-alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
-alias gls='git log --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative --author="`git config --get user.name`"'
-alias gd='git --no-pager diff'
-alias gdc='git --no-pager diff --cached'
-alias gds='git --no-pager diff HEAD\^ HEAD'
-alias gm='git merge --no-edit'
-alias gmu='git fetch upstream && git merge upstream/master'
-alias ga='git add'
-alias gaa='git add --all'
-alias gr='git rm'
-alias gp='git pull --rebase --prune'
-alias gb='git branch'
-alias gba='git branch -a'
-alias gbd='git branch -d'
-alias gbD='git branch -D'
-alias push='git push'
-# alias fpush='git push --force-with-lease origin `git rev-parse --abbrev-ref HEAD`'
-alias fpush='git push --force-with-lease'
-alias scorched_earth='git checkout .; git clean -df'
+if [[ "$ITERM_PROFILE" != "Course" ]]; then
+  # Git
+  alias g='git status'
+  alias gc='git commit --no-edit'
+  alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+  alias gls='git log --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative --author="`git config --get user.name`"'
+  alias gd='git --no-pager diff'
+  alias gdc='git --no-pager diff --cached'
+  alias gds='git --no-pager diff HEAD\^ HEAD'
+  alias gm='git merge --no-edit'
+  alias gmu='git fetch upstream && git merge upstream/master'
+  alias ga='git add'
+  alias gaa='git add --all'
+  alias gr='git rm'
+  alias gp='git pull --rebase --prune'
+  alias gb='git branch'
+  alias gba='git branch -a'
+  alias gbd='git branch -d'
+  alias gbD='git branch -D'
+  alias push='git push'
+  # alias fpush='git push --force-with-lease origin `git rev-parse --abbrev-ref HEAD`'
+  alias fpush='git push --force-with-lease'
+  alias scorched_earth='git checkout .; git clean -df'
+fi
 
 # Ruby / Rails
 alias cap='bundle exec cap' # Capistrano
