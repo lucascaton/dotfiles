@@ -106,8 +106,8 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias gbd='git branch -d'
   alias gbD='git branch -D'
   alias push='git push'
-  # alias fpush='git push --force-with-lease origin `git rev-parse --abbrev-ref HEAD`'
   alias fpush='git push --force-with-lease'
+  # alias fpush='git push --force-with-lease origin `git rev-parse --abbrev-ref HEAD`'
   alias scorched_earth='git checkout .; git clean -df'
 fi
 
