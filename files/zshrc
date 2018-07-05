@@ -122,7 +122,7 @@ alias fs='foreman start -f Procfile.dev'
 # Usage example: `js 2` to load only last 2 posts
 js() {
   if [ "$1" == "" ]; then
-    bundle exec jekyll serve --host=0.0.0.0 --incremental
+    bundle exec jekyll serve --host=0.0.0.0 --drafts --incremental
   else
     echo "### Loading only last $1 posts"
     bundle exec jekyll serve --host=0.0.0.0 --drafts --incremental --limit_posts $1
