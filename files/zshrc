@@ -118,6 +118,7 @@ alias ms='bundle exec middleman server --verbose'
 alias massa='bundle exec massa'
 alias sidekiq='bundle exec sidekiq'
 alias fs='foreman start -f Procfile.dev'
+alias cop="git status --porcelain | grep -E '^A|^M' | grep '.rb' | awk '{print $2}' | xargs rubocop --force-exclusion"
 
 # Usage example: `js 2` to load only last 2 posts
 js() {
