@@ -8,7 +8,7 @@ My Vim configuration files can be found in this repository: [lucascaton/vimfiles
 
 # How to install?
 
-Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) and [gitHUD](https://github.com/gbataille/gitHUD).
+Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh).
 
 Then, run:
 
@@ -19,6 +19,7 @@ Finally, install the following plugins:
 
     git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions       ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/bhilburn/powerlevel9k.git           ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
 
 # Copyright
 
