@@ -1,0 +1,23 @@
+-- Theme based loosely on vim xoria256 but seriously tweaked by Lucas Caton
+
+Description = "almost_one_dark_by_lucas"
+
+Default	= { Colour="#ffffff" }
+Canvas	= { Colour="#1c1c1c" }
+Number	= { Colour="#d19a66" }
+Escape	= { Colour="#df8787" }
+BlockComment	= { Colour="#808080" }
+PreProcessor	= { Colour="#afdf87" }
+LineNum	= { Colour="#a8a8a8" }
+String=   { Colour="#98c379" }
+StringPreProc = String
+LineComment   = BlockComment
+Operator      = { Colour="#888888" }
+Interpolation  = { Colour="#78D1DD" }
+
+Keywords = {
+  { Colour="#c678dd" },
+  { Colour="#87de8c" },
+  { Colour="#e5c07b" },
+  { Colour="#de87da" },
+}
