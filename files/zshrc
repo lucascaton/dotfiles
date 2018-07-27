@@ -219,7 +219,7 @@ alias h='heroku'
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
-  m() { mvim ${1-.} }
+  m() { mvim -p ${1-.} }
 
   if [[ "$ITERM_PROFILE" == "Course" ]]; then
     export ATOM_HOME=~/.dotfiles/other_files/atom/course/;
