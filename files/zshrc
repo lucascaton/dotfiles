@@ -96,8 +96,13 @@ case $OSTYPE in
     export GEM_EDITOR='vim -f'
     ;;
   darwin*)
-    export EDITOR='mvim -f'
-    export GEM_EDITOR='mvim -f'
+    if [[ "$ITERM_PROFILE" == "Course" ]]; then
+      export EDITOR='atom --wait'
+      export GEM_EDITOR='atom --wait'
+    else
+      export EDITOR='mvim -f'
+      export GEM_EDITOR='mvim -f'
+    fi
     ;;
 esac
 
