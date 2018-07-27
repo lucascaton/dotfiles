@@ -35,11 +35,15 @@ fi
 
 set_powerlevel9k_custom_env_vars() {
   if [ -f Gemfile.lock ]; then
-    export POWERLEVEL9K_CUSTOM_RAILS="echo -n '' `cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.*\))/\1/'`"
-    export POWERLEVEL9K_CUSTOM_RSPEC="if [ -d 'spec/' ] && [ `grep -re ':\?focus\(:\| =>\) true' spec --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb | wc -l | awk '{ print $1 }'` != '0' ]; then; echo -n '🎯  RSpec with focus'; fi"
+    POWERLEVEL9K_CUSTOM_RAILS="echo -n '' `cat Gemfile.lock | grep -E ' +rails \([0-9]+' | \
+      sed 's/ *rails (\(.*\))/\1/'`"
+
+    POWERLEVEL9K_CUSTOM_RSPEC="if [ -d spec/ ] && [ `grep -re ':\?focus\(:\| =>\) true' spec \
+      --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb &> /dev/null | \
+      wc -l | awk '{ print $1 }'` != '0' ]; then; echo -n '🎯  RSpec with focus'; fi"
   else
-    export POWERLEVEL9K_CUSTOM_RAILS=""
-    export POWERLEVEL9K_CUSTOM_RSPEC=""
+    POWERLEVEL9K_CUSTOM_RAILS=""
+    POWERLEVEL9K_CUSTOM_RSPEC=""
   fi
 }
 
@@ -341,7 +345,7 @@ gh() {
 
 precmd() {
   if [[ "$ITERM_PROFILE" == "Course" ]]; then
-    export PROMPT="%F{green}%~%{$reset_color%} \$ "
+    export PROMPT='%{$fg_no_bold[green]%}%1~ $(git_prompt_info)%{$reset_color%}» '
     export RPROMPT=''
     return;
   else
