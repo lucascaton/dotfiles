@@ -1,9 +1,5 @@
 "*":
   core:
-    disabledPackages: [
-      "markdown-mindmap"
-      "teletype"
-    ]
     telemetryConsent: "limited"
   editor:
     fontSize: 16
@@ -11,6 +7,7 @@
       eol: ""
       space: ""
     showInvisibles: true
+    softWrap: true
   "exception-reporting":
     userId: "716ebcc0-8930-4cd0-858b-2ee6ce9c1eb7"
   "linter-ui-default":

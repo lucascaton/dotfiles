@@ -10,7 +10,8 @@
     ]
     telemetryConsent: "limited"
   editor:
-    fontSize: 26
+    fontSize: 20
+    softWrap: true
   "exception-reporting":
     userId: "716ebcc0-8930-4cd0-858b-2ee6ce9c1eb7"
   "one-dark-ui":
