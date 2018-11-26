@@ -7,7 +7,7 @@ Session.vim
 *.sw?
 
 # Ctags
-tags
+/tags
 
 # Simplecov
 coverage/
