@@ -172,6 +172,7 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias rg='rails g'
   alias migrate='rake db:migrate && rake db:test:prepare'
   alias assets='rake assets:clean assets:precompile'
+  alias rspec='bundle exec rspec'
   alias cap='bundle exec cap' # Capistrano
   alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
   alias ms='bundle exec middleman server --verbose'
