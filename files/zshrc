@@ -137,8 +137,11 @@ export PATH="$PATH:/usr/local/sbin"
 
 ######################################## Personal configs ########################################
 
-if [[ -s $HOME/.personal_configs ]] ; then source $HOME/.personal_configs ;         fi
-if [[ -s $HOME/Dropbox/.personal_configs/aliases_and_functions.sh ]] ; then source $HOME/Dropbox/.personal_configs/aliases_and_functions.sh ; fi
+if [[ -s $HOME/.personal_configs ]]; then source $HOME/.personal_configs; fi
+
+if [ -d $HOME/Dropbox/.personal_configs ]; then
+  for file in $HOME/Dropbox/.personal_configs/*; do source $file; done
+fi
 
 ############################################ Aliases #############################################
 
