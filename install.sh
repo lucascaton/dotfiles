@@ -26,8 +26,8 @@ for file in *; do
       echo -ne "is identical ${RED}✕${ORIGINAL_COLOR}"
     fi
   else # File doesn't exist, let's create it:
-    echo -ne "symlink has been created ${GREEN}✓${ORIGINAL_COLOR}"
     ln -s ~/.dotfiles/files/$file ~/.$file
+    echo -ne "symlink has been created ${GREEN}✓${ORIGINAL_COLOR}"
   fi
 
   echo -e "${ORIGINAL_COLOR}"
