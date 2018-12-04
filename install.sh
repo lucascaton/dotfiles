@@ -41,6 +41,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then ~/.dotfiles/other_files/macOS; fi
 
 # ------------------------------------------------------------------------------
 
+title "Installing Homebrew packages"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then brew bundle --file=~/.dotfiles/other_files/Brewfile; fi
+
+# ------------------------------------------------------------------------------
+
 title "Installing Atom packages"
 
 if [ -d ~/.atom ]; then
