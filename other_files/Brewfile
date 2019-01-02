@@ -41,6 +41,7 @@ cask 'insomnia' # https://insomnia.rest/
 cask 'keybase' # https://keybase.io/
 cask 'postico'
 cask 'sequel-pro'
+cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
 
 # ┌───────────────┐
 # │ Mac App Store │
