@@ -126,7 +126,10 @@ case $OSTYPE in
 esac
 
 # RVM
-export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin"
+
+# VS Code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Homebrew
 export PATH="$PATH:/usr/local/sbin"
