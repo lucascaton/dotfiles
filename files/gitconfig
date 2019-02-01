@@ -26,5 +26,3 @@
   templatedir = ~/.dotfiles/files/git_template
 [credential]
   helper = osxkeychain
-[commit]
-	gpgsign = true
