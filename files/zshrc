@@ -319,7 +319,7 @@ esac
 
 # Usage: aftermerge <branch> (default: master)
 aftermerge() {
-  branch=`git branch 2> /dev/null | grep \* | sed 's/* //' | sed 's/(detached from \(.*\))/\1/'`
+  branch=`git rev-parse --abbrev-ref HEAD`
 
   git checkout ${1-master}
   git pull --rebase
