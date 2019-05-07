@@ -371,6 +371,14 @@ hl() {
     --src-lang ruby --style lucascaton # | pbcopy
 }
 
+docker-clear() {
+  docker container prune --force
+
+  if [ "$(docker images -f 'dangling=true' -q | wc -l)" -gt "0" ]; then
+    docker image rm $(docker images -f "dangling=true" -q)
+  fi
+}
+
 ############################################## PS1 ###############################################
 
 precmd() {
