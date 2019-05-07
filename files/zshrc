@@ -199,6 +199,8 @@ fi
 
 # Usage example: `js 2` to load only last 2 posts
 js() {
+  bundle exec jekyll clean
+
   if [ "$1" == "" ]; then
     bundle exec jekyll serve --host=0.0.0.0 --drafts --incremental
   else
