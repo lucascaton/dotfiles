@@ -139,9 +139,6 @@ export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin"
 # VS Code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Homebrew
-export PATH="$PATH:/usr/local/sbin"
-
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]]     && source "$HOME/.rvm/scripts/rvm"
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
