@@ -42,6 +42,7 @@ cask 'insomnia' # https://insomnia.rest/
 cask 'keybase' # https://keybase.io/
 cask 'postico'
 cask 'sequel-pro'
+cask 'spectacle' # https://www.spectacleapp.com/
 cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
 
 # ┌───────────────┐
