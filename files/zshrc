@@ -143,6 +143,9 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 [[ -s "$HOME/.rvm/scripts/rvm" ]]     && source "$HOME/.rvm/scripts/rvm"
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 
+# Docker
+export DOCKER_BUILDKIT=1
+
 ######################################## Personal configs ########################################
 
 if [[ -s $HOME/.personal_configs ]]; then source $HOME/.personal_configs; fi
