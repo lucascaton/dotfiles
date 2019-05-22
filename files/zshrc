@@ -366,7 +366,7 @@ hl() {
   theme_folder=`brew --cellar highlight`/`brew list --versions highlight | tr ' ' '\n' | grep -e '^\d' | head -n 1`/share/highlight/themes/
 
   if ! [ -f $theme_folder/lucascaton.theme ]; then
-    cp ~/.dotfiles/other_files/highlight-themes/lucascaton.theme $theme_folder
+    cp ~/.dotfiles/other_files/highlight/themes/lucascaton.theme $theme_folder
   fi
 
   highlight -O rtf $1 --font "Roboto Mono for Powerline" --font-size 48 \
