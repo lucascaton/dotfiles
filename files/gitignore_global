@@ -28,5 +28,6 @@ npm-debug.log
 # Byebug command history file
 .byebug_history
 
-# Project specific Vim configurations
+# Config files created by text editors (per project)
 /.vimrc
+/.vscode
