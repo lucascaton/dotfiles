@@ -1,0 +1,33 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
+    "editor.fontSize": 15,
+    "workbench.activityBar.visible": true,
+    "workbench.editor.enablePreview": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.format": "rubocop",
+    "ruby.intellisense": "rubyLocate",
+    "terminal.integrated.fontSize": 15,
+    "editor.renderFinalNewline": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "html.format.endWithNewline": true,
+    "workbench.iconTheme": "vscode-icons",
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "gitlens.advanced.messages": {
+      "suppressLineUncommittedWarning": true
+    },
+    "editor.minimap.enabled": false,
+}

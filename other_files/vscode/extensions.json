@@ -1,0 +1,182 @@
+[
+  {
+    "metadata": {
+      "id": "d3836729-9cc1-42c1-b2af-d50071f57d29",
+      "publisherId": "formulahendry.auto-close-tag",
+      "publisherDisplayName": "formulahendry"
+    },
+    "name": "auto-close-tag",
+    "publisher": "formulahendry",
+    "version": "0.5.6"
+  },
+  {
+    "metadata": {
+      "id": "6e440e71-8ed9-4f25-bb78-4b13096b8a03",
+      "publisherId": "formulahendry.auto-rename-tag",
+      "publisherDisplayName": "formulahendry"
+    },
+    "name": "auto-rename-tag",
+    "publisher": "formulahendry",
+    "version": "0.1.0"
+  },
+  {
+    "metadata": {
+      "id": "a6a0c5b2-d078-4bf5-a9ee-4e37054414b3",
+      "publisherId": "formulahendry.code-runner",
+      "publisherDisplayName": "formulahendry"
+    },
+    "name": "code-runner",
+    "publisher": "formulahendry",
+    "version": "0.9.11"
+  },
+  {
+    "metadata": {
+      "id": "e337c67b-55c2-4fef-8949-eb260e7fb7fd",
+      "publisherId": "Shan.code-settings-sync",
+      "publisherDisplayName": "Shan"
+    },
+    "name": "code-settings-sync",
+    "publisher": "Shan",
+    "version": "3.3.1"
+  },
+  {
+    "metadata": {
+      "id": "19804510-b475-4dae-b0f7-6ca08fd1af0c",
+      "publisherId": "dsznajder.es7-react-js-snippets",
+      "publisherDisplayName": "dsznajder"
+    },
+    "name": "es7-react-js-snippets",
+    "publisher": "dsznajder",
+    "version": "2.3.0"
+  },
+  {
+    "metadata": {
+      "id": "8bb12ae3-73f8-40cf-86b7-4bd5729c6238",
+      "publisherId": "GrapeCity.gc-excelviewer",
+      "publisherDisplayName": "GrapeCity"
+    },
+    "name": "gc-excelviewer",
+    "publisher": "GrapeCity",
+    "version": "2.1.32"
+  },
+  {
+    "metadata": {
+      "id": "5960f38e-0bbe-4644-8f9c-9c8824e82511",
+      "publisherId": "donjayamanne.githistory",
+      "publisherDisplayName": "donjayamanne"
+    },
+    "name": "githistory",
+    "publisher": "donjayamanne",
+    "version": "0.4.6"
+  },
+  {
+    "metadata": {
+      "id": "4de763bd-505d-4978-9575-2b7696ecf94e",
+      "publisherId": "eamodio.gitlens",
+      "publisherDisplayName": "eamodio"
+    },
+    "name": "gitlens",
+    "publisher": "eamodio",
+    "version": "9.8.2"
+  },
+  {
+    "metadata": {
+      "id": "31dab038-d2f7-47c2-894e-5c35684dbd0e",
+      "publisherId": "karunamurti.haml",
+      "publisherDisplayName": "karunamurti"
+    },
+    "name": "haml",
+    "publisher": "karunamurti",
+    "version": "1.2.0"
+  },
+  {
+    "metadata": {
+      "id": "083bb726-3bae-44b6-88c6-8164f2c3e632",
+      "publisherId": "skyran.js-jsx-snippets",
+      "publisherDisplayName": "skyran"
+    },
+    "name": "js-jsx-snippets",
+    "publisher": "skyran",
+    "version": "0.3.0"
+  },
+  {
+    "metadata": {
+      "id": "26a529c9-2654-4b95-a63f-02f6a52429e6",
+      "publisherId": "zhuangtongfa.Material-theme",
+      "publisherDisplayName": "zhuangtongfa"
+    },
+    "name": "Material-theme",
+    "publisher": "zhuangtongfa",
+    "version": "2.25.0"
+  },
+  {
+    "metadata": {
+      "id": "8819f4d4-9967-4763-a712-029d2bbd67e7",
+      "publisherId": "asux.rspec-focus",
+      "publisherDisplayName": "asux"
+    },
+    "name": "rspec-focus",
+    "publisher": "asux",
+    "version": "0.2.0"
+  },
+  {
+    "metadata": {
+      "id": "ae062c8a-c68e-4b92-9ecf-8f1d4288b05d",
+      "publisherId": "rebornix.ruby",
+      "publisherDisplayName": "rebornix"
+    },
+    "name": "ruby",
+    "publisher": "rebornix",
+    "version": "0.24.0"
+  },
+  {
+    "metadata": {
+      "id": "e52bce95-a629-455f-8626-e7301b9e372a",
+      "publisherId": "robinbentley.sass-indented",
+      "publisherDisplayName": "robinbentley"
+    },
+    "name": "sass-indented",
+    "publisher": "robinbentley",
+    "version": "1.5.1"
+  },
+  {
+    "metadata": {
+      "id": "0479fc1c-3d67-49f9-b087-fb9069afe48f",
+      "publisherId": "ms-azuretools.vscode-docker",
+      "publisherDisplayName": "ms-azuretools"
+    },
+    "name": "vscode-docker",
+    "publisher": "ms-azuretools",
+    "version": "0.6.4"
+  },
+  {
+    "metadata": {
+      "id": "9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a",
+      "publisherId": "vscode-icons-team.vscode-icons",
+      "publisherDisplayName": "vscode-icons-team"
+    },
+    "name": "vscode-icons",
+    "publisher": "vscode-icons-team",
+    "version": "8.8.0"
+  },
+  {
+    "metadata": {
+      "id": "daf8b44d-8aae-4da2-80c5-1f770219f643",
+      "publisherId": "DavidAnson.vscode-markdownlint",
+      "publisherDisplayName": "DavidAnson"
+    },
+    "name": "vscode-markdownlint",
+    "publisher": "DavidAnson",
+    "version": "0.28.0"
+  },
+  {
+    "metadata": {
+      "id": "ae9e3eb0-3357-4cc0-90ee-598d2d384757",
+      "publisherId": "eg2.vscode-npm-script",
+      "publisherDisplayName": "eg2"
+    },
+    "name": "vscode-npm-script",
+    "publisher": "eg2",
+    "version": "0.3.7"
+  }
+]
