@@ -178,5 +178,15 @@
     "name": "vscode-npm-script",
     "publisher": "eg2",
     "version": "0.3.7"
+  },
+  {
+    "metadata": {
+      "id": "3fb77af3-b8b3-4cb9-9137-f555bd80e2b1",
+      "publisherId": "richie5um2.vscode-sort-json",
+      "publisherDisplayName": "richie5um2"
+    },
+    "name": "vscode-sort-json",
+    "publisher": "richie5um2",
+    "version": "1.13.0"
   }
 ]
