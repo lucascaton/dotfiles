@@ -30,4 +30,11 @@
       "suppressLineUncommittedWarning": true
     },
     "editor.minimap.enabled": false,
+    "sync.gist": "a867a5f65c2f289539655a65eff24657",
+    "window.restoreWindows": "none",
+    "sync.autoUpload": true,
+    "sync.quietSync": true,
+    "explorer.autoReveal": false,
+    "search.showLineNumbers": true,
+    "files.simpleDialog.enable": true,
 }
