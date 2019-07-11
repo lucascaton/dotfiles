@@ -21,7 +21,6 @@ brew 'gpg'
 brew 'heroku'
 brew 'highlight'
 brew 'imagemagick'
-brew 'macvim'
 brew 'mysql'
 brew 'node'
 brew 'openssl'
@@ -40,6 +39,7 @@ cask 'chromedriver'
 cask 'docker'
 cask 'insomnia' # https://insomnia.rest/
 cask 'keybase' # https://keybase.io/
+cask 'macvim' # https://github.com/macvim-dev/macvim
 cask 'postico'
 cask 'sequel-pro'
 cask 'spectacle' # https://www.spectacleapp.com/
