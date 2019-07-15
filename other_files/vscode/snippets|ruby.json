@@ -1,0 +1,126 @@
+{
+  // Place your snippets for ruby here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+
+  "bp": {
+    "prefix": "bp",
+    "body": [
+      "binding.pry",
+    ],
+    "description": "Debug via Pry"
+  },
+
+  "enum": {
+    "prefix": "enum",
+    "body": [
+      "class ${1:EnumName} < EnumerateIt::Base",
+      "  associate_values(",
+      "    :${2:first_attribute},${0}",
+      "  )",
+      "end",
+    ],
+    "description": "Debug via Pry"
+  },
+
+  "exe": {
+    "prefix": "exe",
+    "body": [
+      "#!/usr/bin/env ruby",
+    ],
+    "description": "Shebang"
+  },
+
+  "pry": {
+    "prefix": "pry",
+    "body": [
+      "require 'pry'; binding.pry",
+    ],
+    "description": "Require \"Pry\" and adds an breakpoint"
+  },
+
+  "puts": {
+    "prefix": "puts",
+    "body": [
+      "puts \"#{'-' * `tput cols`.to_i}\\n${1:var}\\n#{'-' * `tput cols`.to_i}\"",
+    ],
+    "description": "Highlight your printed text"
+  },
+
+  "putss": {
+    "prefix": "putss",
+    "body": [
+      "puts \"#{'-' * `tput cols`.to_i}\\n${1:var}: #{${1}.inspect}\\n#{'-' * `tput cols`.to_i}\"",
+    ],
+    "description": "Highlight your printed variable"
+  },
+
+  // RSpec
+
+  "spec": {
+    "prefix": "spec",
+    "body": [
+      "RSpec.describe ${1:Class}, type: :${2:model} do",
+      "  ${3}",
+      "end${0}",
+    ],
+    "description": "Basic RSpec block"
+  },
+
+  "des": {
+    "prefix": "des",
+    "body": [
+      "describe '${1}' do",
+      "  ${2}",
+      "end${0}",
+    ],
+    "description": "RSpec's describe block"
+  },
+
+  "con": {
+    "prefix": "con",
+    "body": [
+      "context '${1}' do",
+      "  ${2}",
+      "end${0}",
+    ],
+    "description": "RSpec's context block"
+  },
+
+  "it": {
+    "prefix": "it",
+    "body": [
+      "it '${1}' do",
+      "  ${2}",
+      "end${0}",
+    ],
+    "description": "RSpec's it block"
+  },
+
+  "i": {
+    "prefix": "i",
+    "body": [
+      "it '${1}' { ${2} }${0}",
+    ],
+    "description": "RSpec's it inline block"
+  },
+
+  "be": {
+    "prefix": "be",
+    "body": [
+      "before do",
+      "  ${1}",
+      "end${0}",
+    ],
+    "description": "RSpec's before block"
+  },
+
+  "b": {
+    "prefix": "b",
+    "body": [
+      "before { ${1} }${0}",
+    ],
+    "description": "RSpec's before inline block"
+  },
+}
