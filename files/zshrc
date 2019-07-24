@@ -156,6 +156,8 @@ fi
 
 ############################################ Aliases #############################################
 
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
   # Git
   alias g='git status'
