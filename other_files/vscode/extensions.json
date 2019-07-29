@@ -67,7 +67,7 @@
     },
     "name": "es7-react-js-snippets",
     "publisher": "dsznajder",
-    "version": "2.3.0"
+    "version": "2.4.0"
   },
   {
     "metadata": {
@@ -247,7 +247,7 @@
     },
     "name": "vscode-markdownlint",
     "publisher": "DavidAnson",
-    "version": "0.28.0"
+    "version": "0.29.0"
   },
   {
     "metadata": {

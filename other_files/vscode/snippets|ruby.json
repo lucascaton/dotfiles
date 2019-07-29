@@ -56,6 +56,16 @@
     "description": "Highlight your printed variable"
   },
 
+  "str": {
+    "prefix": "str",
+    "body": [
+      "${1:variable} = <<~${2:FOO}",
+      "  ${3:This is the first line.}",
+      "${2:FOO}",
+    ],
+    "description": "Heredoc"
+  },
+
   // RSpec
 
   "spec": {
