@@ -7,8 +7,6 @@ tap 'homebrew/services'
 tap 'homebrew/cask'
 tap 'heroku/brew'
 
-cask_args appdir: '/Applications'
-
 brew 'awscli'
 brew 'ccat'
 brew 'colordiff'
@@ -35,15 +33,23 @@ brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
 
-cask 'chromedriver'
-cask 'docker'
+cask_args appdir: '/Applications'
+
+cask 'aws-vault'
+cask 'chromedriver' # http://chromedriver.chromium.org/
+cask 'docker' # https://www.docker.com/
 cask 'insomnia' # https://insomnia.rest/
-cask 'keybase' # https://keybase.io/
+# cask 'keybase' # https://keybase.io/
+# cask 'mactex' # https://www.tug.org/mactex/ (Latex)
 cask 'macvim' # https://github.com/macvim-dev/macvim
-cask 'postico'
-cask 'sequel-pro'
+# cast 'phantomjs'
+cask 'prince' # https://www.princexml.com/
+cask 'postico' # https://eggerapps.at/postico/
+cask 'sequel-pro' # https://www.sequelpro.com/
 cask 'spectacle' # https://www.spectacleapp.com/
 cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
+# cask 'virtualbox'
+# cask 'wkhtmltopdf'
 
 # ┌───────────────┐
 # │ Mac App Store │
