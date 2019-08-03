@@ -19,6 +19,7 @@ brew 'gpg'
 brew 'heroku'
 brew 'highlight'
 brew 'imagemagick'
+brew 'imageoptim-cli' # https://github.com/JamieMason/ImageOptim-CLI
 brew 'mysql'
 brew 'node'
 brew 'openssl'
@@ -42,6 +43,7 @@ cask 'insomnia' # https://insomnia.rest/
 # cask 'keybase' # https://keybase.io/
 # cask 'mactex' # https://www.tug.org/mactex/ (Latex)
 cask 'macvim' # https://github.com/macvim-dev/macvim
+# cask 'obs' # https://obsproject.com/
 # cast 'phantomjs'
 cask 'prince' # https://www.princexml.com/
 cask 'postico' # https://eggerapps.at/postico/
