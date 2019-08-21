@@ -123,9 +123,9 @@ case $OSTYPE in
     export LANG=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
 
-    if ! dpkg -l ubuntu-desktop &> /dev/null; then # Only set this env var on Ubuntu Server
-      export RAILS_ENV=production
-    fi
+    # if ! dpkg -l ubuntu-desktop &> /dev/null; then # Only set this env var on Ubuntu Server
+    #   export RAILS_ENV=production
+    # fi
     ;;
   darwin*)
     export CLICOLOR='auto'
