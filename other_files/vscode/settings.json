@@ -7,6 +7,7 @@
   "editor.renderFinalNewline": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -31,6 +32,7 @@
   "gitlens.views.repositories.location": "gitlens",
   "gitlens.views.search.location": "gitlens",
   "html.format.endWithNewline": true,
+  "liveServer.settings.donotShowInfoMsg": true,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
@@ -39,11 +41,14 @@
   "sync.gist": "a867a5f65c2f289539655a65eff24657",
   "sync.quietSync": true,
   "sync.removeExtensions": false,
+  "terminal.external.osxExec": "iTerm 2.app",
   "terminal.integrated.fontSize": 15,
+  "vsicons.dontShowNewVersionMessage": true,
   "window.restoreWindows": "none",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "sync.forceUpload": true
 }
