@@ -298,6 +298,8 @@ function npmlsg() {
   npm ls -g --depth=0 "$@" 2>/dev/null
 }
 
+alias node_modules_folder_sizes='find . -name "node_modules" -type d -prune -print | xargs du -chs'
+
 case $OSTYPE in
   darwin*)
     function rm() {
