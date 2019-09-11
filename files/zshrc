@@ -377,8 +377,8 @@ hl() {
     cp ~/.dotfiles/other_files/highlight/themes/lucascaton.theme $theme_folder
   fi
 
-  highlight -O rtf $1 --font "Roboto Mono for Powerline" --font-size 48 \
-    --src-lang ruby --style lucascaton # | pbcopy
+  highlight -O rtf $1 --font "Hack Regular Nerd Font Complete" --font-size 48 \
+    --src-lang html --style lucascaton # | pbcopy
 }
 
 docker-clear() {
