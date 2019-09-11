@@ -11,7 +11,7 @@ else
 
   POWERLEVEL9K_MODE="nerdfont-complete"
 
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir rvm custom_rails vcs custom_rspec)
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir custom_ruby custom_rails vcs custom_rspec)
   POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 
   POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -24,7 +24,8 @@ else
   POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="╭"
   POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="╰\uF460 "
 
-  POWERLEVEL9K_RVM_BACKGROUND='red'
+  POWERLEVEL9K_CUSTOM_RUBY_BACKGROUND="red"
+  POWERLEVEL9K_CUSTOM_RUBY_FOREGROUND="black"
 
   POWERLEVEL9K_CUSTOM_RAILS_BACKGROUND="red"
   POWERLEVEL9K_CUSTOM_RAILS_FOREGROUND="black"
@@ -34,6 +35,8 @@ else
 fi
 
 set_powerlevel9k_custom_env_vars() {
+  POWERLEVEL9K_CUSTOM_RUBY="echo -n '' `ruby --version | sed -E 's/ruby (.+)p.+/\1/g'`"
+
   if [ -f Gemfile.lock ]; then
     POWERLEVEL9K_CUSTOM_RAILS="echo -n '' `cat Gemfile.lock | grep -E ' +rails \([0-9]+' | \
       sed 's/ *rails (\(.*\))/\1/'`"
@@ -133,15 +136,16 @@ case $OSTYPE in
     ;;
 esac
 
-# RVM
-export PATH="$PATH:$HOME/.rvm/bin:/usr/local/rvm/bin"
+# asdf (multiple runtime versions manager) - https://asdf-vm.com/
+case $OSTYPE in
+  darwin*)
+    . /usr/local/opt/asdf/asdf.sh
+    . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+    ;;
+esac
 
 # VS Code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]]     && source "$HOME/.rvm/scripts/rvm"
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 
 # Docker
 export DOCKER_BUILDKIT=1
