@@ -22,7 +22,7 @@ brew 'highlight'
 brew 'imagemagick'
 brew 'imageoptim-cli' # https://github.com/JamieMason/ImageOptim-CLI
 brew 'mysql'
-brew 'node'
+brew 'node@10'
 brew 'openssl'
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
