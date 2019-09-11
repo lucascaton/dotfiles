@@ -7,6 +7,7 @@ tap 'homebrew/services'
 tap 'homebrew/cask'
 tap 'heroku/brew'
 
+brew 'asdf'
 brew 'awscli'
 brew 'ccat'
 brew 'colordiff'
