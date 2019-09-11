@@ -187,11 +187,11 @@ fi
 
 # Ruby / Rails
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
-  alias rs='rails s'
-  alias rc='rails c'
-  alias rg='rails g'
-  alias migrate='rake db:migrate && rake db:test:prepare'
-  alias assets='rake assets:clean assets:precompile'
+  alias rs='bin/rails s'
+  alias rc='bin/rails c'
+  alias rg='bin/rails g'
+  alias migrate='bin/rails db:migrate && bin/rails db:test:prepare'
+  alias assets='bin/rails assets:clean assets:precompile'
   alias rspec='bundle exec rspec'
   alias cap='bundle exec cap' # Capistrano
   alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
