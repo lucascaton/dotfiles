@@ -40,7 +40,9 @@ cask_args appdir: '/Applications'
 cask 'aws-vault'
 cask 'chromedriver' # http://chromedriver.chromium.org/
 cask 'docker' # https://www.docker.com/
+# cask 'hyper' # https://hyper.is/
 cask 'insomnia' # https://insomnia.rest/
+cask 'iterm2' # https://iterm2.com/
 # cask 'keybase' # https://keybase.io/
 # cask 'mactex' # https://www.tug.org/mactex/ (Latex)
 cask 'macvim' # https://github.com/macvim-dev/macvim
