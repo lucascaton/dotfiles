@@ -5,10 +5,15 @@
   "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
   "editor.renderFinalNewline": false,
+  "editor.rulers": [
+    80,
+    100
+  ],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "emmet.includeLanguages": {
+    "erb": "html",
     "javascript": "javascriptreact"
   },
   "explorer.autoReveal": false,
@@ -38,6 +43,7 @@
   "ruby.intellisense": "rubyLocate",
   "search.showLineNumbers": true,
   "sync.autoUpload": true,
+  "sync.forceUpload": true,
   "sync.gist": "a867a5f65c2f289539655a65eff24657",
   "sync.quietSync": true,
   "sync.removeExtensions": false,
@@ -49,6 +55,5 @@
   "workbench.activityBar.visible": true,
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile",
-  "sync.forceUpload": true
+  "workbench.startupEditor": "newUntitledFile"
 }

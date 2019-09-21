@@ -66,6 +66,15 @@
     "description": "Heredoc"
   },
 
+  "hef": {
+    "prefix": "hef",
+    "body": [
+      "has_enumeration_for :${1:enum}, with: ${2:class}, required: true,",
+      "  create_helpers: true, create_scopes: true",
+    ],
+    "description": "has_enumeration_for"
+  },
+
   // RSpec
 
   "spec": {
