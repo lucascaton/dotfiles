@@ -187,6 +187,7 @@ fi
 
 # Ruby / Rails
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
+  alias be='bundle exec'
   alias rs='bin/rails s'
   alias rc='bin/rails c'
   alias rg='bin/rails g'
@@ -199,6 +200,7 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias massa='bundle exec massa'
   alias sidekiq='bundle exec sidekiq'
   alias cucumber='bundle exec cucumber'
+  alias rubocop='bundle exec rubocop'
   alias fs='foreman start -f Procfile.dev'
   alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
 fi
