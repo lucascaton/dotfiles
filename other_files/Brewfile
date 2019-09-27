@@ -22,7 +22,7 @@ brew 'highlight'
 brew 'imagemagick'
 brew 'imageoptim-cli' # https://github.com/JamieMason/ImageOptim-CLI
 brew 'mysql'
-brew 'node@10'
+# brew 'node' # Use asdf instead
 brew 'openssl'
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
@@ -32,7 +32,7 @@ brew 's3cmd'
 brew 'the_silver_searcher'
 brew 'tree'
 brew 'wget'
-brew 'yarn'
+brew 'yarn', args: %w[without-node]
 brew 'youtube-dl'
 
 cask_args appdir: '/Applications'

@@ -62,9 +62,6 @@ fi
 
 ######################################### General Settings #########################################
 
-# Homebrew
-export PATH="$PATH:/usr/local/sbin"
-
 # The following needs to run before oh-my-zsh
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -117,6 +114,21 @@ case $OSTYPE in
     ;;
 esac
 
+# asdf (multiple runtime versions manager) - https://asdf-vm.com/
+case $OSTYPE in
+  darwin*)
+    . /usr/local/opt/asdf/asdf.sh
+    . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+    ;;
+esac
+
+case $OSTYPE in
+  darwin*)
+    export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+    export PATH="$PATH:/usr/local/sbin" # Homebrew
+    ;;
+esac
+
 # PostgreSQL
 export PGHOST=localhost
 
@@ -135,17 +147,6 @@ case $OSTYPE in
     export ARCHFLAGS='-arch x86_64' # Compilation flags
     ;;
 esac
-
-# asdf (multiple runtime versions manager) - https://asdf-vm.com/
-case $OSTYPE in
-  darwin*)
-    . /usr/local/opt/asdf/asdf.sh
-    . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
-    ;;
-esac
-
-# VS Code
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Docker
 export DOCKER_BUILDKIT=1
