@@ -201,7 +201,6 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias rspec='bundle exec rspec'
   alias cap='bundle exec cap' # Capistrano
   alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
-  alias ms='bundle exec middleman server --verbose'
   alias massa='bundle exec massa'
   alias sidekiq='bundle exec sidekiq'
   alias cucumber='bundle exec cucumber'
