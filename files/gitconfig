@@ -19,7 +19,7 @@
 [rerere]
   enabled = 1
 [push]
-  default = simple
+  default = current
 [color]
   interactive = true
 [init]
