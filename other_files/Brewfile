@@ -19,6 +19,7 @@ brew 'git'
 brew 'gpg'
 brew 'heroku'
 brew 'highlight'
+brew 'hivemind' # https://github.com/DarthSim/hivemind
 brew 'imagemagick'
 brew 'imageoptim-cli' # https://github.com/JamieMason/ImageOptim-CLI
 brew 'mysql'
