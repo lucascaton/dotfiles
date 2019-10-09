@@ -344,7 +344,6 @@ aftermerge() {
 
   git checkout ${1-master}
   git pull --rebase
-  git remote prune origin
   git branch -d $branch
 
   clear

@@ -20,6 +20,8 @@
   enabled = 1
 [push]
   default = current
+[fetch]
+  prune = true
 [color]
   interactive = true
 [init]
