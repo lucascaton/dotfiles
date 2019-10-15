@@ -47,15 +47,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then brew bundle --file=~/.dotfiles/other_files
 
 # ------------------------------------------------------------------------------
 
-title "Installing Atom packages"
-
-if [ -d ~/.atom ]; then
-  apm install --packages-file ~/.dotfiles/other_files/atom/default/package.list;
-  apm install --packages-file ~/.dotfiles/other_files/atom/course/package.list;
-fi
-
-# ------------------------------------------------------------------------------
-
 title "Installing ZSH plugins"
 
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
