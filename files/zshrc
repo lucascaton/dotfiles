@@ -221,6 +221,7 @@ js() {
 
 # Others aliases
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
 
 colorflag="-G"
 alias ls="command ls ${colorflag}"
