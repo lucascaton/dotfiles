@@ -165,8 +165,6 @@ fi
 
 ############################################ Aliases #############################################
 
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
   # Git
   alias g='git status'
@@ -222,6 +220,8 @@ js() {
 }
 
 # Others aliases
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias l="ls -lhF ${colorflag}" # All files, in long format
