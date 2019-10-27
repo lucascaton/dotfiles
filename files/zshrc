@@ -130,6 +130,7 @@ case $OSTYPE in
   darwin*)
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
     export PATH="$PATH:/usr/local/sbin" # Homebrew
+    export PATH="$PATH:$(yarn global bin)" # Yarn global modules
     ;;
 esac
 
