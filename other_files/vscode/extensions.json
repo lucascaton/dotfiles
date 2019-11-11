@@ -17,7 +17,7 @@
     },
     "name": "auto-rename-tag",
     "publisher": "formulahendry",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   {
     "metadata": {
@@ -47,7 +47,7 @@
     },
     "name": "code-settings-sync",
     "publisher": "Shan",
-    "version": "3.4.2"
+    "version": "3.4.3"
   },
   {
     "metadata": {
@@ -57,7 +57,7 @@
     },
     "name": "debugger-for-chrome",
     "publisher": "msjsdiag",
-    "version": "4.11.7"
+    "version": "4.12.1"
   },
   {
     "metadata": {
@@ -67,7 +67,7 @@
     },
     "name": "es7-react-js-snippets",
     "publisher": "dsznajder",
-    "version": "2.4.3"
+    "version": "2.4.4"
   },
   {
     "metadata": {
@@ -97,7 +97,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "10.0.0"
+    "version": "10.1.2"
   },
   {
     "metadata": {
@@ -127,7 +127,7 @@
     },
     "name": "js-jsx-snippets",
     "publisher": "skyran",
-    "version": "0.8.0"
+    "version": "10.0.0"
   },
   {
     "metadata": {
@@ -147,7 +147,7 @@
     },
     "name": "Material-theme",
     "publisher": "zhuangtongfa",
-    "version": "2.27.2"
+    "version": "2.28.3"
   },
   {
     "metadata": {
@@ -157,7 +157,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "2.2.2"
+    "version": "3.2.0"
   },
   {
     "metadata": {
@@ -237,7 +237,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "0.8.1"
+    "version": "0.8.2"
   },
   {
     "metadata": {
@@ -257,7 +257,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "9.3.0"
+    "version": "9.5.0"
   },
   {
     "metadata": {
@@ -267,7 +267,7 @@
     },
     "name": "vscode-markdownlint",
     "publisher": "DavidAnson",
-    "version": "0.30.2"
+    "version": "0.31.2"
   },
   {
     "metadata": {
@@ -287,7 +287,7 @@
     },
     "name": "vscode-sort-json",
     "publisher": "richie5um2",
-    "version": "1.14.0"
+    "version": "1.18.0"
   },
   {
     "metadata": {

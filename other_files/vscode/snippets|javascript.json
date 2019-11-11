@@ -24,7 +24,7 @@
   "ready": {
     "prefix": "ready",
     "body": [
-      "document.addEventListener('DOMContentLoaded', () => {"
+      "document.addEventListener('DOMContentLoaded', () => {",
       "  $1",
       "});",
     ],

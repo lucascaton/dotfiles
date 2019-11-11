@@ -15,6 +15,8 @@
   "enum": {
     "prefix": "enum",
     "body": [
+      "# frozen_string_literal: true",
+      "",
       "class ${1:EnumName} < EnumerateIt::Base",
       "  associate_values(",
       "    :${2:first_attribute},${0}",
@@ -30,6 +32,14 @@
       "#!/usr/bin/env ruby",
     ],
     "description": "Shebang"
+  },
+
+  "fsl": {
+    "prefix": "fsl",
+    "body": [
+      "# frozen_string_literal: true",
+    ],
+    "description": "frozen_string_literal magic comment"
   },
 
   "pry": {

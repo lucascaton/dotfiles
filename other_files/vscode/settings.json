@@ -28,6 +28,7 @@
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.path": "/usr/local/bin/git",
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
@@ -41,6 +42,7 @@
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
+  "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
   "sync.autoUpload": true,
   "sync.forceUpload": true,
