@@ -31,6 +31,3 @@ npm-debug.log
 # Config files created by text editors (per project)
 /.vimrc
 /.vscode
-
-# Config files per project
-/.tool-versions
