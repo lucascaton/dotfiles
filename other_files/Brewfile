@@ -38,7 +38,7 @@ brew 'youtube-dl'
 
 cask_args appdir: '/Applications'
 
-cask 'aws-vault'
+cask 'aws-vault' # https://github.com/99designs/aws-vault
 cask 'chromedriver' # http://chromedriver.chromium.org/
 cask 'docker' # https://www.docker.com/
 # cask 'hyper' # https://hyper.is/
@@ -49,7 +49,7 @@ cask 'iterm2' # https://iterm2.com/
 cask 'macvim' # https://github.com/macvim-dev/macvim
 # cask 'obs' # https://obsproject.com/
 # cast 'phantomjs'
-cask 'prince' # https://www.princexml.com/
+# cask 'prince' # https://www.princexml.com/
 cask 'postico' # https://eggerapps.at/postico/
 cask 'sequel-pro' # https://www.sequelpro.com/
 cask 'spectacle' # https://www.spectacleapp.com/
