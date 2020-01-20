@@ -38,6 +38,7 @@ brew 'youtube-dl'
 
 cask_args appdir: '/Applications'
 
+# cask 'android-platform-tools' # https://developer.android.com/studio/releases/platform-tools.html
 # cask 'android-studio' # https://developer.android.com/studio
 cask 'aws-vault' # https://github.com/99designs/aws-vault
 cask 'chromedriver' # http://chromedriver.chromium.org/
