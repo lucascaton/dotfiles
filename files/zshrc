@@ -222,9 +222,13 @@ js() {
   fi
 }
 
-# Others aliases
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
+# macOS aliases
+case $OSTYPE in
+  darwin*)
+    alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+    alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
+    ;;
+esac
 
 colorflag="-G"
 alias ls="command ls ${colorflag}"
