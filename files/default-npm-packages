@@ -2,4 +2,5 @@ yarn
 create-react-app
 react-native
 eslint
+prettier
 ios-deploy
