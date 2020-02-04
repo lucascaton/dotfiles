@@ -1,61 +1,64 @@
-{
-  "editor.detectIndentation": false,
-  "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
-  "editor.fontSize": 15,
-  "editor.insertSpaces": true,
-  "editor.minimap.enabled": false,
-  "editor.renderFinalNewline": false,
-  "editor.rulers": [
-    80,
-    100
-  ],
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "erb": "html",
-    "javascript": "javascriptreact"
-  },
-  "explorer.autoReveal": false,
-  "files.associations": {
-    "zshrc": "shellscript"
-  },
-  "files.exclude": {
-    "**/.routes/routes.rb": true,
-    "**/.routes/routes.txt": true
-  },
-  "files.insertFinalNewline": true,
-  "files.simpleDialog.enable": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "git.path": "/usr/local/bin/git",
-  "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
-  },
-  "gitlens.views.compare.location": "gitlens",
-  "gitlens.views.fileHistory.location": "gitlens",
-  "gitlens.views.lineHistory.location": "gitlens",
-  "gitlens.views.repositories.location": "gitlens",
-  "gitlens.views.search.location": "gitlens",
-  "html.format.endWithNewline": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.format": "rubocop",
-  "ruby.intellisense": "rubyLocate",
-  "search.collapseResults": "alwaysCollapse",
-  "search.showLineNumbers": true,
-  "sync.autoUpload": true,
-  "sync.forceUpload": true,
-  "sync.gist": "a867a5f65c2f289539655a65eff24657",
-  "sync.quietSync": true,
-  "sync.removeExtensions": false,
-  "terminal.external.osxExec": "iTerm 2.app",
-  "terminal.integrated.fontSize": 15,
-  "vsicons.dontShowNewVersionMessage": true,
-  "window.restoreWindows": "none",
-  "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true,
-  "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile"
-}
+  {
+    "editor.cursorBlinking": "smooth",
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
+    "editor.fontSize": 15,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.renderFinalNewline": false,
+    "editor.rulers": [
+      80,
+      100
+    ],
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+      "erb": "html",
+      "javascript": "javascriptreact"
+    },
+    "explorer.autoReveal": false,
+    "files.associations": {
+      "zshrc": "shellscript"
+    },
+    "files.exclude": {
+      "**/.routes/routes.rb": true,
+      "**/.routes/routes.txt": true
+    },
+    "files.insertFinalNewline": true,
+    "files.simpleDialog.enable": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.path": "/usr/local/bin/git",
+    "gitlens.advanced.messages": {
+      "suppressLineUncommittedWarning": true
+    },
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "html.format.endWithNewline": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.format": "rubocop",
+    "ruby.intellisense": "rubyLocate",
+    "search.collapseResults": "alwaysCollapse",
+    "search.location": "sidebar",
+    "search.showLineNumbers": true,
+    "sync.autoUpload": true,
+    "sync.forceUpload": true,
+    "sync.gist": "a867a5f65c2f289539655a65eff24657",
+    "sync.quietSync": true,
+    "sync.removeExtensions": false,
+    "terminal.external.osxExec": "iTerm 2.app",
+    "terminal.integrated.fontSize": 15,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.restoreWindows": "none",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile"
+  }
