@@ -3,6 +3,7 @@ if ENV['ITERM_PROFILE'] != 'Course'
   require 'irb/ext/save-history'
 
   IRB.conf[:SAVE_HISTORY] = 100_000
+  IRB.conf[:AUTO_INDENT] = true
 
   begin
     require 'pry'
@@ -10,12 +11,5 @@ if ENV['ITERM_PROFILE'] != 'Course'
     exit
   rescue LoadError => e
     warn "### Unable to load pry (#{e})"
-  end
-
-  begin
-    require 'awesome_print'
-    AwesomePrint.irb!
-  rescue LoadError => e
-    warn "### Unable to load awesome_print (#{e})"
   end
 end
