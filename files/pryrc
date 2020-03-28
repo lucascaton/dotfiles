@@ -1,8 +1,6 @@
 rails = File.join(Dir.getwd, 'config', 'environment.rb')
 
-if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
-  require rails
-
+if File.exist?(rails)
   def fb
     puts 'Loading FactoryBot...'
     require 'factory_bot'
