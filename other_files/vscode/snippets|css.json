@@ -22,5 +22,17 @@
       "}"
     ],
     "description": "CSS for a tag"
+  },
+
+  "reset": {
+    "prefix": "reset",
+    "body": [
+      "* {",
+      "  margin: 0;",
+      "  padding: 0;",
+      "  box-sizing: border-box;",
+      "}"
+    ],
+    "description": "Reset CSS"
   }
 }
