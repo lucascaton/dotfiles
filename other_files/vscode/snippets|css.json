@@ -31,8 +31,30 @@
       "  margin: 0;",
       "  padding: 0;",
       "  box-sizing: border-box;",
-      "}"
+      "}",
+      "",
+      "/* html[data-theme=dark] {",
+      "  --color-gray-darker: #262626;",
+      "  --color-white-bis: #fafafa;",
+      "} */",
+      "",
+      "body {",
+      "  font-family: -apple-system, 'Helvetica Neue', sans-serif;",
+      "  -webkit-font-smoothing: antialiased;",
+      "  -moz-osx-font-smoothing: grayscale;",
+      "",
+      "  /* background-color: var(--color-gray-darker);",
+      "  color: var(--color-white-bis); */",
+      "}",
     ],
     "description": "Reset CSS"
-  }
+  },
+
+  "shadow": {
+    "prefix": "shadow",
+    "body": [
+      "box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);",
+    ],
+    "description": "Add default box-shadow (copied from Tailwind CSS)"
+  },
 }

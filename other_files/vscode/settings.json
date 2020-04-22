@@ -1,4 +1,14 @@
 {
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
   "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
@@ -17,11 +27,17 @@
     "erb": "html",
     "javascript": "javascriptreact"
   },
+  "eslint.alwaysShowStatus": true,
   "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 0,
   "files.associations": {
+    "*.map": "json",
+    "*.tsbuildinfo": "json",
+    ". prettierrc": "json",
     "Procfile": "yaml",
     "Procfile.dev": "yaml",
+    "config": "shellscript",
     "irbrc": "ruby",
     "pryrc": "ruby",
     "zshrc": "shellscript"

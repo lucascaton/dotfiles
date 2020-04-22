@@ -7,7 +7,7 @@
     },
     "name": "auto-close-tag",
     "publisher": "formulahendry",
-    "version": "0.5.6"
+    "version": "0.5.7"
   },
   {
     "metadata": {
@@ -17,7 +17,7 @@
     },
     "name": "auto-rename-tag",
     "publisher": "formulahendry",
-    "version": "0.1.1"
+    "version": "0.1.2"
   },
   {
     "metadata": {
@@ -137,7 +137,7 @@
     },
     "name": "highlight-matching-tag",
     "publisher": "vincaslt",
-    "version": "0.9.6"
+    "version": "0.9.9"
   },
   {
     "metadata": {
@@ -167,7 +167,17 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.2.4"
+    "version": "3.3.1"
+  },
+  {
+    "metadata": {
+      "id": "92f9fddf-9fd4-42db-8abd-825cd7838d14",
+      "publisherId": "philnash.ngrok-for-vscode",
+      "publisherDisplayName": "philnash"
+    },
+    "name": "ngrok-for-vscode",
+    "publisher": "philnash",
+    "version": "1.2.0"
   },
   {
     "metadata": {
@@ -181,13 +191,23 @@
   },
   {
     "metadata": {
+      "id": "80def04d-6d01-495b-9d59-4ad19408872f",
+      "publisherId": "csstools.postcss",
+      "publisherDisplayName": "csstools"
+    },
+    "name": "postcss",
+    "publisher": "csstools",
+    "version": "1.0.3"
+  },
+  {
+    "metadata": {
       "id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
       "publisherId": "esbenp.prettier-vscode",
       "publisherDisplayName": "esbenp"
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "3.20.0"
+    "version": "4.4.0"
   },
   {
     "metadata": {
@@ -261,13 +281,23 @@
   },
   {
     "metadata": {
+      "id": "4a23294b-fd16-4c51-9759-da9936474cf8",
+      "publisherId": "mauve.terraform",
+      "publisherDisplayName": "mauve"
+    },
+    "name": "terraform",
+    "publisher": "mauve",
+    "version": "1.4.0"
+  },
+  {
+    "metadata": {
       "id": "0479fc1c-3d67-49f9-b087-fb9069afe48f",
       "publisherId": "ms-azuretools.vscode-docker",
       "publisherDisplayName": "ms-azuretools"
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   {
     "metadata": {
@@ -277,7 +307,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.1.1"
+    "version": "2.1.5"
   },
   {
     "metadata": {
@@ -287,7 +317,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "10.0.0"
+    "version": "10.1.1"
   },
   {
     "metadata": {
