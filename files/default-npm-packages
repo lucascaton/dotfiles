@@ -1,6 +1,7 @@
 yarn
-create-react-app
-react-native
+typescript
+
 eslint
 prettier
-ios-deploy
+
+react-native
