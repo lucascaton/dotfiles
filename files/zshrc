@@ -208,6 +208,7 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias rubocop='bundle exec rubocop'
   alias fs='foreman start'
   alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
+  alias us='bundle exec unicorn_rails -c config/unicorn.rb'
 fi
 
 # Usage example: `js 2` to load only last 2 posts
