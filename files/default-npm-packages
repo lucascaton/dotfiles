@@ -5,3 +5,5 @@ eslint
 prettier
 
 react-native
+
+netlify-cli
