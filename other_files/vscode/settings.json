@@ -1,4 +1,8 @@
 {
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -8,6 +12,12 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
   },
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
@@ -35,6 +45,9 @@
     "*.map": "json",
     "*.tsbuildinfo": "json",
     ". prettierrc": "json",
+    ".env": "shellscript",
+    ".env.production": "shellscript",
+    "CODEOWNERS": "ignore",
     "Procfile": "yaml",
     "Procfile.dev": "yaml",
     "config": "shellscript",
@@ -54,14 +67,14 @@
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
-  "gitlens.currentLine.scrollable": false,
   "gitlens.views.compare.location": "gitlens",
   "gitlens.views.fileHistory.location": "gitlens",
   "gitlens.views.lineHistory.location": "gitlens",
   "gitlens.views.repositories.location": "gitlens",
   "gitlens.views.search.location": "gitlens",
-  "html.format.endWithNewline": true,
   "liveServer.settings.donotShowInfoMsg": true,
+  "prettier.packageManager": "yarn",
+  "prettier.printWidth": 100,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
