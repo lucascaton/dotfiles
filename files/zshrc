@@ -397,11 +397,14 @@ hl() {
 }
 
 docker-clear() {
-  docker container prune --force
+  echo "\n>> Before:"
+  docker system df
 
-  if [ "$(docker images -f 'dangling=true' -q | wc -l)" -gt "0" ]; then
-    docker image rm $(docker images -f "dangling=true" -q)
-  fi
+  echo "\n>> Pruning:"
+  docker system prune --all --force
+
+  echo "\n>> After:\n"
+  docker system df
 }
 
 ############################################## PS1 ###############################################
