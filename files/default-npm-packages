@@ -4,6 +4,6 @@ typescript
 eslint
 prettier
 
-react-native
+# react-native
 
 netlify-cli
