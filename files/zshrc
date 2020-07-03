@@ -182,7 +182,7 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias ga='git add'
   alias gaa='git add --all'
   alias gr='git rm'
-  alias gp='git pull --rebase --prune'
+  alias gp='git pull origin $(git branch --show-current) --rebase --prune'
   alias gb='git branch'
   alias gba='git branch -a'
   alias gbd='git branch -d'
@@ -353,7 +353,7 @@ esac
 
 # Usage: aftermerge <branch> (default: master)
 aftermerge() {
-  branch=`git rev-parse --abbrev-ref HEAD`
+  branch=$(git branch --show-current)
 
   git checkout ${1-master}
   git pull --rebase
