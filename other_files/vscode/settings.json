@@ -13,6 +13,11 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same"
+  },
   "[typescript]": {
     "editor.formatOnSave": true
   },
@@ -25,6 +30,7 @@
   "editor.fontSize": 15,
   "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
+  "editor.renameOnType": true,
   "editor.renderFinalNewline": false,
   "editor.rulers": [
     80,
@@ -74,10 +80,11 @@
   "gitlens.views.search.location": "gitlens",
   "liveServer.settings.donotShowInfoMsg": true,
   "prettier.packageManager": "yarn",
-  "prettier.printWidth": 100,
+  "prettier.printWidth": 120,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
+  "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
   "sync.autoUpload": true,
@@ -92,6 +99,7 @@
   "window.restoreWindows": "none",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile"

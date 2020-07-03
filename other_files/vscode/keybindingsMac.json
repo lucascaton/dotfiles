@@ -3,5 +3,10 @@
   {
     "key": "shift+cmd+0",
     "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "alt+w",
+    "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation",
+    "when": "editorHasSelection && editorTextFocus"
   }
 ]

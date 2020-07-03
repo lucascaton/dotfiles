@@ -85,6 +85,14 @@
     "description": "has_enumeration_for"
   },
 
+  "hl": {
+    "prefix": "hl",
+    "body": [
+      "# ------------------------------------------------------------------------------",
+    ],
+    "description": "Comment with horizontal line"
+  },
+
   // RSpec
 
   "spec": {
@@ -153,7 +161,7 @@
     "description": "RSpec's before inline block"
   },
 
-// Rails
+  // Rails
 
   "defall": {
     "prefix": "defall",
@@ -213,5 +221,5 @@
       "end"
     ],
     "description": "Controller actions"
-  }
+  },
 }
