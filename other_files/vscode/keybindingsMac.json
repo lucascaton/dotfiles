@@ -8,5 +8,15 @@
     "key": "alt+w",
     "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation",
     "when": "editorHasSelection && editorTextFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "extension.jumpy-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "Escape",
+    "command": "extension.jumpy-exit",
+    "when": "editorTextFocus && jumpy.isJumpyMode"
   }
 ]

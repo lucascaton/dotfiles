@@ -15,7 +15,7 @@
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
+    "editor.wordWrapColumn": 100,
     "editor.wrappingIndent": "same"
   },
   "[typescript]": {
@@ -92,6 +92,7 @@
   "sync.gist": "a867a5f65c2f289539655a65eff24657",
   "sync.quietSync": true,
   "sync.removeExtensions": false,
+  "tabnine.experimentalAutoImports": true,
   "terminal.external.osxExec": "iTerm 2.app",
   "terminal.integrated.fontSize": 15,
   "vsicons.dontShowNewVersionMessage": true,

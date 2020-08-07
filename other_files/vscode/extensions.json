@@ -1,6 +1,16 @@
 [
   {
     "metadata": {
+      "id": "2cbad5ee-b4ab-4de8-a1c7-77fede846155",
+      "publisherId": "patbenatar.advanced-new-file",
+      "publisherDisplayName": "patbenatar"
+    },
+    "name": "advanced-new-file",
+    "publisher": "patbenatar",
+    "version": "1.2.2"
+  },
+  {
+    "metadata": {
       "id": "d3836729-9cc1-42c1-b2af-d50071f57d29",
       "publisherId": "formulahendry.auto-close-tag",
       "publisherDisplayName": "formulahendry"
@@ -11,13 +21,23 @@
   },
   {
     "metadata": {
+      "id": "b689fcc8-d494-4dbf-a228-2c694a578afc",
+      "publisherId": "alefragnani.Bookmarks",
+      "publisherDisplayName": "alefragnani"
+    },
+    "name": "Bookmarks",
+    "publisher": "alefragnani",
+    "version": "11.3.1"
+  },
+  {
+    "metadata": {
       "id": "5a6e2b21-1d61-4acd-b31b-907f9c23f18a",
       "publisherId": "CoenraadS.bracket-pair-colorizer-2",
       "publisherDisplayName": "CoenraadS"
     },
     "name": "bracket-pair-colorizer-2",
     "publisher": "CoenraadS",
-    "version": "0.1.4"
+    "version": "0.2.0"
   },
   {
     "metadata": {
@@ -27,7 +47,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.10.0"
+    "version": "0.11.0"
   },
   {
     "metadata": {
@@ -38,6 +58,16 @@
     "name": "code-settings-sync",
     "publisher": "Shan",
     "version": "3.4.3"
+  },
+  {
+    "metadata": {
+      "id": "121396ad-85a1-45ec-9fd1-d95028a847f5",
+      "publisherId": "naumovs.color-highlight",
+      "publisherDisplayName": "naumovs"
+    },
+    "name": "color-highlight",
+    "publisher": "naumovs",
+    "version": "2.3.0"
   },
   {
     "metadata": {
@@ -57,7 +87,7 @@
     },
     "name": "debugger-for-chrome",
     "publisher": "msjsdiag",
-    "version": "4.12.8"
+    "version": "4.12.9"
   },
   {
     "metadata": {
@@ -67,7 +97,7 @@
     },
     "name": "es7-react-js-snippets",
     "publisher": "dsznajder",
-    "version": "2.8.0"
+    "version": "2.8.2"
   },
   {
     "metadata": {
@@ -77,7 +107,7 @@
     },
     "name": "gc-excelviewer",
     "publisher": "GrapeCity",
-    "version": "3.0.37"
+    "version": "3.0.39"
   },
   {
     "metadata": {
@@ -97,7 +127,7 @@
     },
     "name": "githistory",
     "publisher": "donjayamanne",
-    "version": "0.6.5"
+    "version": "0.6.9"
   },
   {
     "metadata": {
@@ -167,7 +197,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.8.2"
+    "version": "3.8.5"
   },
   {
     "metadata": {
@@ -181,23 +211,13 @@
   },
   {
     "metadata": {
-      "id": "d80b9a94-f4a6-4e39-bc42-62212e365682",
-      "publisherId": "pnp.polacode",
-      "publisherDisplayName": "pnp"
-    },
-    "name": "polacode",
-    "publisher": "pnp",
-    "version": "0.3.4"
-  },
-  {
-    "metadata": {
       "id": "80def04d-6d01-495b-9d59-4ad19408872f",
       "publisherId": "csstools.postcss",
       "publisherDisplayName": "csstools"
     },
     "name": "postcss",
     "publisher": "csstools",
-    "version": "1.0.4"
+    "version": "1.0.7"
   },
   {
     "metadata": {
@@ -281,6 +301,16 @@
   },
   {
     "metadata": {
+      "id": "75da638c-c45a-44ea-aa3b-8570a3559810",
+      "publisherId": "TabNine.tabnine-vscode",
+      "publisherDisplayName": "TabNine"
+    },
+    "name": "tabnine-vscode",
+    "publisher": "TabNine",
+    "version": "2.9.1"
+  },
+  {
+    "metadata": {
       "id": "e79fd228-c27f-423b-a8fc-b006fa99ed64",
       "publisherId": "be5invis.toml",
       "publisherDisplayName": "be5invis"
@@ -297,7 +327,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.3.1"
+    "version": "1.4.1"
   },
   {
     "metadata": {
@@ -307,7 +337,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.1.5"
+    "version": "2.1.8"
   },
   {
     "metadata": {
@@ -317,7 +347,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "10.1.1"
+    "version": "10.2.0"
   },
   {
     "metadata": {
@@ -331,13 +361,23 @@
   },
   {
     "metadata": {
+      "id": "3c6d2422-afcc-482d-a751-08c6ed38ce19",
+      "publisherId": "wmaurer.vscode-jumpy",
+      "publisherDisplayName": "wmaurer"
+    },
+    "name": "vscode-jumpy",
+    "publisher": "wmaurer",
+    "version": "0.3.1"
+  },
+  {
+    "metadata": {
       "id": "ae9e3eb0-3357-4cc0-90ee-598d2d384757",
       "publisherId": "eg2.vscode-npm-script",
       "publisherDisplayName": "eg2"
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.12"
+    "version": "0.3.13"
   },
   {
     "metadata": {
@@ -368,5 +408,15 @@
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
     "version": "0.4.1"
+  },
+  {
+    "metadata": {
+      "id": "5a6dc0d5-dc02-4121-8e24-cad33a2ff0af",
+      "publisherId": "ms-vsliveshare.vsliveshare",
+      "publisherDisplayName": "ms-vsliveshare"
+    },
+    "name": "vsliveshare",
+    "publisher": "ms-vsliveshare",
+    "version": "1.0.2478"
   }
 ]
