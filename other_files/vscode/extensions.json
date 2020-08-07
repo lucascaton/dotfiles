@@ -11,16 +11,6 @@
   },
   {
     "metadata": {
-      "id": "d3836729-9cc1-42c1-b2af-d50071f57d29",
-      "publisherId": "formulahendry.auto-close-tag",
-      "publisherDisplayName": "formulahendry"
-    },
-    "name": "auto-close-tag",
-    "publisher": "formulahendry",
-    "version": "0.5.8"
-  },
-  {
-    "metadata": {
       "id": "b689fcc8-d494-4dbf-a228-2c694a578afc",
       "publisherId": "alefragnani.Bookmarks",
       "publisherDisplayName": "alefragnani"
@@ -361,16 +351,6 @@
   },
   {
     "metadata": {
-      "id": "3c6d2422-afcc-482d-a751-08c6ed38ce19",
-      "publisherId": "wmaurer.vscode-jumpy",
-      "publisherDisplayName": "wmaurer"
-    },
-    "name": "vscode-jumpy",
-    "publisher": "wmaurer",
-    "version": "0.3.1"
-  },
-  {
-    "metadata": {
       "id": "ae9e3eb0-3357-4cc0-90ee-598d2d384757",
       "publisherId": "eg2.vscode-npm-script",
       "publisherDisplayName": "eg2"
@@ -408,15 +388,5 @@
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
     "version": "0.4.1"
-  },
-  {
-    "metadata": {
-      "id": "5a6dc0d5-dc02-4121-8e24-cad33a2ff0af",
-      "publisherId": "ms-vsliveshare.vsliveshare",
-      "publisherDisplayName": "ms-vsliveshare"
-    },
-    "name": "vsliveshare",
-    "publisher": "ms-vsliveshare",
-    "version": "1.0.2478"
   }
 ]
