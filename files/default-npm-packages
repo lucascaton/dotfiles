@@ -9,5 +9,7 @@ prettier
 netlify-cli
 vercel
 
+http-server
+
 # Similar to `nodemon` but for TypeScript
 ts-node-dev
