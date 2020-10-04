@@ -5,6 +5,14 @@
     "command": "workbench.action.zoomReset"
   },
   {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  {
     "key": "alt+w",
     "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation",
     "when": "editorHasSelection && editorTextFocus"

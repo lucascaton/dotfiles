@@ -8,6 +8,7 @@
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[json]": {
@@ -41,11 +42,17 @@
   "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "erb": "html",
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "postcss": "css"
   },
   "eslint.alwaysShowStatus": true,
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "files.associations": {
     "*.map": "json",
@@ -78,9 +85,11 @@
   "gitlens.views.lineHistory.location": "gitlens",
   "gitlens.views.repositories.location": "gitlens",
   "gitlens.views.search.location": "gitlens",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
   "prettier.packageManager": "yarn",
-  "prettier.printWidth": 120,
+  "prettier.printWidth": 100,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
@@ -93,8 +102,10 @@
   "sync.quietSync": true,
   "sync.removeExtensions": false,
   "tabnine.experimentalAutoImports": true,
+  "tailwindCSS.emmetCompletions": true,
   "terminal.external.osxExec": "iTerm 2.app",
   "terminal.integrated.fontSize": 15,
+  "typescript.suggest.autoImports": true,
   "vsicons.dontShowNewVersionMessage": true,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
