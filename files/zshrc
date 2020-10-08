@@ -351,11 +351,17 @@ case $OSTYPE in
     ;;
 esac
 
-# Usage: aftermerge <branch> (default: master)
+# Usage: aftermerge <branch> (default: main, then master)
 aftermerge() {
   branch=$(git branch --show-current)
 
-  git checkout ${1-master}
+  if git show-ref -q --heads main; then
+    main_branch=main
+  else
+    main_branch=master
+  fi
+
+  git checkout ${1-$main_branch}
   git pull --rebase
   git branch -d $branch
 
