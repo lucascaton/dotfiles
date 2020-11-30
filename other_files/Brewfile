@@ -53,8 +53,8 @@ cask 'macvim' # https://github.com/macvim-dev/macvim
 # cast 'phantomjs'
 # cask 'prince' # https://www.princexml.com/
 cask 'postico' # https://eggerapps.at/postico/
+cask 'rectangle' # https://rectangleapp.com/
 cask 'sequel-pro' # https://www.sequelpro.com/
-cask 'spectacle' # https://www.spectacleapp.com/
 cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
 # cask 'virtualbox'
 # cask 'wkhtmltopdf'
