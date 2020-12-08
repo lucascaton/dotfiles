@@ -158,6 +158,9 @@ esac
 # Docker
 export DOCKER_BUILDKIT=1
 
+# GPG
+export GPG_TTY=$(tty)
+
 ######################################## Personal configs ########################################
 
 if [[ -s $HOME/.personal_configs ]]; then source $HOME/.personal_configs; fi
