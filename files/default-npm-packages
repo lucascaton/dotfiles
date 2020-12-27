@@ -1,14 +1,8 @@
 yarn
 typescript
-
 eslint
 prettier
-
-# react-native
-
-netlify-cli
 vercel
-
 http-server
 
 # Similar to `nodemon` but for TypeScript
