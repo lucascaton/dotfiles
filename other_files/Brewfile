@@ -19,11 +19,8 @@ brew 'git'
 brew 'gpg'
 brew 'heroku'
 brew 'highlight'
-brew 'hivemind' # https://github.com/DarthSim/hivemind
 brew 'imagemagick'
-brew 'imageoptim-cli' # https://github.com/JamieMason/ImageOptim-CLI
-brew 'mysql'
-# brew 'node' # Use asdf instead
+brew 'mysql@5.6'
 brew 'openssl'
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
@@ -33,7 +30,6 @@ brew 's3cmd'
 brew 'the_silver_searcher'
 brew 'tree'
 brew 'wget'
-brew 'yarn', args: %w[without-node]
 brew 'youtube-dl'
 
 cask_args appdir: '/Applications'
@@ -63,20 +59,19 @@ cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
 # │ Mac App Store │
 # └───────────────┘
 
-mas 'Tweetbot 2 for Twitter', id: 557168941
-# mas '1Password 6' # This version is no longer on MAS :(
+mas '1Password', id: 443987910 # version 6
 mas 'Amphetamine', id: 937984704
 mas 'DaisyDisk', id: 411643860
 mas 'Droplr', id: 498672703
 mas 'Evernote', id: 406056744
-# mas 'ForkLift', id: 412448059
-mas 'Gemini 2', id: 1090488118
+mas 'ForkLift', id: 412448059
+# mas 'Gemini 2', id: 1090488118
 mas 'PhotoMill', id: 778590574
 mas 'Skitch', id: 425955336
 mas 'Slack', id: 803453959
-mas 'Telegram Desktop', id: 946399090
-# mas 'Wallpaper Wizard 2', id: 1266674560
-mas 'WhatsApp Desktop', id: 1147396723
-mas 'Xcode', id: 497799835
-mas 'The Unarchiver', id: 425424353
 # mas 'Super Eraser Pro', id: 1192683670
+mas 'Telegram', id: 747648890
+mas 'The Unarchiver', id: 425424353
+mas 'Twitter', id: 1482454543
+mas 'WhatsApp Desktop', id: 1147396723
+# mas 'Xcode', id: 497799835
