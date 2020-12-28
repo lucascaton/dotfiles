@@ -53,6 +53,7 @@ cask 'rectangle' # https://rectangleapp.com/
 cask 'sequel-pro' # https://www.sequelpro.com/
 cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
 # cask 'virtualbox'
+cask 'windscribe' # https://windscribe.com/
 # cask 'wkhtmltopdf'
 
 # ┌───────────────┐
