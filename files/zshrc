@@ -227,6 +227,8 @@ js() {
 }
 
 # macOS aliases
+alias brew="arch -x86_64 brew" # Homebrew isn't yet fully supported on Macs with Apple Silicon
+
 case $OSTYPE in
   darwin*)
     alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
