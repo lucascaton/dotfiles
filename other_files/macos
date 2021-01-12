@@ -3,7 +3,7 @@
 # Forked from https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/.macos
 
 # Close any open System Preferences panes, to prevent them from overriding
-# settings we’re about to change
+# settings we're about to change
 osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
@@ -20,10 +20,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
-# Disable smart quotes as they’re annoying when typing code
+# Disable smart quotes as they're annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
-# Disable smart dashes as they’re annoying when typing code
+# Disable smart dashes as they're annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 ###############################################################################
@@ -41,10 +41,12 @@ chflags nohidden ~/Library
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-echo "Done. Note that some of these changes require a logout/restart to take effect."
-
 ###############################################################################
 # Dock
 ###############################################################################
 
 defaults write com.apple.dock autohide-time-modifier -float 0
+
+###############################################################################
+
+echo "Done. Note that some of these changes require a logout/restart to take effect."
