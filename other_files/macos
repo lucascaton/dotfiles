@@ -42,11 +42,5 @@ chflags nohidden ~/Library
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
-# Dock
-###############################################################################
-
-defaults write com.apple.dock autohide-time-modifier -float 0
-
-###############################################################################
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
