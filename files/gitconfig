@@ -26,5 +26,6 @@
   interactive = true
 [init]
   templatedir = ~/.dotfiles/files/git_template
+  defaultBranch = main
 [credential]
   helper = osxkeychain
