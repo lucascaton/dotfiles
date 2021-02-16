@@ -1,0 +1,9 @@
+AllCops:
+  TargetRubyVersion: 3.0
+  NewCops: enable
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
