@@ -1,8 +1,3 @@
-[user]
-  name = <Your name here>
-  email = <Your e-mail here>
-[github]
-  user = <Your username here>
 [diff]
   color = auto
 [alias]
@@ -29,3 +24,6 @@
   defaultBranch = main
 [credential]
   helper = osxkeychain
+[include]
+  # Use separate file for username, email, tokens, etc.
+  path = ~/Dropbox/.personal_configs/.gitconfig.private
