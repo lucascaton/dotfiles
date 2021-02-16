@@ -260,6 +260,7 @@ alias agr='ag --ruby'
 alias agj='ag --js --coffee'
 alias agc='ag --sass --css'
 alias agh='ag --html --haml'
+alias agm='ag --markdown'
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
