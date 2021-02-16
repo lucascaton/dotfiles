@@ -1520,7 +1520,7 @@
   }
 
   function prompt_rails() {
-    if [ -f Gemfile.lock ]; then
+    if [ -f Gemfile.lock ] && [ `cat Gemfile.lock | grep -E ' +rails \([0-9]+'` ]; then
       p10k segment -f 001 -i '' \
         -t `cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.*\))/\1/'`
     fi
