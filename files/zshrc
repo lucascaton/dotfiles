@@ -255,7 +255,8 @@ case $OSTYPE in
     ;;
 esac
 
-alias ag='ag --hidden --ignore-dir .git --ignore "*.json" --ignore "*.svg" --ignore=*.min.js'
+alias ag='ag --hidden --ignore-dir .git --ignore-dir node_modules --ignore-dir vendor --ignore=*.min.js'
+# ag --list-file-types
 alias agr='ag --ruby'
 alias agj='ag --js --coffee'
 alias agc='ag --sass --css'
