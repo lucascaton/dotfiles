@@ -15,20 +15,6 @@ else
   ZSH_THEME="powerlevel10k/powerlevel10k"
 fi
 
-set_powerlevel9k_custom_env_vars() {
-  if [ -f Gemfile.lock ]; then
-    POWERLEVEL9K_CUSTOM_RAILS="echo -n '' `cat Gemfile.lock | grep -E ' +rails \([0-9]+' | \
-      sed 's/ *rails (\(.*\))/\1/'`"
-
-    POWERLEVEL9K_CUSTOM_RSPEC="if [ -d spec/ ] && [ `grep -re '[,[:space:]]focus\(:\| =>\)[[:space:]]\?true' spec \
-      --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb &> /dev/null | \
-      wc -l | awk '{ print $1 }'` != '0' ]; then; echo -n '🎯  RSpec with focus'; fi"
-  else
-    POWERLEVEL9K_CUSTOM_RAILS=""
-    POWERLEVEL9K_CUSTOM_RSPEC=""
-  fi
-}
-
 ############################################# Plugins #############################################
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/custom/plugins/)

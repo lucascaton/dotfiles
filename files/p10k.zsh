@@ -67,6 +67,8 @@
     # package               # name@version from package.json (https://docs.npmjs.com/files/package.json)
     rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
     rvm                     # ruby version from rvm (https://rvm.io)
+    rails                   # => Custom function
+    rspec                   # => Custom function
     fvm                     # flutter version management (https://github.com/leoafarias/fvm)
     luaenv                  # lua version from luaenv (https://github.com/cehoffman/luaenv)
     jenv                    # java version from jenv (https://github.com/jenv/jenv)
@@ -1515,6 +1517,21 @@
   # Type `p10k help segment` for documentation and a more sophisticated example.
   function prompt_example() {
     p10k segment -f 208 -i '⭐' -t 'hello, %n'
+  }
+
+  function prompt_rails() {
+    if [ -f Gemfile.lock ]; then
+      p10k segment -f 001 -i '' \
+        -t `cat Gemfile.lock | grep -E ' +rails \([0-9]+' | sed 's/ *rails (\(.*\))/\1/'`
+    fi
+  }
+
+  function prompt_rspec() {
+    if [ -d spec/ ] && [ `grep -re '[,[:space:]]focus\(:\| =>\)[[:space:]]\?true' spec/**/*.rb \
+    --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb &> /dev/null | \
+    wc -l | awk '{ print $1 }'` != '0' ]; then
+      p10k segment -f 004 -i 'ﭧ' -t '[RSpec] Focus'
+    fi
   }
 
   # User-defined prompt segments may optionally provide an instant_prompt_* function. Its job
