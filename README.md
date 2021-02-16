@@ -1,11 +1,14 @@
 # Lucas Caton's dotfiles
 
-This repository contains all my dotfiles, which should work on both **macOS** & **Linux**.
+This is just a selection of my dot-files.
+You may find some of them useful but mostly they are here for me.
+
+They should work on either **macOS** or **Linux**.
 
 ## Editor config files
 
 * [My Vim files](https://github.com/lucascaton/vimfiles)
-* [VS Code settings](https://github.com/lucascaton/dotfiles/tree/master/other_files/vscode)
+* [VS Code settings](https://github.com/lucascaton/dotfiles/tree/main/other_files/vscode)
 
 ## How to install?
 
@@ -16,7 +19,7 @@ Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh). Then, r
 
 ## Copyright
 
-Copyright (c) 2020 Lucas Caton
+Copyright (c) Lucas Caton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
