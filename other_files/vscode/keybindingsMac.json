@@ -14,7 +14,7 @@
   },
   {
     "key": "alt+w",
-    "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
     "when": "editorHasSelection && editorTextFocus"
   }
 ]

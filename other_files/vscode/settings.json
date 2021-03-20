@@ -1,4 +1,8 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -16,13 +20,15 @@
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
+    "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "same"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "editor.cursorBlinking": "smooth",
@@ -30,8 +36,8 @@
   "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
   "editor.fontSize": 15,
   "editor.insertSpaces": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
-  "editor.renameOnType": true,
   "editor.renderFinalNewline": false,
   "editor.rulers": [
     80,
@@ -55,14 +61,19 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "files.associations": {
+    "*.ejson": "json",
+    "*.gemfile": "gemfile",
     "*.map": "json",
+    "*.njk": "html",
     "*.tsbuildinfo": "json",
-    ". prettierrc": "json",
     ".env": "shellscript",
     ".env.production": "shellscript",
+    ".prettierrc": "json",
+    "/etc/hosts": "shellscript",
     "CODEOWNERS": "ignore",
     "Procfile": "yaml",
     "Procfile.dev": "yaml",
+    "brakeman.ignore": "json",
     "config": "shellscript",
     "irbrc": "ruby",
     "pryrc": "ruby",
@@ -80,24 +91,21 @@
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
-  "gitlens.views.compare.location": "gitlens",
-  "gitlens.views.fileHistory.location": "gitlens",
-  "gitlens.views.lineHistory.location": "gitlens",
-  "gitlens.views.repositories.location": "gitlens",
-  "gitlens.views.search.location": "gitlens",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
-  "prettier.packageManager": "yarn",
-  "prettier.printWidth": 100,
+  "prettier.proseWrap": "always",
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
   "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
+  "sync.autoDownload": true,
   "sync.autoUpload": true,
-  "sync.forceUpload": true,
+  "sync.forceUpload": false,
   "sync.gist": "a867a5f65c2f289539655a65eff24657",
   "sync.quietSync": true,
   "sync.removeExtensions": false,
@@ -109,9 +117,8 @@
   "vsicons.dontShowNewVersionMessage": true,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Dark Classic",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile"

@@ -17,7 +17,7 @@
     },
     "name": "auto-rename-tag",
     "publisher": "formulahendry",
-    "version": "0.1.4"
+    "version": "0.1.6"
   },
   {
     "metadata": {
@@ -27,7 +27,7 @@
     },
     "name": "Bookmarks",
     "publisher": "alefragnani",
-    "version": "11.3.1"
+    "version": "13.0.4"
   },
   {
     "metadata": {
@@ -47,7 +47,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.0"
+    "version": "0.11.3"
   },
   {
     "metadata": {
@@ -77,7 +77,7 @@
     },
     "name": "cucumberautocomplete",
     "publisher": "alexkrechik",
-    "version": "2.15.0"
+    "version": "2.15.1"
   },
   {
     "metadata": {
@@ -87,7 +87,7 @@
     },
     "name": "debugger-for-chrome",
     "publisher": "msjsdiag",
-    "version": "4.12.11"
+    "version": "4.12.12"
   },
   {
     "metadata": {
@@ -117,7 +117,17 @@
     },
     "name": "es7-react-js-snippets",
     "publisher": "dsznajder",
-    "version": "3.0.0"
+    "version": "3.1.1"
+  },
+  {
+    "metadata": {
+      "id": "b3917e4f-5086-4def-a82b-2ae6b708db16",
+      "publisherId": "flowtype.flow-for-vscode",
+      "publisherDisplayName": "flowtype"
+    },
+    "name": "flow-for-vscode",
+    "publisher": "flowtype",
+    "version": "1.5.0"
   },
   {
     "metadata": {
@@ -127,7 +137,7 @@
     },
     "name": "gc-excelviewer",
     "publisher": "GrapeCity",
-    "version": "3.0.40"
+    "version": "3.0.41"
   },
   {
     "metadata": {
@@ -147,7 +157,7 @@
     },
     "name": "githistory",
     "publisher": "donjayamanne",
-    "version": "0.6.11"
+    "version": "0.6.16"
   },
   {
     "metadata": {
@@ -156,6 +166,15 @@
       "publisherDisplayName": "GitHub"
     },
     "name": "github-vscode-theme",
+    "publisher": "GitHub",
+    "version": "3.0.0"
+  },
+  {
+    "metadata": {
+      "publisherId": "GitHub.github-vscode-theme-dark-classic",
+      "publisherDisplayName": "GitHub"
+    },
+    "name": "github-vscode-theme-dark-classic",
     "publisher": "GitHub",
     "version": "1.1.5"
   },
@@ -167,7 +186,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "10.2.2"
+    "version": "11.3.0"
   },
   {
     "metadata": {
@@ -217,7 +236,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.9.1"
+    "version": "3.9.15"
   },
   {
     "metadata": {
@@ -227,7 +246,7 @@
     },
     "name": "ngrok-for-vscode",
     "publisher": "philnash",
-    "version": "1.7.0"
+    "version": "1.8.4"
   },
   {
     "metadata": {
@@ -237,7 +256,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "5.7.1"
+    "version": "6.3.1"
   },
   {
     "metadata": {
@@ -287,7 +306,7 @@
     },
     "name": "ruby",
     "publisher": "rebornix",
-    "version": "0.27.0"
+    "version": "0.28.1"
   },
   {
     "metadata": {
@@ -297,17 +316,17 @@
     },
     "name": "ruby-rubocop",
     "publisher": "misogi",
-    "version": "0.8.4"
+    "version": "0.8.5"
   },
   {
     "metadata": {
-      "id": "e52bce95-a629-455f-8626-e7301b9e372a",
-      "publisherId": "robinbentley.sass-indented",
-      "publisherDisplayName": "robinbentley"
+      "id": "466468c3-1861-4ad1-bf3e-f9ad46545ebb",
+      "publisherId": "syler.sass-indented",
+      "publisherDisplayName": "syler"
     },
     "name": "sass-indented",
-    "publisher": "robinbentley",
-    "version": "1.5.1"
+    "publisher": "syler",
+    "version": "1.8.16"
   },
   {
     "metadata": {
@@ -317,7 +336,7 @@
     },
     "name": "string-manipulation",
     "publisher": "marclipovsky",
-    "version": "0.4.3"
+    "version": "0.5.2"
   },
   {
     "metadata": {
@@ -327,7 +346,7 @@
     },
     "name": "tabnine-vscode",
     "publisher": "TabNine",
-    "version": "3.0.2"
+    "version": "3.2.13"
   },
   {
     "metadata": {
@@ -341,13 +360,23 @@
   },
   {
     "metadata": {
+      "id": "e74697c7-82c2-42d0-9502-a19a602732df",
+      "publisherId": "dakara.transformer",
+      "publisherDisplayName": "dakara"
+    },
+    "name": "transformer",
+    "publisher": "dakara",
+    "version": "1.11.0"
+  },
+  {
+    "metadata": {
       "id": "0479fc1c-3d67-49f9-b087-fb9069afe48f",
       "publisherId": "ms-azuretools.vscode-docker",
       "publisherDisplayName": "ms-azuretools"
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.6.0"
+    "version": "1.11.0"
   },
   {
     "metadata": {
@@ -357,7 +386,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.1.8"
+    "version": "2.1.19"
   },
   {
     "metadata": {
@@ -367,7 +396,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.0.0"
+    "version": "11.2.0"
   },
   {
     "metadata": {
@@ -377,7 +406,17 @@
     },
     "name": "vscode-import-cost",
     "publisher": "wix",
-    "version": "2.12.0"
+    "version": "2.15.0"
+  },
+  {
+    "metadata": {
+      "id": "7997a8ae-1fae-4022-b834-12f6318aeffd",
+      "publisherId": "Orta.vscode-jest",
+      "publisherDisplayName": "Orta"
+    },
+    "name": "vscode-jest",
+    "publisher": "Orta",
+    "version": "3.2.0"
   },
   {
     "metadata": {
@@ -387,7 +426,7 @@
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.13"
+    "version": "0.3.17"
   },
   {
     "metadata": {
@@ -397,7 +436,7 @@
     },
     "name": "vscode-ruby",
     "publisher": "wingrunr21",
-    "version": "0.27.0"
+    "version": "0.28.0"
   },
   {
     "metadata": {
@@ -407,7 +446,17 @@
     },
     "name": "vscode-sort-json",
     "publisher": "richie5um2",
-    "version": "1.18.1"
+    "version": "1.19.2"
+  },
+  {
+    "metadata": {
+      "id": "27d96499-52df-4f8e-8905-275284e25ace",
+      "publisherId": "vitaliymaz.vscode-svg-previewer",
+      "publisherDisplayName": "vitaliymaz"
+    },
+    "name": "vscode-svg-previewer",
+    "publisher": "vitaliymaz",
+    "version": "0.7.0"
   },
   {
     "metadata": {
@@ -417,6 +466,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.4.3"
+    "version": "0.5.9"
   }
 ]
