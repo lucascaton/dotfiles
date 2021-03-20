@@ -108,7 +108,6 @@
   "sync.forceUpload": false,
   "sync.gist": "a867a5f65c2f289539655a65eff24657",
   "sync.quietSync": true,
-  "sync.removeExtensions": false,
   "tabnine.experimentalAutoImports": true,
   "tailwindCSS.emmetCompletions": true,
   "terminal.external.osxExec": "iTerm 2.app",
