@@ -304,8 +304,14 @@ case $OSTYPE in
     ;;
 esac
 
-# Usage: aftermerge <branch> (default: main, then master)
-aftermerge() {
+# Run this command after merging your PR. This will:
+# - Return to the default branch (first argument or `main`/`master` by default)
+# - Pull/rebase changes from the default branch
+# - Delete branch from the merged PR
+# - (For convinience) Display all local branches at the moment
+#
+# Usage: reset_env_after_pr <branch> (default: main, then master)
+reset_env_after_pr() {
   branch=$(git branch --show-current)
 
   if git show-ref -q --heads main; then
