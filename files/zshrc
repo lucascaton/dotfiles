@@ -228,20 +228,6 @@ alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
   m() { mvim -p ${1-.} }
 
-  if [[ "$ITERM_PROFILE" == "Course" ]]; then
-    export ATOM_HOME=~/.dotfiles/other_files/atom/course/;
-
-    if type "apm" > /dev/null; then
-      apm list --installed --bare > ${ATOM_HOME}package.list
-    fi
-  else
-    alias a="atom ."
-
-    if [ -d ~/.dotfiles/other_files/atom/default/ ]; then
-      export ATOM_HOME=~/.dotfiles/other_files/atom/default/;
-    fi
-  fi
-
   alias x="gitx"
 fi
 

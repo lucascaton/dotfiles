@@ -1,7 +1,0 @@
-/other_files/atom/default/*
-!/other_files/atom/default/config.cson
-!/other_files/atom/default/package.list
-
-/other_files/atom/course/*
-!/other_files/atom/course/config.cson
-!/other_files/atom/course/package.list
