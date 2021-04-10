@@ -231,6 +231,9 @@ if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
   alias x="gitx"
 fi
 
+# Light VS Code (disable all installed extensions)
+lcode() { code ${1} --disable-extensions }
+
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
 alias bne='curl wttr.in/brisbane'
 
