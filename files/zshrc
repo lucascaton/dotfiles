@@ -231,7 +231,7 @@ if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
   alias x="gitx"
 fi
 
-alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "SSH Key copied to clipboard"'
+alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
 alias bne='curl wttr.in/brisbane'
 
 ########################################### Functions ############################################
