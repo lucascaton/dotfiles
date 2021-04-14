@@ -1520,9 +1520,9 @@
   }
 
   function prompt_rails() {
-    if bundle info rails &> /dev/null; then
+    if egrep ' +rails \([0-9]+' Gemfile.lock &> /dev/null; then
       p10k segment -f 001 -i '' \
-        -t `cat Gemfile.lock | egrep ' +rails \([0-9]+' | sed 's/ *rails (\(.*\))/\1/'`
+        -t `egrep ' +rails \([0-9]+' Gemfile.lock | sed 's/ *rails (\(.*\))/\1/'`
     fi
   }
 
