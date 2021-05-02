@@ -91,6 +91,16 @@
   },
   {
     "metadata": {
+      "id": "f60a60a6-95ba-42d4-b41c-3d24c1b89588",
+      "publisherId": "EditorConfig.EditorConfig",
+      "publisherDisplayName": "EditorConfig"
+    },
+    "name": "EditorConfig",
+    "publisher": "EditorConfig",
+    "version": "0.16.4"
+  },
+  {
+    "metadata": {
       "id": "e9a05054-5cce-41cd-a15c-6d71e99ebab1",
       "publisherId": "kaiwood.endwise",
       "publisherDisplayName": "kaiwood"
@@ -167,7 +177,7 @@
     },
     "name": "github-vscode-theme",
     "publisher": "GitHub",
-    "version": "3.0.0"
+    "version": "4.1.1"
   },
   {
     "metadata": {
@@ -186,7 +196,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "11.3.0"
+    "version": "11.4.1"
   },
   {
     "metadata": {
@@ -236,7 +246,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.9.15"
+    "version": "3.10.13"
   },
   {
     "metadata": {
@@ -246,7 +256,17 @@
     },
     "name": "ngrok-for-vscode",
     "publisher": "philnash",
-    "version": "1.8.4"
+    "version": "1.9.0"
+  },
+  {
+    "metadata": {
+      "id": "113b22c8-8125-42ec-8c6b-80c3f5d5fa5f",
+      "publisherId": "IBM.output-colorizer",
+      "publisherDisplayName": "IBM"
+    },
+    "name": "output-colorizer",
+    "publisher": "IBM",
+    "version": "0.1.2"
   },
   {
     "metadata": {
@@ -256,7 +276,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "6.3.1"
+    "version": "6.3.2"
   },
   {
     "metadata": {
@@ -266,7 +286,7 @@
     },
     "name": "rails-db-schema",
     "publisher": "aki77",
-    "version": "0.2.2"
+    "version": "0.2.3"
   },
   {
     "metadata": {
@@ -287,6 +307,16 @@
     "name": "rails-snippets",
     "publisher": "Hridoy",
     "version": "1.0.8"
+  },
+  {
+    "metadata": {
+      "id": "93ce222b-5f6f-49b7-9ab1-a0463c6238df",
+      "publisherId": "ms-vscode-remote.remote-containers",
+      "publisherDisplayName": "ms-vscode-remote"
+    },
+    "name": "remote-containers",
+    "publisher": "ms-vscode-remote",
+    "version": "0.166.1"
   },
   {
     "metadata": {
@@ -340,13 +370,13 @@
   },
   {
     "metadata": {
-      "id": "75da638c-c45a-44ea-aa3b-8570a3559810",
-      "publisherId": "TabNine.tabnine-vscode",
-      "publisherDisplayName": "TabNine"
+      "id": "b861aa84-146f-440f-b6be-76124b02b729",
+      "publisherId": "4ops.terraform",
+      "publisherDisplayName": "4ops"
     },
-    "name": "tabnine-vscode",
-    "publisher": "TabNine",
-    "version": "3.2.13"
+    "name": "terraform",
+    "publisher": "4ops",
+    "version": "0.2.2"
   },
   {
     "metadata": {
@@ -366,7 +396,7 @@
     },
     "name": "transformer",
     "publisher": "dakara",
-    "version": "1.11.0"
+    "version": "1.11.1"
   },
   {
     "metadata": {
@@ -376,7 +406,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.11.0"
+    "version": "1.12.1"
   },
   {
     "metadata": {
@@ -386,7 +416,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.1.19"
+    "version": "2.1.20"
   },
   {
     "metadata": {
@@ -396,7 +426,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.2.0"
+    "version": "11.4.0"
   },
   {
     "metadata": {
@@ -426,7 +456,7 @@
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.17"
+    "version": "0.3.21"
   },
   {
     "metadata": {
@@ -446,7 +476,7 @@
     },
     "name": "vscode-sort-json",
     "publisher": "richie5um2",
-    "version": "1.19.2"
+    "version": "1.20.0"
   },
   {
     "metadata": {
@@ -466,6 +496,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.5.9"
+    "version": "0.5.10"
   }
 ]
