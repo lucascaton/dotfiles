@@ -47,7 +47,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.3"
+    "version": "0.11.4"
   },
   {
     "metadata": {
@@ -246,7 +246,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.10.13"
+    "version": "3.10.14"
   },
   {
     "metadata": {
@@ -276,7 +276,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "6.3.2"
+    "version": "6.4.0"
   },
   {
     "metadata": {
@@ -316,7 +316,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.166.1"
+    "version": "0.177.2"
   },
   {
     "metadata": {
@@ -446,7 +446,7 @@
     },
     "name": "vscode-jest",
     "publisher": "Orta",
-    "version": "3.2.0"
+    "version": "4.0.1"
   },
   {
     "metadata": {
@@ -480,6 +480,16 @@
   },
   {
     "metadata": {
+      "id": "ec35b5a3-9802-4c68-b5ff-e85f19ec0977",
+      "publisherId": "stylelint.vscode-stylelint",
+      "publisherDisplayName": "stylelint"
+    },
+    "name": "vscode-stylelint",
+    "publisher": "stylelint",
+    "version": "0.86.0"
+  },
+  {
+    "metadata": {
       "id": "27d96499-52df-4f8e-8905-275284e25ace",
       "publisherId": "vitaliymaz.vscode-svg-previewer",
       "publisherDisplayName": "vitaliymaz"
@@ -496,6 +506,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.5.10"
+    "version": "0.6.5"
   }
 ]

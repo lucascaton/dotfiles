@@ -119,6 +119,7 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "GitHub Dark Classic",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile"
 }
