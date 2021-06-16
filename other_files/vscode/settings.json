@@ -20,7 +20,7 @@
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
+    "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "same"
   },
   "[typescript]": {
@@ -94,6 +94,7 @@
   },
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
@@ -104,6 +105,7 @@
   "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
+  "security.workspace.trust.untrustedFiles": "open",
   "sync.autoDownload": true,
   "sync.autoUpload": true,
   "sync.forceUpload": false,
@@ -117,7 +119,7 @@
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "GitHub Dark Classic",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.enablePreview": false,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vscode-icons",

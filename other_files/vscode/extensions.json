@@ -27,7 +27,7 @@
     },
     "name": "Bookmarks",
     "publisher": "alefragnani",
-    "version": "13.0.4"
+    "version": "13.1.0"
   },
   {
     "metadata": {
@@ -37,7 +37,7 @@
     },
     "name": "bracket-pair-colorizer-2",
     "publisher": "CoenraadS",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   {
     "metadata": {
@@ -147,7 +147,7 @@
     },
     "name": "gc-excelviewer",
     "publisher": "GrapeCity",
-    "version": "3.0.41"
+    "version": "3.0.42"
   },
   {
     "metadata": {
@@ -181,22 +181,13 @@
   },
   {
     "metadata": {
-      "publisherId": "GitHub.github-vscode-theme-dark-classic",
-      "publisherDisplayName": "GitHub"
-    },
-    "name": "github-vscode-theme-dark-classic",
-    "publisher": "GitHub",
-    "version": "1.1.5"
-  },
-  {
-    "metadata": {
       "id": "4de763bd-505d-4978-9575-2b7696ecf94e",
       "publisherId": "eamodio.gitlens",
       "publisherDisplayName": "eamodio"
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "11.4.1"
+    "version": "11.5.1"
   },
   {
     "metadata": {
@@ -270,6 +261,16 @@
   },
   {
     "metadata": {
+      "id": "d80b9a94-f4a6-4e39-bc42-62212e365682",
+      "publisherId": "pnp.polacode",
+      "publisherDisplayName": "pnp"
+    },
+    "name": "polacode",
+    "publisher": "pnp",
+    "version": "0.3.4"
+  },
+  {
+    "metadata": {
       "id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
       "publisherId": "esbenp.prettier-vscode",
       "publisherDisplayName": "esbenp"
@@ -316,7 +317,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.177.2"
+    "version": "0.183.0"
   },
   {
     "metadata": {
@@ -406,7 +407,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.12.1"
+    "version": "1.13.0"
   },
   {
     "metadata": {
@@ -416,7 +417,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.1.20"
+    "version": "2.1.23"
   },
   {
     "metadata": {
@@ -426,7 +427,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.4.0"
+    "version": "11.5.0"
   },
   {
     "metadata": {
@@ -446,7 +447,7 @@
     },
     "name": "vscode-jest",
     "publisher": "Orta",
-    "version": "4.0.1"
+    "version": "4.0.3"
   },
   {
     "metadata": {
@@ -456,7 +457,17 @@
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.21"
+    "version": "0.3.22"
+  },
+  {
+    "metadata": {
+      "id": "d2d3a116-508a-4978-9cca-18cfe30bed92",
+      "publisherId": "ko-dev.vscode-open-files-in-directory",
+      "publisherDisplayName": "ko-dev"
+    },
+    "name": "vscode-open-files-in-directory",
+    "publisher": "ko-dev",
+    "version": "1.0.0"
   },
   {
     "metadata": {
@@ -506,6 +517,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.6.5"
+    "version": "0.6.9"
   }
 ]

@@ -16,7 +16,7 @@
   "d": {
     "prefix": "d",
     "body": [
-      "debugger; // TODO: Remove-me!"
+      "debugger;$1 // TODO: Remove-me!"
     ],
     "description": "Debugger"
   },
@@ -29,5 +29,13 @@
       "});",
     ],
     "description": "DOMContentLoaded event listener"
+  },
+
+  "sleep": {
+    "prefix": "sleep",
+    "body": [
+      "await new Promise(() => setTimeout(() => {}, ${1:1000}))",
+    ],
+    "description": "Sleep"
   },
 }
