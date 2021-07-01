@@ -4,6 +4,7 @@ eslint
 prettier
 vercel
 http-server
+npm-check
 
 # Similar to `nodemon` but for TypeScript
 ts-node-dev
