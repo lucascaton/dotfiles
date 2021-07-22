@@ -16,5 +16,10 @@
     "key": "alt+w",
     "command": "editor.emmet.action.wrapWithAbbreviation",
     "when": "editorHasSelection && editorTextFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
   }
 ]

@@ -23,6 +23,9 @@
     "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "same"
   },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -31,6 +34,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "diffEditor.renderSideBySide": false,
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
   "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
@@ -97,7 +101,17 @@
   "gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "jest.autoRun": "off",
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "cypress.json"
+      ],
+      "url": "https://on.cypress.io/cypress.schema.json"
+    }
+  ],
   "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
   "prettier.proseWrap": "always",
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",

@@ -17,7 +17,7 @@
     },
     "name": "auto-rename-tag",
     "publisher": "formulahendry",
-    "version": "0.1.6"
+    "version": "0.1.7"
   },
   {
     "metadata": {
@@ -47,7 +47,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.4"
+    "version": "0.11.5"
   },
   {
     "metadata": {
@@ -67,7 +67,7 @@
     },
     "name": "color-highlight",
     "publisher": "naumovs",
-    "version": "2.3.0"
+    "version": "2.4.0"
   },
   {
     "metadata": {
@@ -107,7 +107,7 @@
     },
     "name": "endwise",
     "publisher": "kaiwood",
-    "version": "1.4.2"
+    "version": "1.5.1"
   },
   {
     "metadata": {
@@ -137,7 +137,7 @@
     },
     "name": "flow-for-vscode",
     "publisher": "flowtype",
-    "version": "1.5.0"
+    "version": "1.9.1"
   },
   {
     "metadata": {
@@ -167,7 +167,7 @@
     },
     "name": "githistory",
     "publisher": "donjayamanne",
-    "version": "0.6.16"
+    "version": "0.6.17"
   },
   {
     "metadata": {
@@ -187,7 +187,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "11.5.1"
+    "version": "11.6.0"
   },
   {
     "metadata": {
@@ -207,7 +207,7 @@
     },
     "name": "highlight-matching-tag",
     "publisher": "vincaslt",
-    "version": "0.10.0"
+    "version": "0.10.1"
   },
   {
     "metadata": {
@@ -217,7 +217,7 @@
     },
     "name": "js-jsx-snippets",
     "publisher": "skyran",
-    "version": "10.1.0"
+    "version": "10.2.0"
   },
   {
     "metadata": {
@@ -237,7 +237,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.10.14"
+    "version": "3.11.1"
   },
   {
     "metadata": {
@@ -247,7 +247,7 @@
     },
     "name": "ngrok-for-vscode",
     "publisher": "philnash",
-    "version": "1.9.0"
+    "version": "1.9.1"
   },
   {
     "metadata": {
@@ -277,7 +277,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "6.4.0"
+    "version": "8.0.1"
   },
   {
     "metadata": {
@@ -317,7 +317,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.183.0"
+    "version": "0.187.1"
   },
   {
     "metadata": {
@@ -357,7 +357,7 @@
     },
     "name": "sass-indented",
     "publisher": "syler",
-    "version": "1.8.16"
+    "version": "1.8.17"
   },
   {
     "metadata": {
@@ -397,7 +397,7 @@
     },
     "name": "transformer",
     "publisher": "dakara",
-    "version": "1.11.1"
+    "version": "1.11.2"
   },
   {
     "metadata": {
@@ -407,7 +407,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.13.0"
+    "version": "1.15.0"
   },
   {
     "metadata": {
@@ -467,7 +467,7 @@
     },
     "name": "vscode-open-files-in-directory",
     "publisher": "ko-dev",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   {
     "metadata": {
@@ -517,6 +517,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.6.9"
+    "version": "0.6.13"
   }
 ]
