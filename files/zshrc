@@ -371,6 +371,7 @@ docker-clear() {
 
   echo "\n>> Pruning:"
   docker system prune --all --force
+  docker volume prune
 
   echo "\n>> After:\n"
   docker system df
