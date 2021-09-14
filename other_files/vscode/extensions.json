@@ -191,6 +191,16 @@
   },
   {
     "metadata": {
+      "id": "3159f569-1cd8-4740-abf4-89d633e7fe6e",
+      "publisherId": "Lourenci.go-to-spec",
+      "publisherDisplayName": "Lourenci"
+    },
+    "name": "go-to-spec",
+    "publisher": "Lourenci",
+    "version": "0.1.3"
+  },
+  {
+    "metadata": {
       "id": "31dab038-d2f7-47c2-894e-5c35684dbd0e",
       "publisherId": "karunamurti.haml",
       "publisherDisplayName": "karunamurti"
@@ -261,16 +271,6 @@
   },
   {
     "metadata": {
-      "id": "d80b9a94-f4a6-4e39-bc42-62212e365682",
-      "publisherId": "pnp.polacode",
-      "publisherDisplayName": "pnp"
-    },
-    "name": "polacode",
-    "publisher": "pnp",
-    "version": "0.3.4"
-  },
-  {
-    "metadata": {
       "id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
       "publisherId": "esbenp.prettier-vscode",
       "publisherDisplayName": "esbenp"
@@ -288,16 +288,6 @@
     "name": "rails-db-schema",
     "publisher": "aki77",
     "version": "0.2.3"
-  },
-  {
-    "metadata": {
-      "id": "6472e990-7a38-4fb4-8fe3-ea7d67d2155e",
-      "publisherId": "sporto.rails-go-to-spec",
-      "publisherDisplayName": "sporto"
-    },
-    "name": "rails-go-to-spec",
-    "publisher": "sporto",
-    "version": "0.0.1"
   },
   {
     "metadata": {
@@ -378,6 +368,16 @@
     "name": "terraform",
     "publisher": "4ops",
     "version": "0.2.2"
+  },
+  {
+    "metadata": {
+      "id": "47210ec2-0324-4cbb-9523-9dff02a5f9ec",
+      "publisherId": "ms-vscode.test-adapter-converter",
+      "publisherDisplayName": "ms-vscode"
+    },
+    "name": "test-adapter-converter",
+    "publisher": "ms-vscode",
+    "version": "0.1.2"
   },
   {
     "metadata": {
