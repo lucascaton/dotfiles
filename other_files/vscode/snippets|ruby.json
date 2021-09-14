@@ -45,7 +45,7 @@
   "pry": {
     "prefix": "pry",
     "body": [
-      "require 'pry'; binding.pry",
+      "require \"pry\"; binding.pry",
     ],
     "description": "Require \"Pry\" and adds an breakpoint"
   },
@@ -108,7 +108,7 @@
   "des": {
     "prefix": "des",
     "body": [
-      "describe '${1}' do",
+      "describe \"${1}\" do",
       "  ${2}",
       "end${0}",
     ],
@@ -118,7 +118,7 @@
   "con": {
     "prefix": "con",
     "body": [
-      "context '${1}' do",
+      "context \"${1}\" do",
       "  ${2}",
       "end${0}",
     ],
@@ -128,7 +128,7 @@
   "it": {
     "prefix": "it",
     "body": [
-      "it '${1}' do",
+      "it \"${1}\" do",
       "  ${2}",
       "end${0}",
     ],
@@ -138,7 +138,7 @@
   "i": {
     "prefix": "i",
     "body": [
-      "it '${1}' { ${2} }${0}",
+      "it \"${1}\" { ${2} }${0}",
     ],
     "description": "RSpec's it inline block"
   },
@@ -187,7 +187,7 @@
       "    @${1/(.*)/${1:/downcase}/} = ${1}.new(${1/(.*)/${1:/downcase}/}_params)",
       "",
       "    if @${1/(.*)/${1:/downcase}/}.save",
-      "      redirect_to @${1/(.*)/${1:/downcase}/}, notice: '${1} has been successfully created.'",
+      "      redirect_to @${1/(.*)/${1:/downcase}/}, notice: \"${1} has been successfully created.\"",
       "    else",
       "      flash.now[:error] = @${1/(.*)/${1:/downcase}/}.errors.full_messages.to_sentence",
       "      render :new",
@@ -196,7 +196,7 @@
       "",
       "  def update",
       "    if @${1/(.*)/${1:/downcase}/}.update(${1/(.*)/${1:/downcase}/}_params)",
-      "      redirect_to @${1/(.*)/${1:/downcase}/}, notice: '${1} has been successfully updated.'",
+      "      redirect_to @${1/(.*)/${1:/downcase}/}, notice: \"${1} has been successfully updated.\"",
       "    else",
       "      flash.now[:error] = @${1/(.*)/${1:/downcase}/}.errors.full_messages.to_sentence",
       "      render :edit",
@@ -206,7 +206,7 @@
       "  def destroy",
       "    @${1/(.*)/${1:/downcase}/}.destroy",
       "",
-      "    redirect_to ${1/(.*)/${1:/downcase}/}s_path, notice: '${1} has been successfully removed.'",
+      "    redirect_to ${1/(.*)/${1:/downcase}/}s_path, notice: \"${1} has been successfully removed.\"",
       "  end",
       "",
       "  private",

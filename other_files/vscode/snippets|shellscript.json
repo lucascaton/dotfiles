@@ -13,4 +13,11 @@
     ],
     "description": "interpret as an executable file"
   },
+  "while": {
+    "prefix": "while",
+    "body": [
+      "while true; do; $1; done",
+    ],
+    "description": "while loop"
+  },
 }
