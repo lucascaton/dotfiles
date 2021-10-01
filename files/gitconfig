@@ -1,5 +1,6 @@
 [diff]
   color = auto
+  noprefix = true
 [alias]
   cam = commit -am
   co  = checkout
