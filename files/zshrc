@@ -99,10 +99,6 @@ case $OSTYPE in
     export LANGUAGE=en_US.UTF-8
     export LANG=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
-
-    # if ! dpkg -l ubuntu-desktop &> /dev/null; then # Only set this env var on Ubuntu Server
-    #   export RAILS_ENV=production
-    # fi
     ;;
   darwin*)
     export CLICOLOR='auto'
@@ -159,34 +155,18 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias assets='bin/rails assets:clean assets:precompile'
   alias rspec='bundle exec rspec'
   alias cap='bundle exec cap' # Capistrano
-  alias transpec='bundle exec transpec -v example_group,hook_scope,stub_with_hash --explicit-spec-type -f spec'
   alias massa='bundle exec massa'
   alias sidekiq='bundle exec sidekiq'
   alias cucumber='bundle exec cucumber'
   alias rubocop='bundle exec rubocop'
-  alias fs='foreman start'
   alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
-  alias us='bundle exec unicorn_rails -c config/unicorn.rb'
 fi
-
-# Usage example: `js 2` to load only last 2 posts
-js() {
-  bundle exec jekyll clean
-
-  if [ "$1" == "" ]; then
-    bundle exec jekyll serve --host=0.0.0.0 --drafts --incremental
-  else
-    echo "### Loading only last $1 posts"
-    bundle exec jekyll serve --host=0.0.0.0 --drafts --incremental --limit_posts $1
-  fi
-}
 
 # macOS aliases
 alias brew="arch -x86_64 brew" # Homebrew isn't yet fully supported on Macs with Apple Silicon
 
 case $OSTYPE in
   darwin*)
-    alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
     alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
     alias simulator="open -a Simulator.app"
     ;;
@@ -224,9 +204,6 @@ if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
 
   alias x="gitx"
 fi
-
-# Light VS Code (disable all installed extensions)
-lcode() { code ${1} --disable-extensions }
 
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
 alias bne='curl wttr.in/brisbane'
