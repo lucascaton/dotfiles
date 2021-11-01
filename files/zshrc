@@ -77,15 +77,25 @@ esac
 # asdf (multiple runtime versions manager) - https://asdf-vm.com/
 case $OSTYPE in
   darwin*)
-    . /usr/local/opt/asdf/asdf.sh
-    . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+    if [ $(uname -m) = "x86_64" ]; then # Intel Macs
+      . /usr/local/opt/asdf/asdf.sh
+      . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+    elif [ $(uname -m) = "arm64" ]; then # Apple Silicon
+      . /opt/homebrew/opt/asdf/asdf.sh
+      . /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash
+    fi
     ;;
 esac
 
 case $OSTYPE in
   darwin*)
+    if [ $(uname -m) = "x86_64" ]; then # Intel Macs
+      export PATH="$PATH:/usr/local/sbin" # Homebrew
+    elif [ $(uname -m) = "arm64" ]; then # Apple Silicon
+      export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin" # Homebrew
+    fi
+
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-    export PATH="$PATH:/usr/local/sbin" # Homebrew
     export PATH="$PATH:$(npm bin)" # Executables from `node_modules/.bin` directory
     export PATH="$PATH:$(yarn global bin)" # Yarn global modules
     ;;
@@ -102,7 +112,6 @@ case $OSTYPE in
     ;;
   darwin*)
     export CLICOLOR='auto'
-    export ARCHFLAGS='-arch x86_64' # Compilation flags
     ;;
 esac
 
@@ -162,11 +171,12 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
 fi
 
-# macOS aliases
-alias brew="arch -x86_64 brew" # Homebrew isn't yet fully supported on Macs with Apple Silicon
-
 case $OSTYPE in
   darwin*)
+    if [ $(uname -m) = "arm64" ]; then # Apple Silicon
+      alias a="arch -x86_64"
+    fi
+
     alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
     alias simulator="open -a Simulator.app"
     ;;
@@ -186,7 +196,11 @@ case $OSTYPE in
     alias lsm='ls -l --time-style=long-iso'
     ;;
   darwin*)
-    alias lsm='/usr/local/bin/gls -l --time-style=long-iso'
+    if [ $(uname -m) = "x86_64" ]; then # Intel Macs
+      alias lsm='/usr/local/bin/gls -l --time-style=long-iso'
+    elif [ $(uname -m) = "arm64" ]; then # Apple Silicon
+      alias lsm='/opt/homebrew/bin/gls -l --time-style=long-iso'
+    fi
     ;;
 esac
 
