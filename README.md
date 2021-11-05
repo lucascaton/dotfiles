@@ -3,12 +3,12 @@
 This is just a selection of my dot-files.
 You may find some of them useful but mostly they are here for me.
 
-They should work on either **macOS** or **Linux**.
+They work on both **macOS** and **Linux**.
 
-## Editor config files
+## Editor configs
 
-* [My Vim files](https://github.com/lucascaton/vimfiles)
-* [VS Code settings](https://github.com/lucascaton/dotfiles/tree/main/other_files/vscode)
+- [Vim](https://github.com/lucascaton/vimfiles)
+- [VS Code settings](https://github.com/lucascaton/dotfiles/tree/main/other_files/vscode)
 
 ## How to install?
 
