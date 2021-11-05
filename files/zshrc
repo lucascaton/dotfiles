@@ -167,7 +167,6 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias massa='bundle exec massa'
   alias sidekiq='bundle exec sidekiq'
   alias cucumber='bundle exec cucumber'
-  alias rubocop='bundle exec rubocop'
   alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
 fi
 

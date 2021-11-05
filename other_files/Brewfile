@@ -1,78 +1,78 @@
 # https://github.com/Homebrew/homebrew-bundle
 # Usage: `brew bundle`
 
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'homebrew/services'
-tap 'homebrew/cask'
-tap 'heroku/brew'
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "homebrew/cask"
+tap "heroku/brew"
 
-brew 'asdf'
-brew 'awscli'
-brew 'ccat'
-brew 'colordiff'
-brew 'ctags'
-brew 'curl'
-brew 'ffmpeg', args: %w[with-freetype with-libass]
-brew 'ghostscript'
-brew 'git'
-brew 'gpg'
-brew 'heroku'
-brew 'highlight'
-brew 'imagemagick'
-brew 'mysql@5.6'
-brew 'openssl'
-brew 'postgresql'
-brew 'puma/puma/puma-dev'
-brew 'redis'
-brew 'rsync'
-brew 's3cmd'
-brew 'the_silver_searcher'
-brew 'tree'
-brew 'wget'
-brew 'youtube-dl'
+brew "asdf"
+brew "awscli"
+brew "ccat"
+brew "colordiff"
+brew "ctags"
+brew "curl"
+brew "ffmpeg", args: %w[with-freetype with-libass]
+brew "ghostscript"
+brew "git"
+brew "gpg"
+brew "heroku"
+brew "highlight"
+brew "imagemagick"
+brew "mysql@5.6"
+brew "openssl"
+brew "postgresql"
+brew "puma/puma/puma-dev"
+brew "redis"
+brew "rsync"
+brew "s3cmd"
+brew "the_silver_searcher"
+brew "tree"
+brew "wget"
+brew "youtube-dl"
 
-cask_args appdir: '/Applications'
+cask_args appdir: "/Applications"
 
-# cask 'android-platform-tools' # https://developer.android.com/studio/releases/platform-tools.html
-# cask 'android-studio' # https://developer.android.com/studio
-cask 'aws-vault' # https://github.com/99designs/aws-vault
-cask 'chromedriver' # http://chromedriver.chromium.org/
-cask 'docker' # https://www.docker.com/
-# cask 'hyper' # https://hyper.is/
-cask 'insomnia' # https://insomnia.rest/
-cask 'iterm2' # https://iterm2.com/
-# cask 'keybase' # https://keybase.io/
-# cask 'mactex' # https://www.tug.org/mactex/ (Latex)
-cask 'macvim' # https://github.com/macvim-dev/macvim
-# cask 'obs' # https://obsproject.com/
-# cast 'phantomjs'
-# cask 'prince' # https://www.princexml.com/
-cask 'postico' # https://eggerapps.at/postico/
-cask 'rectangle' # https://rectangleapp.com/
-cask 'sequel-pro' # https://www.sequelpro.com/
-cask 'spotmenu' # https://kmikiy.github.io/SpotMenu/
-# cask 'virtualbox'
-cask 'windscribe' # https://windscribe.com/
-# cask 'wkhtmltopdf'
+# cask "android-platform-tools" # https://developer.android.com/studio/releases/platform-tools.html
+# cask "android-studio" # https://developer.android.com/studio
+cask "aws-vault" # https://github.com/99designs/aws-vault
+cask "chromedriver" # http://chromedriver.chromium.org/
+cask "docker" # https://www.docker.com/
+# cask "hyper" # https://hyper.is/
+cask "insomnia" # https://insomnia.rest/
+cask "iterm2" # https://iterm2.com/
+# cask "keybase" # https://keybase.io/
+# cask "mactex" # https://www.tug.org/mactex/ (Latex)
+cask "macvim" # https://github.com/macvim-dev/macvim
+# cask "obs" # https://obsproject.com/
+# cast "phantomjs"
+# cask "prince" # https://www.princexml.com/
+cask "postico" # https://eggerapps.at/postico/
+cask "rectangle" # https://rectangleapp.com/
+cask "sequel-pro" # https://www.sequelpro.com/
+cask "spotmenu" # https://kmikiy.github.io/SpotMenu/
+# cask "virtualbox"
+cask "windscribe" # https://windscribe.com/
+# cask "wkhtmltopdf"
 
 # ┌───────────────┐
 # │ Mac App Store │
 # └───────────────┘
 
-mas '1Password', id: 443987910 # version 6
-mas 'Amphetamine', id: 937984704
-mas 'DaisyDisk', id: 411643860
-mas 'Droplr', id: 498672703
-mas 'Evernote', id: 406056744
-mas 'ForkLift', id: 412448059
-# mas 'Gemini 2', id: 1090488118
-mas 'PhotoMill', id: 778590574
-mas 'Skitch', id: 425955336
-mas 'Slack', id: 803453959
-# mas 'Super Eraser Pro', id: 1192683670
-mas 'Telegram', id: 747648890
-mas 'The Unarchiver', id: 425424353
-mas 'Twitter', id: 1482454543
-mas 'WhatsApp Desktop', id: 1147396723
-# mas 'Xcode', id: 497799835
+mas "1Password", id: 443987910 # version 6
+mas "Amphetamine", id: 937984704
+mas "DaisyDisk", id: 411643860
+mas "Droplr", id: 498672703
+mas "Evernote", id: 406056744
+mas "ForkLift", id: 412448059
+# mas "Gemini 2", id: 1090488118
+mas "PhotoMill", id: 778590574
+mas "Skitch", id: 425955336
+mas "Slack", id: 803453959
+# mas "Super Eraser Pro", id: 1192683670
+mas "Telegram", id: 747648890
+mas "The Unarchiver", id: 425424353
+mas "Twitter", id: 1482454543
+mas "WhatsApp Desktop", id: 1147396723
+# mas "Xcode", id: 497799835
