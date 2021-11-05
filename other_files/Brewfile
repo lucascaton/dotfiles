@@ -1,11 +1,19 @@
 # https://github.com/Homebrew/homebrew-bundle
 # Usage: `brew bundle`
 
+# ┌─────────────────────────────────┐
+# │ Taps (Third-Party Repositories) |
+# └─────────────────────────────────┘
+
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask"
 tap "heroku/brew"
+
+# ┌──────────┐
+# │ Packages |
+# └──────────┘
 
 brew "asdf"
 brew "awscli"
@@ -31,6 +39,10 @@ brew "the_silver_searcher"
 brew "tree"
 brew "wget"
 brew "youtube-dl"
+
+# ┌───────────────────────┐
+# │ Cask (GUI macOS apps) |
+# └───────────────────────┘
 
 cask_args appdir: "/Applications"
 
