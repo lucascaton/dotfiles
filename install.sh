@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -euxo pipefail
+
 ORIGINAL_COLOR="\033[1;0m"
 GREEN="\033[0;32m"
 GRAY="\033[2m"
@@ -41,7 +43,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then ~/.dotfiles/other_files/macOS; fi
 
 # ------------------------------------------------------------------------------
 
-title "Installing Homebrew packages"
+title "Installing Homebrew packages and applications"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then brew bundle --file=~/.dotfiles/other_files/Brewfile; fi
 
