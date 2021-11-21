@@ -17,7 +17,7 @@
     },
     "name": "auto-rename-tag",
     "publisher": "formulahendry",
-    "version": "0.1.8"
+    "version": "0.1.9"
   },
   {
     "metadata": {
@@ -27,7 +27,7 @@
     },
     "name": "Bookmarks",
     "publisher": "alefragnani",
-    "version": "13.2.1"
+    "version": "13.2.2"
   },
   {
     "metadata": {
@@ -47,7 +47,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.5"
+    "version": "0.11.6"
   },
   {
     "metadata": {
@@ -167,7 +167,7 @@
     },
     "name": "githistory",
     "publisher": "donjayamanne",
-    "version": "0.6.18"
+    "version": "0.6.19"
   },
   {
     "metadata": {
@@ -177,7 +177,7 @@
     },
     "name": "github-vscode-theme",
     "publisher": "GitHub",
-    "version": "4.2.1"
+    "version": "5.0.3"
   },
   {
     "metadata": {
@@ -187,7 +187,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "11.6.0"
+    "version": "11.7.0"
   },
   {
     "metadata": {
@@ -227,7 +227,7 @@
     },
     "name": "js-jsx-snippets",
     "publisher": "skyran",
-    "version": "10.2.0"
+    "version": "11.0.0"
   },
   {
     "metadata": {
@@ -247,7 +247,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.11.4"
+    "version": "3.13.2"
   },
   {
     "metadata": {
@@ -271,13 +271,23 @@
   },
   {
     "metadata": {
+      "id": "80def04d-6d01-495b-9d59-4ad19408872f",
+      "publisherId": "csstools.postcss",
+      "publisherDisplayName": "csstools"
+    },
+    "name": "postcss",
+    "publisher": "csstools",
+    "version": "1.0.9"
+  },
+  {
+    "metadata": {
       "id": "96fa4707-6983-4489-b7c5-d5ffdfdcce90",
       "publisherId": "esbenp.prettier-vscode",
       "publisherDisplayName": "esbenp"
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "8.1.0"
+    "version": "9.0.0"
   },
   {
     "metadata": {
@@ -287,7 +297,7 @@
     },
     "name": "rails-db-schema",
     "publisher": "aki77",
-    "version": "0.2.3"
+    "version": "0.2.4"
   },
   {
     "metadata": {
@@ -307,7 +317,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.194.0"
+    "version": "0.205.2"
   },
   {
     "metadata": {
@@ -351,6 +361,16 @@
   },
   {
     "metadata": {
+      "id": "f95d8fff-f70a-4ae5-bb06-5c47ddbc8fc6",
+      "publisherId": "timonwong.shellcheck",
+      "publisherDisplayName": "timonwong"
+    },
+    "name": "shellcheck",
+    "publisher": "timonwong",
+    "version": "0.18.2"
+  },
+  {
+    "metadata": {
       "id": "f458266d-2636-454c-86ba-1df8d80ed929",
       "publisherId": "marclipovsky.string-manipulation",
       "publisherDisplayName": "marclipovsky"
@@ -377,7 +397,7 @@
     },
     "name": "test-adapter-converter",
     "publisher": "ms-vscode",
-    "version": "0.1.2"
+    "version": "0.1.4"
   },
   {
     "metadata": {
@@ -387,7 +407,7 @@
     },
     "name": "toml",
     "publisher": "be5invis",
-    "version": "0.5.1"
+    "version": "0.6.0"
   },
   {
     "metadata": {
@@ -397,7 +417,7 @@
     },
     "name": "transformer",
     "publisher": "dakara",
-    "version": "1.11.2"
+    "version": "1.12.0"
   },
   {
     "metadata": {
@@ -407,7 +427,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.16.1"
+    "version": "1.18.0"
   },
   {
     "metadata": {
@@ -417,7 +437,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.1.25"
+    "version": "2.2.2"
   },
   {
     "metadata": {
@@ -427,7 +447,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.6.0"
+    "version": "11.7.0"
   },
   {
     "metadata": {
@@ -447,7 +467,7 @@
     },
     "name": "vscode-jest",
     "publisher": "Orta",
-    "version": "4.1.2"
+    "version": "4.2.1"
   },
   {
     "metadata": {
@@ -457,7 +477,7 @@
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.22"
+    "version": "0.3.23"
   },
   {
     "metadata": {
@@ -497,7 +517,7 @@
     },
     "name": "vscode-stylelint",
     "publisher": "stylelint",
-    "version": "0.86.0"
+    "version": "1.2.1"
   },
   {
     "metadata": {
@@ -517,6 +537,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.6.14"
+    "version": "0.7.2"
   }
 ]

@@ -7,10 +7,10 @@
   "gemfile": {
     "prefix": "gemfile",
     "body": [
-      "source 'https://rubygems.org'",
-      "ruby '2.6.5'",
+      "source \"https://rubygems.org\"",
+      "ruby \"3.0.2\"",
       "",
-      "# gem 'pry'"
+      "# gem \"pry\""
     ],
     "description": "Initial structure of a Gemfile"
   },
