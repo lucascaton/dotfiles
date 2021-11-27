@@ -90,9 +90,9 @@ esac
 case $OSTYPE in
   darwin*)
     if [ $(uname -m) = "x86_64" ]; then # Intel Macs
-      export PATH="$PATH:/usr/local/sbin" # Homebrew
+      export PATH="/usr/local/sbin:$PATH" # Homebrew
     elif [ $(uname -m) = "arm64" ]; then # Apple Silicon
-      export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin" # Homebrew
+      export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" # Homebrew
     fi
 
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
