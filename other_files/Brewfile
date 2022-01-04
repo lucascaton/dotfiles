@@ -34,6 +34,7 @@ brew "macvim"
 brew "mas"
 brew "postgresql@13", restart_service: true, link: true
 brew "python"
+brew "qlmarkdown" # QuickLook generator for Markdown files - https://github.com/toland/qlmarkdown
 brew "redis", restart_service: true
 brew "rsync"
 brew "s3cmd"
