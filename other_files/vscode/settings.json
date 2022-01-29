@@ -19,19 +19,28 @@
     "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
-    "editor.wrappingIndent": "same",
+    "editor.wrappingIndent": "same"
+  },
+  "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[ruby]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -48,15 +57,13 @@
   "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
   "editor.fontSize": 15,
   "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.renderFinalNewline": false,
-  "editor.rulers": [
-    80,
-    100
-  ],
+  "editor.rulers": [80, 100],
   "editor.suggest.preview": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -114,9 +121,7 @@
   "jest.autoRun": "off",
   "json.schemas": [
     {
-      "fileMatch": [
-        "cypress.json"
-      ],
+      "fileMatch": ["cypress.json"],
       "url": "https://on.cypress.io/cypress.schema.json"
     }
   ],
@@ -139,6 +144,7 @@
   "terminal.external.osxExec": "iTerm 2.app",
   "terminal.integrated.fontSize": 15,
   "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
@@ -147,9 +153,5 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  }
+  "workbench.startupEditor": "newUntitledFile"
 }
