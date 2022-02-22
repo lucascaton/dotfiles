@@ -5,10 +5,10 @@ You may find some of them useful but mostly they are here for me.
 
 They work on both **macOS** and **Linux**.
 
-## Editor configs
+## Editor settings
 
 - [Vim](https://github.com/lucascaton/vimfiles)
-- [VS Code settings](https://github.com/lucascaton/dotfiles/tree/main/other_files/vscode)
+- [VS Code](https://github.com/lucascaton/dotfiles/tree/main/other_files/vscode)
 
 ## How to install?
 
