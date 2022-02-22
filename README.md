@@ -12,10 +12,9 @@ They work on both **macOS** and **Linux**.
 
 ## How to install?
 
-Firstly, install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh). Then, run:
-
-    git clone https://github.com/lucascaton/dotfiles.git ~/.dotfiles
-    ~/.dotfiles/install.sh
+1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
+1. Clone this repo: `git clone https://github.com/lucascaton/dotfiles.git ~/.dotfiles`
+1. Run: `~/.dotfiles/install.sh`
 
 ## Copyright
 
