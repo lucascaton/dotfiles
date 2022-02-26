@@ -322,7 +322,7 @@ ruby_new_hash_syntax() {
 }
 
 # Git History - http://goo.gl/BzdgE3
-gh() {
+gith() {
   if [ "$#" -ne 2 ]; then
     echo "Usage: $0 PATTERN FILE"
     echo
