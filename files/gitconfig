@@ -28,3 +28,5 @@
 [include]
   # Use separate file for username, email, tokens, etc.
   path = ~/Dropbox/.personal_configs/.gitconfig.private
+[http]
+  postBuffer = 157286400
