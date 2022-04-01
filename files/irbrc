@@ -1,15 +1,9 @@
-if ENV['ITERM_PROFILE'] != 'Course'
-  require 'irb/completion'
-  require 'irb/ext/save-history'
+IRB.conf[:SAVE_HISTORY] = 100_000
 
-  IRB.conf[:SAVE_HISTORY] = 100_000
-  IRB.conf[:AUTO_INDENT] = true
-
-  begin
-    require 'pry'
-    Pry.start
-    exit
-  rescue LoadError => e
-    warn "### Unable to load pry (#{e})"
-  end
+begin
+  require "pry"
+  Pry.start
+  exit
+rescue LoadError => e
+  warn "\nUnable to load Pry: #{e}\n\n"
 end
