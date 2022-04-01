@@ -17,7 +17,7 @@
     },
     "name": "auto-rename-tag",
     "publisher": "formulahendry",
-    "version": "0.1.9"
+    "version": "0.1.10"
   },
   {
     "metadata": {
@@ -27,7 +27,7 @@
     },
     "name": "Bookmarks",
     "publisher": "alefragnani",
-    "version": "13.2.2"
+    "version": "13.2.4"
   },
   {
     "metadata": {
@@ -37,7 +37,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.6"
+    "version": "0.11.7"
   },
   {
     "metadata": {
@@ -51,6 +51,16 @@
   },
   {
     "metadata": {
+      "id": "f6dbd813-b0a0-42c1-90ea-10dde9d925a7",
+      "publisherId": "streetsidesoftware.code-spell-checker",
+      "publisherDisplayName": "streetsidesoftware"
+    },
+    "name": "code-spell-checker",
+    "publisher": "streetsidesoftware",
+    "version": "2.1.11"
+  },
+  {
+    "metadata": {
       "id": "121396ad-85a1-45ec-9fd1-d95028a847f5",
       "publisherId": "naumovs.color-highlight",
       "publisherDisplayName": "naumovs"
@@ -61,13 +71,23 @@
   },
   {
     "metadata": {
+      "id": "d0bfc4ab-1d3a-4487-8782-7cf6027b4fff",
+      "publisherId": "ms-dotnettools.csharp",
+      "publisherDisplayName": "ms-dotnettools"
+    },
+    "name": "csharp",
+    "publisher": "ms-dotnettools",
+    "version": "1.24.1"
+  },
+  {
+    "metadata": {
       "id": "25e38b8d-ff51-4c34-af36-b7b7961cf666",
       "publisherId": "alexkrechik.cucumberautocomplete",
       "publisherDisplayName": "alexkrechik"
     },
     "name": "cucumberautocomplete",
     "publisher": "alexkrechik",
-    "version": "2.15.1"
+    "version": "2.15.2"
   },
   {
     "metadata": {
@@ -107,7 +127,7 @@
     },
     "name": "es7-react-js-snippets",
     "publisher": "dsznajder",
-    "version": "4.1.0"
+    "version": "4.4.3"
   },
   {
     "metadata": {
@@ -117,7 +137,7 @@
     },
     "name": "flow-for-vscode",
     "publisher": "flowtype",
-    "version": "1.9.2"
+    "version": "2.1.0"
   },
   {
     "metadata": {
@@ -127,7 +147,7 @@
     },
     "name": "gc-excelviewer",
     "publisher": "GrapeCity",
-    "version": "4.0.50"
+    "version": "4.2.54"
   },
   {
     "metadata": {
@@ -157,7 +177,7 @@
     },
     "name": "github-vscode-theme",
     "publisher": "GitHub",
-    "version": "5.2.1"
+    "version": "6.0.0"
   },
   {
     "metadata": {
@@ -167,7 +187,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "11.7.0"
+    "version": "12.0.5"
   },
   {
     "metadata": {
@@ -227,7 +247,7 @@
     },
     "name": "LiveServer",
     "publisher": "ritwickdey",
-    "version": "5.7.4"
+    "version": "5.7.5"
   },
   {
     "metadata": {
@@ -237,7 +257,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.13.17"
+    "version": "3.13.20"
   },
   {
     "metadata": {
@@ -267,7 +287,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "9.2.0"
+    "version": "9.5.0"
   },
   {
     "metadata": {
@@ -277,7 +297,7 @@
     },
     "name": "rails-db-schema",
     "publisher": "aki77",
-    "version": "0.2.4"
+    "version": "0.2.5"
   },
   {
     "metadata": {
@@ -297,7 +317,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.209.6"
+    "version": "0.231.1"
   },
   {
     "metadata": {
@@ -337,7 +357,7 @@
     },
     "name": "sass-indented",
     "publisher": "syler",
-    "version": "1.8.18"
+    "version": "1.8.19"
   },
   {
     "metadata": {
@@ -347,7 +367,7 @@
     },
     "name": "shellcheck",
     "publisher": "timonwong",
-    "version": "0.18.4"
+    "version": "0.19.0"
   },
   {
     "metadata": {
@@ -367,7 +387,7 @@
     },
     "name": "terraform",
     "publisher": "4ops",
-    "version": "0.2.2"
+    "version": "0.2.5"
   },
   {
     "metadata": {
@@ -407,7 +427,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.19.0"
+    "version": "1.21.0"
   },
   {
     "metadata": {
@@ -427,7 +447,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.8.0"
+    "version": "11.10.0"
   },
   {
     "metadata": {
@@ -497,7 +517,7 @@
     },
     "name": "vscode-stylelint",
     "publisher": "stylelint",
-    "version": "1.2.1"
+    "version": "1.2.2"
   },
   {
     "metadata": {
@@ -517,6 +537,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.7.6"
+    "version": "0.7.7"
   }
 ]

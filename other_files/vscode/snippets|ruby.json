@@ -7,7 +7,7 @@
   "bp": {
     "prefix": "bp",
     "body": [
-      "binding.pry",
+      "binding.pry"
     ],
     "description": "Debug via Pry"
   },
@@ -21,15 +21,15 @@
       "  associate_values(",
       "    :${2:first_attribute},${0}",
       "  )",
-      "end",
+      "end"
     ],
-    "description": "Debug via Pry"
+    "description": "EnumerateIt class"
   },
 
   "exe": {
     "prefix": "exe",
     "body": [
-      "#!/usr/bin/env ruby",
+      "#!/usr/bin/env ruby"
     ],
     "description": "Shebang"
   },
@@ -37,7 +37,7 @@
   "fsl": {
     "prefix": "fsl",
     "body": [
-      "# frozen_string_literal: true",
+      "# frozen_string_literal: true"
     ],
     "description": "frozen_string_literal magic comment"
   },
@@ -45,7 +45,7 @@
   "pry": {
     "prefix": "pry",
     "body": [
-      "require \"pry\"; binding.pry",
+      "require \"pry\"; binding.pry"
     ],
     "description": "Require \"Pry\" and adds an breakpoint"
   },
@@ -53,7 +53,7 @@
   "puts": {
     "prefix": "puts",
     "body": [
-      "puts \"#{'-' * `tput cols`.to_i}\\n${1:var}\\n#{'-' * `tput cols`.to_i}\"",
+      "puts \"#{'-' * `tput cols`.to_i}\\n${1:var}\\n#{'-' * `tput cols`.to_i}\""
     ],
     "description": "Highlight your printed text"
   },
@@ -61,7 +61,7 @@
   "putss": {
     "prefix": "putss",
     "body": [
-      "puts \"#{'-' * `tput cols`.to_i}\\n${1:var}: #{${1}.inspect}\\n#{'-' * `tput cols`.to_i}\"",
+      "puts \"#{'-' * `tput cols`.to_i}\\n${1:var}: #{${1}.inspect}\\n#{'-' * `tput cols`.to_i}\""
     ],
     "description": "Highlight your printed variable"
   },
@@ -71,7 +71,7 @@
     "body": [
       "${1:variable} = <<~${2:FOO}.squish",
       "  ${3:This is the first line.}",
-      "${2:FOO}",
+      "${2:FOO}"
     ],
     "description": "Heredoc"
   },
@@ -80,7 +80,7 @@
     "prefix": "hef",
     "body": [
       "has_enumeration_for :${1:enum}, with: ${2:class}, required: true,",
-      "  create_helpers: true, create_scopes: true",
+      "  create_helpers: true, create_scopes: true"
     ],
     "description": "has_enumeration_for"
   },
@@ -88,7 +88,7 @@
   "hl": {
     "prefix": "hl",
     "body": [
-      "# ------------------------------------------------------------------------------",
+      "# ------------------------------------------------------------------------------"
     ],
     "description": "Comment with horizontal line"
   },
@@ -100,7 +100,7 @@
     "body": [
       "RSpec.describe ${1:Class}, type: :${2:model} do",
       "  ${3}",
-      "end${0}",
+      "end${0}"
     ],
     "description": "Basic RSpec block"
   },
@@ -110,7 +110,7 @@
     "body": [
       "describe \"${1}\" do",
       "  ${2}",
-      "end${0}",
+      "end${0}"
     ],
     "description": "RSpec's describe block"
   },
@@ -120,7 +120,7 @@
     "body": [
       "context \"${1}\" do",
       "  ${2}",
-      "end${0}",
+      "end${0}"
     ],
     "description": "RSpec's context block"
   },
@@ -130,7 +130,7 @@
     "body": [
       "it \"${1}\" do",
       "  ${2}",
-      "end${0}",
+      "end${0}"
     ],
     "description": "RSpec's it block"
   },
@@ -138,7 +138,7 @@
   "i": {
     "prefix": "i",
     "body": [
-      "it \"${1}\" { ${2} }${0}",
+      "it \"${1}\" { ${2} }${0}"
     ],
     "description": "RSpec's it inline block"
   },
@@ -148,7 +148,7 @@
     "body": [
       "before do",
       "  ${1}",
-      "end${0}",
+      "end${0}"
     ],
     "description": "RSpec's before block"
   },
@@ -156,7 +156,7 @@
   "b": {
     "prefix": "b",
     "body": [
-      "before { ${1} }${0}",
+      "before { ${1} }${0}"
     ],
     "description": "RSpec's before inline block"
   },
@@ -221,5 +221,5 @@
       "end"
     ],
     "description": "Controller actions"
-  },
+  }
 }
