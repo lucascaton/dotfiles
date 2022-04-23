@@ -157,7 +157,7 @@ fi
 # Ruby / Rails
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias be='bundle exec'
-  alias rs='bin/rails s'
+  alias rs="[[ -f bin/dev ]] && ./bin/dev || ./bin/rails s"
   alias rc='bin/rails c'
   alias rg='bin/rails g'
   alias migrate='bin/rails db:migrate && bin/rails db:test:prepare'
