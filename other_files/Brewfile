@@ -75,6 +75,7 @@ cask "rectangle" # https://rectangleapp.com/
 # └───────────────┘
 
 mas "Amphetamine", id: 937984704
+mas "MeetingBar", id: 1532419400 # https://github.com/leits/MeetingBar
 mas "Claquette", id: 587748131
 mas "DaisyDisk", id: 411643860
 mas "Droplr", id: 498672703
