@@ -38,4 +38,14 @@
     ],
     "description": "Sleep"
   },
+
+  "index": {
+    "prefix": "index",
+    "body": [
+      "import ${1:Module} from \"./${1}\";",
+      "",
+      "export default ${1};",
+    ],
+    "description": "Index files"
+  },
 }

@@ -27,7 +27,7 @@
     },
     "name": "Bookmarks",
     "publisher": "alefragnani",
-    "version": "13.2.4"
+    "version": "13.3.0"
   },
   {
     "metadata": {
@@ -57,7 +57,7 @@
     },
     "name": "code-spell-checker",
     "publisher": "streetsidesoftware",
-    "version": "2.1.11"
+    "version": "2.2.0"
   },
   {
     "metadata": {
@@ -77,7 +77,7 @@
     },
     "name": "csharp",
     "publisher": "ms-dotnettools",
-    "version": "1.24.1"
+    "version": "1.25.0"
   },
   {
     "metadata": {
@@ -187,7 +187,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "12.0.5"
+    "version": "12.0.7"
   },
   {
     "metadata": {
@@ -257,7 +257,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.13.20"
+    "version": "3.13.29"
   },
   {
     "metadata": {
@@ -317,7 +317,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.231.1"
+    "version": "0.234.0"
   },
   {
     "metadata": {
@@ -357,7 +357,7 @@
     },
     "name": "sass-indented",
     "publisher": "syler",
-    "version": "1.8.19"
+    "version": "1.8.20"
   },
   {
     "metadata": {
@@ -367,7 +367,7 @@
     },
     "name": "shellcheck",
     "publisher": "timonwong",
-    "version": "0.19.0"
+    "version": "0.19.3"
   },
   {
     "metadata": {
@@ -377,7 +377,7 @@
     },
     "name": "string-manipulation",
     "publisher": "marclipovsky",
-    "version": "0.5.2"
+    "version": "0.5.6"
   },
   {
     "metadata": {
@@ -397,7 +397,7 @@
     },
     "name": "test-adapter-converter",
     "publisher": "ms-vscode",
-    "version": "0.1.5"
+    "version": "0.1.6"
   },
   {
     "metadata": {
@@ -417,7 +417,7 @@
     },
     "name": "transformer",
     "publisher": "dakara",
-    "version": "1.12.0"
+    "version": "1.12.1"
   },
   {
     "metadata": {
@@ -427,7 +427,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.21.0"
+    "version": "1.22.0"
   },
   {
     "metadata": {
@@ -447,7 +447,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.10.0"
+    "version": "11.12.0"
   },
   {
     "metadata": {
@@ -457,7 +457,7 @@
     },
     "name": "vscode-import-cost",
     "publisher": "wix",
-    "version": "2.15.0"
+    "version": "3.3.0"
   },
   {
     "metadata": {
@@ -467,7 +467,7 @@
     },
     "name": "vscode-jest",
     "publisher": "Orta",
-    "version": "4.2.1"
+    "version": "4.6.0"
   },
   {
     "metadata": {
@@ -477,7 +477,7 @@
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.24"
+    "version": "0.3.25"
   },
   {
     "metadata": {
@@ -537,6 +537,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.7.7"
+    "version": "0.8.6"
   }
 ]
