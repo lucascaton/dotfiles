@@ -171,6 +171,7 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias migrate='bin/rails db:migrate && bin/rails db:test:prepare'
   alias assets='bin/rails assets:clean assets:precompile'
   alias rspec='bundle exec rspec'
+  alias rubocop='bundle exec rubocop'
   alias cap='bundle exec cap' # Capistrano
   alias massa='bundle exec massa'
   alias sidekiq='bundle exec sidekiq'
