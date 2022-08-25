@@ -25,6 +25,8 @@
   defaultBranch = main
 [credential]
   helper = osxkeychain
+[gpg]
+  format = ssh
 [include]
   # Use separate file for username, email, tokens, etc.
   path = ~/Dropbox/.personal_configs/.gitconfig.private
