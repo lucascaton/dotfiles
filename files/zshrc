@@ -135,8 +135,8 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   # Git
   alias g='git status'
   alias gc='git commit --no-edit'
-  alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
-  alias gls='git log --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative --author="`git config --get user.name`"'
+  alias gl='git log --show-signature --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+  alias gls='git log --show-signature --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative --author="`git config --get user.name`"'
   alias gd='git --no-pager diff'
   alias gdc='git --no-pager diff --cached'
   alias gds='git --no-pager diff HEAD\^ HEAD'
