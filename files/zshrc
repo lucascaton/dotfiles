@@ -223,8 +223,6 @@ alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
   m() { mvim -p ${1-.} }
-
-  alias x="gitx"
 fi
 
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
