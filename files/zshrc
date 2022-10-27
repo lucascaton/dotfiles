@@ -313,7 +313,7 @@ reset_env_after_pr() {
   fi
 
   git checkout ${1-$main_branch}
-  git pull --rebase
+  git pull origin --rebase --prune
   git branch -d $branch
 
   clear
