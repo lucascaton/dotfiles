@@ -33,8 +33,7 @@ export PURPLE="\[\033[0;35m\]"
 if [ -f /etc/bash_completion ]; then . /etc/bash_completion; fi
 
 # Personal_configs
-if [[ -s $HOME/.personal_configs ]] ;         then source $HOME/.personal_configs ;         fi
-if [[ -s $HOME/Dropbox/.personal_configs ]] ; then source $HOME/Dropbox/.personal_configs ; fi
+if [[ -s $HOME/Documents/.personal_configs ]] ; then source $HOME/Documents/.personal_configs ; fi
 
 # Git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'

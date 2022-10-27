@@ -123,10 +123,8 @@ export GPG_TTY=$(tty)
 
 ######################################## Personal configs ########################################
 
-if [[ -s $HOME/.personal_configs ]]; then source $HOME/.personal_configs; fi
-
-if [ -d $HOME/Dropbox/.personal_configs ]; then
-  for file in $HOME/Dropbox/.personal_configs/*; do source $file; done
+if [ -d $HOME/projects/.personal_configs ]; then
+  for file in $HOME/projects/.personal_configs/*; do source $file; done
 fi
 
 ############################################ Aliases #############################################
