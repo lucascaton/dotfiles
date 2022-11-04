@@ -19,9 +19,11 @@
     "editor.formatOnSave": true
   },
   "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": true
   },
   "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": true
   },
   "[markdown]": {
@@ -48,9 +50,44 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "cSpell.userWords": ["codemods", "flowtype"],
+  "auto-rename-tag.activationOnLanguage": [
+    "*"
+  ],
+  "cSpell.language": "en,en-GB,pt-BR",
+  "cSpell.userWords": [
+    "activerecord",
+    "braintree",
+    "caton",
+    "cimg",
+    "circleci",
+    "codemods",
+    "csrf",
+    "dokku",
+    "Dokku",
+    "envato",
+    "flowtype",
+    "github",
+    "headlessui",
+    "heroicons",
+    "hljs",
+    "lucascaton",
+    "PGHOST",
+    "PGPASSWORD",
+    "PGPORT",
+    "PGUSER",
+    "postgres",
+    "preconnect",
+    "recaptcha",
+    "recurly",
+    "rollbar",
+    "Rollbar",
+    "rubocop",
+    "semibold",
+    "stylelint",
+    "tailwindcss",
+    "twilio"
+  ],
   "diffEditor.renderSideBySide": false,
-  "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
   "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
@@ -62,7 +99,10 @@
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.renderFinalNewline": false,
-  "editor.rulers": [80, 100],
+  "editor.rulers": [
+    80,
+    100
+  ],
   "editor.suggest.preview": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -80,6 +120,7 @@
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.sortOrder": "fullPath",
   "explorer.openEditors.visible": 0,
   "files.associations": {
     "*.ejson": "json",
@@ -108,7 +149,7 @@
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.path": "/usr/local/bin/git",
+  "git.path": "/opt/homebrew/bin/git",
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
@@ -120,16 +161,20 @@
   "jest.autoRun": "off",
   "json.schemas": [
     {
-      "fileMatch": ["cypress.json"],
+      "fileMatch": [
+        "cypress.json"
+      ],
       "url": "https://on.cypress.io/cypress.schema.json"
     }
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
+  "npm.keybindingsChangedWarningShown": true,
   "prettier.proseWrap": "always",
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
+  "ruby.rubocop.useBundler": true,
   "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
@@ -145,6 +190,7 @@
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
+  "window.commandCenter": true,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
   "workbench.activityBar.visible": true,

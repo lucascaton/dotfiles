@@ -27,7 +27,7 @@
     },
     "name": "Bookmarks",
     "publisher": "alefragnani",
-    "version": "13.3.0"
+    "version": "13.3.1"
   },
   {
     "metadata": {
@@ -37,7 +37,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.7"
+    "version": "0.11.8"
   },
   {
     "metadata": {
@@ -57,7 +57,17 @@
     },
     "name": "code-spell-checker",
     "publisher": "streetsidesoftware",
-    "version": "2.2.0"
+    "version": "2.10.1"
+  },
+  {
+    "metadata": {
+      "id": "a669e675-9cb2-48a8-983d-33a1c4ed10ef",
+      "publisherId": "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+      "publisherDisplayName": "streetsidesoftware"
+    },
+    "name": "code-spell-checker-portuguese-brazilian",
+    "publisher": "streetsidesoftware",
+    "version": "2.0.9"
   },
   {
     "metadata": {
@@ -117,7 +127,7 @@
     },
     "name": "erb-helpers",
     "publisher": "rayhanw",
-    "version": "0.5.0"
+    "version": "0.6.0"
   },
   {
     "metadata": {
@@ -131,13 +141,23 @@
   },
   {
     "metadata": {
+      "id": "f50b230b-4be5-4f6f-a869-d9cdf75f879c",
+      "publisherId": "vinliao.fast-arrow",
+      "publisherDisplayName": "vinliao"
+    },
+    "name": "fast-arrow",
+    "publisher": "vinliao",
+    "version": "1.0.8"
+  },
+  {
+    "metadata": {
       "id": "b3917e4f-5086-4def-a82b-2ae6b708db16",
       "publisherId": "flowtype.flow-for-vscode",
       "publisherDisplayName": "flowtype"
     },
     "name": "flow-for-vscode",
     "publisher": "flowtype",
-    "version": "2.1.0"
+    "version": "2.2.0"
   },
   {
     "metadata": {
@@ -147,7 +167,7 @@
     },
     "name": "gc-excelviewer",
     "publisher": "GrapeCity",
-    "version": "4.2.54"
+    "version": "4.2.56"
   },
   {
     "metadata": {
@@ -177,7 +197,7 @@
     },
     "name": "github-vscode-theme",
     "publisher": "GitHub",
-    "version": "6.0.0"
+    "version": "6.3.2"
   },
   {
     "metadata": {
@@ -187,7 +207,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "12.0.7"
+    "version": "13.0.3"
   },
   {
     "metadata": {
@@ -207,7 +227,7 @@
     },
     "name": "haml",
     "publisher": "karunamurti",
-    "version": "1.4.0"
+    "version": "1.4.1"
   },
   {
     "metadata": {
@@ -247,7 +267,7 @@
     },
     "name": "LiveServer",
     "publisher": "ritwickdey",
-    "version": "5.7.5"
+    "version": "5.7.9"
   },
   {
     "metadata": {
@@ -257,7 +277,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.13.29"
+    "version": "3.15.6"
   },
   {
     "metadata": {
@@ -267,7 +287,7 @@
     },
     "name": "ngrok-for-vscode",
     "publisher": "philnash",
-    "version": "1.9.2"
+    "version": "1.10.0"
   },
   {
     "metadata": {
@@ -287,7 +307,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "9.5.0"
+    "version": "9.9.0"
   },
   {
     "metadata": {
@@ -297,7 +317,7 @@
     },
     "name": "rails-db-schema",
     "publisher": "aki77",
-    "version": "0.2.5"
+    "version": "0.2.6"
   },
   {
     "metadata": {
@@ -317,7 +337,7 @@
     },
     "name": "remote-containers",
     "publisher": "ms-vscode-remote",
-    "version": "0.234.0"
+    "version": "0.255.4"
   },
   {
     "metadata": {
@@ -357,7 +377,7 @@
     },
     "name": "sass-indented",
     "publisher": "syler",
-    "version": "1.8.20"
+    "version": "1.8.22"
   },
   {
     "metadata": {
@@ -367,7 +387,7 @@
     },
     "name": "shellcheck",
     "publisher": "timonwong",
-    "version": "0.19.3"
+    "version": "0.26.2"
   },
   {
     "metadata": {
@@ -427,7 +447,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.22.0"
+    "version": "1.22.2"
   },
   {
     "metadata": {
@@ -437,7 +457,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.2.2"
+    "version": "2.2.6"
   },
   {
     "metadata": {
@@ -447,7 +467,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "11.12.0"
+    "version": "12.0.1"
   },
   {
     "metadata": {
@@ -477,7 +497,7 @@
     },
     "name": "vscode-npm-script",
     "publisher": "eg2",
-    "version": "0.3.25"
+    "version": "0.3.29"
   },
   {
     "metadata": {
@@ -487,7 +507,7 @@
     },
     "name": "vscode-open-files-in-directory",
     "publisher": "ko-dev",
-    "version": "1.0.1"
+    "version": "1.0.7"
   },
   {
     "metadata": {
@@ -517,7 +537,7 @@
     },
     "name": "vscode-stylelint",
     "publisher": "stylelint",
-    "version": "1.2.2"
+    "version": "1.2.3"
   },
   {
     "metadata": {
@@ -537,6 +557,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.8.6"
+    "version": "0.9.1"
   }
 ]
