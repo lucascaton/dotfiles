@@ -1,4 +1,12 @@
 if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
+  def active_record_logger_on
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+  end
+
+  def active_record_logger_off
+    ActiveRecord::Base.logger = nil
+  end
+
   def fb
     puts 'Loading FactoryBot...'
     require 'factory_bot'
