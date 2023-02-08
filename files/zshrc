@@ -160,12 +160,13 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias rg='bin/rails g'
   alias migrate='bin/rails db:migrate && bin/rails db:test:prepare'
   alias assets='bin/rails assets:clean assets:precompile'
+
   alias rspec='bundle exec rspec'
   alias rubocop='bundle exec rubocop'
-  alias cap='bundle exec cap' # Capistrano
   alias massa='bundle exec massa'
   alias sidekiq='bundle exec sidekiq'
   alias cucumber='bundle exec cucumber'
+  alias puma='bundle exec puma'
   alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
 fi
 
