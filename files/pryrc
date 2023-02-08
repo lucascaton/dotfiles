@@ -1,6 +1,4 @@
-rails = File.join(Dir.getwd, 'config', 'environment.rb')
-
-if File.exist?(rails)
+if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
   def fb
     puts 'Loading FactoryBot...'
     require 'factory_bot'
