@@ -7,4 +7,4 @@ vercel
 http-server
 
 # Similar to `nodemon` but for TypeScript
-ts-node-dev
+# ts-node-dev
