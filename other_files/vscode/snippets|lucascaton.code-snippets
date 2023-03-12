@@ -38,8 +38,21 @@
       "fetch(`\\${apiUrl}/api/v1/${1:resource}`)",
       "  .then((response) => response.json())",
       "  .then((data) => console.log(data))",
-      "  .catch((error) => console.error({ error }));",
+      "  .catch((error) => console.error({ error }));"
     ],
     "description": "Fetch JSON endpoint across the network and print it to the console"
+  },
+  "gemfile": {
+    "prefix": "gemfile",
+    "scope": "gemfile,ruby",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "source \"https://rubygems.org\"",
+      "ruby \"3.2.1\"",
+      "",
+      "# gem \"pry\""
+    ],
+    "description": "Initial structure of a Gemfile"
   }
 }

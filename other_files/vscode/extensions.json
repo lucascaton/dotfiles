@@ -37,7 +37,7 @@
     },
     "name": "code-runner",
     "publisher": "formulahendry",
-    "version": "0.11.8"
+    "version": "0.12.0"
   },
   {
     "metadata": {
@@ -57,7 +57,7 @@
     },
     "name": "code-spell-checker",
     "publisher": "streetsidesoftware",
-    "version": "2.10.1"
+    "version": "2.19.0"
   },
   {
     "metadata": {
@@ -67,7 +67,7 @@
     },
     "name": "code-spell-checker-portuguese-brazilian",
     "publisher": "streetsidesoftware",
-    "version": "2.0.9"
+    "version": "2.0.11"
   },
   {
     "metadata": {
@@ -87,17 +87,7 @@
     },
     "name": "csharp",
     "publisher": "ms-dotnettools",
-    "version": "1.25.0"
-  },
-  {
-    "metadata": {
-      "id": "25e38b8d-ff51-4c34-af36-b7b7961cf666",
-      "publisherId": "alexkrechik.cucumberautocomplete",
-      "publisherDisplayName": "alexkrechik"
-    },
-    "name": "cucumberautocomplete",
-    "publisher": "alexkrechik",
-    "version": "2.15.2"
+    "version": "1.25.4"
   },
   {
     "metadata": {
@@ -157,7 +147,7 @@
     },
     "name": "flow-for-vscode",
     "publisher": "flowtype",
-    "version": "2.2.0"
+    "version": "2.2.1"
   },
   {
     "metadata": {
@@ -187,7 +177,7 @@
     },
     "name": "githistory",
     "publisher": "donjayamanne",
-    "version": "0.6.19"
+    "version": "0.6.20"
   },
   {
     "metadata": {
@@ -197,7 +187,7 @@
     },
     "name": "github-vscode-theme",
     "publisher": "GitHub",
-    "version": "6.3.2"
+    "version": "6.3.3"
   },
   {
     "metadata": {
@@ -207,7 +197,7 @@
     },
     "name": "gitlens",
     "publisher": "eamodio",
-    "version": "13.0.3"
+    "version": "13.3.2"
   },
   {
     "metadata": {
@@ -237,7 +227,7 @@
     },
     "name": "highlight-matching-tag",
     "publisher": "vincaslt",
-    "version": "0.10.1"
+    "version": "0.11.0"
   },
   {
     "metadata": {
@@ -257,7 +247,7 @@
     },
     "name": "js-jsx-snippets",
     "publisher": "skyran",
-    "version": "11.0.0"
+    "version": "11.0.1"
   },
   {
     "metadata": {
@@ -277,7 +267,7 @@
     },
     "name": "material-theme",
     "publisher": "zhuangtongfa",
-    "version": "3.15.6"
+    "version": "3.15.8"
   },
   {
     "metadata": {
@@ -287,7 +277,7 @@
     },
     "name": "ngrok-for-vscode",
     "publisher": "philnash",
-    "version": "1.10.0"
+    "version": "1.10.1"
   },
   {
     "metadata": {
@@ -307,7 +297,7 @@
     },
     "name": "prettier-vscode",
     "publisher": "esbenp",
-    "version": "9.9.0"
+    "version": "9.10.4"
   },
   {
     "metadata": {
@@ -328,16 +318,6 @@
     "name": "rails-snippets",
     "publisher": "Hridoy",
     "version": "1.0.8"
-  },
-  {
-    "metadata": {
-      "id": "93ce222b-5f6f-49b7-9ab1-a0463c6238df",
-      "publisherId": "ms-vscode-remote.remote-containers",
-      "publisherDisplayName": "ms-vscode-remote"
-    },
-    "name": "remote-containers",
-    "publisher": "ms-vscode-remote",
-    "version": "0.255.4"
   },
   {
     "metadata": {
@@ -377,7 +357,7 @@
     },
     "name": "sass-indented",
     "publisher": "syler",
-    "version": "1.8.22"
+    "version": "1.8.26"
   },
   {
     "metadata": {
@@ -387,7 +367,7 @@
     },
     "name": "shellcheck",
     "publisher": "timonwong",
-    "version": "0.26.2"
+    "version": "0.29.4"
   },
   {
     "metadata": {
@@ -397,7 +377,7 @@
     },
     "name": "string-manipulation",
     "publisher": "marclipovsky",
-    "version": "0.5.6"
+    "version": "0.5.7"
   },
   {
     "metadata": {
@@ -447,7 +427,7 @@
     },
     "name": "vscode-docker",
     "publisher": "ms-azuretools",
-    "version": "1.22.2"
+    "version": "1.24.0"
   },
   {
     "metadata": {
@@ -457,7 +437,7 @@
     },
     "name": "vscode-eslint",
     "publisher": "dbaeumer",
-    "version": "2.2.6"
+    "version": "2.4.0"
   },
   {
     "metadata": {
@@ -467,7 +447,7 @@
     },
     "name": "vscode-icons",
     "publisher": "vscode-icons-team",
-    "version": "12.0.1"
+    "version": "12.2.0"
   },
   {
     "metadata": {
@@ -487,7 +467,17 @@
     },
     "name": "vscode-jest",
     "publisher": "Orta",
-    "version": "4.6.0"
+    "version": "5.2.3"
+  },
+  {
+    "metadata": {
+      "id": "dd5a2c83-ad8c-4839-a529-0644e5acb646",
+      "publisherId": "mgmcdermott.vscode-language-babel",
+      "publisherDisplayName": "mgmcdermott"
+    },
+    "name": "vscode-language-babel",
+    "publisher": "mgmcdermott",
+    "version": "0.0.37"
   },
   {
     "metadata": {
@@ -537,7 +527,7 @@
     },
     "name": "vscode-stylelint",
     "publisher": "stylelint",
-    "version": "1.2.3"
+    "version": "1.2.4"
   },
   {
     "metadata": {
@@ -557,6 +547,6 @@
     },
     "name": "vscode-tailwindcss",
     "publisher": "bradlc",
-    "version": "0.9.1"
+    "version": "0.9.7"
   }
 ]
