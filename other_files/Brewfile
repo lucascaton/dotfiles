@@ -69,6 +69,7 @@ cask "postico" # https://eggerapps.at/postico/
 cask "rectangle" # https://rectangleapp.com/
 # cask "sequel-pro" # https://www.sequelpro.com/
 # cask "spotmenu" # https://kmikiy.github.io/SpotMenu/
+cask "qlmarkdown"
 
 # ┌───────────────┐
 # │ Mac App Store │
