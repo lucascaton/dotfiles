@@ -23,7 +23,7 @@ brew "ccat"
 brew "colordiff"
 brew "ctags"
 brew "curl"
-brew "ffmpeg"#, args: %w[with-freetype with-libass]
+brew "ffmpeg" #, args: %w[with-freetype with-libass]
 brew "ghostscript"
 brew "git"
 brew "gnupg"
@@ -32,7 +32,7 @@ brew "imagemagick"
 brew "openssl"
 brew "macvim"
 brew "mas"
-brew "postgresql@13", restart_service: true, link: true
+brew "postgresql", restart_service: true, link: true
 brew "python"
 brew "qlmarkdown" # QuickLook generator for Markdown files - https://github.com/toland/qlmarkdown
 brew "redis", restart_service: true
@@ -41,7 +41,6 @@ brew "s3cmd"
 brew "the_silver_searcher"
 brew "tree"
 brew "wget"
-brew "youtube-dl"
 brew "dokku/repo/dokku"
 brew "heroku/brew/heroku"
 brew "puma/puma/puma-dev"
@@ -55,15 +54,14 @@ cask_args appdir: "/Applications"
 # cask "android-platform-tools" # https://developer.android.com/studio/releases/platform-tools.html
 # cask "android-studio" # https://developer.android.com/studio
 # cask "aws-vault" # https://github.com/99designs/aws-vault
-cask "chromedriver" # http://chromedriver.chromium.org/
+# cask "chromedriver" # http://chromedriver.chromium.org/
 cask "docker" # https://www.docker.com/
 cask "insomnia" # https://insomnia.rest/
 cask "iterm2" # https://iterm2.com/
 # cask "keybase" # https://keybase.io/
 # cask "mactex" # https://www.tug.org/mactex/ (Latex)
-cask "macvim" # https://github.com/macvim-dev/macvim
+# cask "macvim" # https://github.com/macvim-dev/macvim
 # cask "obs" # https://obsproject.com/
-# cast "phantomjs"
 # cask "prince" # https://www.princexml.com/
 cask "postico" # https://eggerapps.at/postico/
 cask "rectangle" # https://rectangleapp.com/
