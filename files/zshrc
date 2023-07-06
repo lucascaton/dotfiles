@@ -88,7 +88,6 @@ case $OSTYPE in
     . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-    export PATH="$PATH:$(npm bin)" # Executables from `node_modules/.bin` directory
     export PATH="$PATH:$(yarn global bin)" # Yarn global modules
     ;;
 esac
