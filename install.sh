@@ -37,6 +37,14 @@ done
 
 # ------------------------------------------------------------------------------
 
+title "Installing ZSH plugins"
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions         ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/romkatv/powerlevel10k.git             ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# ------------------------------------------------------------------------------
+
 title "Setting up macOS configs"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then ~/.dotfiles/other_files/macOS; fi
@@ -49,11 +57,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then brew bundle --file=~/.dotfiles/other_files
 
 # ------------------------------------------------------------------------------
 
-title "Installing ZSH plugins"
+# title "Installing ZSH plugins"
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions         ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/romkatv/powerlevel10k.git             ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-autosuggestions         ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/romkatv/powerlevel10k.git             ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # ------------------------------------------------------------------------------
 
