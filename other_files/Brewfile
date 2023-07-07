@@ -68,6 +68,7 @@ cask "rectangle" # https://rectangleapp.com/
 # cask "sequel-pro" # https://www.sequelpro.com/
 # cask "spotmenu" # https://kmikiy.github.io/SpotMenu/
 cask "qlmarkdown"
+cask "vlc"
 
 # ┌───────────────┐
 # │ Mac App Store │
