@@ -33,6 +33,7 @@ brew "openssl"
 brew "macvim"
 brew "mas"
 brew "postgresql", restart_service: true, link: true
+brew "libpq" # Includes `psql``, `pg_dump`, `pg_restore`, etc. - https://stackoverflow.com/q/44654216
 brew "python"
 brew "qlmarkdown" # QuickLook generator for Markdown files - https://github.com/toland/qlmarkdown
 brew "redis", restart_service: true
