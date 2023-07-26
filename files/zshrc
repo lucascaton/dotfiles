@@ -218,6 +218,8 @@ fi
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
 alias bne='curl wttr.in/brisbane'
 
+alias myip="ipconfig getifaddr $(route -n get default|awk '/interface/ { print $2 }')"
+
 ########################################### Functions ############################################
 
 case $OSTYPE in
