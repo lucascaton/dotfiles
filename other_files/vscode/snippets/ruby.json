@@ -98,6 +98,8 @@
   "spec": {
     "prefix": "spec",
     "body": [
+      "# frozen_string_literal: true",
+      "",
       "RSpec.describe ${1:Class}, type: :${2:model} do",
       "  ${3}",
       "end${0}"

@@ -49,10 +49,37 @@
       "# frozen_string_literal: true",
       "",
       "source \"https://rubygems.org\"",
-      "ruby \"3.2.1\"",
+      "ruby \"3.3.0\"",
       "",
       "# gem \"pry\""
     ],
     "description": "Initial structure of a Gemfile"
-  }
+  },
+  "markdown/table": {
+    "prefix": "table",
+    "scope": "markdown",
+    "body": [
+      "| First | Second |",
+      "| :---  | :---   |",
+      "| $1 |  |",
+    ],
+    "description": "Minimal Markdown table"
+  },
+  "markdown/logs": {
+    "prefix": "logs",
+    "scope": "markdown",
+    "body": [
+      "`$ ${1:command}`",
+      "",
+      "<details><summary>Logs</summary>",
+      "<p>",
+      "",
+      "```",
+      "${2:logs goes here}",
+      "```",
+      "</p>",
+      "</details>",
+    ],
+    "description": "Logs to be added to GitHub"
+  },
 }

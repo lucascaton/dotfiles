@@ -28,8 +28,9 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "same"
   },
   "[postcss]": {
@@ -80,6 +81,7 @@
     "postgres",
     "postgresql",
     "preconnect",
+    "Pressable",
     "recaptcha",
     "recurly",
     "rollbar",
@@ -152,13 +154,16 @@
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.path": "/opt/homebrew/bin/git",
+  "git.openRepositoryInParentFolders": "always",
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.views.stashes.files.layout": "tree",
+  "javascript.preferences.autoImportFileExcludePatterns": [
+    "**/node_modules/@types/node/**"
+  ],
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "jest.autoRun": "off",
@@ -172,34 +177,56 @@
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
-  "npm.keybindingsChangedWarningShown": true,
   "prettier.proseWrap": "always",
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.format": "rubocop",
-  "ruby.intellisense": "rubyLocate",
   "ruby.rubocop.useBundler": true,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "codeLens": true,
+    "completion": true,
+    "definition": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "references": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "workspaceSymbol": true
+  },
   "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "sync.autoDownload": true,
-  "sync.autoUpload": true,
-  "sync.forceUpload": false,
-  "sync.gist": "a867a5f65c2f289539655a65eff24657",
-  "sync.quietSync": true,
   "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    [
+      [
+        "clsx\\(([^]*)\\)",
+        "(?:'|\"|`)([^\"'`]*)(?:'|\"|`)"
+      ],
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
+  ],
   "terminal.external.osxExec": "iTerm 2.app",
   "terminal.integrated.fontSize": 15,
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "**/node_modules/@types/node/**"
+  ],
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
-  "window.commandCenter": true,
+  "window.commandCenter": false,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
-  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "GitHub Dark",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "newUntitledFile"
 }
