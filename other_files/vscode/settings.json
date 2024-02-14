@@ -93,9 +93,11 @@
     "twilio"
   ],
   "diffEditor.renderSideBySide": false,
+  "editor.codeLensFontFamily": "JetbrainsMono, Hack Nerd Font, Menlo, Monaco, monospace",
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
-  "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Hack Nerd Font, Menlo, Monaco, monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.guides.bracketPairs": "active",
@@ -214,6 +216,7 @@
   ],
   "terminal.external.osxExec": "iTerm 2.app",
   "terminal.integrated.fontSize": 15,
+  "terminal.integrated.stickyScroll.enabled": true,
   "typescript.preferences.autoImportFileExcludePatterns": [
     "**/node_modules/@types/node/**"
   ],

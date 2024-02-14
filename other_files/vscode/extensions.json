@@ -25,6 +25,11 @@
         "enabled": true
     },
     {
+        "identifier": "bierner.markdown-mermaid",
+        "version": "1.22.0",
+        "enabled": true
+    },
+    {
         "identifier": "bradlc.vscode-tailwindcss",
         "version": "0.10.5",
         "enabled": true
@@ -81,12 +86,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.159.0",
+        "version": "1.160.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.12.1",
+        "version": "0.12.2",
         "enabled": true
     },
     {
@@ -151,7 +156,7 @@
     },
     {
         "identifier": "ms-azuretools.vscode-docker",
-        "version": "1.28.0",
+        "version": "1.29.0",
         "enabled": true
     },
     {
@@ -176,7 +181,7 @@
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "5.2.3",
+        "version": "6.2.0",
         "enabled": true
     },
     {
@@ -216,7 +221,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.5.9",
+        "version": "0.5.11",
         "enabled": true
     },
     {
@@ -247,6 +252,11 @@
     {
         "identifier": "timonwong.shellcheck",
         "version": "0.35.0",
+        "enabled": true
+    },
+    {
+        "identifier": "unifiedjs.vscode-mdx",
+        "version": "1.7.1",
         "enabled": true
     },
     {
