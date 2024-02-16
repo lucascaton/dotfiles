@@ -61,6 +61,9 @@ function zshaddhistory() {
 
 ############################################# Export #############################################
 
+HISTSIZE=9999999 # default is 50000
+SAVEHIST=$HISTSIZE
+
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 case $OSTYPE in
