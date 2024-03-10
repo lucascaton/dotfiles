@@ -57,7 +57,6 @@ cask_args appdir: "/Applications"
 # cask "aws-vault" # https://github.com/99designs/aws-vault
 # cask "chromedriver" # http://chromedriver.chromium.org/
 cask "docker" # https://www.docker.com/
-cask "insomnia" # https://insomnia.rest/
 cask "iterm2" # https://iterm2.com/
 # cask "keybase" # https://keybase.io/
 # cask "mactex" # https://www.tug.org/mactex/ (Latex)
