@@ -56,7 +56,7 @@
     },
     {
         "identifier": "eamodio.gitlens",
-        "version": "14.8.0",
+        "version": "14.9.0",
         "enabled": true
     },
     {
@@ -86,12 +86,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.160.0",
+        "version": "1.172.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.12.2",
+        "version": "0.13.0",
         "enabled": true
     },
     {
@@ -101,7 +101,7 @@
     },
     {
         "identifier": "GrapeCity.gc-excelviewer",
-        "version": "4.2.58",
+        "version": "4.2.59",
         "enabled": true
     },
     {
@@ -126,7 +126,7 @@
     },
     {
         "identifier": "Katsute.settings-repository",
-        "version": "1.0.8",
+        "version": "1.0.9",
         "enabled": true
     },
     {
@@ -166,7 +166,7 @@
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.0.1",
+        "version": "2.0.2",
         "enabled": true
     },
     {
@@ -181,7 +181,7 @@
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "6.2.0",
+        "version": "6.2.2",
         "enabled": true
     },
     {
@@ -221,7 +221,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.5.11",
+        "version": "0.5.12",
         "enabled": true
     },
     {
@@ -251,12 +251,12 @@
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.35.0",
+        "version": "0.37.0",
         "enabled": true
     },
     {
         "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.7.1",
+        "version": "1.8.1",
         "enabled": true
     },
     {
