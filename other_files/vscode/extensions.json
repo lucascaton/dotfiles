@@ -110,6 +110,11 @@
         "enabled": true
     },
     {
+        "identifier": "humao.rest-client",
+        "version": "0.25.1",
+        "enabled": true
+    },
+    {
         "identifier": "IBM.output-colorizer",
         "version": "0.1.2",
         "enabled": true
@@ -260,6 +265,11 @@
         "enabled": true
     },
     {
+        "identifier": "usernamehw.errorlens",
+        "version": "3.16.0",
+        "enabled": true
+    },
+    {
         "identifier": "vincaslt.highlight-matching-tag",
         "version": "0.11.0",
         "enabled": true
@@ -292,7 +302,7 @@
     {
         "identifier": "yzhang.markdown-all-in-one",
         "version": "3.6.2",
-        "enabled": false
+        "enabled": true
     },
     {
         "identifier": "zhuangtongfa.material-theme",
