@@ -289,29 +289,20 @@ case $OSTYPE in
     ;;
 esac
 
-# Run this command after merging your PR. This will:
-# - Return to the default branch (first argument or `main`/`master` by default)
-# - Pull/rebase changes from the default branch
-# - Delete branch from the merged PR
-# - (For convinience) Display all local branches at the moment
-#
-# Usage: reset_env_after_pr <branch> (default: main, then master)
+# Command to reset environment after PR merge: switch to default branch, pull changes, clean up
 reset_env_after_pr() {
-  branch=$(git branch --show-current)
+  current_branch=$(git branch --show-current)
+  default_branch=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
 
-  if git show-ref -q --heads main; then
-    main_branch=main
-  else
-    main_branch=master
-  fi
-
-  git checkout ${1-$main_branch}
-  git pull origin --rebase --prune
-  git branch -d $branch
+  git checkout $default_branch # Switch back to the default branch
+  git pull origin --rebase --prune # Pulls/rebases changes from the default branch
+  git branch -d $current_branch # Deletes the branch used for the merged PR
+  git remote prune origin # Removes references to deleted remote branches
+  git fetch # Fetches any new branches or commits
 
   clear
 
-  git branch -a
+  git branch -a # Display all local and remote branches for convenience
 }
 
 # Convert Ruby 1.8 to 1.9 hash syntax
