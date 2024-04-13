@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
-    "key": "shift+cmd+0",
+    "key": "shift+ctrl+0",
     "command": "workbench.action.zoomReset"
   },
   {
@@ -18,8 +18,18 @@
     "when": "editorHasSelection && editorTextFocus"
   },
   {
-    "key": "cmd+w",
+    "key": "ctrl+w",
     "command": "workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  // The following commands are used to remove keybindings (indicated by the `-` prefix)
+  {
+    "key": "ctrl+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "alt+ctrl+h",
+    "command": "-rest-client.history"
   }
 ]

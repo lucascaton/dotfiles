@@ -157,7 +157,6 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
-  "git.path": "/opt/homebrew/bin/git",
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },

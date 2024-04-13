@@ -11,7 +11,7 @@
     },
     {
         "identifier": "alefragnani.Bookmarks",
-        "version": "13.4.2",
+        "version": "13.5.0",
         "enabled": true
     },
     {
@@ -66,7 +66,7 @@
     },
     {
         "identifier": "esbenp.prettier-vscode",
-        "version": "10.1.0",
+        "version": "10.4.0",
         "enabled": true
     },
     {
@@ -81,17 +81,17 @@
     },
     {
         "identifier": "formulahendry.code-runner",
-        "version": "0.12.1",
+        "version": "0.12.2",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.172.0",
+        "version": "1.180.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.13.0",
+        "version": "0.14.1",
         "enabled": true
     },
     {
@@ -166,12 +166,12 @@
     },
     {
         "identifier": "ms-dotnettools.csharp",
-        "version": "2.15.30",
+        "version": "2.23.15",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.0.2",
+        "version": "2.0.3",
         "enabled": true
     },
     {
@@ -181,12 +181,12 @@
     },
     {
         "identifier": "naumovs.color-highlight",
-        "version": "2.5.0",
+        "version": "2.8.0",
         "enabled": true
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "6.2.2",
+        "version": "6.2.4",
         "enabled": true
     },
     {
@@ -215,6 +215,11 @@
         "enabled": true
     },
     {
+        "identifier": "ricard.postcss",
+        "version": "2.0.0",
+        "enabled": true
+    },
+    {
         "identifier": "richie5um2.vscode-sort-json",
         "version": "1.20.0",
         "enabled": true
@@ -226,12 +231,12 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.5.12",
+        "version": "0.5.19",
         "enabled": true
     },
     {
         "identifier": "skyran.js-jsx-snippets",
-        "version": "11.0.1",
+        "version": "11.1.3",
         "enabled": true
     },
     {
@@ -246,7 +251,7 @@
     },
     {
         "identifier": "stylelint.vscode-stylelint",
-        "version": "1.3.0",
+        "version": "1.4.0",
         "enabled": true
     },
     {
@@ -256,12 +261,12 @@
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.37.0",
+        "version": "0.37.1",
         "enabled": true
     },
     {
         "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.8.1",
+        "version": "1.8.3",
         "enabled": true
     },
     {
@@ -296,7 +301,7 @@
     },
     {
         "identifier": "YoavBls.pretty-ts-errors",
-        "version": "0.5.3",
+        "version": "0.5.4",
         "enabled": true
     },
     {
@@ -306,7 +311,7 @@
     },
     {
         "identifier": "zhuangtongfa.material-theme",
-        "version": "3.16.2",
+        "version": "3.17.0",
         "enabled": true
     }
 ]
