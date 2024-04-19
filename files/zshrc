@@ -115,6 +115,9 @@ export DOCKER_BUILDKIT=1
 # GPG
 export GPG_TTY=$(tty)
 
+# fzf (key bindings and fuzzy completion) - https://github.com/junegunn/fzf
+eval "$(fzf --zsh)"
+
 ######################################## Personal configs ########################################
 
 if [ -d $HOME/projects/.personal_configs ]; then

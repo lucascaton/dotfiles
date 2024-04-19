@@ -24,6 +24,7 @@ brew "colordiff"
 brew "ctags"
 brew "curl"
 brew "ffmpeg" #, args: %w[with-freetype with-libass]
+brew "fzf"
 brew "ghostscript"
 brew "git"
 brew "gnupg"
