@@ -227,14 +227,6 @@ alias myip="ipconfig getifaddr $(route -n get default|awk '/interface/ { print $
 
 ########################################### Functions ############################################
 
-case $OSTYPE in
-  linux-gnu)
-    alias c='cat'
-    ;;
-  darwin*)
-    c() { /bin/cat -n $* | ccat } # Colorizing `cat` (https://github.com/jingweno/ccat)
-    ;;
-esac
 # TODO: move all the following to the ./bin directory (bin-files)
 
 replace() {
