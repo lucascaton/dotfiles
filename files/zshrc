@@ -220,26 +220,6 @@ alias myip="ipconfig getifaddr $(route -n get default|awk '/interface/ { print $
 
 case $OSTYPE in
   darwin*)
-    function rm() {
-      local path
-      for path in "$@"; do
-        # Ignore any arguments
-        if [[ "$path" = -* ]]; then :
-        else
-          local dst=${path##*/}
-
-          # Append the time if necessary
-          while [ -e $HOME/.Trash/"$dst" ]; do
-            dst="$dst $RANDOM"
-          done
-
-          /bin/mv "$path" $HOME/.Trash/"$dst"
-        fi
-      done
-
-      echo ""
-    }
-
     # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
     fcd() {
       pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
