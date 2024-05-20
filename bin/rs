@@ -1,0 +1,8 @@
+#! /bin/bash
+set -euxo pipefail
+
+if [ -f bin/dev ]; then
+  ./bin/dev
+else
+  ./bin/rails s
+fi

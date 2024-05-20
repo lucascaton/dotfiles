@@ -155,15 +155,7 @@ fi
 # Ruby / Rails
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias be='bundle exec'
-
-  rs() {
-    if [ -f bin/dev ]; then
-      ./bin/dev
-    else
-      ./bin/rails s
-    fi
-  }
-
+  # Rails server: see `./bin/rs` file
   alias rc='bin/rails c'
   alias rg='bin/rails g'
 
