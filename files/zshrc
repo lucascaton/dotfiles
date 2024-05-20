@@ -214,7 +214,7 @@ if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
   m() { mvim -p ${1-.} }
 fi
 
-alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
+alias sshkey='cat $HOME/.ssh/id_rsa.pub | pbcopy && echo "Your public SSH Key has been copied to the clipboard"'
 alias bne='curl wttr.in/brisbane'
 
 alias myip="ipconfig getifaddr $(route -n get default|awk '/interface/ { print $2 }')"
@@ -269,11 +269,11 @@ case $OSTYPE in
           local dst=${path##*/}
 
           # Append the time if necessary
-          while [ -e ~/.Trash/"$dst" ]; do
+          while [ -e $HOME/.Trash/"$dst" ]; do
             dst="$dst $RANDOM"
           done
 
-          /bin/mv "$path" ~/.Trash/"$dst"
+          /bin/mv "$path" $HOME/.Trash/"$dst"
         fi
       done
 
@@ -330,7 +330,7 @@ hl() {
   theme_folder=`brew --cellar highlight`/`brew list --versions highlight | tr ' ' '\n' | grep -e '^\d' | head -n 1`/share/highlight/themes/
 
   if ! [ -f $theme_folder/lucascaton.theme ]; then
-    cp ~/.dotfiles/other_files/highlight/themes/lucascaton.theme $theme_folder
+    cp $HOME/.dotfiles/other_files/highlight/themes/lucascaton.theme $theme_folder
   fi
 
   highlight -O rtf $1 --font "Hack Regular Nerd Font Complete" --font-size 48 \
@@ -370,4 +370,4 @@ precmd() {
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
