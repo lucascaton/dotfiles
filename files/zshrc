@@ -109,9 +109,6 @@ case $OSTYPE in
     ;;
 esac
 
-# Docker
-export DOCKER_BUILDKIT=1
-
 # GPG
 export GPG_TTY=$(tty)
 
