@@ -121,6 +121,12 @@ if [ -d $HOME/projects/.personal_configs ]; then
   for file in $HOME/projects/.personal_configs/*; do source $file; done
 fi
 
+########################################### bin-files ############################################
+
+if [ -d $HOME/.dotfiles/bin ]; then
+  export PATH=$HOME/.dotfiles/bin:$PATH
+fi
+
 ############################################ Aliases #############################################
 
 if [[ "$ITERM_PROFILE" != "Course" ]]; then
@@ -229,6 +235,7 @@ case $OSTYPE in
     c() { /bin/cat -n $* | ccat } # Colorizing `cat` (https://github.com/jingweno/ccat)
     ;;
 esac
+# TODO: move all the following to the ./bin directory (bin-files)
 
 replace() {
   # Usage: replace foo bar **/*.rb
