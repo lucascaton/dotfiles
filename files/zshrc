@@ -218,24 +218,6 @@ alias myip="ipconfig getifaddr $(route -n get default|awk '/interface/ { print $
 
 # TODO: move all the following to the ./bin directory (bin-files)
 
-replace() {
-  # Usage: replace foo bar **/*.rb
-  # Original function: https://github.com/thoughtbot/dotfiles/blob/master/bin/replace
-
-  find_this="$1"
-  shift
-  replace_with="$1"
-  shift
-
-  items=("${(@f)$(ag -l --nocolor "$find_this" "$@")}")
-  temp="${TMPDIR:-/tmp}/replace_temp_file.$$"
-
-  for item in $items; do
-    echo ✓ $item
-    sed "s/$find_this/$replace_with/g" "$item" > "$temp" && mv "$temp" "$item"
-  done
-}
-
 case $OSTYPE in
   darwin*)
     function rm() {
