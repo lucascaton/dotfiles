@@ -169,9 +169,6 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
 
   alias rspec='bundle exec rspec'
   alias rubocop='bundle exec rubocop'
-  alias sidekiq='bundle exec sidekiq'
-  alias puma='bundle exec puma'
-  alias cop='git status --porcelain | awk '\''$1 ~ /A|M/ && $NF ~ /\.rb$/ { print $NF }'\'' | xargs rubocop --force-exclusion'
 fi
 
 case $OSTYPE in
@@ -247,16 +244,6 @@ replace() {
   done
 }
 
-function npmls() {
-  npm ls --depth=0 "$@" 2>/dev/null
-}
-
-function npmlsg() {
-  npm ls -g --depth=0 "$@" 2>/dev/null
-}
-
-alias node_modules_folder_sizes='find . -name "node_modules" -type d -prune -print | xargs du -chs'
-
 case $OSTYPE in
   darwin*)
     function rm() {
@@ -302,11 +289,6 @@ reset_env_after_pr() {
   clear
 
   git branch -a # Display all local and remote branches for convenience
-}
-
-# Convert Ruby 1.8 to 1.9 hash syntax
-ruby_new_hash_syntax() {
-  perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g' ${1}**/*.rb
 }
 
 # Git History - http://goo.gl/BzdgE3
