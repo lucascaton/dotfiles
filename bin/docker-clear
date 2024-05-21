@@ -1,0 +1,15 @@
+#! /bin/bash
+set -euo pipefail
+
+echo "## Before:"
+docker system df
+echo
+
+echo "## Pruning..."
+docker system prune --all --force
+docker volume prune
+echo
+
+echo "## After:"
+docker system df
+echo

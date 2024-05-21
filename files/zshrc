@@ -232,18 +232,6 @@ esac
 
 # TODO: move all the following to the ./bin directory (bin-files)
 
-docker-clear() {
-  echo "\n>> Before:"
-  docker system df
-
-  echo "\n>> Pruning:"
-  docker system prune --all --force
-  docker volume prune
-
-  echo "\n>> After:\n"
-  docker system df
-}
-
 # Kill process running on a particular port
 killport() {
   kill -9 $(lsof -i:$1 -t)
