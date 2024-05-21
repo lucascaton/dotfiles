@@ -2,8 +2,11 @@
 set -euo pipefail
 
 case "$OSTYPE" in
-  # macOS
-  darwin*)
+  linux-gnu*)
+    /bin/rm "$@"
+  ;;
+
+  darwin*) # macOS
     for path in "$@"; do
       # Ignore any arguments
       if [[ "$path" = -* ]]; then :
