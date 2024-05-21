@@ -1,0 +1,17 @@
+#! /bin/bash
+set -euo pipefail
+
+# Resets environment after PR merge: switch to default branch, pull changes, clean up
+
+current_branch=$(git branch --show-current)
+default_branch=$(git symbolic-ref refs/remotes/origin/HEAD | sed "s@^refs/remotes/origin/@@")
+
+git checkout "$default_branch" # Switch back to the default branch
+git pull origin --rebase --prune # Pulls/rebases changes from the default branch
+git branch -d "$current_branch" # Deletes the branch used for the merged PR
+git remote prune origin # Removes references to deleted remote branches
+git fetch # Fetches any new branches or commits
+
+clear
+
+git branch -a # Display all local and remote branches for convenience
