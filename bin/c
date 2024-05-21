@@ -2,13 +2,11 @@
 set -euo pipefail
 
 case "$OSTYPE" in
-  # Linux
   linux-gnu*)
     /bin/cat "$@"
   ;;
 
-  # macOS
-  darwin*)
+  darwin*) # macOS
     /bin/cat -n "$@" | ccat; # Colorizing `cat` (https://github.com/jingweno/ccat)
   ;;
 esac

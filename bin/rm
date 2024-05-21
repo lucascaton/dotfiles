@@ -1,6 +1,9 @@
 #! /bin/bash
 set -euo pipefail
 
+# If the OS is macOS, the `rm` command will be overwritten, so instead of
+# permanently removing files and directories, it moves them to the Trash/Bin.
+
 case "$OSTYPE" in
   linux-gnu*)
     /bin/rm "$@"
