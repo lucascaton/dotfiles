@@ -1,0 +1,14 @@
+#! /bin/bash
+set -euxo pipefail
+
+# yarn lint
+# yarn test
+# yarn test:all
+
+# bundle exec rubocop
+# bundle exec rspec
+# bundle exec brakeman --run-all-checks --exit-on-warn --exit-on-error --rails7 --no-pager --quiet
+# bundle exec rails_best_practices . -c config/rails_best_practices.yml
+
+# TODO: uncomment the above lines and remove the below line
+echo "⚠️ Edit or remove the .git/hooks/pre-commit file"
