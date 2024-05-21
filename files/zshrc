@@ -232,22 +232,6 @@ esac
 
 # TODO: move all the following to the ./bin directory (bin-files)
 
-# Git History - http://goo.gl/BzdgE3
-gith() {
-  if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 PATTERN FILE"
-    echo
-    echo '  Show all of the various changes to a single line in a specified file over the entire' \
-         'git history'
-    echo
-    return 1
-  fi
-
-  for c in $(git log -G "$1" --format=%H -- $2); do
-    git --no-pager grep -e "$1" $c -- $2
-  done
-}
-
 hl() {
   theme_folder=`brew --cellar highlight`/`brew list --versions highlight | tr ' ' '\n' | grep -e '^\d' | head -n 1`/share/highlight/themes/
 

@@ -1,0 +1,16 @@
+#! /bin/bash
+set -euo pipefail
+
+# Git History - https://stackoverflow.com/q/9935379/1445184
+if [ "$#" -ne 2 ]; then
+  echo 'Show all of the various changes to a single line in a specified file over the entire' \
+        'git history'
+  echo
+  echo "Usage: $0 PATTERN FILE"
+  echo
+  exit 1
+fi
+
+for c in $(git log -G "$1" --format=%H -- "$2"); do
+  git --no-pager grep -e "$1" "$c" -- "$2"
+done
