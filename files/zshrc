@@ -8,22 +8,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 ZSH=$HOME/.oh-my-zsh
-
-if [[ "$ITERM_PROFILE" == "Course" ]]; then
-  ZSH_THEME='fletcherm'
-else
-  ZSH_THEME="powerlevel10k/powerlevel10k"
-fi
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ############################################# Plugins #############################################
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/custom/plugins/)
-if [[ "$ITERM_PROFILE" != "Course" ]]; then
 plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
-fi
 
 ######################################### General Settings #########################################
 
@@ -129,40 +122,36 @@ fi
 
 ############################################ Aliases #############################################
 
-if [[ "$ITERM_PROFILE" != "Course" ]]; then
-  # Git
-  alias g='git status'
-  alias gc='git commit --no-edit'
-  alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
-  alias gls='git log --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative --author="`git config --get user.name`"'
-  alias gd='git --no-pager diff'
-  alias gdc='git --no-pager diff --cached'
-  alias gds='git --no-pager diff HEAD\^ HEAD'
-  alias gm='git merge --no-edit'
-  alias gmu='git fetch upstream && git merge upstream/main'
-  alias ga='git add'
-  alias gaa='git add --all'
-  alias gr='git rm'
-  alias gp='git pull origin $(git branch --show-current) --rebase --prune'
-  alias gb='git branch'
-  alias gba='git branch -a'
-  alias gbd='git branch -d'
-  alias gbD='git branch -D'
-  alias push='git push'
-  alias fpush='git push --force-with-lease'
-  alias pch=".git/hooks/pre-commit"
-fi
+# Git
+alias g='git status'
+alias gc='git commit --no-edit'
+alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+alias gls='git log --graph --pretty=format:'\''%s'\'' --abbrev-commit --date=relative --author="`git config --get user.name`"'
+alias gd='git --no-pager diff'
+alias gdc='git --no-pager diff --cached'
+alias gds='git --no-pager diff HEAD\^ HEAD'
+alias gm='git merge --no-edit'
+alias gmu='git fetch upstream && git merge upstream/main'
+alias ga='git add'
+alias gaa='git add --all'
+alias gr='git rm'
+alias gp='git pull origin $(git branch --show-current) --rebase --prune'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+alias push='git push'
+alias fpush='git push --force-with-lease'
+alias pch=".git/hooks/pre-commit"
 
 # Ruby / Rails
-if [[ "$ITERM_PROFILE" != "Course" ]]; then
-  alias be='bundle exec'
-  # Rails server: see `./bin/rs` file
-  alias rc='bin/rails c'
-  alias rg='bin/rails g'
+alias be='bundle exec'
+# Rails server: see `./bin/rs` file
+alias rc='bin/rails c'
+alias rg='bin/rails g'
 
-  alias rspec='bundle exec rspec'
-  alias rubocop='bundle exec rubocop'
-fi
+alias rspec='bundle exec rspec'
+alias rubocop='bundle exec rubocop'
 
 case $OSTYPE in
   darwin*)
@@ -234,11 +223,9 @@ esac
 ############################################## PS1 ###############################################
 
 precmd() {
-  if [[ "$ITERM_PROFILE" == "Course" ]]; then
-    export PROMPT='%{$fg_no_bold[green]%}%1~ $(git_prompt_info)%{$reset_color%}» '
-    export RPROMPT=''
-    return;
-  fi
+  export PROMPT='%{$fg_no_bold[green]%}%1~ $(git_prompt_info)%{$reset_color%}» '
+  export RPROMPT=''
+  return;
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
