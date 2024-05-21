@@ -216,18 +216,21 @@ alias myip="ipconfig getifaddr $(route -n get default|awk '/interface/ { print $
 
 ########################################### Functions ############################################
 
-# TODO: move all the following to the ./bin directory (bin-files)
-
 case $OSTYPE in
-  darwin*)
-    # http://br-mac.org/2013/07/fcd-um-atalho-para-mudar-o-diretorio-corrente-do-terminal-para-a-pasta-aberta-no-finder.html
+  darwin*) # macOS
+    # Change directory in your terminal window to the path of the front Finder window
+    # From https://superuser.com/a/1044651/667812
+    # NOTE: this function cannot be extracted to its own bin-file because while a script can change
+    # directories within its own execution context, these changes will not persist after it finishes
     fcd() {
-      pFinder=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
-      [ -n "$pFinder" ] && cd "$pFinder"
+      target=$(osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)')
+      [ -n "$target" ] && cd "$target"
       pwd
     }
     ;;
 esac
+
+# TODO: move all the following to the ./bin directory (bin-files)
 
 # Command to reset environment after PR merge: switch to default branch, pull changes, clean up
 reset_env_after_pr() {
