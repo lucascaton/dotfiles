@@ -1,0 +1,7 @@
+#! /bin/bash
+set -euo pipefail
+
+# See details from the process running on a particular port
+# Usage: `port <number>`, eg.: `port 5432`
+
+ps aux | grep "$(lsof -i:$1 -t)" | grep -vi grep

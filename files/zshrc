@@ -237,11 +237,6 @@ killport() {
   kill -9 $(lsof -i:$1 -t)
 }
 
-# See details from the process running on a particular port
-port() {
-  ps aux | grep $(lsof -i:$1 -t) | grep -vi grep
-}
-
 ############################################## PS1 ###############################################
 
 precmd() {
