@@ -150,6 +150,7 @@ if [[ "$ITERM_PROFILE" != "Course" ]]; then
   alias gbD='git branch -D'
   alias push='git push'
   alias fpush='git push --force-with-lease'
+  alias pch=".git/hooks/pre-commit"
 fi
 
 # Ruby / Rails
