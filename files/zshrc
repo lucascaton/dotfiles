@@ -142,7 +142,8 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias push='git push'
 alias fpush='git push --force-with-lease'
-alias pch=".git/hooks/pre-commit"
+alias ch=".git/hooks/pre-commit"
+alias ph=".git/hooks/pre-push"
 
 # Ruby / Rails
 alias be='bundle exec'
