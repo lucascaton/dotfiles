@@ -1,0 +1,6 @@
+#! /bin/bash
+set -euo pipefail
+
+# Kill process running on a particular port, eg.: kill-port 3000
+
+kill -9 "$(lsof -i:$1 -t)"
