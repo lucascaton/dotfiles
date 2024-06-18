@@ -93,6 +93,7 @@
     "twilio"
   ],
   "diffEditor.renderSideBySide": false,
+  "editor.accessibilitySupport": "off",
   "editor.codeLensFontFamily": "JetbrainsMono, Hack Nerd Font, Menlo, Monaco, monospace",
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
@@ -123,6 +124,10 @@
     "javascript": "jsx",
     "postcss": "css"
   },
+  "errorLens.delay": 500,
+  "errorLens.delayMode": "debounce",
+  "errorLens.enabled": false,
+  "errorLens.enabledInMergeConflict": false,
   "eslint.alwaysShowStatus": true,
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
@@ -157,6 +162,7 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
+  "github.copilot.editor.enableAutoCompletions": true,
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },

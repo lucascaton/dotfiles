@@ -6,7 +6,7 @@
     },
     {
         "identifier": "aki77.rails-db-schema",
-        "version": "0.2.7",
+        "version": "0.2.8",
         "enabled": true
     },
     {
@@ -26,7 +26,7 @@
     },
     {
         "identifier": "bierner.markdown-mermaid",
-        "version": "1.22.0",
+        "version": "1.23.0",
         "enabled": true
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "identifier": "dbaeumer.vscode-eslint",
-        "version": "2.4.4",
+        "version": "3.0.10",
         "enabled": true
     },
     {
@@ -56,7 +56,7 @@
     },
     {
         "identifier": "eamodio.gitlens",
-        "version": "14.9.0",
+        "version": "15.1.0",
         "enabled": true
     },
     {
@@ -67,6 +67,11 @@
     {
         "identifier": "esbenp.prettier-vscode",
         "version": "10.4.0",
+        "enabled": true
+    },
+    {
+        "identifier": "expo.vscode-expo-tools",
+        "version": "1.5.0",
         "enabled": true
     },
     {
@@ -86,12 +91,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.180.0",
+        "version": "1.204.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.14.1",
+        "version": "0.16.1",
         "enabled": true
     },
     {
@@ -122,11 +127,6 @@
     {
         "identifier": "kaiwood.endwise",
         "version": "1.5.1",
-        "enabled": true
-    },
-    {
-        "identifier": "karunamurti.haml",
-        "version": "1.4.1",
         "enabled": true
     },
     {
@@ -161,17 +161,17 @@
     },
     {
         "identifier": "ms-azuretools.vscode-docker",
-        "version": "1.29.0",
+        "version": "1.29.1",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.csharp",
-        "version": "2.23.15",
+        "version": "2.33.17",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.0.3",
+        "version": "2.0.6",
         "enabled": true
     },
     {
@@ -186,7 +186,7 @@
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "6.2.4",
+        "version": "6.2.5",
         "enabled": true
     },
     {
@@ -231,7 +231,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.5.19",
+        "version": "0.7.4",
         "enabled": true
     },
     {
@@ -266,12 +266,12 @@
     },
     {
         "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.8.3",
+        "version": "1.8.8",
         "enabled": true
     },
     {
         "identifier": "usernamehw.errorlens",
-        "version": "3.16.0",
+        "version": "3.18.0",
         "enabled": true
     },
     {
@@ -291,12 +291,7 @@
     },
     {
         "identifier": "vscode-icons-team.vscode-icons",
-        "version": "12.7.0",
-        "enabled": true
-    },
-    {
-        "identifier": "wix.vscode-import-cost",
-        "version": "3.3.0",
+        "version": "12.8.0",
         "enabled": true
     },
     {
@@ -311,7 +306,7 @@
     },
     {
         "identifier": "zhuangtongfa.material-theme",
-        "version": "3.17.0",
+        "version": "3.17.2",
         "enabled": true
     }
 ]
