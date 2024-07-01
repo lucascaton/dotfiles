@@ -5,6 +5,7 @@ eslint
 prettier
 vercel
 http-server
+eas-cli
 
 # Similar to `nodemon` but for TypeScript
 # ts-node-dev
