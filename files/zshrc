@@ -72,19 +72,13 @@ esac
 
 case $OSTYPE in
   darwin*)
-    if [ $(uname -m) = "x86_64" ]; then # Intel Macs
-      export PATH="/usr/local/bin:/usr/local/sbin:$PATH" # Homebrew
-    elif [ $(uname -m) = "arm64" ]; then # Apple Silicon
-      export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH" # Homebrew
-    fi
+    export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
-    # asdf (multiple runtime versions manager) - https://asdf-vm.com/
-    # The following works on both Apple Silicon and Intel Macs
     . $(brew --prefix asdf)/libexec/asdf.sh
     . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-    export PATH="$PATH:$(yarn global bin)" # Yarn global modules
+    export PATH="$PATH:$(yarn global bin)"
     ;;
 esac
 
@@ -179,11 +173,7 @@ case $OSTYPE in
     alias lsm='ls -l --time-style=long-iso'
     ;;
   darwin*)
-    if [ $(uname -m) = "x86_64" ]; then # Intel Macs
-      alias lsm='/usr/local/bin/gls -l --time-style=long-iso'
-    elif [ $(uname -m) = "arm64" ]; then # Apple Silicon
-      alias lsm='/opt/homebrew/bin/gls -l --time-style=long-iso'
-    fi
+    alias lsm="$(brew --prefix)/bin/gls -l --time-style=long-iso"
     ;;
 esac
 
