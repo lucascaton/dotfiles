@@ -150,7 +150,7 @@ alias rubocop='bundle exec rubocop'
 
 case $OSTYPE in
   darwin*)
-    alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
+    alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/101481
     alias simulator="open -a Simulator.app"
     ;;
 esac
