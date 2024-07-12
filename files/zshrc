@@ -150,10 +150,6 @@ alias rubocop='bundle exec rubocop'
 
 case $OSTYPE in
   darwin*)
-    if [ $(uname -m) = "arm64" ]; then # Apple Silicon
-      alias a="arch -x86_64"
-    fi
-
     alias flushdns='sudo killall -HUP mDNSResponder' # https://support.apple.com/en-au/HT202516
     alias simulator="open -a Simulator.app"
     ;;
