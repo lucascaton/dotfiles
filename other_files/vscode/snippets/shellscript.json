@@ -7,7 +7,7 @@
   "Shebang": {
     "prefix": "exe",
     "body": [
-      "#! /bin/bash",
+      "#!/bin/bash",
       "",
       "set -euxo pipefail"
     ],

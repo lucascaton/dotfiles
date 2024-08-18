@@ -4,7 +4,7 @@
     "editor.formatOnSave": true
   },
   "[gemfile]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
+    "editor.defaultFormatter": "rubocop.vscode-rubocop"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -37,7 +37,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
+    "editor.defaultFormatter": "rubocop.vscode-rubocop"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",

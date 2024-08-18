@@ -6,7 +6,7 @@
     },
     {
         "identifier": "aki77.rails-db-schema",
-        "version": "0.2.8",
+        "version": "0.2.9",
         "enabled": true
     },
     {
@@ -26,12 +26,12 @@
     },
     {
         "identifier": "bierner.markdown-mermaid",
-        "version": "1.23.0",
+        "version": "1.23.1",
         "enabled": true
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.10.5",
+        "version": "0.12.6",
         "enabled": true
     },
     {
@@ -56,7 +56,7 @@
     },
     {
         "identifier": "eamodio.gitlens",
-        "version": "15.1.0",
+        "version": "15.3.0",
         "enabled": true
     },
     {
@@ -66,7 +66,7 @@
     },
     {
         "identifier": "esbenp.prettier-vscode",
-        "version": "10.4.0",
+        "version": "11.0.0",
         "enabled": true
     },
     {
@@ -91,12 +91,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.204.0",
+        "version": "1.223.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.16.1",
+        "version": "0.18.2",
         "enabled": true
     },
     {
@@ -106,7 +106,7 @@
     },
     {
         "identifier": "GrapeCity.gc-excelviewer",
-        "version": "4.2.59",
+        "version": "4.2.60",
         "enabled": true
     },
     {
@@ -155,23 +155,23 @@
         "enabled": true
     },
     {
-        "identifier": "misogi.ruby-rubocop",
-        "version": "0.8.6",
-        "enabled": true
-    },
-    {
         "identifier": "ms-azuretools.vscode-docker",
-        "version": "1.29.1",
+        "version": "1.29.2",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.csharp",
-        "version": "2.33.17",
+        "version": "2.39.29",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.0.6",
+        "version": "2.1.1",
+        "enabled": true
+    },
+    {
+        "identifier": "ms-vscode-remote.remote-containers",
+        "version": "0.380.0",
         "enabled": true
     },
     {
@@ -230,8 +230,13 @@
         "enabled": true
     },
     {
+        "identifier": "rubocop.vscode-rubocop",
+        "version": "0.7.0",
+        "enabled": true
+    },
+    {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.7.4",
+        "version": "0.7.15",
         "enabled": true
     },
     {
@@ -256,7 +261,7 @@
     },
     {
         "identifier": "syler.sass-indented",
-        "version": "1.8.29",
+        "version": "1.8.31",
         "enabled": true
     },
     {
@@ -266,12 +271,12 @@
     },
     {
         "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.8.8",
+        "version": "1.8.9",
         "enabled": true
     },
     {
         "identifier": "usernamehw.errorlens",
-        "version": "3.18.0",
+        "version": "3.20.0",
         "enabled": true
     },
     {
@@ -296,7 +301,7 @@
     },
     {
         "identifier": "YoavBls.pretty-ts-errors",
-        "version": "0.5.4",
+        "version": "0.6.0",
         "enabled": true
     },
     {
