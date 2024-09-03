@@ -145,6 +145,7 @@ alias be='bundle exec'
 alias rc='bin/rails c'
 alias rg='bin/rails g'
 
+alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
 alias rubocop='bundle exec rubocop'
 
