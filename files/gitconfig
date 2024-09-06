@@ -4,6 +4,7 @@
 [alias]
   cam = commit -am
   co  = checkout
+  undo = reset --soft HEAD^
 [core]
   quotepath = false
   excludesfile = ~/.gitignore_global
