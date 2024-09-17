@@ -139,7 +139,7 @@ alias fpush='git push --force-with-lease'
 alias ch=".git/hooks/pre-commit"
 alias ph=".git/hooks/pre-push"
 
-# Ruby / Rails
+# Ruby/Rails
 alias be='bundle exec'
 # Rails server: see `./bin/rs` file
 alias rc='bin/rails c'
@@ -148,6 +148,8 @@ alias rg='bin/rails g'
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
 alias rubocop='bundle exec rubocop'
+
+# Others
 
 case $OSTYPE in
   darwin*)
