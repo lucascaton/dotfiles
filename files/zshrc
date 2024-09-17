@@ -149,6 +149,11 @@ alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
 alias rubocop='bundle exec rubocop'
 
+# devcontainers - https://containers.dev/, https://github.com/rails/devcontainer
+
+# Usage: `devc [command]` or simply `devc` to open a shell
+alias devc='devcontainer exec --workspace-folder . ${1-bash}'
+
 # Others
 
 case $OSTYPE in
