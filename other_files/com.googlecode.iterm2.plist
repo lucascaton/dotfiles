@@ -2022,6 +2022,8 @@
 	<integer>0</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<true/>
+	<key>PMPrintingPanelSize</key>
+	<string>{777, 828}</string>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
