@@ -1,7 +1,9 @@
 #! /bin/bash
 set -euxo pipefail
 
-if [ -f bin/dev ]; then
+if [ -d .devcontainer ]; then
+  devcontainer exec --workspace-folder . rails s
+elif [ -f bin/dev ]; then
   ./bin/dev
 else
   ./bin/rails s
