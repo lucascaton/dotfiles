@@ -90,7 +90,7 @@ mas "Slack", id: 803453959
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
-mas "Twitter", id: 1482454543
+# mas "Twitter", id: 1482454543 # Replaced with web version
 mas "WhatsApp", id: 1147396723
 # mas "WhatsOn", id: 1136082516 # Apple Music - Now Playing
 # mas "Xcode", id: 497799835
