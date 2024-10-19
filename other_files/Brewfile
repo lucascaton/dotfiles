@@ -12,7 +12,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "puma/puma"
-tap "iina/homebrew-mpv-iina"
 
 # ┌──────────┐
 # │ Packages |
@@ -47,7 +46,6 @@ brew "wget"
 brew "dokku/repo/dokku"
 brew "heroku/brew/heroku"
 brew "puma/puma/puma-dev"
-brew "mpv-iina"
 
 # ┌───────────────────────┐
 # │ Cask (GUI macOS apps) |
@@ -71,7 +69,7 @@ cask "rectangle" # https://rectangleapp.com/
 # cask "sequel-pro" # https://www.sequelpro.com/
 # cask "spotmenu" # https://kmikiy.github.io/SpotMenu/
 cask "qlmarkdown"
-# cask "vlc" # Replaced with IINA - https://iina.io/
+cask "vlc"
 
 # ┌───────────────┐
 # │ Mac App Store │
