@@ -9,6 +9,10 @@
     "body": [
       "#!/bin/bash",
       "",
+      "# -e: Exit on any command error (non-zero exit status)",
+      "# -u: Treat unset variables as errors",
+      "# -x: Print each command before execution",
+      "# -o pipefail: Fail if any command in a pipeline (`|` chain) fails",
       "set -euxo pipefail"
     ],
     "description": "interpret as an executable file"

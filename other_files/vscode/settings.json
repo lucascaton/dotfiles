@@ -37,7 +37,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[ruby]": {
-    "editor.defaultFormatter": "rubocop.vscode-rubocop"
+    // "editor.defaultFormatter": "rubocop.vscode-rubocop",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -221,6 +223,7 @@
     ]
   ],
   "terminal.external.osxExec": "iTerm 2.app",
+  "terminal.integrated.env.osx": {},
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.stickyScroll.enabled": true,
   "typescript.preferences.autoImportFileExcludePatterns": [
