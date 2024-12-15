@@ -53,17 +53,9 @@ brew "puma/puma/puma-dev"
 
 cask_args appdir: "/Applications"
 
-# cask "android-platform-tools" # https://developer.android.com/studio/releases/platform-tools.html
-# cask "android-studio" # https://developer.android.com/studio
 # cask "aws-vault" # https://github.com/99designs/aws-vault
-# cask "chromedriver" # http://chromedriver.chromium.org/
 cask "docker" # https://www.docker.com/
 cask "iterm2" # https://iterm2.com/
-# cask "keybase" # https://keybase.io/
-# cask "mactex" # https://www.tug.org/mactex/ (Latex)
-# cask "macvim" # https://github.com/macvim-dev/macvim
-# cask "obs" # https://obsproject.com/
-# cask "prince" # https://www.princexml.com/
 cask "postico" # https://eggerapps.at/postico/
 cask "rectangle" # https://rectangleapp.com/
 # cask "sequel-pro" # https://www.sequelpro.com/
@@ -90,7 +82,4 @@ mas "Slack", id: 803453959
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
-# mas "Twitter", id: 1482454543 # Replaced with web version
 mas "WhatsApp", id: 1147396723
-# mas "WhatsOn", id: 1136082516 # Apple Music - Now Playing
-# mas "Xcode", id: 497799835
