@@ -18,6 +18,7 @@ tap "puma/puma"
 # └──────────┘
 
 brew "asdf"
+brew "aws-sso-util"
 # brew "awscli"
 brew "ccat"
 brew "colordiff"
