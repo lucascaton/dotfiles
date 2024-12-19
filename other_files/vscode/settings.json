@@ -80,6 +80,7 @@
     "PGPASSWORD",
     "PGPORT",
     "PGUSER",
+    "pipx",
     "postgres",
     "postgresql",
     "preconnect",

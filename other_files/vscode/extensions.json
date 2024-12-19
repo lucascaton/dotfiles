@@ -26,12 +26,12 @@
     },
     {
         "identifier": "bierner.markdown-mermaid",
-        "version": "1.25.0",
+        "version": "1.27.0",
         "enabled": true
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.12.11",
+        "version": "0.12.16",
         "enabled": true
     },
     {
@@ -56,7 +56,7 @@
     },
     {
         "identifier": "eamodio.gitlens",
-        "version": "15.6.2",
+        "version": "16.1.0",
         "enabled": true
     },
     {
@@ -71,12 +71,12 @@
     },
     {
         "identifier": "expo.vscode-expo-tools",
-        "version": "1.5.0",
+        "version": "1.5.1",
         "enabled": true
     },
     {
         "identifier": "flowtype.flow-for-vscode",
-        "version": "2.2.1",
+        "version": "3.0.0",
         "enabled": true
     },
     {
@@ -91,12 +91,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.239.0",
+        "version": "1.253.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.21.2",
+        "version": "0.23.2",
         "enabled": true
     },
     {
@@ -161,22 +161,22 @@
     },
     {
         "identifier": "ms-dotnettools.csharp",
-        "version": "2.50.27",
+        "version": "2.55.29",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.2.0",
+        "version": "2.2.3",
         "enabled": true
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.388.0",
+        "version": "0.394.0",
         "enabled": true
     },
     {
         "identifier": "ms-vscode.test-adapter-converter",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "enabled": true
     },
     {
@@ -186,7 +186,7 @@
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "6.2.5",
+        "version": "6.4.0",
         "enabled": true
     },
     {
@@ -236,7 +236,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.8.7",
+        "version": "0.8.16",
         "enabled": true
     },
     {
@@ -246,12 +246,12 @@
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "3.0.1",
+        "version": "4.0.21",
         "enabled": true
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-        "version": "2.2.1",
+        "version": "2.2.2",
         "enabled": true
     },
     {
@@ -276,7 +276,7 @@
     },
     {
         "identifier": "usernamehw.errorlens",
-        "version": "3.20.0",
+        "version": "3.21.0",
         "enabled": true
     },
     {
@@ -296,12 +296,12 @@
     },
     {
         "identifier": "vscode-icons-team.vscode-icons",
-        "version": "12.9.0",
+        "version": "12.10.0",
         "enabled": true
     },
     {
         "identifier": "YoavBls.pretty-ts-errors",
-        "version": "0.6.0",
+        "version": "0.6.1",
         "enabled": true
     },
     {
@@ -311,7 +311,7 @@
     },
     {
         "identifier": "zhuangtongfa.material-theme",
-        "version": "3.17.5",
+        "version": "3.17.7",
         "enabled": true
     }
 ]
