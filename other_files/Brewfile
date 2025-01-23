@@ -57,7 +57,7 @@ cask_args appdir: "/Applications"
 # cask "aws-vault" # https://github.com/99designs/aws-vault
 cask "docker" # https://www.docker.com/
 cask "iterm2" # https://iterm2.com/
-cask "postico" # https://eggerapps.at/postico/
+cask "postico@1" # https://eggerapps.at/postico/v1.php
 cask "rectangle" # https://rectangleapp.com/
 # cask "sequel-pro" # https://www.sequelpro.com/
 # cask "spotmenu" # https://kmikiy.github.io/SpotMenu/
