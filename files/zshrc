@@ -74,8 +74,9 @@ case $OSTYPE in
   darwin*)
     export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
-    . $(brew --prefix asdf)/libexec/asdf.sh
-    . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+    export PATH="$HOME/.asdf/shims:$PATH"
+    fpath=($HOME/.asdf/completions $fpath)
+    autoload -Uz compinit && compinit # Initialize completions with ZSH's compinit
 
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
     export PATH="$PATH:$(yarn global bin)"
