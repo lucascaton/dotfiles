@@ -21,9 +21,15 @@
     "body": [
       "console.log(",
       // https://code.visualstudio.com/docs/editor/userdefinedsnippets
-      "  \"🟢 $TM_FILENAME\", JSON.stringify({",
-      "    $1",
-      "  }, null, 2)",
+      "  \"🟢 $TM_FILENAME\",",
+      "  JSON.stringify(",
+      "    {",
+      "      $1",
+      "    },",
+      "    null,",
+      "    2",
+      "  )",
+      // "",
       ");",
     ],
     "description": "Log output to console"

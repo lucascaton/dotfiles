@@ -31,7 +31,7 @@
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.12.16",
+        "version": "0.14.6",
         "enabled": true
     },
     {
@@ -45,23 +45,13 @@
         "enabled": true
     },
     {
-        "identifier": "donjayamanne.githistory",
-        "version": "0.6.20",
-        "enabled": true
-    },
-    {
         "identifier": "dsznajder.es7-react-js-snippets",
         "version": "4.4.3",
         "enabled": true
     },
     {
-        "identifier": "eamodio.gitlens",
-        "version": "16.1.0",
-        "enabled": true
-    },
-    {
         "identifier": "EditorConfig.EditorConfig",
-        "version": "0.16.4",
+        "version": "0.17.1",
         "enabled": true
     },
     {
@@ -71,7 +61,7 @@
     },
     {
         "identifier": "expo.vscode-expo-tools",
-        "version": "1.5.1",
+        "version": "1.6.0",
         "enabled": true
     },
     {
@@ -91,12 +81,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.253.0",
+        "version": "1.272.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.23.2",
+        "version": "0.24.1",
         "enabled": true
     },
     {
@@ -106,7 +96,7 @@
     },
     {
         "identifier": "GrapeCity.gc-excelviewer",
-        "version": "4.2.62",
+        "version": "4.2.63",
         "enabled": true
     },
     {
@@ -146,7 +136,7 @@
     },
     {
         "identifier": "marclipovsky.string-manipulation",
-        "version": "0.7.25",
+        "version": "0.7.26",
         "enabled": true
     },
     {
@@ -156,22 +146,37 @@
     },
     {
         "identifier": "ms-azuretools.vscode-docker",
-        "version": "1.29.3",
+        "version": "1.29.4",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.csharp",
-        "version": "2.55.29",
+        "version": "2.63.32",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.2.3",
+        "version": "2.2.8",
+        "enabled": true
+    },
+    {
+        "identifier": "ms-python.debugpy",
+        "version": "2025.0.1",
+        "enabled": true
+    },
+    {
+        "identifier": "ms-python.python",
+        "version": "2025.0.0",
+        "enabled": true
+    },
+    {
+        "identifier": "ms-python.vscode-pylance",
+        "version": "2025.2.1",
         "enabled": true
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.394.0",
+        "version": "0.397.0",
         "enabled": true
     },
     {
@@ -200,11 +205,6 @@
         "enabled": true
     },
     {
-        "identifier": "pomber.git-file-history",
-        "version": "1.0.1",
-        "enabled": true
-    },
-    {
         "identifier": "rayhanw.erb-helpers",
         "version": "0.6.0",
         "enabled": true
@@ -212,6 +212,11 @@
     {
         "identifier": "raymondcamden.htmlescape-vscode-extension",
         "version": "0.0.7",
+        "enabled": true
+    },
+    {
+        "identifier": "redhat.vscode-yaml",
+        "version": "1.16.0",
         "enabled": true
     },
     {
@@ -236,7 +241,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.8.16",
+        "version": "0.9.6",
         "enabled": true
     },
     {
@@ -246,7 +251,7 @@
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "4.0.21",
+        "version": "4.0.34",
         "enabled": true
     },
     {
@@ -261,22 +266,22 @@
     },
     {
         "identifier": "syler.sass-indented",
-        "version": "1.8.31",
+        "version": "1.8.33",
         "enabled": true
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.37.1",
+        "version": "0.37.7",
         "enabled": true
     },
     {
         "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.8.11",
+        "version": "1.8.13",
         "enabled": true
     },
     {
         "identifier": "usernamehw.errorlens",
-        "version": "3.21.0",
+        "version": "3.23.0",
         "enabled": true
     },
     {
@@ -296,7 +301,7 @@
     },
     {
         "identifier": "vscode-icons-team.vscode-icons",
-        "version": "12.10.0",
+        "version": "12.11.0",
         "enabled": true
     },
     {
@@ -311,7 +316,7 @@
     },
     {
         "identifier": "zhuangtongfa.material-theme",
-        "version": "3.17.7",
+        "version": "3.19.0",
         "enabled": true
     }
 ]

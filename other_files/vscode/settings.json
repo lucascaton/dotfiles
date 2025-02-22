@@ -36,6 +36,9 @@
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[python]": {
+    "editor.tabSize": 4
+  },
   "[ruby]": {
     // "editor.defaultFormatter": "rubocop.vscode-rubocop",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -131,7 +134,6 @@
   "errorLens.delayMode": "debounce",
   "errorLens.enabled": false,
   "errorLens.enabledInMergeConflict": false,
-  "eslint.alwaysShowStatus": true,
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -164,20 +166,16 @@
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.editorDecoration.template": "${authorName}: ${subject} (${authorDateAgo})",
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.editor.enableAutoCompletions": true,
-  "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
-  },
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.views.stashes.files.layout": "tree",
   "javascript.preferences.autoImportFileExcludePatterns": [
     "**/node_modules/@types/node/**"
   ],
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "jest.autoRun": "off",
+  "jest.runMode": "on-demand",
   "json.schemas": [
     {
       "fileMatch": [
@@ -189,10 +187,8 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
   "prettier.proseWrap": "always",
-  "ruby.rubocop.useBundler": true,
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
-    "codeLens": true,
     "completion": true,
     "definition": true,
     "diagnostics": true,
