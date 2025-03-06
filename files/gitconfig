@@ -30,6 +30,10 @@
 [commit]
   gpgsign = true
   sign = true
+
+  # Defining a `template` is cool and works well when committing stuff via terminal,
+  # but Fork app include comments in the commit message :(
+  # template = ~/projects/.personal_configs/.gitmessage
 [include]
   # Use separate file for username, email, tokens, etc.
   path = ~/projects/.personal_configs/.gitconfig.private
