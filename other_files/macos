@@ -27,6 +27,12 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 ###############################################################################
+# Keyboard                                                                    #
+###############################################################################
+
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+###############################################################################
 # Finder                                                                      #
 ###############################################################################
 
