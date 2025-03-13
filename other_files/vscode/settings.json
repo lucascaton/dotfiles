@@ -166,10 +166,13 @@
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
   "git.blame.editorDecoration.enabled": true,
   "git.blame.editorDecoration.template": "${authorName}: ${subject} (${authorDateAgo})",
   "git.openRepositoryInParentFolders": "always",
+  "github.copilot.chat.codesearch.enabled": true,
   "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
   "javascript.preferences.autoImportFileExcludePatterns": [
     "**/node_modules/@types/node/**"
   ],

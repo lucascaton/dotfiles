@@ -31,7 +31,7 @@
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.14.6",
+        "version": "0.14.9",
         "enabled": true
     },
     {
@@ -51,7 +51,7 @@
     },
     {
         "identifier": "EditorConfig.EditorConfig",
-        "version": "0.17.1",
+        "version": "0.17.2",
         "enabled": true
     },
     {
@@ -81,12 +81,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.272.0",
+        "version": "1.284.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.24.1",
+        "version": "0.25.0",
         "enabled": true
     },
     {
@@ -161,22 +161,22 @@
     },
     {
         "identifier": "ms-python.debugpy",
-        "version": "2025.0.1",
+        "version": "2025.4.1",
         "enabled": true
     },
     {
         "identifier": "ms-python.python",
-        "version": "2025.0.0",
+        "version": "2025.2.0",
         "enabled": true
     },
     {
         "identifier": "ms-python.vscode-pylance",
-        "version": "2025.2.1",
+        "version": "2025.3.1",
         "enabled": true
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.397.0",
+        "version": "0.401.0",
         "enabled": true
     },
     {
@@ -216,7 +216,7 @@
     },
     {
         "identifier": "redhat.vscode-yaml",
-        "version": "1.16.0",
+        "version": "1.17.0",
         "enabled": true
     },
     {
@@ -241,7 +241,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.9.6",
+        "version": "0.9.7",
         "enabled": true
     },
     {
@@ -251,7 +251,7 @@
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "4.0.34",
+        "version": "4.0.40",
         "enabled": true
     },
     {
@@ -281,7 +281,7 @@
     },
     {
         "identifier": "usernamehw.errorlens",
-        "version": "3.23.0",
+        "version": "3.24.0",
         "enabled": true
     },
     {
@@ -311,7 +311,7 @@
     },
     {
         "identifier": "yzhang.markdown-all-in-one",
-        "version": "3.6.2",
+        "version": "3.6.3",
         "enabled": true
     },
     {
