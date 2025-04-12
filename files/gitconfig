@@ -1,32 +1,15 @@
-[diff]
-  color = auto
-  noprefix = true
 [alias]
   cam = commit -am
   co  = checkout
   undo = reset --soft HEAD^
-[core]
-  quotepath = false
-  excludesfile = ~/.gitignore_global
-  mergeoptions = --no-edit
+
 [branch]
   autosetuprebase = always
   rebase = true
-[rerere]
-  enabled = 1
-[push]
-  default = current
-[fetch]
-  prune = true
+
 [color]
   interactive = true
-[init]
-  templatedir = ~/.dotfiles/files/git_template
-  defaultBranch = main
-[credential]
-  helper = osxkeychain
-[gpg]
-  format = ssh
+
 [commit]
   gpgsign = true
   sign = true
@@ -34,8 +17,38 @@
   # Defining a `template` is cool and works well when committing stuff via terminal,
   # but Fork app include comments in the commit message :(
   # template = ~/projects/.personal_configs/.gitmessage
+
+[core]
+  quotepath = false
+  excludesfile = ~/.gitignore_global
+  mergeoptions = --no-edit
+
+[credential]
+  helper = osxkeychain
+
+[diff]
+  color = auto
+  noprefix = true
+
+[fetch]
+  prune = true
+
+[gpg]
+  format = ssh
+
+[http]
+  postBuffer = 157286400
+
 [include]
   # Use separate file for username, email, tokens, etc.
   path = ~/projects/.personal_configs/.gitconfig.private
-[http]
-  postBuffer = 157286400
+
+[init]
+  templatedir = ~/.dotfiles/files/git_template
+  defaultBranch = main
+
+[push]
+  default = current
+
+[rerere]
+  enabled = 1
