@@ -26,12 +26,12 @@
     },
     {
         "identifier": "bierner.markdown-mermaid",
-        "version": "1.27.0",
+        "version": "1.28.0",
         "enabled": true
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.14.9",
+        "version": "0.14.16",
         "enabled": true
     },
     {
@@ -42,6 +42,11 @@
     {
         "identifier": "dbaeumer.vscode-eslint",
         "version": "3.0.10",
+        "enabled": true
+    },
+    {
+        "identifier": "docker.docker",
+        "version": "0.4.10",
         "enabled": true
     },
     {
@@ -66,7 +71,7 @@
     },
     {
         "identifier": "flowtype.flow-for-vscode",
-        "version": "3.0.0",
+        "version": "3.1.0",
         "enabled": true
     },
     {
@@ -81,12 +86,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.284.0",
+        "version": "1.303.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.25.0",
+        "version": "0.26.7",
         "enabled": true
     },
     {
@@ -121,7 +126,7 @@
     },
     {
         "identifier": "Katsute.settings-repository",
-        "version": "1.0.9",
+        "version": "1.0.12",
         "enabled": true
     },
     {
@@ -136,7 +141,7 @@
     },
     {
         "identifier": "marclipovsky.string-manipulation",
-        "version": "0.7.26",
+        "version": "0.7.33",
         "enabled": true
     },
     {
@@ -146,37 +151,37 @@
     },
     {
         "identifier": "ms-azuretools.vscode-docker",
-        "version": "1.29.4",
+        "version": "1.29.5",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.csharp",
-        "version": "2.63.32",
+        "version": "2.72.34",
         "enabled": true
     },
     {
         "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.2.8",
+        "version": "2.3.3",
         "enabled": true
     },
     {
         "identifier": "ms-python.debugpy",
-        "version": "2025.4.1",
+        "version": "2025.6.0",
         "enabled": true
     },
     {
         "identifier": "ms-python.python",
-        "version": "2025.2.0",
+        "version": "2025.4.0",
         "enabled": true
     },
     {
         "identifier": "ms-python.vscode-pylance",
-        "version": "2025.3.1",
+        "version": "2025.4.1",
         "enabled": true
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.401.0",
+        "version": "0.409.0",
         "enabled": true
     },
     {
@@ -236,12 +241,12 @@
     },
     {
         "identifier": "rubocop.vscode-rubocop",
-        "version": "0.7.0",
+        "version": "0.8.0",
         "enabled": true
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.9.7",
+        "version": "0.9.16",
         "enabled": true
     },
     {
@@ -251,17 +256,17 @@
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "4.0.40",
+        "version": "4.0.47",
         "enabled": true
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-        "version": "2.2.2",
+        "version": "2.2.3",
         "enabled": true
     },
     {
         "identifier": "stylelint.vscode-stylelint",
-        "version": "1.4.0",
+        "version": "1.5.0",
         "enabled": true
     },
     {
@@ -276,12 +281,12 @@
     },
     {
         "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.8.13",
+        "version": "1.8.14",
         "enabled": true
     },
     {
         "identifier": "usernamehw.errorlens",
-        "version": "3.24.0",
+        "version": "3.25.0",
         "enabled": true
     },
     {
@@ -301,7 +306,7 @@
     },
     {
         "identifier": "vscode-icons-team.vscode-icons",
-        "version": "12.11.0",
+        "version": "12.12.0",
         "enabled": true
     },
     {

@@ -98,6 +98,7 @@
     "tailwindcss",
     "twilio"
   ],
+  "chat.mcp.discovery.enabled": true,
   "diffEditor.renderSideBySide": false,
   "editor.accessibilitySupport": "off",
   "editor.codeLensFontFamily": "JetbrainsMono, Hack Nerd Font, Menlo, Monaco, monospace",
@@ -189,6 +190,7 @@
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
+  "prettier.printWidth": 100,
   "prettier.proseWrap": "always",
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
