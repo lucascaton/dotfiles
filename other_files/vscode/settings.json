@@ -131,10 +131,6 @@
     "javascript": "jsx",
     "postcss": "css"
   },
-  "errorLens.delay": 500,
-  "errorLens.delayMode": "debounce",
-  "errorLens.enabled": false,
-  "errorLens.enabledInMergeConflict": false,
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -172,7 +168,6 @@
   "git.blame.editorDecoration.template": "${authorName}: ${subject} (${authorDateAgo})",
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.chat.codesearch.enabled": true,
-  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.nextEditSuggestions.enabled": true,
   "javascript.preferences.autoImportFileExcludePatterns": [
     "**/node_modules/@types/node/**"
@@ -233,14 +228,12 @@
   ],
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vsicons.dontShowNewVersionMessage": true,
   "window.commandCenter": false,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
   "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "newUntitledFile"
 }

@@ -5,18 +5,8 @@
         "enabled": true
     },
     {
-        "identifier": "aki77.rails-db-schema",
-        "version": "0.2.9",
-        "enabled": true
-    },
-    {
         "identifier": "alefragnani.Bookmarks",
         "version": "13.5.0",
-        "enabled": true
-    },
-    {
-        "identifier": "asux.rspec-focus",
-        "version": "0.2.0",
         "enabled": true
     },
     {
@@ -31,12 +21,7 @@
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.14.16",
-        "enabled": true
-    },
-    {
-        "identifier": "dakara.transformer",
-        "version": "1.12.1",
+        "version": "0.14.23",
         "enabled": true
     },
     {
@@ -45,18 +30,8 @@
         "enabled": true
     },
     {
-        "identifier": "docker.docker",
-        "version": "0.4.10",
-        "enabled": true
-    },
-    {
-        "identifier": "dsznajder.es7-react-js-snippets",
-        "version": "4.4.3",
-        "enabled": true
-    },
-    {
         "identifier": "EditorConfig.EditorConfig",
-        "version": "0.17.2",
+        "version": "0.17.4",
         "enabled": true
     },
     {
@@ -71,7 +46,7 @@
     },
     {
         "identifier": "flowtype.flow-for-vscode",
-        "version": "3.1.0",
+        "version": "3.1.1",
         "enabled": true
     },
     {
@@ -80,18 +55,13 @@
         "enabled": true
     },
     {
-        "identifier": "formulahendry.code-runner",
-        "version": "0.12.2",
-        "enabled": true
-    },
-    {
         "identifier": "GitHub.copilot",
-        "version": "1.303.0",
+        "version": "1.338.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.26.7",
+        "version": "0.28.3",
         "enabled": true
     },
     {
@@ -100,23 +70,8 @@
         "enabled": true
     },
     {
-        "identifier": "GrapeCity.gc-excelviewer",
-        "version": "4.2.63",
-        "enabled": true
-    },
-    {
-        "identifier": "Hridoy.rails-snippets",
-        "version": "1.0.8",
-        "enabled": true
-    },
-    {
         "identifier": "humao.rest-client",
         "version": "0.25.1",
-        "enabled": true
-    },
-    {
-        "identifier": "IBM.output-colorizer",
-        "version": "0.1.2",
         "enabled": true
     },
     {
@@ -126,12 +81,7 @@
     },
     {
         "identifier": "Katsute.settings-repository",
-        "version": "1.0.12",
-        "enabled": true
-    },
-    {
-        "identifier": "ko-dev.vscode-open-files-in-directory",
-        "version": "1.0.8",
+        "version": "1.0.13",
         "enabled": true
     },
     {
@@ -141,7 +91,7 @@
     },
     {
         "identifier": "marclipovsky.string-manipulation",
-        "version": "0.7.33",
+        "version": "0.7.42",
         "enabled": true
     },
     {
@@ -150,43 +100,8 @@
         "enabled": true
     },
     {
-        "identifier": "ms-azuretools.vscode-docker",
-        "version": "1.29.5",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-dotnettools.csharp",
-        "version": "2.72.34",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-dotnettools.vscode-dotnet-runtime",
-        "version": "2.3.3",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-python.debugpy",
-        "version": "2025.6.0",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-python.python",
-        "version": "2025.4.0",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-python.vscode-pylance",
-        "version": "2025.4.1",
-        "enabled": true
-    },
-    {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.409.0",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-vscode.test-adapter-converter",
-        "version": "0.2.1",
+        "version": "0.417.0",
         "enabled": true
     },
     {
@@ -196,7 +111,7 @@
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "6.4.0",
+        "version": "6.4.3",
         "enabled": true
     },
     {
@@ -205,23 +120,8 @@
         "enabled": true
     },
     {
-        "identifier": "philnash.ngrok-for-vscode",
-        "version": "1.10.1",
-        "enabled": true
-    },
-    {
-        "identifier": "rayhanw.erb-helpers",
-        "version": "0.6.0",
-        "enabled": true
-    },
-    {
-        "identifier": "raymondcamden.htmlescape-vscode-extension",
-        "version": "0.0.7",
-        "enabled": true
-    },
-    {
         "identifier": "redhat.vscode-yaml",
-        "version": "1.17.0",
+        "version": "1.18.0",
         "enabled": true
     },
     {
@@ -241,17 +141,12 @@
     },
     {
         "identifier": "rubocop.vscode-rubocop",
-        "version": "0.8.0",
+        "version": "0.10.0",
         "enabled": true
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.9.16",
-        "enabled": true
-    },
-    {
-        "identifier": "skyran.js-jsx-snippets",
-        "version": "11.1.3",
+        "version": "0.9.28",
         "enabled": true
     },
     {
@@ -266,7 +161,7 @@
     },
     {
         "identifier": "stylelint.vscode-stylelint",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "enabled": true
     },
     {
@@ -280,33 +175,13 @@
         "enabled": true
     },
     {
-        "identifier": "unifiedjs.vscode-mdx",
-        "version": "1.8.14",
-        "enabled": true
-    },
-    {
-        "identifier": "usernamehw.errorlens",
-        "version": "3.25.0",
-        "enabled": true
-    },
-    {
         "identifier": "vincaslt.highlight-matching-tag",
         "version": "0.11.0",
         "enabled": true
     },
     {
-        "identifier": "vinliao.fast-arrow",
-        "version": "1.0.8",
-        "enabled": true
-    },
-    {
         "identifier": "vitaliymaz.vscode-svg-previewer",
         "version": "0.7.0",
-        "enabled": true
-    },
-    {
-        "identifier": "vscode-icons-team.vscode-icons",
-        "version": "12.12.0",
         "enabled": true
     },
     {
@@ -317,11 +192,6 @@
     {
         "identifier": "yzhang.markdown-all-in-one",
         "version": "3.6.3",
-        "enabled": true
-    },
-    {
-        "identifier": "zhuangtongfa.material-theme",
-        "version": "3.19.0",
         "enabled": true
     }
 ]

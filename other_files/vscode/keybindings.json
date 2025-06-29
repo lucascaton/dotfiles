@@ -22,10 +22,6 @@
     "command": "workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
   },
-  {
-    "key": "ctrl+alt+ctrl+e",
-    "command": "errorLens.toggle"
-  },
   // The following commands are used to remove keybindings (indicated by the `-` prefix)
   {
     "key": "ctrl+b",
