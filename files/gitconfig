@@ -64,7 +64,7 @@
   rebase = true
 
 [push]
-  default = simple # TODO: return this to `current` if `simple` isn't very convenient
+  default = simple
   autoSetupRemote = true # This isn't need if `default = current`
   followTags = true
 
