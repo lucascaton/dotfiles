@@ -21,12 +21,12 @@
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.14.23",
+        "version": "0.14.26",
         "enabled": true
     },
     {
         "identifier": "dbaeumer.vscode-eslint",
-        "version": "3.0.10",
+        "version": "3.0.16",
         "enabled": true
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "identifier": "expo.vscode-expo-tools",
-        "version": "1.6.0",
+        "version": "1.6.1",
         "enabled": true
     },
     {
@@ -56,12 +56,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.338.0",
+        "version": "1.364.0",
         "enabled": true
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.28.3",
+        "version": "0.30.3",
         "enabled": true
     },
     {
@@ -81,7 +81,7 @@
     },
     {
         "identifier": "Katsute.settings-repository",
-        "version": "1.0.13",
+        "version": "2.0.0",
         "enabled": true
     },
     {
@@ -91,7 +91,7 @@
     },
     {
         "identifier": "marclipovsky.string-manipulation",
-        "version": "0.7.42",
+        "version": "0.7.43",
         "enabled": true
     },
     {
@@ -101,7 +101,7 @@
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.417.0",
+        "version": "0.422.1",
         "enabled": true
     },
     {
@@ -111,7 +111,7 @@
     },
     {
         "identifier": "Orta.vscode-jest",
-        "version": "6.4.3",
+        "version": "6.4.4",
         "enabled": true
     },
     {
@@ -146,7 +146,7 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.9.28",
+        "version": "0.9.32",
         "enabled": true
     },
     {
@@ -156,7 +156,7 @@
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-        "version": "2.2.3",
+        "version": "2.2.4",
         "enabled": true
     },
     {
@@ -171,7 +171,7 @@
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.37.7",
+        "version": "0.38.3",
         "enabled": true
     },
     {
@@ -187,6 +187,11 @@
     {
         "identifier": "YoavBls.pretty-ts-errors",
         "version": "0.6.1",
+        "enabled": true
+    },
+    {
+        "identifier": "yzane.markdown-pdf",
+        "version": "1.5.0",
         "enabled": true
     },
     {

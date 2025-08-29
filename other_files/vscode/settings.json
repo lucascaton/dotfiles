@@ -205,6 +205,7 @@
     "semanticHighlighting": true,
     "workspaceSymbol": true
   },
+  "rubyLsp.rubyExecutablePath": "~/.asdf/shims/ruby",
   "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
