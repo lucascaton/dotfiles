@@ -140,8 +140,35 @@ alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias push='git push'
 alias fpush='git push --force-with-lease'
-alias ch=".git/hooks/pre-commit"
-alias ph=".git/hooks/pre-push"
+hook() {
+  if [ ! -d .git/hooks ]; then
+    echo "❌ Not in a git repository or .git/hooks directory not found"
+    return 1
+  fi
+
+  local available_hooks
+  available_hooks=$(find .git/hooks -type f -o -type l | grep -v '.sample$')
+
+  if [ -z "$available_hooks" ]; then
+    echo "❌ No git hooks found in .git/hooks"
+    return 1
+  fi
+
+  if ! command -v fzf &> /dev/null; then
+    echo "❌ fzf is not installed. See installation instructions:"
+    echo "   https://junegunn.github.io/fzf/installation/"
+    return 1
+  fi
+
+  local hook_file
+  hook_file=$(echo "$available_hooks" | sed 's|.git/hooks/||' | fzf --prompt="Select git hook to run: " --height=40% --border --preview="head -20 .git/hooks/{}")
+
+  if [ -n "$hook_file" ]; then
+    echo "🪝 Running hook: $hook_file"
+    echo ""
+    ".git/hooks/$hook_file"
+  fi
+}
 
 # Ruby/Rails
 alias be='bundle exec'
