@@ -65,8 +65,8 @@
     # laravel_version       # laravel php framework version (https://laravel.com/)
     # java_version          # java version (https://www.java.com/)
     # package               # name@version from package.json (https://docs.npmjs.com/files/package.json)
-    rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
-    rvm                     # ruby version from rvm (https://rvm.io)
+    # rbenv                 # ruby version from rbenv (https://github.com/rbenv/rbenv)
+    # rvm                   # ruby version from rvm (https://rvm.io)
     rails                   # => Custom function
     rspec                   # => Custom function
     fvm                     # flutter version management (https://github.com/leoafarias/fvm)
@@ -617,12 +617,14 @@
   # Ruby version from asdf.
   typeset -g POWERLEVEL9K_ASDF_RUBY_FOREGROUND=168
   # typeset -g POWERLEVEL9K_ASDF_RUBY_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  # typeset -g POWERLEVEL9K_ASDF_RUBY_SHOW_ON_UPGLOB='*.foo|*.bar'
+  # Only show Ruby version when there are Ruby files or Gemfile in the directory tree
+  typeset -g POWERLEVEL9K_ASDF_RUBY_SHOW_ON_UPGLOB='Gemfile|*.rb|.ruby-version|Rakefile'
 
   # Python version from asdf.
   typeset -g POWERLEVEL9K_ASDF_PYTHON_FOREGROUND=37
   # typeset -g POWERLEVEL9K_ASDF_PYTHON_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  # typeset -g POWERLEVEL9K_ASDF_PYTHON_SHOW_ON_UPGLOB='*.foo|*.bar'
+  # Only show Python version when there are Python files in the directory tree
+  typeset -g POWERLEVEL9K_ASDF_PYTHON_SHOW_ON_UPGLOB='*.py|requirements.txt|setup.py|pyproject.toml|Pipfile'
 
   # Go version from asdf.
   typeset -g POWERLEVEL9K_ASDF_GOLANG_FOREGROUND=37
@@ -632,7 +634,8 @@
   # Node.js version from asdf.
   typeset -g POWERLEVEL9K_ASDF_NODEJS_FOREGROUND=70
   # typeset -g POWERLEVEL9K_ASDF_NODEJS_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  # typeset -g POWERLEVEL9K_ASDF_NODEJS_SHOW_ON_UPGLOB='*.foo|*.bar'
+  # Only show Node.js version when there are Node.js files in the directory tree
+  typeset -g POWERLEVEL9K_ASDF_NODEJS_SHOW_ON_UPGLOB='package.json|*.js|*.ts|*.jsx|*.tsx|*.mjs|*.cjs'
 
   # Rust version from asdf.
   typeset -g POWERLEVEL9K_ASDF_RUST_FOREGROUND=37
@@ -1520,9 +1523,19 @@
   }
 
   function prompt_rails() {
-    if egrep ' +rails \([0-9]+' Gemfile.lock &> /dev/null; then
-      p10k segment -f 001 -i '' \
-        -t `egrep ' +rails \([0-9]+' Gemfile.lock | sed 's/ *rails (\(.*\))/\1/'`
+    if [[ -f Gemfile.lock ]]; then
+      local version
+      # Try to find full rails gem first
+      if egrep -q ' +rails \([0-9]+' Gemfile.lock 2>/dev/null; then
+        version=$(egrep ' +rails \([0-9]+' Gemfile.lock 2>/dev/null | head -1 | sed 's/.*(\(.*\))/\1/')
+      # Fall back to detecting Rails via individual components (actionpack, activesupport, etc.)
+      elif egrep -q ' +(actionpack|activesupport) \([0-9]+' Gemfile.lock 2>/dev/null; then
+        version=$(egrep ' +(actionpack|activesupport) \([0-9]+' Gemfile.lock 2>/dev/null | head -1 | sed 's/.*(\(.*\))/\1/')
+      fi
+
+      if [[ -n "$version" ]]; then
+        p10k segment -f 001 -i '' -t "$version"
+      fi
     fi
   }
 
@@ -1530,8 +1543,8 @@
     if [ -d spec/ ] && [ `grep -re '[,[:space:]]focus\(:\| =>\)[[:space:]]\?true' spec/**/*.rb \
     --exclude spec/spec_helper.rb --exclude spec/rails_helper.rb &> /dev/null | \
     wc -l | awk '{ print $1 }'` != '0' ]; then
-      p10k segment -f 004 -i 'ﭧ' -t '[RSpec] Focus'
-    fi
+        p10k segment -f 004 -i 'ﭧ' -t '[RSpec] Focus'
+      fi
   }
 
   # User-defined prompt segments may optionally provide an instant_prompt_* function. Its job
