@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 set -euo pipefail
 
 # Resets environment after PR merge: switch to default branch, pull changes, clean up
