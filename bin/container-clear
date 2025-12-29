@@ -10,11 +10,21 @@ echo "## Before:"
 du -sh "$DATA_DIR" 2>/dev/null || echo "No data found"
 echo
 
+# Clean up orphaned data first (bug workaround) to prevent errors in container commands
+# Only safe when no images/containers exist
+if [ -z "$(container image list --quiet 2>/dev/null)" ]; then
+  rm -rf "$DATA_DIR/snapshots/"* 2>/dev/null || true
+  rm -rf "$DATA_DIR/content/"* 2>/dev/null || true
+  mkdir -p "$DATA_DIR/content/blobs/sha256" 2>/dev/null || true
+  echo '{}' > "$DATA_DIR/state.json" 2>/dev/null || true
+fi
+
 echo "## Pruning..."
-container delete --all # Stopped containers only (use --force to include running ones)
+container delete --all      # Stopped containers only (use --force to include running ones)
+container image delete --all # Removes all images
 container image prune
 container volume prune
-container builder delete # Removes build cache
+container builder delete    # Removes build cache
 echo
 
 echo "## After:"
