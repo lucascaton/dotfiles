@@ -1,0 +1,22 @@
+#!/bin/bash
+set -euo pipefail
+
+# Cleans up unused Apple Container resources
+# https://github.com/apple/container
+
+DATA_DIR="$HOME/Library/Application Support/com.apple.container"
+
+echo "## Before:"
+du -sh "$DATA_DIR" 2>/dev/null || echo "No data found"
+echo
+
+echo "## Pruning..."
+container delete --all # Stopped containers only (use --force to include running ones)
+container image prune
+container volume prune
+container builder delete # Removes build cache
+echo
+
+echo "## After:"
+du -sh "$DATA_DIR" 2>/dev/null || echo "No data found"
+echo
