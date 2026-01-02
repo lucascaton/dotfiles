@@ -6,7 +6,7 @@
     },
     {
         "identifier": "alefragnani.Bookmarks",
-        "version": "13.5.0",
+        "version": "14.0.0",
         "enabled": true
     },
     {
@@ -16,17 +16,17 @@
     },
     {
         "identifier": "bierner.markdown-mermaid",
-        "version": "1.28.0",
+        "version": "1.29.0",
         "enabled": true
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.14.26",
+        "version": "0.14.29",
         "enabled": true
     },
     {
         "identifier": "dbaeumer.vscode-eslint",
-        "version": "3.0.16",
+        "version": "3.0.20",
         "enabled": true
     },
     {
@@ -36,12 +36,12 @@
     },
     {
         "identifier": "esbenp.prettier-vscode",
-        "version": "11.0.0",
+        "version": "11.0.2",
         "enabled": true
     },
     {
         "identifier": "expo.vscode-expo-tools",
-        "version": "1.6.1",
+        "version": "1.6.2",
         "enabled": true
     },
     {
@@ -56,12 +56,12 @@
     },
     {
         "identifier": "GitHub.copilot",
-        "version": "1.364.0",
-        "enabled": true
+        "version": "1.388.0",
+        "enabled": false
     },
     {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.30.3",
+        "version": "0.35.2",
         "enabled": true
     },
     {
@@ -101,7 +101,7 @@
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.422.1",
+        "version": "0.434.0",
         "enabled": true
     },
     {
@@ -121,7 +121,7 @@
     },
     {
         "identifier": "redhat.vscode-yaml",
-        "version": "1.18.0",
+        "version": "1.19.1",
         "enabled": true
     },
     {
@@ -151,7 +151,7 @@
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "4.0.47",
+        "version": "4.4.0",
         "enabled": true
     },
     {
@@ -161,7 +161,7 @@
     },
     {
         "identifier": "stylelint.vscode-stylelint",
-        "version": "1.5.3",
+        "version": "1.6.0",
         "enabled": true
     },
     {
@@ -171,7 +171,7 @@
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.38.3",
+        "version": "0.38.5",
         "enabled": true
     },
     {
@@ -186,7 +186,7 @@
     },
     {
         "identifier": "YoavBls.pretty-ts-errors",
-        "version": "0.6.1",
+        "version": "0.7.0",
         "enabled": true
     },
     {

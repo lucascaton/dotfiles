@@ -3,8 +3,17 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
   "[gemfile]": {
     "editor.defaultFormatter": "rubocop.vscode-rubocop"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -98,7 +107,12 @@
     "tailwindcss",
     "twilio"
   ],
-  "chat.mcp.discovery.enabled": true,
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": true,
+    "cursor-global": true,
+    "cursor-workspace": true,
+    "windsurf": true
+  },
   "diffEditor.renderSideBySide": false,
   "editor.accessibilitySupport": "off",
   "editor.codeLensFontFamily": "JetbrainsMono, Hack Nerd Font, Menlo, Monaco, monospace",
@@ -121,6 +135,8 @@
   "editor.suggest.preview": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "erb": "html",
