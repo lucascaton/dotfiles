@@ -617,7 +617,7 @@
   typeset -g POWERLEVEL9K_ASDF_RUBY_FOREGROUND=168
   # typeset -g POWERLEVEL9K_ASDF_RUBY_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Only show Ruby version when there are Ruby files or Gemfile in the directory tree
-  typeset -g POWERLEVEL9K_ASDF_RUBY_SHOW_ON_UPGLOB='Gemfile|*.rb|.ruby-version|Rakefile'
+  typeset -g POWERLEVEL9K_ASDF_RUBY_SHOW_ON_UPGLOB='Gemfile|*.rb|.ruby-version|Rakefile|.tool-versions'
 
   # Python version from asdf.
   typeset -g POWERLEVEL9K_ASDF_PYTHON_FOREGROUND=37
@@ -634,7 +634,7 @@
   typeset -g POWERLEVEL9K_ASDF_NODEJS_FOREGROUND=70
   # typeset -g POWERLEVEL9K_ASDF_NODEJS_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Only show Node.js version when there are Node.js files in the directory tree
-  typeset -g POWERLEVEL9K_ASDF_NODEJS_SHOW_ON_UPGLOB='package.json|*.js|*.ts|*.jsx|*.tsx|*.mjs|*.cjs'
+  typeset -g POWERLEVEL9K_ASDF_NODEJS_SHOW_ON_UPGLOB='package.json|*.js|*.ts|*.jsx|*.tsx|*.mjs|*.cjs|.tool-versions'
 
   # Rust version from asdf.
   typeset -g POWERLEVEL9K_ASDF_RUST_FOREGROUND=37
