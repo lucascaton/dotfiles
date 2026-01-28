@@ -216,6 +216,7 @@ alias rg="rg --hidden --glob '!.git'"
 # rg --type-list
 alias rgr='rg -t ruby'
 alias rgj='rg -t js -t ts'
+alias rgt='rg -t ts'
 alias rgc='rg -t css -t sass'
 alias rgh='rg -t html'
 alias rgm='rg -t md'
