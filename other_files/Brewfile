@@ -41,7 +41,7 @@ brew "qlmarkdown" # QuickLook generator for Markdown files - https://github.com/
 brew "redis", restart_service: true
 brew "rsync"
 brew "s3cmd"
-brew "the_silver_searcher"
+brew "ripgrep"
 brew "tree"
 brew "wget"
 brew "dokku/repo/dokku"

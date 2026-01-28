@@ -212,13 +212,13 @@ case $OSTYPE in
     ;;
 esac
 
-alias ag='ag --hidden --ignore-dir .git --ignore-dir node_modules --ignore-dir vendor --ignore=*.min.js'
-# ag --list-file-types
-alias agr='ag --ruby'
-alias agj='ag --js --ts'
-alias agc='ag --sass --css'
-alias agh='ag --html'
-alias agm='ag --markdown'
+alias rg="rg --hidden --glob '!.git'"
+# rg --type-list
+alias rgr='rg -t ruby'
+alias rgj='rg -t js -t ts'
+alias rgc='rg -t css -t sass'
+alias rgh='rg -t html'
+alias rgm='rg -t md'
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 if [ "${OSTYPE//[0-9.]/}" == "darwin" ]; then
