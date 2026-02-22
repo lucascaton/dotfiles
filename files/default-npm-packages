@@ -7,4 +7,3 @@ vercel
 http-server
 eas-cli
 @devcontainers/cli
-@anthropic-ai/claude-code
