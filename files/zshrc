@@ -79,6 +79,8 @@ case $OSTYPE in
     autoload -Uz compinit && compinit # Initialize completions with ZSH's compinit
 
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+    export PATH="$HOME/.local/bin:$PATH"
     ;;
 esac
 
