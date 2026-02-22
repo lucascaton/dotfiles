@@ -79,10 +79,6 @@ case $OSTYPE in
     autoload -Uz compinit && compinit # Initialize completions with ZSH's compinit
 
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-    # if yarn --version &> /dev/null; then
-    #   export PATH="$PATH:$(yarn global bin)"
-    # fi
     ;;
 esac
 
