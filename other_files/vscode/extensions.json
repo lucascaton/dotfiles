@@ -16,7 +16,7 @@
     },
     {
         "identifier": "bierner.markdown-mermaid",
-        "version": "1.29.0",
+        "version": "1.32.0",
         "enabled": true
     },
     {
@@ -31,12 +31,12 @@
     },
     {
         "identifier": "EditorConfig.EditorConfig",
-        "version": "0.17.4",
+        "version": "0.18.1",
         "enabled": true
     },
     {
         "identifier": "esbenp.prettier-vscode",
-        "version": "11.0.2",
+        "version": "12.3.0",
         "enabled": true
     },
     {
@@ -46,7 +46,7 @@
     },
     {
         "identifier": "flowtype.flow-for-vscode",
-        "version": "3.1.1",
+        "version": "3.1.2",
         "enabled": true
     },
     {
@@ -55,13 +55,8 @@
         "enabled": true
     },
     {
-        "identifier": "GitHub.copilot",
-        "version": "1.388.0",
-        "enabled": false
-    },
-    {
         "identifier": "GitHub.copilot-chat",
-        "version": "0.35.2",
+        "version": "0.37.9",
         "enabled": true
     },
     {
@@ -81,7 +76,7 @@
     },
     {
         "identifier": "Katsute.settings-repository",
-        "version": "2.0.0",
+        "version": "2.0.1",
         "enabled": true
     },
     {
@@ -91,7 +86,7 @@
     },
     {
         "identifier": "marclipovsky.string-manipulation",
-        "version": "0.7.43",
+        "version": "0.7.47",
         "enabled": true
     },
     {
@@ -101,7 +96,7 @@
     },
     {
         "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.434.0",
+        "version": "0.442.0",
         "enabled": true
     },
     {
@@ -121,7 +116,7 @@
     },
     {
         "identifier": "redhat.vscode-yaml",
-        "version": "1.19.1",
+        "version": "1.21.0",
         "enabled": true
     },
     {
@@ -136,7 +131,7 @@
     },
     {
         "identifier": "ritwickdey.LiveServer",
-        "version": "5.7.9",
+        "version": "5.7.10",
         "enabled": true
     },
     {
@@ -146,12 +141,12 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.9.32",
+        "version": "0.10.0",
         "enabled": true
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "4.4.0",
+        "version": "4.5.6",
         "enabled": true
     },
     {
@@ -161,7 +156,7 @@
     },
     {
         "identifier": "stylelint.vscode-stylelint",
-        "version": "1.6.0",
+        "version": "2.0.2",
         "enabled": true
     },
     {
@@ -171,7 +166,7 @@
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.38.5",
+        "version": "0.39.1",
         "enabled": true
     },
     {
@@ -186,7 +181,7 @@
     },
     {
         "identifier": "YoavBls.pretty-ts-errors",
-        "version": "0.7.0",
+        "version": "0.8.3",
         "enabled": true
     },
     {
