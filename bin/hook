@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# Usage: `hook [hook-name]` or simply `hook` to select interactively
+
+if [ ! -d .git/hooks ]; then
+  echo "❌ Not in a git repository or .git/hooks directory not found"
+  exit 1
+fi
+
+available_hooks=$(find .git/hooks -type f -o -type l | grep -v '.sample$')
+
+if [ -z "$available_hooks" ]; then
+  echo "❌ No git hooks found in .git/hooks"
+  exit 1
+fi
+
+if [ -n "$1" ]; then
+  if [ ! -f ".git/hooks/$1" ]; then
+    echo "❌ Hook '$1' not found in .git/hooks"
+    exit 1
+  fi
+  hook_file="$1"
+else
+  if ! command -v fzf &> /dev/null; then
+    echo "❌ fzf is not installed. See installation instructions:"
+    echo "   https://junegunn.github.io/fzf/installation/"
+    exit 1
+  fi
+
+  hook_file=$(echo "$available_hooks" | sed 's|.git/hooks/||' | fzf --prompt="Select git hook to run: " --height=40% --border --preview="head -20 .git/hooks/{}")
+fi
+
+if [ -n "$hook_file" ]; then
+  echo "🪝 Running hook: $hook_file"
+  echo ""
+  ".git/hooks/$hook_file"
+fi
