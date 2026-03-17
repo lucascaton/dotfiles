@@ -1,6 +1,8 @@
-if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
+# frozen_string_literal: true
+
+if File.exist?(File.join(Dir.getwd, "config", "environment.rb")) # Is Rails app?
   def active_record_logger_on
-    ActiveRecord::Base.logger = Logger.new(STDOUT)
+    ActiveRecord::Base.logger = Logger.new($stdout)
   end
 
   def active_record_logger_off
@@ -8,13 +10,13 @@ if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
   end
 
   # Load FactoryBot factories and Faker into the current Rails console session (development env)
-  def fb
-    puts 'Loading FactoryBot...'
-    require 'factory_bot'
+  def fb # rubocop:disable Metrics/MethodLength, Naming/PredicateMethod
+    puts "Loading FactoryBot..."
+    require "factory_bot"
 
     begin
-      require 'faker'
-      puts 'Faker loaded!'
+      require "faker"
+      puts "Faker loaded!"
     rescue LoadError
       begin
         require "ffaker"
@@ -33,7 +35,8 @@ if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
 
     FactoryBot.find_definitions if FactoryBot.factories.none?
 
-    include FactoryBot::Syntax::Methods
+    # Intentionally included at top level to make build/create available in the console
+    include FactoryBot::Syntax::Methods # rubocop:disable Style/MixinUsage
 
     true
   end
