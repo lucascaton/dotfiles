@@ -7,6 +7,7 @@ if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
     ActiveRecord::Base.logger = nil
   end
 
+  # Load FactoryBot factories and Faker into the current Rails console session (development env)
   def fb
     puts 'Loading FactoryBot...'
     require 'factory_bot'
@@ -23,18 +24,14 @@ if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
       end
     end
 
-    FactoryBot.factories.clear
+    factory_bot_config = Rails.root.join("spec", "support", "factory_bot.rb")
 
-    factory_bot_paths = [
-      'spec/factories.rb',
-      'spec/support/factories.rb',
-      *Dir['spec/factories/**/*.rb']
-    ]
-
-    factory_bot_paths.each do |path|
-      file = File.join(Rails.root, path)
-      load(File.join(Rails.root, path)) if File.exist?(file)
+    if File.exist?(factory_bot_config)
+      load factory_bot_config
+      puts "Loaded #{factory_bot_config}"
     end
+
+    FactoryBot.find_definitions if FactoryBot.factories.none?
 
     include FactoryBot::Syntax::Methods
 
