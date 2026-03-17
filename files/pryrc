@@ -14,11 +14,13 @@ if File.exist?(File.join(Dir.getwd, 'config', 'environment.rb')) # Is Rails app?
     begin
       require 'faker'
       puts 'Faker loaded!'
-    rescue LoadError => e
-      require 'ffaker'
-      puts 'FFaker loaded!'
-    rescue LoadError => e
-      puts "=> Unable to load [F]Faker (#{e})"
+    rescue LoadError
+      begin
+        require "ffaker"
+        puts "FFaker loaded!"
+      rescue LoadError => e
+        puts "=> Unable to load [F]Faker (#{e})"
+      end
     end
 
     FactoryBot.factories.clear
