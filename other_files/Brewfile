@@ -8,8 +8,6 @@
 tap "dokku/repo"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "puma/puma"
 
@@ -34,10 +32,9 @@ brew "imagemagick"
 brew "openssl"
 brew "macvim"
 brew "mas"
-brew "postgresql", restart_service: true, link: true
+# brew "postgresql", restart_service: true, link: true
 brew "libpq" # Includes `psql``, `pg_dump`, `pg_restore`, etc. - https://stackoverflow.com/q/44654216
 brew "python"
-brew "qlmarkdown" # QuickLook generator for Markdown files - https://github.com/toland/qlmarkdown
 brew "redis", restart_service: true
 brew "rsync"
 brew "s3cmd"
@@ -55,9 +52,9 @@ brew "puma/puma/puma-dev"
 cask_args appdir: "/Applications"
 
 # cask "aws-vault" # https://github.com/99designs/aws-vault
-cask "docker" # https://www.docker.com/
+cask "docker-desktop" # https://www.docker.com/
 cask "iterm2" # https://iterm2.com/
-cask "postico@1" # https://eggerapps.at/postico/v1.php
+# cask "postico@1" # https://eggerapps.at/postico/v1.php
 cask "rectangle" # https://rectangleapp.com/
 # cask "sequel-pro" # https://www.sequelpro.com/
 # cask "spotmenu" # https://kmikiy.github.io/SpotMenu/
@@ -70,17 +67,17 @@ cask "vlc"
 
 mas "Amphetamine", id: 937984704
 mas "MeetingBar", id: 1532419400 # https://github.com/leits/MeetingBar
-mas "Claquette", id: 587748131
+# mas "Claquette", id: 587748131
 mas "DaisyDisk", id: 411643860
-mas "Droplr", id: 498672703
-mas "Gemini 2", id: 1090488118
+# mas "Droplr", id: 498672703
+# mas "Gemini 2", id: 1090488118 # The duplicate finder app, not Google's
 mas "Keynote", id: 409183694
-mas "Microsoft Excel", id: 462058435
-mas "PhotoMill", id: 778590574
+# mas "Microsoft Excel", id: 462058435
+# mas "PhotoMill", id: 778590574
 mas "Pixelmator Pro", id: 1289583905
 mas "Skitch", id: 425955336
-mas "Slack", id: 803453959
+# mas "Slack", id: 803453959
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
-mas "WhatsApp", id: 1147396723
+# mas "WhatsApp", id: 1147396723
