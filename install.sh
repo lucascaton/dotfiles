@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euxo pipefail
+set -euo pipefail
 
 ORIGINAL_COLOR="\033[1;0m"
 GREEN="\033[0;32m"
