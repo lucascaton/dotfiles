@@ -6,47 +6,131 @@
 # settings we're about to change
 osascript -e 'tell application "System Preferences" to quit'
 
+###############################################################################
+# Check current settings                                                      #
+###############################################################################
+
+declare -a keys=()
+declare -a domains=()
+declare -a desired=()
+declare -a current_hosts=()
+declare -a current_values=()
+declare -a statuses=()
+
+check_default() {
+  local current_host=""
+  if [[ "$1" == "-currentHost" ]]; then
+    current_host="-currentHost"
+    shift
+  fi
+
+  local domain="$1" key="$2" value="$3"
+  local expected
+  expected=$([[ "$value" == "true" ]] && echo "1" || echo "0")
+  local current
+  if [[ -n "$current_host" ]]; then
+    current=$(defaults "$current_host" read "$domain" "$key" 2>/dev/null)
+  else
+    current=$(defaults read "$domain" "$key" 2>/dev/null)
+  fi
+
+  keys+=("$key")
+  domains+=("$domain")
+  desired+=("$value")
+  current_hosts+=("$current_host")
+
+  if [[ "$current" == "$expected" ]]; then
+    statuses+=("OK")
+    current_values+=("$value")
+  else
+    statuses+=("CHANGE")
+    if [[ -n "$current" ]]; then
+      current_values+=("$([[ "$current" == "1" ]] && echo "true" || echo "false")")
+    else
+      current_values+=("(not set)")
+    fi
+  fi
+}
+
+# 👉 General UI/UX
+
+# Expand save panel by default
+check_default NSGlobalDomain NSNavPanelExpandedStateForSaveMode true
+check_default NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 true
+
+# Disable smart quotes as they're annoying when typing code
+check_default NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled false
+
+# Disable smart dashes as they're annoying when typing code
+check_default NSGlobalDomain NSAutomaticDashSubstitutionEnabled false
+
+# 👉 Keyboard
+
+# Disable press-and-hold in favour of key repeat
+check_default -g ApplePressAndHoldEnabled false
+
+# 👉 Photos
+
+# Prevent Photos from opening automatically when devices are plugged in
+check_default -currentHost com.apple.ImageCapture disableHotPlug true
+
+###############################################################################
+# Summary                                                                     #
+###############################################################################
+
+echo ""
+echo "macOS Defaults"
+echo "=============="
+echo ""
+printf "  %-45s %-12s %-12s %s\n" "Key" "Current" "Desired" "Status"
+printf "  %-45s %-12s %-12s %s\n" "---" "-------" "-------" "------"
+for i in "${!keys[@]}"; do
+  printf "  %-45s %-12s %-12s %s\n" "${keys[$i]}" "${current_values[$i]}" "${desired[$i]}" "${statuses[$i]}"
+done
+echo ""
+
+changes=0
+for status in "${statuses[@]}"; do
+  [[ "$status" == "CHANGE" ]] && ((changes++))
+done
+
+if [[ $changes -eq 0 ]]; then
+  echo "All settings are already configured. Nothing to do."
+  exit 0
+fi
+
+read -rp "$changes change(s) to apply. Proceed? [y/N] " confirm
+if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+  echo "Aborted."
+  exit 0
+fi
+
+###############################################################################
+# Apply changes                                                               #
+###############################################################################
+
+echo ""
+
 # Ask for the administrator password upfront
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-###############################################################################
-# General UI/UX                                                               #
-###############################################################################
+for i in "${!keys[@]}"; do
+  if [[ "${statuses[$i]}" == "CHANGE" ]]; then
+    if [[ -n "${current_hosts[$i]}" ]]; then
+      defaults "${current_hosts[$i]}" write "${domains[$i]}" "${keys[$i]}" -bool "${desired[$i]}"
+    else
+      defaults write "${domains[$i]}" "${keys[$i]}" -bool "${desired[$i]}"
+    fi
+    echo "  Updated: ${keys[$i]} → ${desired[$i]}"
+  fi
+done
 
-# Expand save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-
-# Disable smart quotes as they're annoying when typing code
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-
-# Disable smart dashes as they're annoying when typing code
-defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-
-###############################################################################
-# Keyboard                                                                    #
-###############################################################################
-
-defaults write -g ApplePressAndHoldEnabled -bool false
-
-###############################################################################
-# Finder                                                                      #
-###############################################################################
-
-# Show the ~/Library folder
+# Finder: show the ~/Library folder
 setfile -a v ~/Library
 chflags nohidden ~/Library
 
-###############################################################################
-# Photos                                                                      #
-###############################################################################
-
-# Prevent Photos from opening automatically when devices are plugged in
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-###############################################################################
-
+echo ""
 echo "Done. Note that some of these changes require a logout/restart to take effect."
