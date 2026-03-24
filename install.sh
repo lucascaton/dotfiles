@@ -39,9 +39,17 @@ done
 
 title "Installing ZSH plugins"
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions         ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/romkatv/powerlevel10k.git             ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+ZSH_PLUGINS=(
+  "https://github.com/zsh-users/zsh-syntax-highlighting.git plugins/zsh-syntax-highlighting"
+  "https://github.com/zsh-users/zsh-autosuggestions.git plugins/zsh-autosuggestions"
+  "https://github.com/romkatv/powerlevel10k.git themes/powerlevel10k"
+)
+
+for plugin in "${ZSH_PLUGINS[@]}"; do
+  repo="${plugin% *}"
+  dest="${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/${plugin#* }"
+  [ -d "$dest" ] || git clone "$repo" "$dest"
+done
 
 # ------------------------------------------------------------------------------
 
