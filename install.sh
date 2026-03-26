@@ -17,6 +17,7 @@ title "Creating backup & creating symlinks to new dotfiles"
 
 cd ~/.dotfiles/files
 for file in *; do
+  [ "$file" = "~" ] && continue
   echo -ne "~/.$file ${GRAY}"
 
   if [ -s ~/.$file ]; then
