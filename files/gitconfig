@@ -79,3 +79,6 @@
 
 [tag]
   sort = version:refname
+
+[url "https://github.com/"]
+  insteadOf = git@github.com:
