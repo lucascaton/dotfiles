@@ -183,14 +183,13 @@
   "git.blame.editorDecoration.enabled": true,
   "git.blame.editorDecoration.template": "${authorName}: ${subject} (${authorDateAgo})",
   "git.openRepositoryInParentFolders": "always",
-  "github.copilot.chat.codesearch.enabled": true,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "javascript.preferences.autoImportFileExcludePatterns": [
+  "jest.runMode": "on-demand",
+  "js/ts.preferences.autoImportFileExcludePatterns": [
     "**/node_modules/@types/node/**"
   ],
-  "javascript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "jest.runMode": "on-demand",
+  "js/ts.suggest.autoImports": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "json.schemas": [
     {
       "fileMatch": [
@@ -240,11 +239,6 @@
   "terminal.integrated.env.osx": {},
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.stickyScroll.enabled": true,
-  "typescript.preferences.autoImportFileExcludePatterns": [
-    "**/node_modules/@types/node/**"
-  ],
-  "typescript.suggest.autoImports": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
@@ -252,5 +246,6 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "newUntitledFile"
 }
