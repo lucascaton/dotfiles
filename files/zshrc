@@ -84,6 +84,8 @@ case $OSTYPE in
     ;;
 esac
 
+export PATH="$HOME/.opencode/bin:$PATH"
+
 # PostgreSQL
 export PGHOST=localhost
 
