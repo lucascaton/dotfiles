@@ -31,5 +31,16 @@
   {
     "key": "alt+ctrl+h",
     "command": "-rest-client.history"
+  },
+  {
+    // Collapse 3+ consecutive newlines into 2
+    "key": "ctrl+alt+ctrl+r",
+    "command": "workbench.action.findInFiles",
+    "args": {
+      "query": "\\n{3,}",
+      "replace": "\n\n",
+      "isRegex": true,
+      "triggerSearch": true
+    }
   }
 ]
