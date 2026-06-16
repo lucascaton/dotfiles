@@ -34,3 +34,5 @@ npm-debug.log
 
 # ESLint
 /.eslintcache
+
+**/.claude/settings.local.json
