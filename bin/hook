@@ -1,43 +1,44 @@
 #!/usr/bin/env bash
 
 # Usage: `hook [hook-name]` or simply `hook` to select interactively
+#
+# Thin wrapper around `git hook run`, which honours core.hooksPath, so it works
+# with .git/hooks, .husky/_ and any other configured hooks directory.
 
-hooks_dir=$(git config core.hooksPath 2>/dev/null || echo ".git/hooks")
+hook_name=$1
 
-# Husky sets core.hooksPath to .husky/_ which contains internal wrappers for
-# every Git hook type. The actual user-defined hooks live in .husky/.
-[ "$hooks_dir" = ".husky/_" ] && hooks_dir=".husky"
-
-if [ ! -d "$hooks_dir" ]; then
-  echo "❌ Not in a git repository or hooks directory not found"
-  exit 1
-fi
-
-available_hooks=$(find "$hooks_dir" -maxdepth 1 -type f -o -type l | grep -v '.sample$')
-
-if [ -z "$available_hooks" ]; then
-  echo "❌ No git hooks found in $hooks_dir"
-  exit 1
-fi
-
-if [ -n "$1" ]; then
-  if [ ! -f "$hooks_dir/$1" ]; then
-    echo "❌ Hook '$1' not found in $hooks_dir"
-    exit 1
-  fi
-  hook_file="$1"
-else
+if [ -z "$hook_name" ]; then
   if ! command -v fzf &> /dev/null; then
     echo "❌ fzf is not installed. See installation instructions:"
     echo "   https://junegunn.github.io/fzf/installation/"
     exit 1
   fi
 
-  hook_file=$(echo "$available_hooks" | sed "s|$hooks_dir/||" | fzf --prompt="Select git hook to run: " --height=100% --border --preview="head -20 $hooks_dir/{}")
+  hooks_dir=$(git rev-parse --git-path hooks) || exit 1
+
+  # Without the configured directory there's nothing for `git hook run` to find,
+  # e.g. Husky's .husky/_ is gitignored and only exists once its install step ran.
+  if [ ! -d "$hooks_dir" ]; then
+    echo "❌ No git hooks found in $hooks_dir"
+    exit 1
+  fi
+
+  # Husky sets core.hooksPath to .husky/_ which contains internal wrappers for
+  # every Git hook type. The actual user-defined hooks live in .husky/.
+  [ "$(basename "$hooks_dir")" = "_" ] && hooks_dir=$(dirname "$hooks_dir")
+
+  available_hooks=$(find "$hooks_dir" -maxdepth 1 -type f -o -type l | grep -v '.sample$' | sed "s|$hooks_dir/||")
+
+  if [ -z "$available_hooks" ]; then
+    echo "❌ No git hooks found in $hooks_dir"
+    exit 1
+  fi
+
+  hook_name=$(echo "$available_hooks" | fzf --prompt="Select git hook to run: " --height=100% --border --preview="head -20 $hooks_dir/{}")
+
+  [ -z "$hook_name" ] && exit 0
 fi
 
-if [ -n "$hook_file" ]; then
-  echo "🪝 Running hook: $hook_file"
-  echo ""
-  "$hooks_dir/$hook_file"
-fi
+echo "🪝 Running hook: $hook_name"
+echo ""
+git hook run "$hook_name"
