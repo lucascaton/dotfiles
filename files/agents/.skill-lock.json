@@ -68,7 +68,7 @@
       "skillFolderHash": "19def6229f89686253063fb9d795a6d45a246046",
       "pluginName": "bro",
       "installedAt": "2026-08-06T00:24:22.084Z",
-      "updatedAt": "2026-08-06T00:24:22.084Z"
+      "updatedAt": "2026-08-18T23:24:13.564Z"
     },
     "facts": {
       "source": "backnotprop/bro",
@@ -76,8 +76,9 @@
       "sourceUrl": "https://github.com/backnotprop/bro.git",
       "skillPath": "skills/facts/SKILL.md",
       "skillFolderHash": "506010476ff11a7f91dd30d73bc59f642b5bec76",
+      "pluginName": "bro",
       "installedAt": "2026-08-06T00:24:22.087Z",
-      "updatedAt": "2026-08-17T02:46:15.790Z"
+      "updatedAt": "2026-08-18T23:24:13.567Z"
     },
     "ask-matt": {
       "source": "mattpocock/skills",
@@ -278,6 +279,15 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-17T02:45:50.452Z",
       "updatedAt": "2026-08-17T02:45:50.452Z"
+    },
+    "rails-upgrade": {
+      "source": "ombulabs/claude-code_rails-upgrade-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ombulabs/claude-code_rails-upgrade-skill.git",
+      "skillPath": "rails-upgrade/SKILL.md",
+      "skillFolderHash": "3843d584a6926588da08578cba8b52d21f402329",
+      "installedAt": "2026-08-18T23:28:03.093Z",
+      "updatedAt": "2026-08-18T23:28:03.093Z"
     }
   },
   "dismissed": {
