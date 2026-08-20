@@ -77,6 +77,7 @@
     "caton",
     "cimg",
     "circleci",
+    "cloudflare",
     "codemods",
     "Concat",
     "csrf",
@@ -119,6 +120,9 @@
     "cursor-workspace": true,
     "windsurf": true
   },
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.experimental.useTrueInlineView": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.renderSideBySide": false,
   "editor.accessibilitySupport": "off",
   "editor.codeLensFontFamily": "JetbrainsMono, Hack Nerd Font, Menlo, Monaco, monospace",
@@ -227,6 +231,9 @@
     "workspaceSymbol": true
   },
   "rubyLsp.rubyExecutablePath": "~/.asdf/shims/ruby",
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
   "screencastMode.fontSize": 64,
   "search.collapseResults": "alwaysCollapse",
   "search.showLineNumbers": true,
@@ -251,6 +258,7 @@
   "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
+  "workbench.experimental.modernUI": true,
   "workbench.layoutControl.enabled": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "newUntitledFile"

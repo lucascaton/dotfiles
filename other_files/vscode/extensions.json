@@ -11,7 +11,7 @@
     },
     {
         "identifier": "astro-build.astro-vscode",
-        "version": "2.16.13",
+        "version": "2.16.18",
         "enabled": true
     },
     {
@@ -26,32 +26,17 @@
     },
     {
         "identifier": "bradlc.vscode-tailwindcss",
-        "version": "0.14.29",
+        "version": "0.16.0",
         "enabled": true
     },
     {
         "identifier": "dbaeumer.vscode-eslint",
-        "version": "3.0.24",
-        "enabled": true
-    },
-    {
-        "identifier": "EditorConfig.EditorConfig",
-        "version": "0.18.2",
+        "version": "3.0.34",
         "enabled": true
     },
     {
         "identifier": "esbenp.prettier-vscode",
         "version": "12.4.0",
-        "enabled": true
-    },
-    {
-        "identifier": "expo.vscode-expo-tools",
-        "version": "1.6.3",
-        "enabled": true
-    },
-    {
-        "identifier": "flowtype.flow-for-vscode",
-        "version": "3.1.4",
         "enabled": true
     },
     {
@@ -70,13 +55,8 @@
         "enabled": true
     },
     {
-        "identifier": "kaiwood.endwise",
-        "version": "2.1.0",
-        "enabled": true
-    },
-    {
         "identifier": "Katsute.settings-repository",
-        "version": "2.0.3",
+        "version": "2.0.4",
         "enabled": true
     },
     {
@@ -92,12 +72,7 @@
     {
         "identifier": "mgmcdermott.vscode-language-babel",
         "version": "0.0.40",
-        "enabled": true
-    },
-    {
-        "identifier": "ms-vscode-remote.remote-containers",
-        "version": "0.459.1",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "naumovs.color-highlight",
@@ -112,11 +87,6 @@
     {
         "identifier": "patbenatar.advanced-new-file",
         "version": "1.2.2",
-        "enabled": true
-    },
-    {
-        "identifier": "redhat.vscode-yaml",
-        "version": "1.23.0",
         "enabled": true
     },
     {
@@ -136,12 +106,12 @@
     },
     {
         "identifier": "rubocop.vscode-rubocop",
-        "version": "0.10.0",
+        "version": "0.10.1",
         "enabled": true
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.10.4",
+        "version": "0.10.6",
         "enabled": true
     },
     {
@@ -186,7 +156,7 @@
     },
     {
         "identifier": "yzane.markdown-pdf",
-        "version": "2.1.0",
+        "version": "2.2.0",
         "enabled": true
     },
     {
