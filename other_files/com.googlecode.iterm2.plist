@@ -1495,6 +1495,8 @@
 			</dict>
 			<key>Guid</key>
 			<string>2D89F8E7-7613-4812-8E16-347239AAE358</string>
+			<key>Height Percentage</key>
+			<integer>-1</integer>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -1556,7 +1558,7 @@
 			<key>Rows</key>
 			<integer>100</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>0</integer>
 			<key>Scrollback With Status Bar</key>
@@ -1752,8 +1754,10 @@
 			<real>1</real>
 			<key>Visual Bell</key>
 			<true/>
+			<key>Width Percentage</key>
+			<integer>-1</integer>
 			<key>Window Type</key>
-			<integer>1</integer>
+			<integer>15</integer>
 			<key>Working Directory</key>
 			<string>/Users/lucascaton</string>
 		</dict>
