@@ -38,27 +38,27 @@
       "skillFolderHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-27T04:36:11.290Z",
-      "updatedAt": "2026-08-17T02:45:50.442Z"
+      "updatedAt": "2026-11-14T04:51:02.639Z"
     },
     "grilling": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/grilling/SKILL.md",
-      "skillFolderHash": "0d40d978f1a588971a11ea7ae85b208e78102dc3",
+      "skillFolderHash": "f551b6e0d219fdda0b6abf277f8f915b3127d1e9",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-27T04:44:05.782Z",
-      "updatedAt": "2026-08-17T02:45:50.443Z"
+      "updatedAt": "2026-11-14T04:51:02.640Z"
     },
     "domain-modeling": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/domain-modeling/SKILL.md",
-      "skillFolderHash": "05c3244ec75b7548bbc2b635b0624bb9f70369c3",
+      "skillFolderHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-07-27T04:44:14.697Z",
-      "updatedAt": "2026-08-17T02:45:50.441Z"
+      "updatedAt": "2026-11-14T04:51:02.641Z"
     },
     "bro": {
       "source": "backnotprop/bro",
@@ -145,10 +145,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "skillFolderHash": "db546af0f3419a8bd261a83708d4cb33d2a915cd",
+      "skillFolderHash": "587147dd230da299cc5e84971cb0a33f6676f8a6",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-17T02:45:50.445Z",
-      "updatedAt": "2026-08-17T02:45:50.445Z"
+      "updatedAt": "2026-11-14T04:51:02.637Z"
     },
     "prototype": {
       "source": "mattpocock/skills",
@@ -288,6 +288,16 @@
       "skillFolderHash": "3843d584a6926588da08578cba8b52d21f402329",
       "installedAt": "2026-08-18T23:28:03.093Z",
       "updatedAt": "2026-08-18T23:28:03.093Z"
+    },
+    "humanizer": {
+      "source": "blader/humanizer",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/blader/humanizer.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "b48c832f0f809c1b5658edbb838c2521b72f2413",
+      "pluginName": "humanizer",
+      "installedAt": "2026-11-13T05:54:37.213Z",
+      "updatedAt": "2026-11-13T05:54:37.213Z"
     }
   },
   "dismissed": {
@@ -295,16 +305,17 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
+    "fx",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed",
     "claude-code"
