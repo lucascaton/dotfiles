@@ -298,6 +298,16 @@
       "pluginName": "humanizer",
       "installedAt": "2026-11-13T05:54:37.213Z",
       "updatedAt": "2026-11-13T05:54:37.213Z"
+    },
+    "diagram-design": {
+      "source": "cathrynlavery/diagram-design",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cathrynlavery/diagram-design.git",
+      "commit": "d74d8c2d0c78a9e1efd43137f6a9a51182a8b5f0",
+      "skillPath": "skills/diagram-design/SKILL.md",
+      "skillFolderHash": "ed58ce288b23b5fc2f26b57e91c794088cc557bd",
+      "installedAt": "2026-11-19T05:21:09.638Z",
+      "updatedAt": "2026-11-19T05:21:09.638Z"
     }
   },
   "dismissed": {
