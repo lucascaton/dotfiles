@@ -73,6 +73,7 @@
     "actionpack",
     "activemodel",
     "activerecord",
+    "bigdecimal",
     "braintree",
     "caton",
     "cimg",
@@ -111,7 +112,10 @@
     "rubocop",
     "semibold",
     "stylelint",
+    "stylesheet",
     "tailwindcss",
+    "testid",
+    "tmpdir",
     "twilio"
   ],
   "chat.mcp.discovery.enabled": {

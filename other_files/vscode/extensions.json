@@ -2,22 +2,17 @@
     {
         "identifier": "4ops.terraform",
         "version": "0.2.5",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "alefragnani.Bookmarks",
         "version": "14.1.1",
-        "enabled": true
-    },
-    {
-        "identifier": "astro-build.astro-vscode",
-        "version": "2.16.18",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "be5invis.toml",
         "version": "0.6.0",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "bierner.markdown-mermaid",
@@ -27,12 +22,12 @@
     {
         "identifier": "bradlc.vscode-tailwindcss",
         "version": "0.16.0",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "dbaeumer.vscode-eslint",
         "version": "3.0.34",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "esbenp.prettier-vscode",
@@ -42,7 +37,7 @@
     {
         "identifier": "formulahendry.auto-rename-tag",
         "version": "0.1.10",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "GitHub.github-vscode-theme",
@@ -52,7 +47,7 @@
     {
         "identifier": "humao.rest-client",
         "version": "0.25.1",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "Katsute.settings-repository",
@@ -62,7 +57,7 @@
     {
         "identifier": "Lourenci.go-to-spec",
         "version": "0.1.3",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "marclipovsky.string-manipulation",
@@ -70,19 +65,14 @@
         "enabled": true
     },
     {
-        "identifier": "mgmcdermott.vscode-language-babel",
-        "version": "0.0.40",
-        "enabled": false
-    },
-    {
         "identifier": "naumovs.color-highlight",
         "version": "2.8.0",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "Orta.vscode-jest",
         "version": "6.4.4",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "patbenatar.advanced-new-file",
@@ -92,7 +82,7 @@
     {
         "identifier": "ricard.postcss",
         "version": "2.0.0",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "richie5um2.vscode-sort-json",
@@ -102,7 +92,7 @@
     {
         "identifier": "ritwickdey.LiveServer",
         "version": "5.7.10",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "rubocop.vscode-rubocop",
@@ -111,48 +101,48 @@
     },
     {
         "identifier": "Shopify.ruby-lsp",
-        "version": "0.10.6",
+        "version": "0.10.8",
         "enabled": true
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker",
-        "version": "4.5.6",
+        "version": "4.10.0",
         "enabled": true
     },
     {
         "identifier": "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-        "version": "2.2.4",
+        "version": "3.0.2",
         "enabled": true
     },
     {
         "identifier": "stylelint.vscode-stylelint",
         "version": "2.2.1",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "syler.sass-indented",
         "version": "1.8.33",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "timonwong.shellcheck",
-        "version": "0.39.5",
-        "enabled": true
+        "version": "0.48.4",
+        "enabled": false
     },
     {
         "identifier": "vincaslt.highlight-matching-tag",
         "version": "0.11.0",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "vitaliymaz.vscode-svg-previewer",
         "version": "0.7.0",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "YoavBls.pretty-ts-errors",
         "version": "0.8.7",
-        "enabled": true
+        "enabled": false
     },
     {
         "identifier": "yzane.markdown-pdf",
@@ -162,6 +152,6 @@
     {
         "identifier": "yzhang.markdown-all-in-one",
         "version": "3.6.3",
-        "enabled": true
+        "enabled": false
     }
 ]
